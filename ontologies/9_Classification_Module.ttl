@@ -1,0 +1,66 @@
+@prefix : <http://www.w3id.org/dpp/classification#> .
+@prefix dpp: <http://www.w3id.org/dpp#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<http://www.w3id.org/dpp/classification> rdf:type owl:Ontology ;
+    owl:versionIRI <http://www.w3id.org/dpp/classification/1.0> ;
+    owl:versionInfo "1.0" ;
+    dcterms:title "Digital Product Passport – Classification Module Ontology" ;
+    dcterms:creator "Rahel Kebede" ;
+    dcterms:contributor "Peter Johansson" , "Annika Moscati" ;
+    dcterms:description "This ontology defines concepts and properties for classifying products within a Digital Product Passport (DPP), supporting multiple classification systems and hierarchies such as functional or material-based classification." ;
+    dcterms:created "2023-09-08"^^xsd:date ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> .
+
+dpp:classificationCode a owl:DatatypeProperty ;
+    rdfs:label "classification code"@en ;
+    rdfs:comment "A unique code or identifier for the classification"@en ;
+    rdfs:domain dpp:Classification ;
+    rdfs:range xsd:string .
+
+dpp:classificationDescription a owl:DatatypeProperty ;
+    rdfs:label "classification description"@en ;
+    rdfs:comment "A description of the classification"@en ;
+    rdfs:domain dpp:Classification ;
+    rdfs:range xsd:string .
+
+dpp:classificationName a owl:DatatypeProperty ;
+    rdfs:label "classification name"@en ;
+    rdfs:comment "The name of the classification"@en ;
+    rdfs:domain dpp:Classification ;
+    rdfs:range xsd:string .
+
+dpp:classifiesComponent a owl:ObjectProperty ;
+    rdfs:label "classifies component"@en ;
+    rdfs:comment "Links the classification to the components it classifies"@en ;
+    rdfs:domain dpp:Classification ;
+    rdfs:range dpp:Component .
+
+dpp:classifiesMaterial a owl:ObjectProperty ;
+    rdfs:label "classifies material"@en ;
+    rdfs:comment "Links the classification to the materials it classifies"@en ;
+    rdfs:domain dpp:Classification ;
+    rdfs:range dpp:Material .
+
+dpp:classifiesProduct a owl:ObjectProperty ;
+    rdfs:label "classifies products"@en ;
+    rdfs:comment "Links the classification to the products it classifies"@en ;
+    rdfs:domain dpp:Classification ;
+    rdfs:range dpp:Product .
+
+dpp:hasClassification a owl:ObjectProperty ;
+    rdfs:label "has classification"@en ;
+    rdfs:comment "Links a product, material, or component to its classification"@en ;
+    rdfs:domain dpp:Component,
+        dpp:Material,
+        dpp:Product ;
+    rdfs:range dpp:Classification .
+
+dpp:Classification a owl:Class ;
+    rdfs:label "Classification"@en ;
+    rdfs:comment "A hierarchical or categorical system used for organizing and classifying information about products, components, or other items based on their shared characteristics, properties, or features."@en .
+

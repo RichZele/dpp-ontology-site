@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <owl:Class rdf:about="http://www.w3id.org/dpp#EnergyEfficiencyRating">
+    <rdfs:label xml:lang="en">Energy Efficiency Rating</rdfs:label>
+    <rdfs:comment xml:lang="en">The energy efficiency rating of a product, e.g., ENERGY STAR and DesignLights Consortium (DLC) for lighting products.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3id.org/dpp#Certification"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.w3id.org/dpp#EnvironmentalCertification">
+    <rdfs:label xml:lang="en">Environmental Certification</rdfs:label>
+    <rdfs:comment xml:lang="en">The environmental certifications of a product, e.g., RoHS, REACH (https://www.assent.com/blog/difference-reach-rohs-compliance/).</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3id.org/dpp#Certification"/>
+  </owl:Class>
+  <owl:Ontology rdf:about="http://www.w3id.org/dpp/certification">
+    <owl:versionIRI rdf:resource="http://www.w3id.org/dpp/certification/1.0"/>
+    <owl:versionInfo>1.0</owl:versionInfo>
+    <dcterms:title>Digital Product Passport – Certification Module Ontology</dcterms:title>
+    <dcterms:creator>Rahel Kebede</dcterms:creator>
+    <dcterms:contributor>Peter Johansson</dcterms:contributor>
+    <dcterms:contributor>Annika Moscati</dcterms:contributor>
+    <dcterms:description>This ontology defines concepts and properties for representing certification schemes, assessment bodies, and compliance data in the context of a Digital Product Passport (DPP).</dcterms:description>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-08</dcterms:created>
+    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+  </owl:Ontology>
+  <owl:DatatypeProperty rdf:about="http://www.w3id.org/dpp#certificationScope">
+    <rdfs:label xml:lang="en">Certification Scope</rdfs:label>
+    <rdfs:comment xml:lang="en">A description of the scope of the certification, i.e., the aspects or activities it covers.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#Certification"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3id.org/dpp#hasCertification">
+    <rdfs:label xml:lang="en">has certification</rdfs:label>
+    <rdfs:comment xml:lang="en">Links the product to its Certification</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#Product"/>
+    <rdfs:range rdf:resource="http://www.w3id.org/dpp#Certification"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.w3id.org/dpp#certificationStatus">
+    <rdfs:label xml:lang="en">Certification Status</rdfs:label>
+    <rdfs:comment xml:lang="en">The current status of the certification, e.g., active, expired, revoked.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#Certification"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.w3id.org/dpp#expiryDate">
+    <rdfs:label xml:lang="en">Expiry Date</rdfs:label>
+    <rdfs:comment xml:lang="en">The date when the certification expires, if applicable.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#Certification"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.w3id.org/dpp#certificationName">
+    <rdfs:label xml:lang="en">Certification Name</rdfs:label>
+    <rdfs:comment xml:lang="en">The name of the certification</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#Certification"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://www.w3id.org/dpp#RegulatoryCompliance">
+    <rdfs:label xml:lang="en">Regulatory Compliance</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates if a product complies with applicable building codes and regulations.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3id.org/dpp#Certification"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="http://www.w3id.org/dpp#issueDate">
+    <rdfs:label xml:lang="en">Issue Date</rdfs:label>
+    <rdfs:comment xml:lang="en">The date when the certification was issued.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#Certification"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.w3id.org/dpp#certificationAuthority">
+    <rdfs:label xml:lang="en">Certification Authority </rdfs:label>
+    <rdfs:comment xml:lang="en">The organization or body that issued the certification</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#Certification"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://www.w3id.org/dpp#SafetyCertification">
+    <rdfs:label xml:lang="en">Safety Certification</rdfs:label>
+    <rdfs:comment xml:lang="en">The safety certifications of a product, e.g., UL, CE.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3id.org/dpp#Certification"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="http://www.w3id.org/dpp#certificationIdentifier">
+    <rdfs:label xml:lang="en">Certification Identifier</rdfs:label>
+    <rdfs:comment xml:lang="en">A unique identifier for the certification, such as a certificate number</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#Certification"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://www.w3id.org/dpp#ConformityCertificates">
+    <rdfs:label xml:lang="en">Conformity Certificates</rdfs:label>
+    <rdfs:comment xml:lang="en">The conformity certificates for a product.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3id.org/dpp#Certification"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.w3id.org/dpp#Certification">
+    <rdfs:label xml:lang="en">Product Certification</rdfs:label>
+    <rdfs:comment xml:lang="en">A formal recognition or validation of a product or Manufacturer's compliance with specific standards, regulations, or guidelines.</rdfs:comment>
+  </owl:Class>
+</rdf:RDF>

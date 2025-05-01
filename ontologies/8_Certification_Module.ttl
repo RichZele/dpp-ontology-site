@@ -1,0 +1,95 @@
+@prefix : <http://www.w3id.org/dpp/certification#> .
+@prefix dpp: <http://www.w3id.org/dpp#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<http://www.w3id.org/dpp/certification> rdf:type owl:Ontology ;
+    owl:versionIRI <http://www.w3id.org/dpp/certification/1.0> ;
+    owl:versionInfo "1.0" ;
+    dcterms:title "Digital Product Passport – Certification Module Ontology" ;
+    dcterms:creator "Rahel Kebede" ;
+    dcterms:contributor "Peter Johansson" , "Annika Moscati" ;
+    dcterms:description "This ontology defines concepts and properties for representing certification schemes, assessment bodies, and compliance data in the context of a Digital Product Passport (DPP)." ;
+    dcterms:created "2023-09-08"^^xsd:date ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> .
+
+dpp:ConformityCertificates a owl:Class ;
+    rdfs:label "Conformity Certificates"@en ;
+    rdfs:comment "The conformity certificates for a product."@en ;
+    rdfs:subClassOf dpp:Certification .
+
+dpp:EnergyEfficiencyRating a owl:Class ;
+    rdfs:label "Energy Efficiency Rating"@en ;
+    rdfs:comment "The energy efficiency rating of a product, e.g., ENERGY STAR and DesignLights Consortium (DLC) for lighting products."@en ;
+    rdfs:subClassOf dpp:Certification .
+
+dpp:EnvironmentalCertification a owl:Class ;
+    rdfs:label "Environmental Certification"@en ;
+    rdfs:comment "The environmental certifications of a product, e.g., RoHS, REACH (https://www.assent.com/blog/difference-reach-rohs-compliance/)."@en ;
+    rdfs:subClassOf dpp:Certification .
+
+dpp:RegulatoryCompliance a owl:Class ;
+    rdfs:label "Regulatory Compliance"@en ;
+    rdfs:comment "Indicates if a product complies with applicable building codes and regulations."@en ;
+    rdfs:subClassOf dpp:Certification .
+
+dpp:SafetyCertification a owl:Class ;
+    rdfs:label "Safety Certification"@en ;
+    rdfs:comment "The safety certifications of a product, e.g., UL, CE."@en ;
+    rdfs:subClassOf dpp:Certification .
+
+dpp:certificationAuthority a owl:DatatypeProperty ;
+    rdfs:label "Certification Authority "@en ;
+    rdfs:comment "The organization or body that issued the certification"@en ;
+    rdfs:domain dpp:Certification ;
+    rdfs:range xsd:string .
+
+dpp:certificationIdentifier a owl:DatatypeProperty ;
+    rdfs:label "Certification Identifier"@en ;
+    rdfs:comment "A unique identifier for the certification, such as a certificate number"@en ;
+    rdfs:domain dpp:Certification ;
+    rdfs:range xsd:string .
+
+dpp:certificationName a owl:DatatypeProperty ;
+    rdfs:label "Certification Name"@en ;
+    rdfs:comment "The name of the certification"@en ;
+    rdfs:domain dpp:Certification ;
+    rdfs:range xsd:string .
+
+dpp:certificationScope a owl:DatatypeProperty ;
+    rdfs:label "Certification Scope"@en ;
+    rdfs:comment "A description of the scope of the certification, i.e., the aspects or activities it covers."@en ;
+    rdfs:domain dpp:Certification ;
+    rdfs:range xsd:string .
+
+dpp:certificationStatus a owl:DatatypeProperty ;
+    rdfs:label "Certification Status"@en ;
+    rdfs:comment "The current status of the certification, e.g., active, expired, revoked."@en ;
+    rdfs:domain dpp:Certification ;
+    rdfs:range xsd:string .
+
+dpp:expiryDate a owl:DatatypeProperty ;
+    rdfs:label "Expiry Date"@en ;
+    rdfs:comment "The date when the certification expires, if applicable."@en ;
+    rdfs:domain dpp:Certification ;
+    rdfs:range xsd:date .
+
+dpp:hasCertification a owl:ObjectProperty ;
+    rdfs:label "has certification"@en ;
+    rdfs:comment "Links the product to its Certification"@en ;
+    rdfs:domain dpp:Product ;
+    rdfs:range dpp:Certification .
+
+dpp:issueDate a owl:DatatypeProperty ;
+    rdfs:label "Issue Date"@en ;
+    rdfs:comment "The date when the certification was issued."@en ;
+    rdfs:domain dpp:Certification ;
+    rdfs:range xsd:date .
+
+dpp:Certification a owl:Class ;
+    rdfs:label "Product Certification"@en ;
+    rdfs:comment "A formal recognition or validation of a product or Manufacturer's compliance with specific standards, regulations, or guidelines."@en .
+

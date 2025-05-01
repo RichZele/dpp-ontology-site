@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <owl:DatatypeProperty rdf:about="http://www.w3id.org/dpp#description">
+    <rdfs:label xml:lang="en">description</rdfs:label>
+    <rdfs:comment xml:lang="en">A brief description of the item</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#BuildingCode"/>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#DeclarationOfConformity"/>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#Guarantee"/>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#LiabilityDetail"/>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#Regulation"/>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#TechnicalDocumentation"/>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#Warranty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3id.org/dpp#hasBuildingCode">
+    <rdfs:label xml:lang="en">has BuildingCode</rdfs:label>
+    <rdfs:comment xml:lang="en">Links Product to BuildingCode</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#Product"/>
+    <rdfs:range rdf:resource="http://www.w3id.org/dpp#BuildingCode"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3id.org/dpp#hasTechnicalDocumentation">
+    <rdfs:label xml:lang="en">has TechnicalDocumentation</rdfs:label>
+    <rdfs:comment xml:lang="en">Links Product to TechnicalDocumentation</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#Product"/>
+    <rdfs:range rdf:resource="http://www.w3id.org/dpp#TechnicalDocumentation"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3id.org/dpp#checkedAgainst">
+    <rdfs:label xml:lang="en">checked against</rdfs:label>
+    <rdfs:comment xml:lang="en">Links a compliance check to the standard being verified</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#ComplianceCheck"/>
+    <rdfs:range rdf:resource="http://www.w3id.org/dpp#Standard"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3id.org/dpp#hasFireResistanceRating">
+    <rdfs:label xml:lang="en">has FireResistanceRating</rdfs:label>
+    <rdfs:comment xml:lang="en">Links Product to FireResistanceRating</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#Product"/>
+    <rdfs:range rdf:resource="http://www.w3id.org/dpp#FireResistanceRating"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3id.org/dpp#hasDeclarationOfConformity">
+    <rdfs:label xml:lang="en">has DeclarationOfConformity</rdfs:label>
+    <rdfs:comment xml:lang="en">Links Product to DeclarationOfConformity</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#Product"/>
+    <rdfs:range rdf:resource="http://www.w3id.org/dpp#DeclarationOfConformity"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3id.org/dpp#adheresTo">
+    <rdfs:label xml:lang="en">adheres to</rdfs:label>
+    <rdfs:comment xml:lang="en">Links a product to the standard it adheres to</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#Product"/>
+    <rdfs:range rdf:resource="http://www.w3id.org/dpp#Standard"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3id.org/dpp#hasSoundTransmissionClass">
+    <rdfs:label xml:lang="en">has SoundTransmissionClass</rdfs:label>
+    <rdfs:comment xml:lang="en">Links Product to SoundTransmissionClass</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#Product"/>
+    <rdfs:range rdf:resource="http://www.w3id.org/dpp#SoundTransmissionClass"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.w3id.org/dpp#rating">
+    <rdfs:label xml:lang="en">rating</rdfs:label>
+    <rdfs:comment xml:lang="en">The rating value of the item</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#FireResistanceRating"/>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#SoundTransmissionClass"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3id.org/dpp#hasLiabilityDetail">
+    <rdfs:label xml:lang="en">has LiabilityDetail</rdfs:label>
+    <rdfs:comment xml:lang="en">Links Product to LiabilityDetail</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#Product"/>
+    <rdfs:range rdf:resource="http://www.w3id.org/dpp#LiabilityDetail"/>
+  </owl:ObjectProperty>
+  <owl:Ontology rdf:about="http://www.w3id.org/dpp/standard">
+    <owl:versionIRI rdf:resource="http://www.w3id.org/dpp/standard/1.0"/>
+    <owl:versionInfo>1.0</owl:versionInfo>
+    <dcterms:title>Digital Product Passport – Standard Module Ontology</dcterms:title>
+    <dcterms:creator>Rahel Kebede</dcterms:creator>
+    <dcterms:contributor>Peter Johansson</dcterms:contributor>
+    <dcterms:contributor>Annika Moscati</dcterms:contributor>
+    <dcterms:description>This ontology defines concepts and properties for representing product standards, certifications, and compliance requirements in the context of a Digital Product Passport (DPP).</dcterms:description>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-07</dcterms:created>
+    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+  </owl:Ontology>
+  <owl:ObjectProperty rdf:about="http://www.w3id.org/dpp#hasVerificationResult">
+    <rdfs:label xml:lang="en">has verification result</rdfs:label>
+    <rdfs:comment xml:lang="en">Links a compliance check to its result</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#ComplianceCheck"/>
+    <rdfs:range rdf:resource="http://www.w3id.org/dpp#VerificationResult"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3id.org/dpp#hasGuarantee">
+    <rdfs:label xml:lang="en">has Guarantee</rdfs:label>
+    <rdfs:comment xml:lang="en">Links Product to Guarantee</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#Product"/>
+    <rdfs:range rdf:resource="http://www.w3id.org/dpp#Guarantee"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.w3id.org/dpp#standardDescription">
+    <rdfs:label xml:lang="en">standard description</rdfs:label>
+    <rdfs:comment xml:lang="en">A brief description of the standard</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#Standard"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.w3id.org/dpp#standardName">
+    <rdfs:label xml:lang="en">standard name</rdfs:label>
+    <rdfs:comment xml:lang="en">The name of the standard</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#Standard"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3id.org/dpp#regulatedBy">
+    <rdfs:label xml:lang="en">regulated by</rdfs:label>
+    <rdfs:comment xml:lang="en">Links a standard to the organization responsible for its creation and maintenance</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#Standard"/>
+    <rdfs:range rdf:resource="http://www.w3id.org/dpp#Organization"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.w3id.org/dpp#standardIdentifier">
+    <rdfs:label xml:lang="en">standard identifier</rdfs:label>
+    <rdfs:comment xml:lang="en">A unique identifier or code for the standard</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#Standard"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3id.org/dpp#hasWarranty">
+    <rdfs:label xml:lang="en">has Warranty</rdfs:label>
+    <rdfs:comment xml:lang="en">Links Product to Warranty</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#Product"/>
+    <rdfs:range rdf:resource="http://www.w3id.org/dpp#Warranty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3id.org/dpp#hasRegulation">
+    <rdfs:label xml:lang="en">has Regulation</rdfs:label>
+    <rdfs:comment xml:lang="en">Links Product to Regulation</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#Product"/>
+    <rdfs:range rdf:resource="http://www.w3id.org/dpp#Regulation"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3id.org/dpp#hasComplianceCheck">
+    <rdfs:label xml:lang="en">has compliance check</rdfs:label>
+    <rdfs:comment xml:lang="en">Links a product to a compliance check verifying its adherence to a standard</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3id.org/dpp#Product"/>
+    <rdfs:range rdf:resource="http://www.w3id.org/dpp#ComplianceCheck"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.w3id.org/dpp#Regulation"/>
+  <owl:Class rdf:about="http://www.w3id.org/dpp#Standard">
+    <rdfs:label xml:lang="en">Standard</rdfs:label>
+    <rdfs:comment xml:lang="en">A set of criteria, guidelines, or specifications that are established to ensure consistent quality, safety, and compatibility in products, processes, or services.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.w3id.org/dpp#LiabilityDetail"/>
+  <owl:Class rdf:about="http://www.w3id.org/dpp#DeclarationOfConformity"/>
+  <owl:Class rdf:about="http://www.w3id.org/dpp#Warranty"/>
+  <owl:Class rdf:about="http://www.w3id.org/dpp#ComplianceCheck"/>
+  <owl:Class rdf:about="http://www.w3id.org/dpp#SoundTransmissionClass"/>
+  <owl:Class rdf:about="http://www.w3id.org/dpp#VerificationResult"/>
+  <owl:Class rdf:about="http://www.w3id.org/dpp#FireResistanceRating"/>
+  <owl:Class rdf:about="http://www.w3id.org/dpp#TechnicalDocumentation"/>
+  <owl:Class rdf:about="http://www.w3id.org/dpp#Guarantee"/>
+  <owl:Class rdf:about="http://www.w3id.org/dpp#Organization"/>
+  <owl:Class rdf:about="http://www.w3id.org/dpp#BuildingCode"/>
+  <owl:Class rdf:about="http://www.w3id.org/dpp#Product"/>
+</rdf:RDF>
