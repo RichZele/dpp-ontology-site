@@ -1,0 +1,272 @@
+[
+  {
+    "@id": "http://www.w3id.org/dpp#classificationDescription",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A description of the classification"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3id.org/dpp#Classification"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "classification description"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3id.org/dpp#classificationName",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The name of the classification"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3id.org/dpp#Classification"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "classification name"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3id.org/dpp#classifiesProduct",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Links the classification to the products it classifies"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3id.org/dpp#Classification"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "classifies products"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3id.org/dpp#Product"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3id.org/dpp#classifiesMaterial",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Links the classification to the materials it classifies"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3id.org/dpp#Classification"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "classifies material"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3id.org/dpp#Material"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3id.org/dpp#classificationCode",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A unique code or identifier for the classification"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3id.org/dpp#Classification"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "classification code"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3id.org/dpp#Classification",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A hierarchical or categorical system used for organizing and classifying information about products, components, or other items based on their shared characteristics, properties, or features."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Classification"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3id.org/dpp/classification",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://purl.org/dc/terms/contributor": [
+      {
+        "@value": "Peter Johansson"
+      },
+      {
+        "@value": "Annika Moscati"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-09-08"
+      }
+    ],
+    "http://purl.org/dc/terms/creator": [
+      {
+        "@value": "Rahel Kebede"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "This ontology defines concepts and properties for classifying products within a Digital Product Passport (DPP), supporting multiple classification systems and hierarchies such as functional or material-based classification."
+      }
+    ],
+    "http://purl.org/dc/terms/license": [
+      {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "Digital Product Passport – Classification Module Ontology"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionIRI": [
+      {
+        "@id": "http://www.w3id.org/dpp/classification/1.0"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo": [
+      {
+        "@value": "1.0"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3id.org/dpp#classifiesComponent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Links the classification to the components it classifies"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3id.org/dpp#Classification"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "classifies component"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3id.org/dpp#Component"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3id.org/dpp#hasClassification",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Links a product, material, or component to its classification"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3id.org/dpp#Component"
+      },
+      {
+        "@id": "http://www.w3id.org/dpp#Material"
+      },
+      {
+        "@id": "http://www.w3id.org/dpp#Product"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has classification"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3id.org/dpp#Classification"
+      }
+    ]
+  }
+]

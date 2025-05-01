@@ -11,6 +11,11 @@ node_modules
 
 # Build files
 deploy/**
+!deploy/
+!deploy/index.html
+!deploy/data/
+!deploy/data/*.json
+
 !deploy/.htaccess
 webvowl*.zip
 
