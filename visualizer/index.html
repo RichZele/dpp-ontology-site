@@ -9,6 +9,9 @@
     <meta name="robots" content="noindex,nofollow"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- added below this -->
+    <link rel="stylesheet" href="webvowl/css/vowl.css" />
+    <!-- added above this -->
     <link rel="stylesheet" type="text/css" href="css/webvowl.css"/>
     <link rel="stylesheet" type="text/css" href="css/webvowl.app.css"/>
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
@@ -536,9 +539,17 @@
 
 
 </main>
-<script src="js/d3.min.js"></script>
-<script src="js/webvowl.js"></script>
-<script src="js/webvowl.app.js"></script>
+<script src="webvowl/js/d3.min.js"></script>
+<script src="webvowl/js/entry.js"></script>
+<script>
+  window.onload = function () {
+    if (webvowl && webvowl.app) {
+      webvowl.app().initialize();
+    } else {
+      console.error("webvowl.app not found. Check JS loading.");
+    }
+  };
+</script>
 <script>window.onload = webvowl.app().initialize;</script>
 </body>
 </html>
