@@ -1,47 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Digital Product Passport Ontologies</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
+      background: #f9f9f9;
       color: #333;
     }
+
     header, footer {
       background: #80276d;
-      color: white;
+      color: #fff;
       text-align: center;
-      padding: 20px 10px;
+      padding: 2rem 1rem;
     }
-    h1 {
-      margin-bottom: 0;
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
     }
+
+    header p {
+      margin-top: 0.5rem;
+      font-weight: 300;
+    }
+
     .container {
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-      background: white;
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
+
     h2 {
       color: #80276d;
+      text-align: center;
+      margin-bottom: 1.5rem;
     }
-    ul {
-      padding-left: 20px;
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
     }
-    li {
-      margin-bottom: 10px;
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+      padding: 1.5rem;
+      width: 280px;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
-    a {
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin-top: 0;
       color: #a04588;
+      font-size: 1.1rem;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-right: 10px;
+      color: #80276d;
+      font-size: 0.95rem;
       text-decoration: none;
     }
-    a:hover {
+
+    .card a:hover {
       text-decoration: underline;
+    }
+
+    footer {
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -53,63 +101,72 @@
 
   <div class="container">
     <h2>Ontology Modules</h2>
-    <p>The following ontologies are developed as part of the Digital Product Passport (DPP) project. Click to view human-readable HTML documentation or download the ontologies in various formats:</p>
-    <ul>
-      <li><strong>Product Module</strong><br>
-        <a href="1-product-module-9.html">View HTML</a> |
-        <a href="ontologies/1_Product_Module_Protege_9.ttl">TURTLE</a> |
-        <a href="documentations/1_Product_Module_Protege_9.pdf">Documentation</a>
-      </li>
-      <li><strong>Material Module</strong><br>
-        <a href="2-material-module-5.html">View HTML</a> |
-        <a href="ontologies/2_Material_Module_Protege_5.ttl">TURTLE</a> |
-        <a href="documentations/2_Material_Module_Protege_5.pdf">Documentation</a>
-      </li>
-      <li><strong>Manufacturer Module</strong><br>
-        <a href="3-manufacturer-module.html">View HTML</a> |
-        <a href="ontologies/3_Manufacturer_Module_Protege.ttl">TURTLE</a> |
-        <a href="documentations/3_Manufacturer_Module_Protege.pdf">Documentation</a>
-      </li>
-      <li><strong>Environmental Impact Module</strong><br>
-        <a href="4-environmentalimpact-module-2.html">View HTML</a> |
-        <a href="ontologies/4_EnvironmentalImpact_Module_Protege_2.ttl">TURTLE</a> |
-        <a href="documentations/4_EnvironmentalImpact_Module_Protege_2.pdf">Documentation</a>
-      </li>
-      <li><strong>Use and Maintenance Module</strong><br>
-        <a href="5-use-and-maintenance-module-2.html">View HTML</a> |
-        <a href="ontologies/5_Use_And_Maintenance_Module_Protege_2.ttl">TURTLE</a> |
-        <a href="documentations/5_Use_And_Maintenance_Module_Protege_2.pdf">Documentation</a>
-      </li>
-      <li><strong>End-of-life Management Module</strong><br>
-        <a href="6-endoflifemanagement-module.html">View HTML</a> |
-        <a href="ontologies/6_EndOfLifeManagement_Module_Protege.ttl">TURTLE</a> |
-        <a href="documentations/6_EndOfLifeManagement_Module_Protege.pdf">Documentation</a>
-      </li>
-      <li><strong>Standard Module</strong><br>
-        <a href="7-standard-module.html">View HTML</a> |
-        <a href="ontologies/7_Standard_Module.ttl">TURTLE</a> |
-        <a href="documentations/7_Standard_Module.pdf">Documentation</a>
-      </li>
-      <li><strong>Certification Module</strong><br>
-        <a href="8-certification-module.html">View HTML</a> |
-        <a href="ontologies/8_Certification_Module.ttl">TURTLE</a> |
-        <a href="documentations/8_Certification_Module.pdf">Documentation</a>
-      </li>
-      <li><strong>Classification Module</strong><br>
-        <a href="9-classification-module.html">View HTML</a> |
-        <a href="ontologies/9_Classification_Module.ttl">TURTLE</a> |
-        <a href="documentations/9_Classification_Module.pdf">Documentation</a>
-      </li>
-      <li><strong>Supply Chain Information Module</strong><br>
-        <a href="10-supplychain-module.html">View HTML</a> |
-        <a href="ontologies/10_SupplyChain_Module_Protege.ttl">TURTLE</a> |
-        <a href="documentations/10_SupplyChain_Module_Protege.pdf">Documentation</a>
-      </li>
-    </ul>
+    <div class="grid">
+      <div class="card">
+        <h3>Product Module</h3>
+        <a href="1-product-module-9.html">HTML</a>
+        <a href="ontologies/1_Product_Module_Protege_9.ttl">TTL</a>
+        <a href="documentations/1_Product_Module_Protege_9.pdf">Doc</a>
+      </div>
+      <div class="card">
+        <h3>Material Module</h3>
+        <a href="2-material-module-5.html">HTML</a>
+        <a href="ontologies/2_Material_Module_Protege_5.ttl">TTL</a>
+        <a href="documentations/2_Material_Module_Protege_5.pdf">Doc</a>
+      </div>
+      <div class="card">
+        <h3>Manufacturer Module</h3>
+        <a href="3-manufacturer-module.html">HTML</a>
+        <a href="ontologies/3_Manufacturer_Module_Protege.ttl">TTL</a>
+        <a href="documentations/3_Manufacturer_Module_Protege.pdf">Doc</a>
+      </div>
+      <div class="card">
+        <h3>Environmental Impact Module</h3>
+        <a href="4-environmentalimpact-module-2.html">HTML</a>
+        <a href="ontologies/4_EnvironmentalImpact_Module_Protege_2.ttl">TTL</a>
+        <a href="documentations/4_EnvironmentalImpact_Module_Protege_2.pdf">Doc</a>
+      </div>
+      <div class="card">
+        <h3>Use & Maintenance Module</h3>
+        <a href="5-use-and-maintenance-module-2.html">HTML</a>
+        <a href="ontologies/5_Use_And_Maintenance_Module_Protege_2.ttl">TTL</a>
+        <a href="documentations/5_Use_And_Maintenance_Module_Protege_2.pdf">Doc</a>
+      </div>
+      <div class="card">
+        <h3>End-of-life Management Module</h3>
+        <a href="6-endoflifemanagement-module.html">HTML</a>
+        <a href="ontologies/6_EndOfLifeManagement_Module_Protege.ttl">TTL</a>
+        <a href="documentations/6_EndOfLifeManagement_Module_Protege.pdf">Doc</a>
+      </div>
+      <div class="card">
+        <h3>Standard Module</h3>
+        <a href="7-standard-module.html">HTML</a>
+        <a href="ontologies/7_Standard_Module.ttl">TTL</a>
+        <a href="documentations/7_Standard_Module.pdf">Doc</a>
+      </div>
+      <div class="card">
+        <h3>Certification Module</h3>
+        <a href="8-certification-module.html">HTML</a>
+        <a href="ontologies/8_Certification_Module.ttl">TTL</a>
+        <a href="documentations/8_Certification_Module.pdf">Doc</a>
+      </div>
+      <div class="card">
+        <h3>Classification Module</h3>
+        <a href="9-classification-module.html">HTML</a>
+        <a href="ontologies/9_Classification_Module.ttl">TTL</a>
+        <a href="documentations/9_Classification_Module.pdf">Doc</a>
+      </div>
+      <div class="card">
+        <h3>Supply Chain Module</h3>
+        <a href="10-supplychain-module.html">HTML</a>
+        <a href="ontologies/10_SupplyChain_Module_Protege.ttl">TTL</a>
+        <a href="documentations/10_SupplyChain_Module_Protege.pdf">Doc</a>
+      </div>
+    </div>
   </div>
 
   <footer>
-    <p>&copy; 2023 Digital Product Passport Project</p>
+    <p>ProFlow Research Project 2022 - 2024</p>
   </footer>
 </body>
 </html>
