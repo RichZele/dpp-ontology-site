@@ -500,19 +500,7 @@
     </main>
     <script src="js/d3.min.js"></script>
     <script src="js/webvowl.js"></script>
-    <script src="js/webvowl.app.js"></script>
-    <script>
-        const app = webvowl.app();
-        window.onload = function () {
-            const hash = window.location.hash;
-            const jsonPath = hash ? decodeURIComponent(hash.substring(1)) : null;
-            if (jsonPath) {
-                app.loadOntologyFromUrl(jsonPath);
-            } else {
-                app.initialize(); // fallback
-            }
-        };
-    </script>
+    <script src="js/webvowl.app.js"></script>    
     
 </body>
 
