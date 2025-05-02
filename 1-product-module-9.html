@@ -289,10 +289,10 @@ td {
     ],
     "https://schema.org/contributor": [
       {
-        "@value": "Peter Johansson"
+        "@value": "Annika Moscati"
       },
       {
-        "@value": "Annika Moscati"
+        "@value": "Peter Johansson"
       }
     ],
     "https://schema.org/creator": [
@@ -328,9 +328,7 @@ td {
   <body>
     <div id="content">
       <div class="section" id="metadata">
-        <h1>Digital Product Passport – Product Module Ontology</h1>    
-        
-
+        <h1>Digital Product Passport – Product Module Ontology</h1>
         <h2>Metadata</h2>
         <dl>
           <div>
@@ -359,8 +357,8 @@ td {
             </dt>
             <dd>
               <ul>
-                <li><p>Peter Johansson</p></li>
                 <li><p>Annika Moscati</p></li>
+                <li><p>Peter Johansson</p></li>
               </ul>
             </dd>
           </div>
@@ -400,20 +398,6 @@ td {
           </div>
         </dl>
       </div>
-      
-
-      <h2>Ontology Visualization</h2>
-      <div class="figure">
-        <iframe
-          height="600px"
-          width="100%"
-          id="iframe-overview"
-          src="WebVOWL/index.html#ontology/data/1_Product_Module_Protege_9.json">
-        </iframe>
-      </div>
-
-
-
       <div class="section" id="classes">
         <h2>Classes</h2>
         <div class="property entity" id="Module">
@@ -429,6 +413,13 @@ td {
             </tr>
           </table>
         </div>
+        <h2>Ontology Overview</h2>
+          <iframe
+            height="600px"
+            width="100%"
+            id="iframe-overview"
+            src="WebVOWL/index.html#ontology/data/1_Product_Module_Protege_9.json">
+          </iframe>
         <div class="property entity" id="Pattern">
           <h3>Pattern
             <sup class="sup-c" title="OWL/RDFS Class">c</sup>
@@ -438,172 +429,6 @@ td {
               <th>IRI</th>
               <td>
                 <code>http://ontologydesignpatterns.org/opla#Pattern</code>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="Agent">
-          <h3>Agent
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#Agent</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
-              </th>
-              <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="#hasName">dpp:hasName</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="#performsAgentRole">dpp:performsAgentRole</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
-              </th>
-              <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="#attributedTo">dpp:attributedTo</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="#performedBy">dpp:performedBy</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
-              </th>
-              <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="#Assembler">dpp:Assembler</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="#Disassembler">dpp:Disassembler</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="#Installer">dpp:Installer</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="#Manufacturer">dpp:Manufacturer</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="AgentRole">
-          <h3>Agent Role
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#AgentRole</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#hasTemporalExtent">dpp:hasTemporalExtent</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
-              </th>
-              <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="#performsAgentRole">dpp:performsAgentRole</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="#proivdesAgentRole">dpp:proivdesAgentRole</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
-              </th>
-              <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="#AssemblingRole">dpp:AssemblingRole</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="#DisassemblingRole">dpp:DisassemblingRole</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="#InstallationRole">dpp:InstallationRole</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="#ManufacturingRole">ManufacturingRole</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                </ul>
               </td>
             </tr>
           </table>
@@ -625,7 +450,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Agent">dpp:Agent</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#Agent">https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#Agent</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -649,7 +474,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#AgentRole">dpp:AgentRole</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#AgentRole">https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#AgentRole</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -874,41 +699,6 @@ td {
             </tr>
           </table>
         </div>
-        <div class="property entity" id="Context">
-          <h3>Context
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#Context</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#hasContext">dpp:hasContext</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#InstructionContext">dpp:InstructionContext</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
         <div class="property entity" id="Disassembler">
           <h3>Disassembler
             <sup class="sup-c" title="OWL/RDFS Class">c</sup>
@@ -926,7 +716,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Agent">dpp:Agent</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#Agent">https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#Agent</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -950,7 +740,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#AgentRole">dpp:AgentRole</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#AgentRole">https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#AgentRole</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -998,7 +788,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#reifiedPropertyFrom">dpp:reifiedPropertyFrom</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/reification#reifiedPropertyFrom">https://archive.org/services/purl/domain/modular_ontology_design_library/reification#reifiedPropertyFrom</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -1089,78 +879,6 @@ td {
                   <li>
                     <span>
                       <a href="#SensorUnit">dpp:SensorUnit</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="EntityWithProvenance">
-          <h3>Entity With Provenance
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#EntityWithProvenance</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
-              </th>
-              <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="#attributedTo">dpp:attributedTo</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="#derivedFrom">dpp:derivedFrom</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="#generatedBy">dpp:generatedBy</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#derivedFrom">dpp:derivedFrom</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
-              </th>
-              <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="#Product">dpp:Product</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="#ProductSpecification">dpp:ProductSpecification</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -1261,7 +979,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#ListItem">dpp:ListItem</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/list#ListItem">https://archive.org/services/purl/domain/modular_ontology_design_library/list#ListItem</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1272,7 +990,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#hasFirstStep">dpp:hasFirstStep</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/list#hasFirstStep">https://archive.org/services/purl/domain/modular_ontology_design_library/list#hasFirstStep</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -1344,98 +1062,8 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#IDType">dpp:IDType</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#IDType">https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#IDType</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="IDType">
-          <h3>Id Type
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#IDType</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#hasIdentifierType">dpp:hasIdentifierType</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
-              </th>
-              <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="#GlobalTradeID">dpp:GlobalTradeID</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="#SerialNumber">dpp:SerialNumber</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="Identifier">
-          <h3>Identifier
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#Identifier</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
-              </th>
-              <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="#hasIdentifierType">dpp:hasIdentifierType</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="#identifierAsText">dpp:identifierAsText</a>
-                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
-                    </span>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#hasIdentifier">dpp:hasIdentifier</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
             </tr>
@@ -1482,7 +1110,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#AgentRole">dpp:AgentRole</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#AgentRole">https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#AgentRole</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1506,7 +1134,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Agent">dpp:Agent</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#Agent">https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#Agent</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1530,7 +1158,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Context">dpp:Context</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/reification#Context">https://archive.org/services/purl/domain/modular_ontology_design_library/reification#Context</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1589,7 +1217,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#PropertyToBeReified">dpp:PropertyToBeReified</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/reification#PropertyToBeReified">https://archive.org/services/purl/domain/modular_ontology_design_library/reification#PropertyToBeReified</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1640,7 +1268,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#ListItem">dpp:ListItem</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/list#ListItem">https://archive.org/services/purl/domain/modular_ontology_design_library/list#ListItem</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1803,82 +1431,6 @@ td {
             </tr>
           </table>
         </div>
-        <div class="property entity" id="ListItem">
-          <h3>List Item
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#ListItem</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
-              </th>
-              <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="#hasNext">dpp:hasNext</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="#hasSuccessor">dpp:hasSuccessor</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
-              </th>
-              <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="#hasNext">dpp:hasNext</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="#hasSuccessor">dpp:hasSuccessor</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
-              </th>
-              <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="#FirstItem">dpp:FirstItem</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="#LastItem">dpp:LastItem</a>
-                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                    </span>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-          </table>
-        </div>
         <div class="property entity" id="Manufacturer">
           <h3>Manufacturer
             <sup class="sup-c" title="OWL/RDFS Class">c</sup>
@@ -1896,7 +1448,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Agent">dpp:Agent</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#Agent">https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#Agent</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1937,7 +1489,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#AgentRole">dpp:AgentRole</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#AgentRole">https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#AgentRole</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1985,7 +1537,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#nameAsString">dpp:nameAsString</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/namestub#nameAsString">https://archive.org/services/purl/domain/modular_ontology_design_library/namestub#nameAsString</a>
                   <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                 </span>
               </td>
@@ -2058,7 +1610,7 @@ td {
                   </li>
                   <li>
                     <span>
-                      <a href="#EntityWithProvenance">dpp:EntityWithProvenance</a>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#EntityWithProvenance">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#EntityWithProvenance</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -2081,14 +1633,14 @@ td {
                     <span>
                       <span>
                         <span>
-                          <a href="#hasIdentifier">dpp:hasIdentifier</a>
+                          <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#hasIdentifier">https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#hasIdentifier</a>
                           <sup class="sup-op" title="OWL Object Property">op</sup>
                         </span>
                         <span>
                           <span class="cardinality">some</span>
                           <span>
                             <span>
-                              <a href="#Identifier">dpp:Identifier</a>
+                              <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#Identifier">https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#Identifier</a>
                               <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                             </span>
                           </span>
@@ -2100,7 +1652,7 @@ td {
                     <span>
                       <span>
                         <span>
-                          <a href="#nameAsString">dpp:nameAsString</a>
+                          <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/namestub#nameAsString">https://archive.org/services/purl/domain/modular_ontology_design_library/namestub#nameAsString</a>
                           <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                         </span>
                         <span>
@@ -2150,12 +1702,6 @@ td {
                   </li>
                   <li>
                     <span>
-                      <a href="#hasIdentifier">dpp:hasIdentifier</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
                       <a href="#hasInstructionEntity">dpp:hasInstructionEntity</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
@@ -2186,19 +1732,25 @@ td {
                   </li>
                   <li>
                     <span>
-                      <a href="#hasType">dpp:hasType</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
                       <a href="#manufacturedBy">manufacturedBy</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#proivdesAgentRole">dpp:proivdesAgentRole</a>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#proivdesAgentRole">https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#proivdesAgentRole</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/explicittyping#hasType">https://archive.org/services/purl/domain/modular_ontology_design_library/explicittyping#hasType</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#hasIdentifier">https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#hasIdentifier</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
@@ -2235,7 +1787,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#EntityWithProvenance">dpp:EntityWithProvenance</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#EntityWithProvenance">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#EntityWithProvenance</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2246,7 +1798,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#hasQuantity">dpp:hasQuantity</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#hasQuantity">https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#hasQuantity</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -2258,222 +1810,6 @@ td {
               <td>
                 <span>
                   <a href="#hasSpecification">hasSpecification</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="PropertyToBeReified">
-          <h3>Property To Be Reified
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#PropertyToBeReified</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
-              </th>
-              <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="#hasContext">dpp:hasContext</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="#reifiedPropertyTo">dpp:reifiedPropertyTo</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#reifiedPropertyFrom">dpp:reifiedPropertyFrom</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#InstructionEntity">dpp:InstructionEntity</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="ProvenanceActivity">
-          <h3>Provenance Activity
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#ProvenanceActivity</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#performedBy">dpp:performedBy</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#generatedBy">dpp:generatedBy</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#SupplyChainInfo">dpp:SupplyChainInfo</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="Quantity">
-          <h3>Quantity
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#Quantity</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
-              </th>
-              <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="#hasQuantityKind">dpp:hasQuantityKind</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="#hasQuantityValue">dpp:hasQuantityValue</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#hasQuantity">dpp:hasQuantity</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="QuantityKind">
-          <h3>Quantity Kind
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#QuantityKind</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#hasQuantityKind">dpp:hasQuantityKind</a>
-                  <sup class="sup-op" title="OWL Object Property">op</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="QuantityValue">
-          <h3>Quantity Value
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#QuantityValue</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
-              </th>
-              <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="#hasUnit">dpp:hasUnit</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="#hasNumericValue">dpp:hasNumericValue</a>
-                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
-                    </span>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#hasQuantityValue">dpp:hasQuantityValue</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -2497,7 +1833,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#reifiedPropertyTo">dpp:reifiedPropertyTo</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/reification#reifiedPropertyTo">https://archive.org/services/purl/domain/modular_ontology_design_library/reification#reifiedPropertyTo</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -2639,7 +1975,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#hasFirstStep">dpp:hasFirstStep</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/list#hasFirstStep">https://archive.org/services/purl/domain/modular_ontology_design_library/list#hasFirstStep</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -2663,7 +1999,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#IDType">dpp:IDType</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#IDType">https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#IDType</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2711,7 +2047,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#ProvenanceActivity">dpp:ProvenanceActivity</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#ProvenanceActivity">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#ProvenanceActivity</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2729,15 +2065,36 @@ td {
             </tr>
           </table>
         </div>
-        <div class="property entity" id="TemporalExtent">
-          <h3>Temporal Extent
+        <div class="property entity" id="Agent">
+          <h3>Agent
             <sup class="sup-c" title="OWL/RDFS Class">c</sup>
           </h3>
           <table>
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://www.w3id.org/dpp#TemporalExtent</code>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#Agent</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="#hasName">dpp:hasName</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#performsAgentRole">https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#performsAgentRole</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr>
@@ -2745,10 +2102,131 @@ td {
                 <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
               </th>
               <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#attributedTo">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#attributedTo</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#performedBy">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#performedBy</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="#Assembler">dpp:Assembler</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#Disassembler">dpp:Disassembler</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#Installer">dpp:Installer</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#Manufacturer">dpp:Manufacturer</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="AgentRole">
+          <h3>Agent Role
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#AgentRole</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+              </th>
+              <td>
                 <span>
-                  <a href="#hasTemporalExtent">dpp:hasTemporalExtent</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent#hasTemporalExtent">https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent#hasTemporalExtent</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#performsAgentRole">https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#performsAgentRole</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#proivdesAgentRole">https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#proivdesAgentRole</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="#AssemblingRole">dpp:AssemblingRole</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#DisassemblingRole">dpp:DisassemblingRole</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#InstallationRole">dpp:InstallationRole</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#ManufacturingRole">ManufacturingRole</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
               </td>
             </tr>
           </table>
@@ -2761,7 +2239,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://www.w3id.org/dpp#Type</code>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/explicittyping#Type</code>
               </td>
             </tr>
             <tr>
@@ -2770,7 +2248,425 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#hasType">dpp:hasType</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/explicittyping#hasType">https://archive.org/services/purl/domain/modular_ontology_design_library/explicittyping#hasType</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="IDType">
+          <h3>Id Type
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#IDType</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#hasIdentifierType">https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#hasIdentifierType</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="#GlobalTradeID">dpp:GlobalTradeID</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#SerialNumber">dpp:SerialNumber</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="Identifier">
+          <h3>Identifier
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#Identifier</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#hasIdentifierType">https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#hasIdentifierType</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#identifierAsText">https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#identifierAsText</a>
+                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#hasIdentifier">https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#hasIdentifier</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="ListItem">
+          <h3>List Item
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/list#ListItem</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/list#hasNext">https://archive.org/services/purl/domain/modular_ontology_design_library/list#hasNext</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/list#hasSuccessor">https://archive.org/services/purl/domain/modular_ontology_design_library/list#hasSuccessor</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/list#hasNext">https://archive.org/services/purl/domain/modular_ontology_design_library/list#hasNext</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/list#hasSuccessor">https://archive.org/services/purl/domain/modular_ontology_design_library/list#hasSuccessor</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="#FirstItem">dpp:FirstItem</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#LastItem">dpp:LastItem</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="EntityWithProvenance">
+          <h3>Entity With Provenance
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#EntityWithProvenance</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#attributedTo">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#attributedTo</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#generatedBy">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#generatedBy</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#wasDerivedFrom">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#wasDerivedFrom</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#used">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#used</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#wasDerivedFrom">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#wasDerivedFrom</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="#Product">dpp:Product</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#ProductSpecification">dpp:ProductSpecification</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="ProvenanceActivity">
+          <h3>Provenance Activity
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#ProvenanceActivity</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#performedBy">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#performedBy</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#used">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#used</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#generatedBy">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#generatedBy</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#SupplyChainInfo">dpp:SupplyChainInfo</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="Quantity">
+          <h3>Quantity
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#Quantity</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#hasQuantityKind">https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#hasQuantityKind</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#hasQuantityValue">https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#hasQuantityValue</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#hasQuantity">https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#hasQuantity</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="QuantityKind">
+          <h3>Quantity Kind
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#QuantityKind</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#hasQuantityKind">https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#hasQuantityKind</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="QuantityValue">
+          <h3>Quantity Value
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#QuantityValue</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#hasUnit">https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#hasUnit</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#hasNumericValue">https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#hasNumericValue</a>
+                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#hasQuantityValue">https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#hasQuantityValue</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -2785,7 +2681,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://www.w3id.org/dpp#Unit</code>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#Unit</code>
               </td>
             </tr>
             <tr>
@@ -2794,7 +2690,122 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#hasUnit">dpp:hasUnit</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#hasUnit">https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#hasUnit</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="Context">
+          <h3>Context
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/reification#Context</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/reification#hasContext">https://archive.org/services/purl/domain/modular_ontology_design_library/reification#hasContext</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#InstructionContext">dpp:InstructionContext</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="PropertyToBeReified">
+          <h3>Property To Be Reified
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/reification#PropertyToBeReified</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/reification#hasContext">https://archive.org/services/purl/domain/modular_ontology_design_library/reification#hasContext</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/reification#reifiedPropertyTo">https://archive.org/services/purl/domain/modular_ontology_design_library/reification#reifiedPropertyTo</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/reification#reifiedPropertyFrom">https://archive.org/services/purl/domain/modular_ontology_design_library/reification#reifiedPropertyFrom</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#InstructionEntity">dpp:InstructionEntity</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="TemporalExtent">
+          <h3>Temporal Extent
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent#TemporalExtent</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent#hasTemporalExtent">https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent#hasTemporalExtent</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -2828,132 +2839,6 @@ td {
       </div>
       <div class="section" id="objectproperties">
         <h2>Object Properties</h2>
-        <div class="property entity" id="attributedTo">
-          <h3>attributed to
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#attributedTo</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#EntityWithProvenance">dpp:EntityWithProvenance</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#Agent">dpp:Agent</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="derivedFrom">
-          <h3>derived from
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#derivedFrom</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#EntityWithProvenance">dpp:EntityWithProvenance</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#EntityWithProvenance">dpp:EntityWithProvenance</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="generatedBy">
-          <h3>generated by
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#generatedBy</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superPropertyOf" title="Inverse of RDFS' subPropertyOf. Defined in Ontology Documentation Profile">Super Property Of</a>
-              </th>
-              <td>
-                <ul>
-                  <li>
-                    <span>
-                      <a href="#hasSupplyChainInfo">hasSupplyChainInfo</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="#manufacturedBy">manufacturedBy</a>
-                      <sup class="sup-op" title="OWL Object Property">op</sup>
-                    </span>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#EntityWithProvenance">dpp:EntityWithProvenance</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#ProvenanceActivity">dpp:ProvenanceActivity</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
         <div class="property entity" id="hasCertification">
           <h3>hasCertification
             <sup class="sup-op" title="OWL Object Property">op</sup>
@@ -3077,41 +2962,6 @@ td {
             </tr>
           </table>
         </div>
-        <div class="property entity" id="hasContext">
-          <h3>has context
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#hasContext</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#PropertyToBeReified">dpp:PropertyToBeReified</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#Context">dpp:Context</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
         <div class="property entity" id="hasEnvironmentalImpact">
           <h3>has environmental impact
             <sup class="sup-op" title="OWL Object Property">op</sup>
@@ -3147,111 +2997,6 @@ td {
             </tr>
           </table>
         </div>
-        <div class="property entity" id="hasFirstStep">
-          <h3>has first step
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#hasFirstStep</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#SequentialInstructionDetail">dpp:SequentialInstructionDetail</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#FirstItem">dpp:FirstItem</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="hasIdentifier">
-          <h3>has identifier
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#hasIdentifier</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#Product">dpp:Product</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#Identifier">dpp:Identifier</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="hasIdentifierType">
-          <h3>has identifier type
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#hasIdentifierType</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#Identifier">dpp:Identifier</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#IDType">dpp:IDType</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
         <div class="property entity" id="hasInstructionDetail">
           <h3>has instruction detail
             <sup class="sup-op" title="OWL Object Property">op</sup>
@@ -3269,7 +3014,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#reifiedPropertyTo">dpp:reifiedPropertyTo</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/reification#reifiedPropertyTo">https://archive.org/services/purl/domain/modular_ontology_design_library/reification#reifiedPropertyTo</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -3293,7 +3038,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#reifiedPropertyFrom">dpp:reifiedPropertyFrom</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/reification#reifiedPropertyFrom">https://archive.org/services/purl/domain/modular_ontology_design_library/reification#reifiedPropertyFrom</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -3365,13 +3110,13 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="#Agent">dpp:Agent</a>
+                      <a href="#Product">dpp:Product</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#Product">dpp:Product</a>
+                      <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#Agent">https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#Agent</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -3385,146 +3130,6 @@ td {
               <td>
                 <span>
                   <a href="#Name">dpp:Name</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="hasNext">
-          <h3>has next
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#hasNext</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#ListItem">dpp:ListItem</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#ListItem">dpp:ListItem</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="hasQuantity">
-          <h3>has quantity
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#hasQuantity</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#ProductSpecification">dpp:ProductSpecification</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#Quantity">dpp:Quantity</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="hasQuantityKind">
-          <h3>has quantity kind
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#hasQuantityKind</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#Quantity">dpp:Quantity</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#QuantityKind">dpp:QuantityKind</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="hasQuantityValue">
-          <h3>has quantity value
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#hasQuantityValue</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#Quantity">dpp:Quantity</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#QuantityValue">dpp:QuantityValue</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3572,41 +3177,6 @@ td {
             </tr>
           </table>
         </div>
-        <div class="property entity" id="hasSuccessor">
-          <h3>has successor
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#hasSuccessor</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#ListItem">dpp:ListItem</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#ListItem">dpp:ListItem</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
         <div class="property entity" id="hasSupplyChainInfo">
           <h3>hasSupplyChainInfo
             <sup class="sup-op" title="OWL Object Property">op</sup>
@@ -3630,7 +3200,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#generatedBy">dpp:generatedBy</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#generatedBy">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#generatedBy</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -3653,111 +3223,6 @@ td {
               <td>
                 <span>
                   <a href="#SupplyChainInfo">dpp:SupplyChainInfo</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="hasTemporalExtent">
-          <h3>has temporal extent
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#hasTemporalExtent</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#AgentRole">dpp:AgentRole</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#TemporalExtent">dpp:TemporalExtent</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="hasType">
-          <h3>has type
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#hasType</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#Product">dpp:Product</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#Type">dpp:Type</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="hasUnit">
-          <h3>has unit
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#hasUnit</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#QuantityValue">dpp:QuantityValue</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#Unit">dpp:Unit</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3787,7 +3252,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#generatedBy">dpp:generatedBy</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#generatedBy">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#generatedBy</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -3816,37 +3281,15 @@ td {
             </tr>
           </table>
         </div>
-        <div class="property entity" id="performedBy">
-          <h3>performed by
+        <div class="property entity" id="removes">
+          <h3>removes
             <sup class="sup-op" title="OWL Object Property">op</sup>
           </h3>
           <table>
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://www.w3id.org/dpp#performedBy</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#ProvenanceActivity">dpp:ProvenanceActivity</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="#Agent">dpp:Agent</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
+                <code>http://www.w3id.org/dpp#removes</code>
               </td>
             </tr>
           </table>
@@ -3859,7 +3302,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://www.w3id.org/dpp#performsAgentRole</code>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#performsAgentRole</code>
               </td>
             </tr>
             <tr>
@@ -3868,7 +3311,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Agent">dpp:Agent</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#Agent">https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#Agent</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3879,7 +3322,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#AgentRole">dpp:AgentRole</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#AgentRole">https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#AgentRole</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3894,7 +3337,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://www.w3id.org/dpp#proivdesAgentRole</code>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#proivdesAgentRole</code>
               </td>
             </tr>
             <tr>
@@ -3914,7 +3357,588 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#AgentRole">dpp:AgentRole</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#AgentRole">https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#AgentRole</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="hasType">
+          <h3>has type
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/explicittyping#hasType</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Product">dpp:Product</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/explicittyping#Type">https://archive.org/services/purl/domain/modular_ontology_design_library/explicittyping#Type</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="hasIdentifier">
+          <h3>has identifier
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#hasIdentifier</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Product">dpp:Product</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#Identifier">https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#Identifier</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="hasIdentifierType">
+          <h3>has identifier type
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#hasIdentifierType</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#Identifier">https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#Identifier</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#IDType">https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#IDType</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="hasFirstStep">
+          <h3>has first step
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/list#hasFirstStep</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#SequentialInstructionDetail">dpp:SequentialInstructionDetail</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#FirstItem">dpp:FirstItem</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="hasNext">
+          <h3>has next
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/list#hasNext</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/list#ListItem">https://archive.org/services/purl/domain/modular_ontology_design_library/list#ListItem</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/list#ListItem">https://archive.org/services/purl/domain/modular_ontology_design_library/list#ListItem</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="hasSuccessor">
+          <h3>has successor
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/list#hasSuccessor</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/list#ListItem">https://archive.org/services/purl/domain/modular_ontology_design_library/list#ListItem</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/list#ListItem">https://archive.org/services/purl/domain/modular_ontology_design_library/list#ListItem</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="attributedTo">
+          <h3>attributed to
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#attributedTo</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#EntityWithProvenance">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#EntityWithProvenance</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#Agent">https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#Agent</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="generatedBy">
+          <h3>generated by
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#generatedBy</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superPropertyOf" title="Inverse of RDFS' subPropertyOf. Defined in Ontology Documentation Profile">Super Property Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="#hasSupplyChainInfo">hasSupplyChainInfo</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#manufacturedBy">manufacturedBy</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#EntityWithProvenance">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#EntityWithProvenance</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#ProvenanceActivity">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#ProvenanceActivity</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="performedBy">
+          <h3>performed by
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#performedBy</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#ProvenanceActivity">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#ProvenanceActivity</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#Agent">https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#Agent</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="used">
+          <h3>used
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#used</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#ProvenanceActivity">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#ProvenanceActivity</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#EntityWithProvenance">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#EntityWithProvenance</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="wasDerivedFrom">
+          <h3>was derived from
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#wasDerivedFrom</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#EntityWithProvenance">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#EntityWithProvenance</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#EntityWithProvenance">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#EntityWithProvenance</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="hasQuantity">
+          <h3>has quantity
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#hasQuantity</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#ProductSpecification">dpp:ProductSpecification</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#Quantity">https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#Quantity</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="hasQuantityKind">
+          <h3>has quantity kind
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#hasQuantityKind</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#Quantity">https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#Quantity</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#QuantityKind">https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#QuantityKind</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="hasQuantityValue">
+          <h3>has quantity value
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#hasQuantityValue</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#Quantity">https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#Quantity</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#QuantityValue">https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#QuantityValue</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="hasUnit">
+          <h3>has unit
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#hasUnit</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#QuantityValue">https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#QuantityValue</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#Unit">https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#Unit</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="hasContext">
+          <h3>has context
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/reification#hasContext</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/reification#PropertyToBeReified">https://archive.org/services/purl/domain/modular_ontology_design_library/reification#PropertyToBeReified</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/reification#Context">https://archive.org/services/purl/domain/modular_ontology_design_library/reification#Context</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3929,7 +3953,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://www.w3id.org/dpp#reifiedPropertyFrom</code>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/reification#reifiedPropertyFrom</code>
               </td>
             </tr>
             <tr>
@@ -3960,7 +3984,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#PropertyToBeReified">dpp:PropertyToBeReified</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/reification#PropertyToBeReified">https://archive.org/services/purl/domain/modular_ontology_design_library/reification#PropertyToBeReified</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3975,7 +3999,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://www.w3id.org/dpp#reifiedPropertyTo</code>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/reification#reifiedPropertyTo</code>
               </td>
             </tr>
             <tr>
@@ -3995,7 +4019,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#PropertyToBeReified">dpp:PropertyToBeReified</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/reification#PropertyToBeReified">https://archive.org/services/purl/domain/modular_ontology_design_library/reification#PropertyToBeReified</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4013,31 +4037,15 @@ td {
             </tr>
           </table>
         </div>
-        <div class="property entity" id="removes">
-          <h3>removes
+        <div class="property entity" id="hasTemporalExtent">
+          <h3>has temporal extent
             <sup class="sup-op" title="OWL Object Property">op</sup>
           </h3>
           <table>
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://www.w3id.org/dpp#removes</code>
-              </td>
-            </tr>
-          </table>
-        </div>
-      </div>
-      <div class="section" id="datatypeproperties">
-        <h2>Datatype Properties</h2>
-        <div class="property entity" id="hasNumericValue">
-          <h3>has numeric value
-            <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>http://www.w3id.org/dpp#hasNumericValue</code>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent#hasTemporalExtent</code>
               </td>
             </tr>
             <tr>
@@ -4046,7 +4054,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#QuantityValue">dpp:QuantityValue</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#AgentRole">https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#AgentRole</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4056,11 +4064,17 @@ td {
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2001/XMLSchema#double">xsd:double</a>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent#TemporalExtent">https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent#TemporalExtent</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
               </td>
             </tr>
           </table>
         </div>
+      </div>
+      <div class="section" id="datatypeproperties">
+        <h2>Datatype Properties</h2>
         <div class="property entity" id="identifierAsText">
           <h3>identifier as text
             <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
@@ -4069,7 +4083,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://www.w3id.org/dpp#identifierAsText</code>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#identifierAsText</code>
               </td>
             </tr>
             <tr>
@@ -4078,7 +4092,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Identifier">dpp:Identifier</a>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#Identifier">https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#Identifier</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4093,6 +4107,27 @@ td {
             </tr>
           </table>
         </div>
+        <div class="property entity" id="stepOrder">
+          <h3>step order
+            <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/list#stepOrder</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <a href="http://www.w3.org/2001/XMLSchema#decimal">xsd:decimal</a>
+              </td>
+            </tr>
+          </table>
+        </div>
         <div class="property entity" id="nameAsString">
           <h3>name as string
             <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
@@ -4101,7 +4136,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://www.w3id.org/dpp#nameAsString</code>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/namestub#nameAsString</code>
               </td>
             </tr>
             <tr>
@@ -4125,15 +4160,26 @@ td {
             </tr>
           </table>
         </div>
-        <div class="property entity" id="stepOrder">
-          <h3>step order
+        <div class="property entity" id="hasNumericValue">
+          <h3>has numeric value
             <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
           </h3>
           <table>
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://www.w3id.org/dpp#stepOrder</code>
+                <code>https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#hasNumericValue</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#QuantityValue">https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#QuantityValue</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
               </td>
             </tr>
             <tr>
@@ -4141,7 +4187,7 @@ td {
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2001/XMLSchema#decimal">xsd:decimal</a>
+                <a href="http://www.w3.org/2001/XMLSchema#double">xsd:double</a>
               </td>
             </tr>
           </table>
@@ -4210,6 +4256,84 @@ td {
               <th>IRI</th>
               <td>
                 <code>http://ontologydesignpatterns.org/opla-sd#entityPositionY</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="contributor">
+          <h3>contributor
+            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/terms/contributor</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="created">
+          <h3>created
+            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/terms/created</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="creator">
+          <h3>creator
+            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/terms/creator</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="description">
+          <h3>description
+            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/terms/description</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="license">
+          <h3>license
+            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/terms/license</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="title">
+          <h3>title
+            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/terms/title</code>
               </td>
             </tr>
           </table>
@@ -4315,12 +4439,6 @@ td {
               <a href="#Pattern">Pattern</a>
             </li>
             <li>
-              <a href="#Agent">Agent</a>
-            </li>
-            <li>
-              <a href="#AgentRole">Agent Role</a>
-            </li>
-            <li>
               <a href="#Assembler">Assembler</a>
             </li>
             <li>
@@ -4348,9 +4466,6 @@ td {
               <a href="#Component">Component</a>
             </li>
             <li>
-              <a href="#Context">Context</a>
-            </li>
-            <li>
               <a href="#Disassembler">Disassembler</a>
             </li>
             <li>
@@ -4369,9 +4484,6 @@ td {
               <a href="#ElectricalComponent">Electrical Component</a>
             </li>
             <li>
-              <a href="#EntityWithProvenance">Entity With Provenance</a>
-            </li>
-            <li>
               <a href="#EnvironmentalImpact">Environmental Impact</a>
             </li>
             <li>
@@ -4388,12 +4500,6 @@ td {
             </li>
             <li>
               <a href="#GlobalTradeID">Global Trade Id</a>
-            </li>
-            <li>
-              <a href="#IDType">Id Type</a>
-            </li>
-            <li>
-              <a href="#Identifier">Identifier</a>
             </li>
             <li>
               <a href="#InstallationInstruction">Installation Instruction</a>
@@ -4429,9 +4535,6 @@ td {
               <a href="#LinearLEDCard">Linear Led Card</a>
             </li>
             <li>
-              <a href="#ListItem">List Item</a>
-            </li>
-            <li>
               <a href="#Manufacturer">Manufacturer</a>
             </li>
             <li>
@@ -4451,21 +4554,6 @@ td {
             </li>
             <li>
               <a href="#ProductSpecification">Product Specification</a>
-            </li>
-            <li>
-              <a href="#PropertyToBeReified">Property To Be Reified</a>
-            </li>
-            <li>
-              <a href="#ProvenanceActivity">Provenance Activity</a>
-            </li>
-            <li>
-              <a href="#Quantity">Quantity</a>
-            </li>
-            <li>
-              <a href="#QuantityKind">Quantity Kind</a>
-            </li>
-            <li>
-              <a href="#QuantityValue">Quantity Value</a>
             </li>
             <li>
               <a href="#Range">Range</a>
@@ -4495,13 +4583,49 @@ td {
               <a href="#SupplyChainInfo">Supply Chain Info</a>
             </li>
             <li>
-              <a href="#TemporalExtent">Temporal Extent</a>
+              <a href="#Agent">Agent</a>
+            </li>
+            <li>
+              <a href="#AgentRole">Agent Role</a>
             </li>
             <li>
               <a href="#Type">Type</a>
             </li>
             <li>
+              <a href="#IDType">Id Type</a>
+            </li>
+            <li>
+              <a href="#Identifier">Identifier</a>
+            </li>
+            <li>
+              <a href="#ListItem">List Item</a>
+            </li>
+            <li>
+              <a href="#EntityWithProvenance">Entity With Provenance</a>
+            </li>
+            <li>
+              <a href="#ProvenanceActivity">Provenance Activity</a>
+            </li>
+            <li>
+              <a href="#Quantity">Quantity</a>
+            </li>
+            <li>
+              <a href="#QuantityKind">Quantity Kind</a>
+            </li>
+            <li>
+              <a href="#QuantityValue">Quantity Value</a>
+            </li>
+            <li>
               <a href="#Unit">Unit</a>
+            </li>
+            <li>
+              <a href="#Context">Context</a>
+            </li>
+            <li>
+              <a href="#PropertyToBeReified">Property To Be Reified</a>
+            </li>
+            <li>
+              <a href="#TemporalExtent">Temporal Extent</a>
             </li>
             <li>
               <a href="#Element">Element</a>
@@ -4514,15 +4638,6 @@ td {
           </h4>
           <ul class="second">
             <li>
-              <a href="#attributedTo">attributed to</a>
-            </li>
-            <li>
-              <a href="#derivedFrom">derived from</a>
-            </li>
-            <li>
-              <a href="#generatedBy">generated by</a>
-            </li>
-            <li>
               <a href="#hasCertification">hasCertification</a>
             </li>
             <li>
@@ -4532,19 +4647,7 @@ td {
               <a href="#hasComponent">hasComponent</a>
             </li>
             <li>
-              <a href="#hasContext">has context</a>
-            </li>
-            <li>
               <a href="#hasEnvironmentalImpact">has environmental impact</a>
-            </li>
-            <li>
-              <a href="#hasFirstStep">has first step</a>
-            </li>
-            <li>
-              <a href="#hasIdentifier">has identifier</a>
-            </li>
-            <li>
-              <a href="#hasIdentifierType">has identifier type</a>
             </li>
             <li>
               <a href="#hasInstructionDetail">has instruction detail</a>
@@ -4559,7 +4662,55 @@ td {
               <a href="#hasName">has name</a>
             </li>
             <li>
+              <a href="#hasSpecification">hasSpecification</a>
+            </li>
+            <li>
+              <a href="#hasSupplyChainInfo">hasSupplyChainInfo</a>
+            </li>
+            <li>
+              <a href="#manufacturedBy">manufacturedBy</a>
+            </li>
+            <li>
+              <a href="#removes">removes</a>
+            </li>
+            <li>
+              <a href="#performsAgentRole">performs agent role</a>
+            </li>
+            <li>
+              <a href="#proivdesAgentRole">proivdes agent role</a>
+            </li>
+            <li>
+              <a href="#hasType">has type</a>
+            </li>
+            <li>
+              <a href="#hasIdentifier">has identifier</a>
+            </li>
+            <li>
+              <a href="#hasIdentifierType">has identifier type</a>
+            </li>
+            <li>
+              <a href="#hasFirstStep">has first step</a>
+            </li>
+            <li>
               <a href="#hasNext">has next</a>
+            </li>
+            <li>
+              <a href="#hasSuccessor">has successor</a>
+            </li>
+            <li>
+              <a href="#attributedTo">attributed to</a>
+            </li>
+            <li>
+              <a href="#generatedBy">generated by</a>
+            </li>
+            <li>
+              <a href="#performedBy">performed by</a>
+            </li>
+            <li>
+              <a href="#used">used</a>
+            </li>
+            <li>
+              <a href="#wasDerivedFrom">was derived from</a>
             </li>
             <li>
               <a href="#hasQuantity">has quantity</a>
@@ -4571,34 +4722,10 @@ td {
               <a href="#hasQuantityValue">has quantity value</a>
             </li>
             <li>
-              <a href="#hasSpecification">hasSpecification</a>
-            </li>
-            <li>
-              <a href="#hasSuccessor">has successor</a>
-            </li>
-            <li>
-              <a href="#hasSupplyChainInfo">hasSupplyChainInfo</a>
-            </li>
-            <li>
-              <a href="#hasTemporalExtent">has temporal extent</a>
-            </li>
-            <li>
-              <a href="#hasType">has type</a>
-            </li>
-            <li>
               <a href="#hasUnit">has unit</a>
             </li>
             <li>
-              <a href="#manufacturedBy">manufacturedBy</a>
-            </li>
-            <li>
-              <a href="#performedBy">performed by</a>
-            </li>
-            <li>
-              <a href="#performsAgentRole">performs agent role</a>
-            </li>
-            <li>
-              <a href="#proivdesAgentRole">proivdes agent role</a>
+              <a href="#hasContext">has context</a>
             </li>
             <li>
               <a href="#reifiedPropertyFrom">reified property from</a>
@@ -4607,7 +4734,7 @@ td {
               <a href="#reifiedPropertyTo">reified property to</a>
             </li>
             <li>
-              <a href="#removes">removes</a>
+              <a href="#hasTemporalExtent">has temporal extent</a>
             </li>
           </ul>
         </li>
@@ -4617,16 +4744,16 @@ td {
           </h4>
           <ul class="second">
             <li>
-              <a href="#hasNumericValue">has numeric value</a>
+              <a href="#identifierAsText">identifier as text</a>
             </li>
             <li>
-              <a href="#identifierAsText">identifier as text</a>
+              <a href="#stepOrder">step order</a>
             </li>
             <li>
               <a href="#nameAsString">name as string</a>
             </li>
             <li>
-              <a href="#stepOrder">step order</a>
+              <a href="#hasNumericValue">has numeric value</a>
             </li>
           </ul>
         </li>
@@ -4649,6 +4776,24 @@ td {
             </li>
             <li>
               <a href="#entityPositionY">entity position y</a>
+            </li>
+            <li>
+              <a href="#contributor">contributor</a>
+            </li>
+            <li>
+              <a href="#created">created</a>
+            </li>
+            <li>
+              <a href="#creator">creator</a>
+            </li>
+            <li>
+              <a href="#description">description</a>
+            </li>
+            <li>
+              <a href="#license">license</a>
+            </li>
+            <li>
+              <a href="#title">title</a>
             </li>
           </ul>
         </li>
