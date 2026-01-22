@@ -1,0 +1,193 @@
+@prefix : <http://www.w3id.org/dpp/alignment/dpp-dppo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3id.org/dpp/alignment/dpp-dppo/> .
+
+<http://www.w3id.org/dpp/alignment/dpp-dppo/> rdf:type owl:Ontology ;
+                                               <http://purl.org/dc/terms/contributor> "Eva Blomqvist" ,
+                                                                                      "Huanyu Li" ,
+                                                                                      "Rahel Kebede" ;
+                                               <http://purl.org/dc/terms/creator> "Rahel Kebede" ;
+                                               <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" ;
+                                               <http://purl.org/dc/terms/source> "DPP-DPPO.xlsx" ;
+                                               <http://purl.org/dc/terms/title> "The alignment ontology between DPP and DPPO" ;
+                                               <http://purl.org/vocab/vann/preferredNamespaceUri> "http://w3id.org/dpp/alignment/dpp-dppo/" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/sssom/mapping_justificatio
+<https://w3id.org/sssom/mapping_justificatio> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/sssom/object_label
+<https://w3id.org/sssom/object_label> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/sssom/object_type
+<https://w3id.org/sssom/object_type> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/sssom/subject_label
+<https://w3id.org/sssom/subject_label> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/sssom/subject_type
+<https://w3id.org/sssom/subject_type> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/dppo/ontology/dpp-core/Component
+<http://w3id.org/dppo/ontology/dpp-core/Component> rdf:type owl:Class ;
+                                                   owl:equivalentClass <http://www.w3id.org/dpp#Component> .
+
+
+###  http://w3id.org/dppo/ontology/dpp-core/Material
+<http://w3id.org/dppo/ontology/dpp-core/Material> rdf:type owl:Class .
+
+
+###  http://w3id.org/dppo/ontology/dpp-info/CompositionInformation
+<http://w3id.org/dppo/ontology/dpp-info/CompositionInformation> rdf:type owl:Class .
+
+
+###  http://w3id.org/dppo/ontology/dpp-odp/Product
+<http://w3id.org/dppo/ontology/dpp-odp/Product> rdf:type owl:Class .
+
+
+###  http://w3id.org/dppo/ontology/dpp-prov/Actor
+<http://w3id.org/dppo/ontology/dpp-prov/Actor> rdf:type owl:Class ;
+                                               owl:equivalentClass <http://www.w3id.org/dpp#Agent> .
+
+
+###  http://www.w3id.org/dpp#Agent
+<http://www.w3id.org/dpp#Agent> rdf:type owl:Class .
+
+
+###  http://www.w3id.org/dpp#Component
+<http://www.w3id.org/dpp#Component> rdf:type owl:Class .
+
+
+###  http://www.w3id.org/dpp#Material
+<http://www.w3id.org/dpp#Material> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://w3id.org/dppo/ontology/dpp-core/Material> .
+
+
+###  http://www.w3id.org/dpp#MaterialComposition
+<http://www.w3id.org/dpp#MaterialComposition> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://w3id.org/dppo/ontology/dpp-info/CompositionInformation> .
+
+
+###  http://www.w3id.org/dpp#Product
+<http://www.w3id.org/dpp#Product> rdf:type owl:Class ;
+                                  rdfs:subClassOf <http://w3id.org/dppo/ontology/dpp-odp/Product> .
+
+
+###  https://w3id.org/sssom/Mapping
+<https://w3id.org/sssom/Mapping> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0001
+:DPP_DPPO_0001 rdf:type owl:NamedIndividual ,
+                        <https://w3id.org/sssom/Mapping> ;
+               <http://purl.org/dc/elements/1.1/identifier> "DPP_DPPO_0001" ;
+               <http://purl.org/dc/terms/source> "http://www.w3id.org/dpp/alignment/dpp-dppo/" ;
+               rdfs:comment "DPP is stricter: product≠material; DPPO keeps them possibly overlapping. Subclass mapping preserves DPPO’s sector-agnostic stance without breaking DPP's disjointness." ;
+               <https://w3id.org/sssom/mapping_justificatio> <https://w3id.org/semapv/vocab/ManualMappingCuration> ;
+               <https://w3id.org/sssom/object_label> "Product" ;
+               <https://w3id.org/sssom/object_type> owl:Class ;
+               <https://w3id.org/sssom/subject_label> "Product" ;
+               <https://w3id.org/sssom/subject_type> owl:Class .
+
+
+###  http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0002
+:DPP_DPPO_0002 rdf:type owl:NamedIndividual ,
+                        <https://w3id.org/sssom/Mapping> ;
+               <http://purl.org/dc/elements/1.1/identifier> "DPP_DPPO_0002" ;
+               <http://purl.org/dc/terms/source> "http://www.w3id.org/dpp/alignment/dpp-dppo/" ;
+               rdfs:comment "Both represent part-whole relationships. Structural correspondence: both as subclasses of Product with part-of links. Modular alignment allows complex product breakdowns in DPP (e.g., building elements into sub-components) to map into DPPO’s composition pattern." ;
+               <https://w3id.org/sssom/mapping_justificatio> <https://w3id.org/semapv/vocab/ManualMappingCuration> ;
+               <https://w3id.org/sssom/object_label> "Component" ;
+               <https://w3id.org/sssom/object_type> owl:Class ;
+               <https://w3id.org/sssom/subject_label> "Component" ;
+               <https://w3id.org/sssom/subject_type> owl:Class .
+
+
+###  http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0003
+:DPP_DPPO_0003 rdf:type owl:NamedIndividual ,
+                        <https://w3id.org/sssom/Mapping> ;
+               <http://purl.org/dc/elements/1.1/identifier> "DPP_DPPO_0003" ;
+               <http://purl.org/dc/terms/source> "http://www.w3id.org/dpp/alignment/dpp-dppo/" ;
+               rdfs:comment "Semantically equivalent: both capture the matter constituting products/parts. Subclass mapping (dppo:Material ⊑ dppo:Product) reflects DPPO’s flexibility; DPP’s modular placement preserves structure. Alignment preserves CE relevance (resource loops, recyclability)." ;
+               <https://w3id.org/sssom/mapping_justificatio> <https://w3id.org/semapv/vocab/ManualMappingCuration> ;
+               <https://w3id.org/sssom/object_label> "Material" ;
+               <https://w3id.org/sssom/object_type> owl:Class ;
+               <https://w3id.org/sssom/subject_label> "Material" ;
+               <https://w3id.org/sssom/subject_type> owl:Class .
+
+
+###  http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0004
+:DPP_DPPO_0004 rdf:type owl:NamedIndividual ,
+                        <https://w3id.org/sssom/Mapping> ;
+               <http://purl.org/dc/elements/1.1/identifier> "DPP_DPPO_0004" ;
+               <http://purl.org/dc/terms/source> "http://www.w3id.org/dpp/alignment/dpp-dppo/" ;
+               rdfs:comment "Both model partonomy as first-class nodes; quantitative details remain attached to the reified link." ;
+               <https://w3id.org/sssom/mapping_justificatio> <https://w3id.org/semapv/vocab/ManualMappingCuration> ;
+               <https://w3id.org/sssom/object_label> "CompositionInformation" ;
+               <https://w3id.org/sssom/object_type> owl:Class ;
+               <https://w3id.org/sssom/subject_label> "MaterialComposition" ;
+               <https://w3id.org/sssom/subject_type> owl:Class .
+
+
+###  http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0005
+:DPP_DPPO_0005 rdf:type owl:NamedIndividual ,
+                        <https://w3id.org/sssom/Mapping> ;
+               <http://purl.org/dc/elements/1.1/identifier> "DPP_DPPO_0005" ;
+               <http://purl.org/dc/terms/source> "http://www.w3id.org/dpp/alignment/dpp-dppo/" ;
+               rdfs:comment "For product-level roles, keep DPP’s AgentRole on dpp:Product; additionally mint DPPO responsibleActor on each DPPInformation item to meet DPPO’s auditability." ;
+               <https://w3id.org/sssom/mapping_justificatio> <https://w3id.org/semapv/vocab/ManualMappingCuration> ;
+               <https://w3id.org/sssom/object_label> "Actor" ;
+               <https://w3id.org/sssom/object_type> owl:Class ;
+               <https://w3id.org/sssom/subject_label> "Agent" ;
+               <https://w3id.org/sssom/subject_type> owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

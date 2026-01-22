@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="resources/primer.css" media="screen"/>
+<link rel="stylesheet" href="resources/rec.css" media="screen"/>
+<link rel="stylesheet" href="resources/extra.css" media="screen"/>
+<link rel="stylesheet" href="resources/owl.css" media="screen"/>
+<link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="resources/slider.css" media="screen"/>
+<meta name="color-scheme" content="dark light">
+<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
+	<dark-mode-toggle class="slider"></dark-mode-toggle>
+</div>
+ <title>The alignment ontology between DPP and DPPO</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://w3id.org/dpp/alignment/dpp-dppo/","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://w3id.org/dpp/alignment/dpp-dppo/","name":"The alignment ontology between DPP and DPPO", "headline":"Document describing the ontology http://w3id.org/dpp/alignment/dpp-dppo/", "dateReleased":"Thu Jan 22 08:38:46 CET 2026", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Rahel Kebede"}], "contributor":[{"@type":"Person","name":"Eva Blomqvist"},{"@type":"Person","name":"Huanyu Li"},{"@type":"Person","name":"Rahel Kebede"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>The alignment ontology between DPP and DPPO</h1>
+
+
+<dl>
+<dt>Latest version:</dt>
+<dd><a href="http://w3id.org/dpp/alignment/dpp-dppo/">http://w3id.org/dpp/alignment/dpp-dppo/</a></dd>
+<dt>Authors:</dt>
+<dd>Rahel Kebede</dd>
+
+<dt>Contributors:</dt>
+<dd>Eva Blomqvist</dd><dd>Huanyu Li</dd><dd>Rahel Kebede</dd>
+
+<dt>Source:</dt>
+<dd><a href="DPP-DPPO.xlsx">DPP-DPPO.xlsx</a></dd>
+
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by/4.0/-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/" /></a>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+<dd>Rahel Kebede. The alignment ontology between DPP and DPPO.</dd>
+</dl>
+
+<hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+This is a placeholder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>[Ontology NS Prefix]</b></td><td>&lt;http://www.w3id.org/dpp/alignment/dpp-dppo/&gt;</td></tr>
+<tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1/&gt;</td></tr>
+<tr><td><b>dcterms</b></td><td>&lt;http://purl.org/dc/terms/&gt;</td></tr>
+<tr><td><b>dpp</b></td><td>&lt;http://www.w3id.org/dpp#&gt;</td></tr>
+<tr><td><b>dpp-core</b></td><td>&lt;http://w3id.org/dppo/ontology/dpp-core/&gt;</td></tr>
+<tr><td><b>dpp-info</b></td><td>&lt;http://w3id.org/dppo/ontology/dpp-info/&gt;</td></tr>
+<tr><td><b>dpp-odp</b></td><td>&lt;http://w3id.org/dppo/ontology/dpp-odp/&gt;</td></tr>
+<tr><td><b>dpp-prov</b></td><td>&lt;http://w3id.org/dppo/ontology/dpp-prov/&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl#&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</td></tr>
+<tr><td><b>semapv</b></td><td>&lt;https://w3id.org/semapv/vocab/&gt;</td></tr>
+<tr><td><b>sssom</b></td><td>&lt;https://w3id.org/sssom/&gt;</td></tr>
+<tr><td><b>vann</b></td><td>&lt;http://purl.org/vocab/vann/&gt;</td></tr>
+<tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema#&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">The alignment ontology between DPP and DPPO: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#http://w3id.org/dppo/ontology/dpp-prov/Actor" title="http://w3id.org/dppo/ontology/dpp-prov/Actor">
+         <span>Actor</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://w3id.org/dppo/ontology/dpp-core/Component" title="http://w3id.org/dppo/ontology/dpp-core/Component">
+         <span>Component</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.w3id.org/dpp#Material" title="http://www.w3id.org/dpp#Material">
+         <span>Material</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.w3id.org/dpp#MaterialComposition" title="http://www.w3id.org/dpp#MaterialComposition">
+         <span>Material Composition</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.w3id.org/dpp#Product" title="http://www.w3id.org/dpp#Product">
+         <span>Product</span>
+      </a>
+   </li>
+</ul><h4>Annotation Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#http://purl.org/dc/terms/contributor" title="http://purl.org/dc/terms/contributor">
+         <span>contributor</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">
+         <span>creator</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/identifier" title="http://purl.org/dc/elements/1.1/identifier">
+         <span>identifier</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">
+         <span>license</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/sssom/mapping_justificatio" title="https://w3id.org/sssom/mapping_justificatio">
+         <span>mapping justificatio</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/sssom/object_label" title="https://w3id.org/sssom/object_label">
+         <span>object label</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/sssom/object_type" title="https://w3id.org/sssom/object_type">
+         <span>object type</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/vocab/vann/preferredNamespaceUri" title="http://purl.org/vocab/vann/preferredNamespaceUri">
+         <span>preferred Namespace Uri</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/source" title="http://purl.org/dc/terms/source">
+         <span>source</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/sssom/subject_label" title="https://w3id.org/sssom/subject_label">
+         <span>subject label</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/sssom/subject_type" title="https://w3id.org/sssom/subject_type">
+         <span>subject type</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">
+         <span>title</span>
+      </a>
+   </li>
+</ul><h4>Named Individuals</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0001"
+         title="http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0001">
+         <span>D P P D P P O 0001</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0002"
+         title="http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0002">
+         <span>D P P D P P O 0002</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0003"
+         title="http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0003">
+         <span>D P P D P P O 0003</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0004"
+         title="http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0004">
+         <span>D P P D P P O 0004</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0005"
+         title="http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0005">
+         <span>D P P D P P O 0005</span>
+      </a>
+   </li>
+</ul><iframe src="webvowl/index.html"></iframe> 
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">The alignment ontology between DPP and DPPO: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+<span class="markdown">This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.
+
+</span></div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for The alignment ontology between DPP and DPPO classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by The alignment ontology between DPP and DPPO.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#http://w3id.org/dppo/ontology/dpp-prov/Actor" title="http://w3id.org/dppo/ontology/dpp-prov/Actor"> <span>Actor</span> </a></li>
+  <li><a href="#http://w3id.org/dppo/ontology/dpp-core/Component" title="http://w3id.org/dppo/ontology/dpp-core/Component"> <span>Component</span> </a></li>
+  <li><a href="#http://www.w3id.org/dpp#Material" title="http://www.w3id.org/dpp#Material"> <span>Material</span> </a></li>
+  <li><a href="#http://www.w3id.org/dpp#MaterialComposition" title="http://www.w3id.org/dpp#MaterialComposition"> <span>Material Composition</span> </a></li>
+  <li><a href="#http://www.w3id.org/dpp#Product" title="http://www.w3id.org/dpp#Product"> <span>Product</span> </a></li>
+ </ul>
+ <div class="entity" id="http://w3id.org/dppo/ontology/dpp-prov/Actor">
+  <h3>Actor<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dppo/ontology/dpp-prov/Actor</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://www.w3id.org/dpp#Agent" target="_blank" title="http://www.w3id.org/dpp#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://w3id.org/dppo/ontology/dpp-core/Component">
+  <h3>Component<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dppo/ontology/dpp-core/Component</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://www.w3id.org/dpp#Component" target="_blank" title="http://www.w3id.org/dpp#Component">Component</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.w3id.org/dpp#Material">
+  <h3>Material<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3id.org/dpp#Material</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://w3id.org/dppo/ontology/dpp-core/Material" target="_blank" title="http://w3id.org/dppo/ontology/dpp-core/Material">Material</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.w3id.org/dpp#MaterialComposition">
+  <h3>Material Composition<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3id.org/dpp#MaterialComposition</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://w3id.org/dppo/ontology/dpp-info/CompositionInformation" target="_blank" title="http://w3id.org/dppo/ontology/dpp-info/CompositionInformation">Composition Information</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.w3id.org/dpp#Product">
+  <h3>Product<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3id.org/dpp#Product</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://w3id.org/dppo/ontology/dpp-odp/Product" target="_blank" title="http://w3id.org/dppo/ontology/dpp-odp/Product">Product</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="annotationproperties">
+ <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+ <ul class="hlist">
+  <li><a href="#http://purl.org/dc/terms/contributor" title="http://purl.org/dc/terms/contributor"> <span>contributor</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator"> <span>creator</span> </a></li>
+  <li><a href="#http://purl.org/dc/elements/1.1/identifier" title="http://purl.org/dc/elements/1.1/identifier"> <span>identifier</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license"> <span>license</span> </a></li>
+  <li><a href="#https://w3id.org/sssom/mapping_justificatio" title="https://w3id.org/sssom/mapping_justificatio"> <span>mapping justificatio</span> </a></li>
+  <li><a href="#https://w3id.org/sssom/object_label" title="https://w3id.org/sssom/object_label"> <span>object label</span> </a></li>
+  <li><a href="#https://w3id.org/sssom/object_type" title="https://w3id.org/sssom/object_type"> <span>object type</span> </a></li>
+  <li><a href="#http://purl.org/vocab/vann/preferredNamespaceUri" title="http://purl.org/vocab/vann/preferredNamespaceUri"> <span>preferred Namespace Uri</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/source" title="http://purl.org/dc/terms/source"> <span>source</span> </a></li>
+  <li><a href="#https://w3id.org/sssom/subject_label" title="https://w3id.org/sssom/subject_label"> <span>subject label</span> </a></li>
+  <li><a href="#https://w3id.org/sssom/subject_type" title="https://w3id.org/sssom/subject_type"> <span>subject type</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title"> <span>title</span> </a></li>
+ </ul>
+ <div class="entity" id="http://purl.org/dc/terms/contributor">
+  <h3>contributor<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/contributor</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/creator">
+  <h3>creator<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/creator</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/elements/1.1/identifier">
+  <h3>identifier<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/identifier</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/license">
+  <h3>license<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/license</p>
+ </div>
+ <div class="entity" id="https://w3id.org/sssom/mapping_justificatio">
+  <h3>mapping justificatio<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/sssom/mapping_justificatio</p>
+ </div>
+ <div class="entity" id="https://w3id.org/sssom/object_label">
+  <h3>object label<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/sssom/object_label</p>
+ </div>
+ <div class="entity" id="https://w3id.org/sssom/object_type">
+  <h3>object type<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/sssom/object_type</p>
+ </div>
+ <div class="entity" id="http://purl.org/vocab/vann/preferredNamespaceUri">
+  <h3>preferred Namespace Uri<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/vocab/vann/preferredNamespaceUri</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/source">
+  <h3>source<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/source</p>
+ </div>
+ <div class="entity" id="https://w3id.org/sssom/subject_label">
+  <h3>subject label<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/sssom/subject_label</p>
+ </div>
+ <div class="entity" id="https://w3id.org/sssom/subject_type">
+  <h3>subject type<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/sssom/subject_type</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/title">
+  <h3>title<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/title</p>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+ <h3 id="namedindividuals" class="list">Named Individuals</h3>
+ <ul class="hlist">
+  <li><a href="#http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0001" title="http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0001"> <span>D P P D P P O 0001</span> </a></li>
+  <li><a href="#http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0002" title="http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0002"> <span>D P P D P P O 0002</span> </a></li>
+  <li><a href="#http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0003" title="http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0003"> <span>D P P D P P O 0003</span> </a></li>
+  <li><a href="#http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0004" title="http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0004"> <span>D P P D P P O 0004</span> </a></li>
+  <li><a href="#http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0005" title="http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0005"> <span>D P P D P P O 0005</span> </a></li>
+ </ul>
+ <div class="entity" id="http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0001">
+  <h3>D P P D P P O 0001<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0001</p>
+  <div class="comment">
+   <span class="markdown">DPP is stricter: product≠material; DPPO keeps them possibly overlapping. Subclass mapping preserves DPPO’s sector-agnostic stance without breaking DPP's disjointness.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    http://www.w3id.org/dpp/alignment/dpp-dppo/
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="https://w3id.org/sssom/Mapping" target="_blank" title="https://w3id.org/sssom/Mapping">Mapping</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/terms/source" target="_blank" title="http://purl.org/dc/terms/source">source</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"http://www.w3id.org/dpp/alignment/dpp-dppo/"</span>
+   </dd>
+   <dd>
+    <a href="https://w3id.org/sssom/mapping_justificatio" target="_blank" title="https://w3id.org/sssom/mapping_justificatio">mapping justificatio</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="https://w3id.org/semapv/vocab/ManualMappingCuration" target="_blank" title="https://w3id.org/semapv/vocab/ManualMappingCuration">Manual Mapping Curation</a> <sup class="type-ep" title="external property">ep</sup>
+   </dd>
+   <dd>
+    <a href="https://w3id.org/sssom/object_label" target="_blank" title="https://w3id.org/sssom/object_label">object label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Product"</span>
+   </dd>
+   <dd>
+    <a href="https://w3id.org/sssom/object_type" target="_blank" title="https://w3id.org/sssom/object_type">object type</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://www.w3.org/2002/07/owl#Class" target="_blank" title="http://www.w3.org/2002/07/owl#Class">Class</a> <sup class="type-ep" title="external property">ep</sup>
+   </dd>
+   <dd>
+    <a href="https://w3id.org/sssom/subject_label" target="_blank" title="https://w3id.org/sssom/subject_label">subject label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Product"</span>
+   </dd>
+   <dd>
+    <a href="https://w3id.org/sssom/subject_type" target="_blank" title="https://w3id.org/sssom/subject_type">subject type</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://www.w3.org/2002/07/owl#Class" target="_blank" title="http://www.w3.org/2002/07/owl#Class">Class</a> <sup class="type-ep" title="external property">ep</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0002">
+  <h3>D P P D P P O 0002<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0002</p>
+  <div class="comment">
+   <span class="markdown">Both represent part-whole relationships. Structural correspondence: both as subclasses of Product with part-of links. Modular alignment allows complex product breakdowns in DPP (e.g., building elements into sub-components) to map into DPPO’s composition pattern.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    http://www.w3id.org/dpp/alignment/dpp-dppo/
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="https://w3id.org/sssom/Mapping" target="_blank" title="https://w3id.org/sssom/Mapping">Mapping</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/terms/source" target="_blank" title="http://purl.org/dc/terms/source">source</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"http://www.w3id.org/dpp/alignment/dpp-dppo/"</span>
+   </dd>
+   <dd>
+    <a href="https://w3id.org/sssom/mapping_justificatio" target="_blank" title="https://w3id.org/sssom/mapping_justificatio">mapping justificatio</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="https://w3id.org/semapv/vocab/ManualMappingCuration" target="_blank" title="https://w3id.org/semapv/vocab/ManualMappingCuration">Manual Mapping Curation</a> <sup class="type-ep" title="external property">ep</sup>
+   </dd>
+   <dd>
+    <a href="https://w3id.org/sssom/object_label" target="_blank" title="https://w3id.org/sssom/object_label">object label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Component"</span>
+   </dd>
+   <dd>
+    <a href="https://w3id.org/sssom/object_type" target="_blank" title="https://w3id.org/sssom/object_type">object type</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://www.w3.org/2002/07/owl#Class" target="_blank" title="http://www.w3.org/2002/07/owl#Class">Class</a> <sup class="type-ep" title="external property">ep</sup>
+   </dd>
+   <dd>
+    <a href="https://w3id.org/sssom/subject_label" target="_blank" title="https://w3id.org/sssom/subject_label">subject label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Component"</span>
+   </dd>
+   <dd>
+    <a href="https://w3id.org/sssom/subject_type" target="_blank" title="https://w3id.org/sssom/subject_type">subject type</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://www.w3.org/2002/07/owl#Class" target="_blank" title="http://www.w3.org/2002/07/owl#Class">Class</a> <sup class="type-ep" title="external property">ep</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0003">
+  <h3>D P P D P P O 0003<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0003</p>
+  <div class="comment">
+   <span class="markdown">Semantically equivalent: both capture the matter constituting products/parts. Subclass mapping (dppo:Material ⊑ dppo:Product) reflects DPPO’s flexibility; DPP’s modular placement preserves structure. Alignment preserves CE relevance (resource loops, recyclability).</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    http://www.w3id.org/dpp/alignment/dpp-dppo/
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="https://w3id.org/sssom/Mapping" target="_blank" title="https://w3id.org/sssom/Mapping">Mapping</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/terms/source" target="_blank" title="http://purl.org/dc/terms/source">source</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"http://www.w3id.org/dpp/alignment/dpp-dppo/"</span>
+   </dd>
+   <dd>
+    <a href="https://w3id.org/sssom/mapping_justificatio" target="_blank" title="https://w3id.org/sssom/mapping_justificatio">mapping justificatio</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="https://w3id.org/semapv/vocab/ManualMappingCuration" target="_blank" title="https://w3id.org/semapv/vocab/ManualMappingCuration">Manual Mapping Curation</a> <sup class="type-ep" title="external property">ep</sup>
+   </dd>
+   <dd>
+    <a href="https://w3id.org/sssom/object_label" target="_blank" title="https://w3id.org/sssom/object_label">object label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Material"</span>
+   </dd>
+   <dd>
+    <a href="https://w3id.org/sssom/object_type" target="_blank" title="https://w3id.org/sssom/object_type">object type</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://www.w3.org/2002/07/owl#Class" target="_blank" title="http://www.w3.org/2002/07/owl#Class">Class</a> <sup class="type-ep" title="external property">ep</sup>
+   </dd>
+   <dd>
+    <a href="https://w3id.org/sssom/subject_label" target="_blank" title="https://w3id.org/sssom/subject_label">subject label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Material"</span>
+   </dd>
+   <dd>
+    <a href="https://w3id.org/sssom/subject_type" target="_blank" title="https://w3id.org/sssom/subject_type">subject type</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://www.w3.org/2002/07/owl#Class" target="_blank" title="http://www.w3.org/2002/07/owl#Class">Class</a> <sup class="type-ep" title="external property">ep</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0004">
+  <h3>D P P D P P O 0004<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0004</p>
+  <div class="comment">
+   <span class="markdown">Both model partonomy as first-class nodes; quantitative details remain attached to the reified link.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    http://www.w3id.org/dpp/alignment/dpp-dppo/
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="https://w3id.org/sssom/Mapping" target="_blank" title="https://w3id.org/sssom/Mapping">Mapping</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/terms/source" target="_blank" title="http://purl.org/dc/terms/source">source</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"http://www.w3id.org/dpp/alignment/dpp-dppo/"</span>
+   </dd>
+   <dd>
+    <a href="https://w3id.org/sssom/mapping_justificatio" target="_blank" title="https://w3id.org/sssom/mapping_justificatio">mapping justificatio</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="https://w3id.org/semapv/vocab/ManualMappingCuration" target="_blank" title="https://w3id.org/semapv/vocab/ManualMappingCuration">Manual Mapping Curation</a> <sup class="type-ep" title="external property">ep</sup>
+   </dd>
+   <dd>
+    <a href="https://w3id.org/sssom/object_label" target="_blank" title="https://w3id.org/sssom/object_label">object label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"CompositionInformation"</span>
+   </dd>
+   <dd>
+    <a href="https://w3id.org/sssom/object_type" target="_blank" title="https://w3id.org/sssom/object_type">object type</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://www.w3.org/2002/07/owl#Class" target="_blank" title="http://www.w3.org/2002/07/owl#Class">Class</a> <sup class="type-ep" title="external property">ep</sup>
+   </dd>
+   <dd>
+    <a href="https://w3id.org/sssom/subject_label" target="_blank" title="https://w3id.org/sssom/subject_label">subject label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"MaterialComposition"</span>
+   </dd>
+   <dd>
+    <a href="https://w3id.org/sssom/subject_type" target="_blank" title="https://w3id.org/sssom/subject_type">subject type</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://www.w3.org/2002/07/owl#Class" target="_blank" title="http://www.w3.org/2002/07/owl#Class">Class</a> <sup class="type-ep" title="external property">ep</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0005">
+  <h3>D P P D P P O 0005<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0005</p>
+  <div class="comment">
+   <span class="markdown">For product-level roles, keep DPP’s AgentRole on dpp:Product; additionally mint DPPO responsibleActor on each DPPInformation item to meet DPPO’s auditability.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    http://www.w3id.org/dpp/alignment/dpp-dppo/
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="https://w3id.org/sssom/Mapping" target="_blank" title="https://w3id.org/sssom/Mapping">Mapping</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/terms/source" target="_blank" title="http://purl.org/dc/terms/source">source</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"http://www.w3id.org/dpp/alignment/dpp-dppo/"</span>
+   </dd>
+   <dd>
+    <a href="https://w3id.org/sssom/mapping_justificatio" target="_blank" title="https://w3id.org/sssom/mapping_justificatio">mapping justificatio</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="https://w3id.org/semapv/vocab/ManualMappingCuration" target="_blank" title="https://w3id.org/semapv/vocab/ManualMappingCuration">Manual Mapping Curation</a> <sup class="type-ep" title="external property">ep</sup>
+   </dd>
+   <dd>
+    <a href="https://w3id.org/sssom/object_label" target="_blank" title="https://w3id.org/sssom/object_label">object label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Actor"</span>
+   </dd>
+   <dd>
+    <a href="https://w3id.org/sssom/object_type" target="_blank" title="https://w3id.org/sssom/object_type">object type</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://www.w3.org/2002/07/owl#Class" target="_blank" title="http://www.w3.org/2002/07/owl#Class">Class</a> <sup class="type-ep" title="external property">ep</sup>
+   </dd>
+   <dd>
+    <a href="https://w3id.org/sssom/subject_label" target="_blank" title="https://w3id.org/sssom/subject_label">subject label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Agent"</span>
+   </dd>
+   <dd>
+    <a href="https://w3id.org/sssom/subject_type" target="_blank" title="https://w3id.org/sssom/subject_type">subject type</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://www.w3.org/2002/07/owl#Class" target="_blank" title="http://www.w3.org/2002/07/owl#Class">Class</a> <sup class="type-ep" title="external property">ep</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
+<sup class="type-ep" title="External Properties">ep</sup>: External Properties
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>
