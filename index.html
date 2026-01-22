@@ -1,10 +1,129 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DPP (Digital Product Passport) ontology and Alignments for DPPs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-papVZbKXBxMjVtL4MhM0KyxOQb9N1vfrlQn6kDZQrvu1Sfq2k6s15yIuQ+nX+I2+E6T+jfNAX8t6k42Ta0n74Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    :root {
+      --primary: #80276d;
+      --secondary: #a04588;
+      --bg-dark: #1e1e1e;
+      --text-dark: #ddd;
+      --card-bg: #2e2e2e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--bg-dark);
+      color: var(--text-dark);
+    }
+    header {
+      position: relative;
+      background: url('https://source.unsplash.com/1600x900/?technology,abstract') center/cover no-repeat;
+      padding: 4rem 1rem;
+      text-align: center;
+      color: white;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    header .header-content { position: relative; z-index: 1; }
+    header h1 { font-size: 2.5rem; margin: 0; }
+    header p { margin: 1rem 0; font-weight: 300; font-size: 1.1rem; }
+    #controls { margin: 2rem auto; max-width: 600px; padding: 0 1rem; }
+    #search { width: 100%; padding: 0.5rem 1rem; border-radius: 999px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.1); color: var(--text-dark); font-size: 1rem; outline: none; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 0 1rem; }
+    h2 { text-align: center; color: var(--primary); margin-bottom: 1rem; }    
+  
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-<a href="./alignment-doc/index.html">alignment doc</a>
-<a href="./ontology-doc/index.html">ontology doc</a>
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* This centers the items if there is only one */
+      gap: 1.5rem;
+    }
+
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;  
+      flex: 0 1 300px; 
+    }
+    
+    .card a {
+      display: inline-block;
+      margin: 0.5rem;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s;
+      cursor: pointer;
+    } { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1.5rem; }
+    .card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); padding: 1.5rem; text-align: center; transition: transform 0.2s, box-shadow 0.2s; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 6px 16px rgba(0,0,0,0.3); }
+    .card h3 { margin-top: 0; color: var(--secondary); }
+    .card a { display: inline-block; margin: 0.5rem; color: var(--primary); text-decoration: none; font-weight: 600; transition: color 0.2s; }
+    .card a:hover { text-decoration: underline; }
+    footer { background: var(--primary); color: #fff; text-align: center; padding: 0.5rem; margin-top: 0.5rem; }
+    @media (max-width: 600px) { header h1 { font-size: 2rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>DPP (Digital Product Passport) ontology and Alignments for DPPs</h1>
+      <!--<p>Aligning digital product passport and circular economy ontology network ontologies for shared knowledge across sectors</p>-->
+    </div>
+  </header>
+
+  <div id="controls">
+    <input type="text" id="search" placeholder="🔍 Search alignment modules...">
+  </div>
+
+  <div class="container">
+    <!--<h2>DPP ontology</h2>-->
+    <div class="grid">
+      <div class="card">
+        <h3>DPP ontology</h3>
+        <a href="ontology-doc/index.html"><i class="fas fa-code"></i> Documentation</a>
+      </div>      
+    </div>
+<br>
+    <!--<h2>Alignment for DPPs</h2>-->
+    <div class="grid">
+      <div class="card">
+        <h3>Alignment for DPPs</h3>
+        <a href="alignment-doc/index.html"><i class="fas fa-code"></i> Documentation</a>
+        <!--<a href="documentations/DPPO-CEON.pdf"><i class="fas fa-file-alt"></i> Doc</a>--!
+      </div>
+  </div>
+
+  <footer>
+    <p>DPP-AIDE Research Project, Jönköping University and ____ Linköping University </p>
+  </footer>
+
+  <script>
+    // Search filter
+    const searchInput = document.getElementById('search');
+    searchInput.addEventListener('input', () => {
+      const filter = searchInput.value.toLowerCase();
+      document.querySelectorAll('.card').forEach(card => {
+        card.style.display = card.textContent.toLowerCase().includes(filter) ? '' : 'none';
+      });
+    });
+  </script>
 </body>
 </html>
+
