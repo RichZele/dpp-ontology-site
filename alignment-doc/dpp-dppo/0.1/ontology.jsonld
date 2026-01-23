@@ -5,6 +5,9 @@
   "@id" : "http://purl.org/dc/terms/contributor",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -17,55 +20,40 @@
   "@id" : "http://purl.org/dc/terms/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://w3id.org/dppo/ontology/dpp-core/Component",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "http://www.w3id.org/dpp#Component"
-  } ]
-}, {
-  "@id" : "http://w3id.org/dppo/ontology/dpp-core/Material",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://w3id.org/dppo/ontology/dpp-info/CompositionInformation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://w3id.org/dppo/ontology/dpp-odp/Product",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://w3id.org/dppo/ontology/dpp-prov/Actor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "http://www.w3id.org/dpp#Agent"
-  } ]
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
   "@id" : "http://www.w3id.org/dpp#Agent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://w3id.org/dppo/ontology/dpp-prov/Actor"
+  } ]
 }, {
   "@id" : "http://www.w3id.org/dpp#Component",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://w3id.org/dppo/ontology/dpp-core/Component"
+  } ]
 }, {
   "@id" : "http://www.w3id.org/dpp#Material",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/dppo/ontology/dpp-core/Material"
+    "@id" : "https://w3id.org/dppo/ontology/dpp-core/Material"
   } ]
 }, {
   "@id" : "http://www.w3id.org/dpp#MaterialComposition",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/dppo/ontology/dpp-info/CompositionInformation"
+    "@id" : "https://w3id.org/dppo/ontology/dpp-info/CompositionInformation"
   } ]
 }, {
   "@id" : "http://www.w3id.org/dpp#Product",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/dppo/ontology/dpp-odp/Product"
+    "@id" : "https://w3id.org/dppo/ontology/dpp-odp/Product"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/dpp/alignment/dpp-dppo/",
+  "@id" : "https://w3id.org/dpp/alignment/dpp-dppo/",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/contributor" : [ {
     "@value" : "Eva Blomqvist"
@@ -74,6 +62,10 @@
   }, {
     "@value" : "Rahel Kebede"
   } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-01-23"
+  } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@value" : "Rahel Kebede"
   } ],
@@ -81,22 +73,25 @@
     "@value" : "https://creativecommons.org/licenses/by/4.0/"
   } ],
   "http://purl.org/dc/terms/source" : [ {
-    "@value" : "DPP-DPPO.xlsx"
+    "@value" : "https://github.com/RichZele/DPP-DPPO-CEON-Ontology-Alignment/blob/main/documentations/DPP-DPPO.xlsx"
   } ],
   "http://purl.org/dc/terms/title" : [ {
-    "@value" : "The alignment ontology between DPP and DPPO"
+    "@value" : "The alignment ontology between DPP ontology and DPPO"
   } ],
-  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@value" : "http://w3id.org/dpp/alignment/dpp-dppo/"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This ontology represents the alignment between the Digital Product Passport (DPP) ontology and Digital Product Passport Ontology (DPPO)."
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.1"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0001",
+  "@id" : "https://w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0001",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/elements/1.1/identifier" : [ {
     "@value" : "DPP_DPPO_0001"
   } ],
   "http://purl.org/dc/terms/source" : [ {
-    "@value" : "http://www.w3id.org/dpp/alignment/dpp-dppo/"
+    "@value" : "https://w3id.org/dpp/alignment/dpp-dppo/"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/sssom/Mapping"
@@ -120,13 +115,13 @@
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0002",
+  "@id" : "https://w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0002",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/elements/1.1/identifier" : [ {
     "@value" : "DPP_DPPO_0002"
   } ],
   "http://purl.org/dc/terms/source" : [ {
-    "@value" : "http://www.w3id.org/dpp/alignment/dpp-dppo/"
+    "@value" : "https://w3id.org/dpp/alignment/dpp-dppo/"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/sssom/Mapping"
@@ -150,13 +145,13 @@
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0003",
+  "@id" : "https://w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0003",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/elements/1.1/identifier" : [ {
     "@value" : "DPP_DPPO_0003"
   } ],
   "http://purl.org/dc/terms/source" : [ {
-    "@value" : "http://www.w3id.org/dpp/alignment/dpp-dppo/"
+    "@value" : "https://w3id.org/dpp/alignment/dpp-dppo/"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/sssom/Mapping"
@@ -180,13 +175,13 @@
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0004",
+  "@id" : "https://w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0004",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/elements/1.1/identifier" : [ {
     "@value" : "DPP_DPPO_0004"
   } ],
   "http://purl.org/dc/terms/source" : [ {
-    "@value" : "http://www.w3id.org/dpp/alignment/dpp-dppo/"
+    "@value" : "https://w3id.org/dpp/alignment/dpp-dppo/"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/sssom/Mapping"
@@ -210,13 +205,13 @@
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0005",
+  "@id" : "https://w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0005",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/elements/1.1/identifier" : [ {
     "@value" : "DPP_DPPO_0005"
   } ],
   "http://purl.org/dc/terms/source" : [ {
-    "@value" : "http://www.w3id.org/dpp/alignment/dpp-dppo/"
+    "@value" : "https://w3id.org/dpp/alignment/dpp-dppo/"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/sssom/Mapping"
@@ -239,6 +234,21 @@
   "https://w3id.org/sssom/subject_type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ]
+}, {
+  "@id" : "https://w3id.org/dppo/ontology/dpp-core/Component",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dppo/ontology/dpp-core/Material",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dppo/ontology/dpp-info/CompositionInformation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dppo/ontology/dpp-odp/Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dppo/ontology/dpp-prov/Actor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/sssom/Mapping",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]

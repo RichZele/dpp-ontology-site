@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rdf:RDF xmlns="https://w3id.org/dpp/alignment/dpp-dppo/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <Alignment>
+    <xml>yes</xml>
+    <level>0</level>
+    <onto1>https://w3id.org/dpp/</onto1>
+    <onto2>https://w3id.org/dppo/</onto2>
+    <url1>https://w3id.org/dpp/</url1>
+    <url2>https://w3id.org/dppo/</url2>
+    <map>
+      <cell>
+        <entity1 rdf:resource="https://w3id.org/dpp#Product" />
+        <entity2 rdf:resource="https://w3id.org/dppo/ontology/dpp-odp/Product" />
+        <relation>=</relation>
+      </cell>
+    </map>
+    <map>
+      <cell>
+        <entity1 rdf:resource="https://w3id.org/dpp#Component" />
+        <entity2 rdf:resource="https://w3id.org/dppo/ontology/dpp-core/Component" />
+        <relation>=</relation>
+      </cell>
+    </map>
+    <map>
+      <cell>
+        <entity1 rdf:resource="https://w3id.org/dpp#Material" />
+        <entity2 rdf:resource="https://w3id.org/dppo/ontology/dpp-core/Material" />
+        <relation>=</relation>
+      </cell>
+    </map>
+    <map>
+      <cell>
+        <entity1 rdf:resource="https://w3id.org/dpp#MaterialComposition" />
+        <entity2 rdf:resource="https://w3id.org/dppo/ontology/dpp-info/CompositionInformation" />
+        <relation>=</relation>
+      </cell>
+    </map>
+    <map>
+      <cell>
+        <entity1 rdf:resource="https://w3id.org/dpp#Agent" />
+        <entity2 rdf:resource="https://w3id.org/dppo/ontology/dpp-prov/Actor" />
+        <relation>=</relation>
+      </cell>
+    </map>
+  </Alignment>
+</rdf:RDF>
