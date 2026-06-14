@@ -1,0 +1,152 @@
+@prefix dpp-role:  <http://w3id.org/dpp/roles#> .
+@prefix dpp-ac:    <http://w3id.org/dpp/access-control#> .
+@prefix espr:      <http://w3id.org/espr/dpp#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:   <http://purl.org/dc/terms/> .
+
+# ============================================================
+# ONTOLOGY DECLARATION — DPP STAKEHOLDER ROLE TAXONOMY
+# ============================================================
+
+<http://w3id.org/dpp/roles>
+    rdf:type owl:Ontology ;
+    owl:versionIRI <http://w3id.org/dpp/roles/1.0.0> ;
+    owl:imports <http://w3id.org/dpp/access-control> ;
+    dcterms:title "DPP Stakeholder Role Taxonomy"@en ;
+    dcterms:description
+        """OWL class hierarchy of stakeholder roles defined in the ESPR Digital
+         Product Passport framework. Roles are modelled as classes (not individuals)
+         to support ABAC attribute constraints via class-level SHACL shapes."""@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2026-04-01"^^xsd:date ;
+    owl:versionInfo "1.0.0" .
+
+
+# ============================================================
+# ECONOMIC OPERATOR ROLES (ESPR Article 4)
+# ============================================================
+
+dpp-role:EconomicOperator
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-ac:Role ;
+    skos:prefLabel "Economic Operator"@en ;
+    skos:definition
+        """A role defined under ESPR Article 4 with specific DPP data
+         rights and obligations."""@en .
+
+dpp-role:ManufacturerRole
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-role:EconomicOperator ;
+    skos:prefLabel "Manufacturer"@en ;
+    skos:definition
+        """The entity that manufactures the product and is the primary
+         DPP data owner with full read/write access to all modules."""@en ;
+    skos:scopeNote "ESPR Article 4(1)(a)."@en .
+
+dpp-role:ImporterRole
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-role:EconomicOperator ;
+    skos:prefLabel "Importer"@en ;
+    skos:definition
+        """An entity that places products manufactured outside the EU
+         on the EU market and assumes ESPR obligations."""@en ;
+    skos:scopeNote "ESPR Article 4(1)(b)."@en .
+
+dpp-role:DistributorRole
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-role:EconomicOperator ;
+    skos:prefLabel "Distributor"@en ;
+    skos:definition
+        """An entity in the supply chain that makes a product available
+         on the market other than the manufacturer or importer."""@en ;
+    skos:scopeNote "ESPR Article 4(1)(c)."@en .
+
+dpp-role:AuthorisedRepresentativeRole
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-role:EconomicOperator ;
+    skos:prefLabel "Authorised Representative"@en ;
+    skos:definition
+        """A natural or legal person established in the EU mandated by
+         the manufacturer to act on their behalf."""@en ;
+    skos:scopeNote "ESPR Article 4(1)(d)."@en .
+
+
+# ============================================================
+# REGULATORY AUTHORITY ROLES
+# ============================================================
+
+dpp-role:RegulatoryAuthority
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-ac:Role ;
+    skos:prefLabel "Regulatory Authority"@en ;
+    skos:definition
+        """A public authority with statutory rights to access DPP data
+         for market surveillance or customs enforcement."""@en .
+
+dpp-role:MarketSurveillanceAuthorityRole
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-role:RegulatoryAuthority ;
+    skos:prefLabel "Market Surveillance Authority"@en ;
+    skos:definition
+        """A national authority with full read access to all DPP
+         modules per ESPR Article 14."""@en ;
+    skos:scopeNote "ESPR Article 14; Regulation (EU) 2019/1020."@en .
+
+dpp-role:CustomsAuthorityRole
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-role:RegulatoryAuthority ;
+    skos:prefLabel "Customs Authority"@en ;
+    skos:definition
+        """A customs enforcement authority with read access to
+         product identification and certification data at border control."""@en .
+
+
+# ============================================================
+# SERVICE PROVIDER ROLES
+# ============================================================
+
+dpp-role:ServiceProviderRole
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-ac:Role ;
+    skos:prefLabel "Service Provider"@en ;
+    skos:definition
+        """An entity providing after-sales services such as repair,
+         maintenance, or refurbishment."""@en .
+
+dpp-role:MaintenanceTechnicianRole
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-role:ServiceProviderRole ;
+    skos:prefLabel "Maintenance Technician"@en ;
+    skos:definition
+        """A certified technician performing repair or maintenance with
+         read access to use-and-maintenance and repairability data."""@en .
+
+
+# ============================================================
+# END-OF-LIFE ROLES
+# ============================================================
+
+dpp-role:RecyclerRole
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-ac:Role ;
+    skos:prefLabel "Recycler"@en ;
+    skos:definition
+        """An entity processing products at end-of-life with read access
+         to material composition and disassembly instruction data."""@en .
+
+
+# ============================================================
+# CONSUMER ROLE
+# ============================================================
+
+dpp-role:ConsumerRole
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-ac:Role ;
+    skos:prefLabel "Consumer"@en ;
+    skos:definition
+        """An end user with read access to public and use-phase DPP data,
+         including product identification and energy efficiency data."""@en .

@@ -1,0 +1,171 @@
+@prefix dpp-ac:    <http://w3id.org/dpp/access-control#> .
+@prefix dpp-data:  <http://w3id.org/dpp/data-categories#> .
+@prefix dpvo:      <https://w3id.org/dpv#> .
+@prefix dpvo-gdpr: <https://w3id.org/dpv/dpv-gdpr#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:   <http://purl.org/dc/terms/> .
+
+# ============================================================
+# ONTOLOGY DECLARATION — GDPR REGULATORY ALIGNMENT MODULE
+# ============================================================
+
+<http://w3id.org/dpp/access-control/gdpr>
+    rdf:type owl:Ontology ;
+    owl:versionIRI <http://w3id.org/dpp/access-control/gdpr/1.0.0> ;
+    owl:imports <http://w3id.org/dpp/access-control> ;
+    owl:imports dpvo: ;
+    dcterms:title "DPP Access Control — GDPR Regulatory Alignment"@en ;
+    dcterms:description
+        """Legal basis declarations, purpose limitation patterns, data subject rights,
+         and data retention policies connecting the dpp-ac framework to GDPR via the
+         Data Privacy Vocabulary (DPVO)."""@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2026-04-01"^^xsd:date ;
+    owl:versionInfo "1.0.0" .
+
+
+# ============================================================
+# LEGAL BASIS CLASSES & INDIVIDUALS (GDPR Article 6)
+# ============================================================
+
+dpp-ac:LegalBasis
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpvo:LegalBasis ;
+    skos:prefLabel "DPP Legal Basis"@en ;
+    skos:definition
+        """The GDPR Article 6 legal basis justifying the processing of personal
+         data in the context of a DPP access operation."""@en .
+
+dpp-ac:LegalObligation
+    rdf:type owl:NamedIndividual , dpp-ac:LegalBasis ;
+    skos:prefLabel "Legal Obligation (Art. 6(1)(c))"@en ;
+    skos:definition
+        """Processing is necessary for compliance with a legal obligation to which
+         the controller is subject — including ESPR data disclosure obligations."""@en .
+
+dpp-ac:LegitimateInterest
+    rdf:type owl:NamedIndividual , dpp-ac:LegalBasis ;
+    skos:prefLabel "Legitimate Interest (Art. 6(1)(f))"@en ;
+    skos:definition
+        """Processing is necessary for the purposes of the legitimate interests
+         pursued by the controller or a third party."""@en .
+
+dpp-ac:ConsentBasis
+    rdf:type owl:NamedIndividual , dpp-ac:LegalBasis ;
+    skos:prefLabel "Consent (Art. 6(1)(a))"@en ;
+    skos:definition
+        """The data subject has given consent to the processing of their personal
+         data for one or more specific purposes."""@en .
+
+dpp-ac:PublicTaskBasis
+    rdf:type owl:NamedIndividual , dpp-ac:LegalBasis ;
+    skos:prefLabel "Public Task (Art. 6(1)(e))"@en ;
+    skos:definition
+        """Processing is necessary for the performance of a task carried out in
+         the public interest or in the exercise of official authority — relevant
+         for Market Surveillance Authority access."""@en .
+
+
+# ============================================================
+# LEGAL BASIS PROPERTY ON ACCESS POLICY
+# ============================================================
+
+dpp-ac:hasLegalBasis
+    rdf:type owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:AccessPolicy ;
+    rdfs:range dpp-ac:LegalBasis ;
+    skos:prefLabel "has legal basis"@en ;
+    skos:definition
+        "The GDPR Article 6 legal basis that justifies issuing this policy."@en .
+
+
+# ============================================================
+# DATA RETENTION POLICY
+# ============================================================
+
+dpp-ac:DataRetentionPolicy
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpvo:Policy ;
+    skos:prefLabel "Data Retention Policy"@en ;
+    skos:definition
+        """A time-bound policy governing how long a DPP data category may be
+         retained before erasure or anonymisation."""@en .
+
+dpp-ac:retentionPeriodYears
+    rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:DataRetentionPolicy ;
+    rdfs:range xsd:integer ;
+    skos:prefLabel "retention period (years)"@en ;
+    skos:definition
+        """The number of years for which data in this category must be retained
+         before erasure or anonymisation is triggered."""@en .
+
+dpp-ac:hasRetentionPolicy
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain dpp-data:DataCategory ;
+    rdfs:range dpp-ac:DataRetentionPolicy ;
+    skos:prefLabel "has retention policy"@en ;
+    skos:definition
+        "Links a DPP data category to its applicable data retention policy."@en .
+
+
+# ============================================================
+# DATA SUBJECT RIGHTS (GDPR Chapter III)
+# ============================================================
+
+dpp-ac:DataSubjectRight
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpvo:Right ;
+    skos:prefLabel "Data Subject Right"@en ;
+    skos:definition
+        """A GDPR Chapter III right held by a natural person whose personal data
+         is processed in the context of DPP operations."""@en .
+
+dpp-ac:RightOfAccess
+    rdf:type owl:NamedIndividual , dpp-ac:DataSubjectRight ;
+    skos:prefLabel "Right of Access (Art. 15)"@en ;
+    skos:definition
+        """The right to obtain confirmation of whether personal data is being
+         processed and to access that data."""@en .
+
+dpp-ac:RightToErasure
+    rdf:type owl:NamedIndividual , dpp-ac:DataSubjectRight ;
+    skos:prefLabel "Right to Erasure (Art. 17)"@en ;
+    skos:definition
+        """The right to have personal data erased where it is no longer
+         necessary for the purpose for which it was collected."""@en .
+
+dpp-ac:RightToDataPortability
+    rdf:type owl:NamedIndividual , dpp-ac:DataSubjectRight ;
+    skos:prefLabel "Right to Data Portability (Art. 20)"@en ;
+    skos:definition
+        """The right to receive personal data in a structured, commonly used,
+         and machine-readable format."""@en .
+
+dpp-ac:RightToRectification
+    rdf:type owl:NamedIndividual , dpp-ac:DataSubjectRight ;
+    skos:prefLabel "Right to Rectification (Art. 16)"@en ;
+    skos:definition
+        "The right to have inaccurate personal data corrected without undue delay."@en .
+
+
+# ============================================================
+# EXAMPLE DATA RETENTION INSTANCES
+# ============================================================
+
+<http://w3id.org/dpp/access-control/gdpr/RetentionPolicy-SupplyChain>
+    rdf:type dpp-ac:DataRetentionPolicy ;
+    dpp-ac:retentionPeriodYears 10 ;
+    skos:prefLabel "Supply Chain Data Retention — 10 years"@en ;
+    skos:scopeNote
+        """ESPR supply chain data must be retained for the product's
+         service life plus 10 years per proposed delegated acts."""@en .
+
+<http://w3id.org/dpp/access-control/gdpr/RetentionPolicy-ProductId>
+    rdf:type dpp-ac:DataRetentionPolicy ;
+    dpp-ac:retentionPeriodYears 15 ;
+    skos:prefLabel "Product Identification Data Retention — 15 years"@en .

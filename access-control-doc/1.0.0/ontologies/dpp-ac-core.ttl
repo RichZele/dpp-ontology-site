@@ -1,0 +1,586 @@
+@prefix dpp-ac:    <http://w3id.org/dpp/access-control#> .
+@prefix dpp-data:  <http://w3id.org/dpp/data-categories#> .
+@prefix dpp-role:  <http://w3id.org/dpp/roles#> .
+@prefix odrl:      <http://www.w3.org/ns/odrl/2/> .
+@prefix prov:      <http://www.w3.org/ns/prov#> .
+@prefix dpvo:      <https://w3id.org/dpv#> .
+@prefix dpvo-gdpr: <https://w3id.org/dpv/dpv-gdpr#> .
+@prefix sh:        <http://www.w3.org/ns/shacl#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:   <http://purl.org/dc/terms/> .
+@prefix espr:      <http://w3id.org/espr/dpp#> .
+@prefix schema:    <https://schema.org/> .
+
+# ============================================================
+# ONTOLOGY DECLARATION
+# ============================================================
+
+<http://w3id.org/dpp/access-control>
+    rdf:type owl:Ontology ;
+    owl:versionIRI <http://w3id.org/dpp/access-control/1.0.0> ;
+    owl:imports odrl: ;
+    owl:imports prov: ;
+    dcterms:title "DPP Access Control Ontology Module"@en ;
+    dcterms:description
+        """A modular semantic framework for role-, attribute-, relationship-, and
+         purpose-based access control over Digital Product Passport data,
+         aligned with ESPR, GDPR, and ODRL 2.2."""@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2026-04-01"^^xsd:date ;
+    dcterms:creator "Jönköping University — Semantic Web Lab"@en ;
+    owl:versionInfo "1.0.0" .
+
+
+# ============================================================
+# PRINCIPAL CLASSES
+# ============================================================
+
+dpp-ac:Principal
+    rdf:type owl:Class ;
+    rdfs:subClassOf prov:Agent , odrl:Party ;
+    skos:prefLabel "Principal"@en ;
+    skos:definition
+        """Any entity — human, organisation, or automated system — that
+         may request access to DPP resources."""@en .
+
+dpp-ac:HumanPrincipal
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-ac:Principal ;
+    skos:prefLabel "Human Principal"@en ;
+    skos:definition
+        "A natural person acting as a DPP data requester or owner."@en .
+
+dpp-ac:OrganisationPrincipal
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-ac:Principal ;
+    skos:prefLabel "Organisation Principal"@en ;
+    skos:definition
+        "A legal entity or organisation acting as a DPP stakeholder."@en .
+
+dpp-ac:SystemPrincipal
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-ac:Principal ;
+    skos:prefLabel "System Principal"@en ;
+    skos:definition
+        """An automated agent or software system acting as a DPP data
+         consumer or producer."""@en .
+
+
+# ============================================================
+# ROLE CLASSES & PROPERTIES
+# ============================================================
+
+dpp-ac:Role
+    rdf:type owl:Class ;
+    skos:prefLabel "Access Control Role"@en ;
+    skos:definition
+        """A named function or responsibility assigned to a Principal
+         that determines which access policies apply."""@en .
+
+dpp-ac:hasRole
+    rdf:type owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:Principal ;
+    rdfs:range dpp-ac:Role ;
+    skos:prefLabel "has role"@en ;
+    skos:definition
+        "Assigns a single Access Control Role to a Principal."@en .
+
+
+# ============================================================
+# ACCESS REQUEST
+# ============================================================
+
+dpp-ac:AccessRequest
+    rdf:type owl:Class ;
+    rdfs:subClassOf prov:Activity ;
+    skos:prefLabel "Access Request"@en ;
+    skos:definition
+        """A formal, time-stamped expression of intent by a Principal
+         to perform a specific Action on a specific DPP resource."""@en .
+
+dpp-ac:requestedBy
+    rdf:type owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:AccessRequest ;
+    rdfs:range dpp-ac:Principal ;
+    skos:prefLabel "requested by"@en ;
+    skos:definition
+        "Links an AccessRequest to the Principal who submitted it."@en .
+
+dpp-ac:requestedAction
+    rdf:type owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:AccessRequest ;
+    rdfs:range odrl:Action ;
+    skos:prefLabel "requested action"@en ;
+    skos:definition
+        "The CRUD action the Principal intends to perform."@en .
+
+dpp-ac:requestedResource
+    rdf:type owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:AccessRequest ;
+    rdfs:range dpp-ac:DPPResource ;
+    skos:prefLabel "requested resource"@en ;
+    skos:definition
+        "The DPP resource the Principal intends to access."@en .
+
+dpp-ac:requestTimestamp
+    rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:AccessRequest ;
+    rdfs:range xsd:dateTime ;
+    skos:prefLabel "request timestamp"@en ;
+    skos:definition
+        "The UTC date-time at which the AccessRequest was submitted."@en .
+
+dpp-ac:requestContext
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain dpp-ac:AccessRequest ;
+    rdfs:range dpp-ac:AccessContext ;
+    skos:prefLabel "request context"@en ;
+    skos:definition
+        """Environmental or situational metadata that conditions the evaluation
+         of this access request."""@en .
+
+
+# ============================================================
+# DPP RESOURCE
+# ============================================================
+
+dpp-ac:DPPResource
+    rdf:type owl:Class ;
+    rdfs:subClassOf odrl:Asset , prov:Entity ;
+    skos:prefLabel "DPP Resource"@en ;
+    skos:definition
+        """A discrete, addressable unit of data within a Digital Product
+         Passport that may be the target of an access request."""@en .
+
+dpp-ac:resourceSensitivity
+    rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:DPPResource ;
+    rdfs:range xsd:string ;
+    skos:prefLabel "resource sensitivity"@en ;
+    skos:definition
+        "Classification of the sensitivity level of this DPP resource."@en ;
+    skos:scopeNote
+        """Allowed values: PUBLIC, RESTRICTED, CONFIDENTIAL,
+         STRICTLY_CONFIDENTIAL."""@en .
+
+dpp-ac:belongsToModule
+    rdf:type owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:DPPResource ;
+    rdfs:range dpp-data:DataCategory ;
+    skos:prefLabel "belongs to module"@en ;
+    skos:definition
+        "The ESPR-defined data category (DPP module) that contains this resource."@en .
+
+dpp-ac:ownedBy
+    rdf:type owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:DPPResource ;
+    rdfs:range dpp-ac:Principal ;
+    skos:prefLabel "owned by"@en ;
+    skos:definition
+        """The Principal who is the authoritative data owner of this
+         DPP resource and may grant or revoke access."""@en .
+
+
+# ============================================================
+# ACCESS POLICY
+# ============================================================
+
+dpp-ac:AccessPolicy
+    rdf:type owl:Class ;
+    rdfs:subClassOf odrl:Policy ;
+    skos:prefLabel "DPP Access Policy"@en ;
+    skos:definition
+        """A declarative specification of permissions and prohibitions
+         over DPP resources, scoped to a Role and optionally
+         conditioned on contextual constraints."""@en .
+
+dpp-ac:appliesToRole
+    rdf:type owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:AccessPolicy ;
+    rdfs:range dpp-ac:Role ;
+    skos:prefLabel "applies to role"@en ;
+    skos:definition
+        "The Role to which this AccessPolicy is addressed."@en .
+
+dpp-ac:policyOwner
+    rdf:type owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:AccessPolicy ;
+    rdfs:range dpp-ac:Principal ;
+    skos:prefLabel "policy owner"@en ;
+    skos:definition
+        "The Principal responsible for the lifecycle of this policy."@en .
+
+dpp-ac:policyValidFrom
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain dpp-ac:AccessPolicy ;
+    rdfs:range xsd:dateTime ;
+    skos:prefLabel "policy valid from"@en ;
+    skos:definition
+        "The UTC date-time from which this policy is active."@en .
+
+dpp-ac:policyValidUntil
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain dpp-ac:AccessPolicy ;
+    rdfs:range xsd:dateTime ;
+    skos:prefLabel "policy valid until"@en ;
+    skos:definition
+        "The UTC date-time after which this policy expires."@en .
+
+
+# ============================================================
+# ACCESS DECISION
+# ============================================================
+
+dpp-ac:AccessDecision
+    rdf:type owl:Class ;
+    rdfs:subClassOf prov:Entity ;
+    skos:prefLabel "Access Decision"@en ;
+    skos:definition
+        """An immutable, time-stamped record of the outcome of evaluating
+         an AccessRequest against applicable AccessPolicies."""@en .
+
+dpp-ac:decidesOn
+    rdf:type owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:AccessDecision ;
+    rdfs:range dpp-ac:AccessRequest ;
+    skos:prefLabel "decides on"@en ;
+    skos:definition
+        "Links this AccessDecision to the AccessRequest it resolves."@en .
+
+dpp-ac:decisionOutcome
+    rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:AccessDecision ;
+    rdfs:range xsd:string ;
+    skos:prefLabel "decision outcome"@en ;
+    skos:definition
+        "The result of evaluating the access request."@en ;
+    skos:scopeNote
+        "Allowed values: GRANT, DENY, DELEGATE, PENDING."@en .
+
+dpp-ac:decisionTimestamp
+    rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:AccessDecision ;
+    rdfs:range xsd:dateTime ;
+    skos:prefLabel "decision timestamp"@en ;
+    skos:definition
+        "The UTC date-time at which the access decision was recorded."@en .
+
+dpp-ac:appliedPolicy
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain dpp-ac:AccessDecision ;
+    rdfs:range dpp-ac:AccessPolicy ;
+    skos:prefLabel "applied policy"@en ;
+    skos:definition
+        """The AccessPolicy (or policies) that were evaluated to produce
+         this decision."""@en .
+
+dpp-ac:conflictResolutionApplied
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain dpp-ac:AccessDecision ;
+    rdfs:range xsd:boolean ;
+    skos:prefLabel "conflict resolution applied"@en ;
+    skos:definition
+        """True if a deny-overrides conflict resolution strategy was
+         invoked during this decision evaluation."""@en .
+
+
+# ============================================================
+# CRUD ACTION TAXONOMY (Named Individuals)
+# ============================================================
+
+dpp-ac:ReadResource
+    rdf:type owl:NamedIndividual , odrl:Action ;
+    skos:prefLabel "Read"@en ;
+    skos:definition
+        """Retrieve and inspect the content of a DPP resource without
+         modifying it."""@en .
+
+dpp-ac:CreateResource
+    rdf:type owl:NamedIndividual , odrl:Action ;
+    skos:prefLabel "Create"@en ;
+    skos:definition
+        """Introduce a new data record into a DPP module where no prior
+         record exists for that resource identifier."""@en .
+
+dpp-ac:UpdateResource
+    rdf:type owl:NamedIndividual , odrl:Action ;
+    skos:prefLabel "Update"@en ;
+    skos:definition
+        "Modify the content of an existing DPP resource record."@en .
+
+dpp-ac:DeleteResource
+    rdf:type owl:NamedIndividual , odrl:Action ;
+    skos:prefLabel "Delete"@en ;
+    skos:definition
+        """Remove a DPP resource record, subject to data retention
+         obligations."""@en .
+
+dpp-ac:DelegateAccess
+    rdf:type owl:NamedIndividual , odrl:Action ;
+    skos:prefLabel "Delegate"@en ;
+    skos:definition
+        """Transfer a subset of one's own access rights to another
+         Principal for a bounded scope and time period."""@en .
+
+
+# ============================================================
+# ACCESS CONTEXT CLASS HIERARCHY
+# ============================================================
+
+dpp-ac:AccessContext
+    rdf:type owl:Class ;
+    skos:prefLabel "Access Context"@en ;
+    skos:definition
+        """Environmental, temporal, geographic, or purpose-related
+         metadata that conditions the evaluation of an access
+         request."""@en .
+
+dpp-ac:TemporalContext
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-ac:AccessContext ;
+    skos:prefLabel "Temporal Context"@en ;
+    skos:definition
+        "A time window within which access is permitted."@en .
+
+dpp-ac:accessValidFrom
+    rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:TemporalContext ;
+    rdfs:range xsd:dateTime ;
+    skos:prefLabel "access valid from"@en ;
+    skos:definition
+        "The UTC date-time from which this temporal access window opens."@en .
+
+dpp-ac:accessValidUntil
+    rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:TemporalContext ;
+    rdfs:range xsd:dateTime ;
+    skos:prefLabel "access valid until"@en ;
+    skos:definition
+        "The UTC date-time at which this temporal access window closes."@en .
+
+dpp-ac:GeographicContext
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-ac:AccessContext ;
+    skos:prefLabel "Geographic Context"@en ;
+    skos:definition
+        "A jurisdictional constraint on where access may be exercised."@en .
+
+dpp-ac:jurisdictionCode
+    rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:GeographicContext ;
+    rdfs:range xsd:string ;
+    skos:prefLabel "jurisdiction code"@en ;
+    skos:definition
+        "The jurisdiction in which this access constraint applies."@en ;
+    skos:scopeNote
+        "ISO 3166-1 alpha-2 country code, or the literals EU or EEA."@en .
+
+dpp-ac:PurposeContext
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-ac:AccessContext ;
+    rdfs:subClassOf dpvo:Purpose ;
+    skos:prefLabel "Purpose Context"@en ;
+    skos:definition
+        """The declared purpose for which a Principal requests access,
+         per GDPR Article 5(1)(b) purpose limitation."""@en .
+
+dpp-ac:declaredPurpose
+    rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:PurposeContext ;
+    rdfs:range xsd:string ;
+    skos:prefLabel "declared purpose"@en ;
+    skos:definition
+        "A textual description of the purpose for which data access is requested."@en .
+
+dpp-ac:TrustContext
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-ac:AccessContext ;
+    skos:prefLabel "Trust Context"@en ;
+    skos:definition
+        """The assurance level of the authentication mechanism used
+         by the requesting Principal."""@en .
+
+dpp-ac:trustAssuranceLevel
+    rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:TrustContext ;
+    rdfs:range xsd:string ;
+    skos:prefLabel "trust assurance level"@en ;
+    skos:definition
+        "The eIDAS assurance level of the requester's authentication."@en ;
+    skos:scopeNote "eIDAS values: LOW, SUBSTANTIAL, HIGH."@en .
+
+dpp-ac:CertificationContext
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-ac:AccessContext ;
+    skos:prefLabel "Certification Context"@en ;
+    skos:definition
+        """Evidence of a certification held by the requesting Principal
+         that may unlock access to restricted DPP data."""@en .
+
+dpp-ac:certificationScheme
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain dpp-ac:CertificationContext ;
+    rdfs:range xsd:string ;
+    skos:prefLabel "certification scheme"@en ;
+    skos:definition
+        "The name or identifier of the certification scheme."@en .
+
+dpp-ac:certificationIsValid
+    rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:CertificationContext ;
+    rdfs:range xsd:boolean ;
+    skos:prefLabel "certification is valid"@en ;
+    skos:definition
+        "True if the referenced certification is currently valid and in good standing."@en .
+
+
+# ============================================================
+# DELEGATION CLASS
+# ============================================================
+
+dpp-ac:Delegation
+    rdf:type owl:Class ;
+    rdfs:subClassOf prov:Activity ;
+    skos:prefLabel "Delegation"@en ;
+    skos:definition
+        """A bounded, time-limited transfer of a subset of access rights
+         from one Principal to another."""@en .
+
+dpp-ac:delegatedBy
+    rdf:type owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:Delegation ;
+    rdfs:range dpp-ac:Principal ;
+    skos:prefLabel "delegated by"@en ;
+    skos:definition
+        "The Principal who grants delegated access rights."@en .
+
+dpp-ac:delegatedTo
+    rdf:type owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:Delegation ;
+    rdfs:range dpp-ac:Principal ;
+    skos:prefLabel "delegated to"@en ;
+    skos:definition
+        "The Principal who receives delegated access rights."@en .
+
+dpp-ac:delegationCoversResource
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain dpp-ac:Delegation ;
+    rdfs:range dpp-ac:DPPResource ;
+    skos:prefLabel "delegation covers resource"@en ;
+    skos:definition
+        "The DPP resource(s) over which delegated rights are granted."@en .
+
+dpp-ac:delegationCoversAction
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain dpp-ac:Delegation ;
+    rdfs:range odrl:Action ;
+    skos:prefLabel "delegation covers action"@en ;
+    skos:definition
+        "The action(s) the delegatee is authorised to perform."@en .
+
+dpp-ac:delegationValidFrom
+    rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:Delegation ;
+    rdfs:range xsd:dateTime ;
+    skos:prefLabel "delegation valid from"@en ;
+    skos:definition
+        "The UTC date-time from which the delegation is active."@en .
+
+dpp-ac:delegationValidUntil
+    rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:Delegation ;
+    rdfs:range xsd:dateTime ;
+    skos:prefLabel "delegation valid until"@en ;
+    skos:definition
+        "The UTC date-time at which the delegation expires."@en .
+
+dpp-ac:delegationDepth
+    rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:Delegation ;
+    rdfs:range xsd:integer ;
+    skos:prefLabel "delegation depth"@en ;
+    skos:definition
+        "The number of sub-delegation hops permitted from this delegation."@en ;
+    skos:scopeNote
+        "Maximum allowed value is 1. Sub-delegation is prohibited by policy."@en .
+
+dpp-ac:delegationIsActive
+    rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:Delegation ;
+    rdfs:range xsd:boolean ;
+    skos:prefLabel "delegation is active"@en ;
+    skos:definition
+        """True if this delegation is currently within its valid time window
+         and has not been revoked."""@en .
+
+
+# ============================================================
+# PHASE 5 — ABAC: ATTRIBUTE CONSTRAINT CLASS & PROPERTIES
+# ============================================================
+
+dpp-ac:AttributeConstraint
+    rdf:type owl:Class ;
+    skos:prefLabel "Attribute Constraint"@en ;
+    skos:definition
+        """A condition on a named attribute of the requesting Principal
+         or target resource that must be satisfied for a policy's
+         permissions to apply."""@en .
+
+dpp-ac:hasAttributeConstraint
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain dpp-ac:AccessPolicy ;
+    rdfs:range dpp-ac:AttributeConstraint ;
+    skos:prefLabel "has attribute constraint"@en ;
+    skos:definition
+        """Links an AccessPolicy to one or more AttributeConstraints that
+         must all be satisfied for the policy's permissions to activate."""@en .
+
+dpp-ac:constraintAttribute
+    rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:AttributeConstraint ;
+    rdfs:range xsd:string ;
+    skos:prefLabel "constraint attribute"@en ;
+    skos:definition
+        "The name of the attribute being constrained."@en ;
+    skos:scopeNote
+        "E.g., trustAssuranceLevel, resourceSensitivity, certificationIsValid."@en .
+
+dpp-ac:constraintOperator
+    rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:AttributeConstraint ;
+    rdfs:range xsd:string ;
+    skos:prefLabel "constraint operator"@en ;
+    skos:definition
+        "The comparison operator applied to the attribute value."@en ;
+    skos:scopeNote "Allowed values: EQ, NEQ, GT, LT, GTE, LTE, IN."@en .
+
+dpp-ac:constraintValue
+    rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:domain dpp-ac:AttributeConstraint ;
+    rdfs:range xsd:string ;
+    skos:prefLabel "constraint value"@en ;
+    skos:definition
+        "The value against which the attribute is compared."@en .
+
+
+# ============================================================
+# PHASE 5 — PBAC: PURPOSE-POLICY BINDING PROPERTY
+# ============================================================
+
+dpp-ac:permittedPurpose
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain dpp-ac:AccessPolicy ;
+    rdfs:range xsd:string ;
+    skos:prefLabel "permitted purpose"@en ;
+    skos:definition
+        """A purpose code that an access request must declare to activate
+         this policy's permissions."""@en ;
+    skos:scopeNote
+        """Must be one of the purpose codes defined in PurposeContextShape:
+         MAINTENANCE, COMPLIANCE_AUDIT, RECYCLING_PROCESSING,
+         MARKET_SURVEILLANCE, CUSTOMS_INSPECTION, CONSUMER_INFORMATION,
+         RESEARCH_DEVELOPMENT, SUPPLY_CHAIN_DUE_DILIGENCE."""@en .

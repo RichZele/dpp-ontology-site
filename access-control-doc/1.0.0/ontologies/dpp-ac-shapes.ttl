@@ -1,0 +1,449 @@
+@prefix dpp-ac:    <http://w3id.org/dpp/access-control#> .
+@prefix dpp-data:  <http://w3id.org/dpp/data-categories#> .
+@prefix dpp-role:  <http://w3id.org/dpp/roles#> .
+@prefix odrl:      <http://www.w3.org/ns/odrl/2/> .
+@prefix prov:      <http://www.w3.org/ns/prov#> .
+@prefix sh:        <http://www.w3.org/ns/shacl#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:   <http://purl.org/dc/terms/> .
+
+# ============================================================
+# ONTOLOGY DECLARATION — SHACL SHAPES GRAPH
+# ============================================================
+
+<http://w3id.org/dpp/access-control/shapes>
+    rdf:type owl:Ontology ;
+    owl:versionIRI <http://w3id.org/dpp/access-control/shapes/1.0.0> ;
+    owl:imports <http://w3id.org/dpp/access-control> ;
+    dcterms:title "DPP Access Control SHACL Shapes"@en ;
+    dcterms:description
+        """SHACL node and property shapes co-designed with the dpp-ac core T-Box.
+         Operates under the Closed World Assumption. Kept separate from the OWL
+         ontology to prevent reasoner misinterpretation of SHACL triples."""@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2026-04-01"^^xsd:date ;
+    owl:versionInfo "1.0.0" .
+
+
+# ============================================================
+# TASK 3.1 — PrincipalShape
+# ============================================================
+
+dpp-ac:PrincipalShape
+    rdf:type sh:NodeShape ;
+    sh:targetClass dpp-ac:Principal ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type rdfs:label skos:prefLabel
+                           dcterms:identifier prov:wasAssociatedWith ) ;
+    sh:property [
+        sh:path dpp-ac:hasRole ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class dpp-ac:Role ;
+        sh:severity sh:Violation ;
+        sh:message "Every Principal must have exactly one Role."@en
+    ] ;
+    sh:property [
+        sh:path dcterms:identifier ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+        sh:minLength 3 ;
+        sh:severity sh:Violation ;
+        sh:message "Every Principal must have a non-empty dcterms:identifier."@en
+    ] .
+
+
+# ============================================================
+# TASK 3.2 — AccessRequestShape
+# ============================================================
+
+dpp-ac:AccessRequestShape
+    rdf:type sh:NodeShape ;
+    sh:targetClass dpp-ac:AccessRequest ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type rdfs:label prov:startedAtTime ) ;
+    sh:property [
+        sh:path dpp-ac:requestedBy ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class dpp-ac:Principal ;
+        sh:severity sh:Violation ;
+        sh:message "An AccessRequest must reference exactly one Principal."@en
+    ] ;
+    sh:property [
+        sh:path dpp-ac:requestedAction ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class odrl:Action ;
+        sh:severity sh:Violation ;
+        sh:message "An AccessRequest must specify exactly one odrl:Action."@en
+    ] ;
+    sh:property [
+        sh:path dpp-ac:requestedResource ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class dpp-ac:DPPResource ;
+        sh:severity sh:Violation ;
+        sh:message "An AccessRequest must target exactly one DPPResource."@en
+    ] ;
+    sh:property [
+        sh:path dpp-ac:requestTimestamp ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:dateTime ;
+        sh:severity sh:Violation ;
+        sh:message "An AccessRequest must carry a requestTimestamp."@en
+    ] ;
+    sh:property [
+        sh:path dpp-ac:requestContext ;
+        sh:class dpp-ac:AccessContext ;
+        sh:severity sh:Warning ;
+        sh:message
+            """An AccessRequest should include an AccessContext for
+             context-aware policy evaluation."""@en
+    ] .
+
+
+# ============================================================
+# TASK 3.3 — DPPResourceShape
+# ============================================================
+
+dpp-ac:DPPResourceShape
+    rdf:type sh:NodeShape ;
+    sh:targetClass dpp-ac:DPPResource ;
+    sh:property [
+        sh:path dpp-ac:resourceSensitivity ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:in ( "PUBLIC" "RESTRICTED" "CONFIDENTIAL" "STRICTLY_CONFIDENTIAL" ) ;
+        sh:severity sh:Violation ;
+        sh:message "Every DPPResource must declare a sensitivity level."@en
+    ] ;
+    sh:property [
+        sh:path dpp-ac:belongsToModule ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class dpp-data:DataCategory ;
+        sh:severity sh:Violation ;
+        sh:message "Every DPPResource must belong to exactly one DataCategory."@en
+    ] ;
+    sh:property [
+        sh:path dpp-ac:ownedBy ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class dpp-ac:Principal ;
+        sh:severity sh:Violation ;
+        sh:message "Every DPPResource must have exactly one owner."@en
+    ] .
+
+
+# ============================================================
+# TASK 3.4 — AccessPolicyShape
+# ============================================================
+
+dpp-ac:AccessPolicyShape
+    rdf:type sh:NodeShape ;
+    sh:targetClass dpp-ac:AccessPolicy ;
+    sh:property [
+        sh:path dpp-ac:appliesToRole ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class dpp-ac:Role ;
+        sh:severity sh:Violation ;
+        sh:message "A policy must apply to exactly one Role."@en
+    ] ;
+    sh:property [
+        sh:path odrl:permission ;
+        sh:minCount 1 ;
+        sh:class odrl:Permission ;
+        sh:severity sh:Violation ;
+        sh:message "A policy must define at least one Permission."@en
+    ] ;
+    sh:property [
+        sh:path dpp-ac:policyOwner ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class dpp-ac:Principal ;
+        sh:severity sh:Violation ;
+        sh:message "A policy must have exactly one owner."@en
+    ] .
+
+
+# ============================================================
+# TASK 3.5 — AccessDecisionShape
+# ============================================================
+
+dpp-ac:AccessDecisionShape
+    rdf:type sh:NodeShape ;
+    sh:targetClass dpp-ac:AccessDecision ;
+    sh:property [
+        sh:path dpp-ac:decidesOn ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class dpp-ac:AccessRequest ;
+        sh:severity sh:Violation ;
+        sh:message "A Decision must reference exactly one AccessRequest."@en
+    ] ;
+    sh:property [
+        sh:path dpp-ac:decisionOutcome ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:in ( "GRANT" "DENY" "DELEGATE" "PENDING" ) ;
+        sh:severity sh:Violation ;
+        sh:message "decisionOutcome must be GRANT, DENY, DELEGATE, or PENDING."@en
+    ] ;
+    sh:property [
+        sh:path dpp-ac:decisionTimestamp ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:dateTime ;
+        sh:severity sh:Violation ;
+        sh:message "A Decision must carry a decisionTimestamp."@en
+    ] .
+
+
+# ============================================================
+# TASK 3.6 — TemporalContextShape (with SPARQL cross-property constraint)
+# ============================================================
+
+dpp-ac:TemporalContextShape
+    rdf:type sh:NodeShape ;
+    sh:targetClass dpp-ac:TemporalContext ;
+    sh:property [
+        sh:path dpp-ac:accessValidFrom ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:dateTime ;
+        sh:severity sh:Violation ;
+        sh:message "TemporalContext requires accessValidFrom."@en
+    ] ;
+    sh:property [
+        sh:path dpp-ac:accessValidUntil ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:dateTime ;
+        sh:severity sh:Violation ;
+        sh:message "TemporalContext requires accessValidUntil."@en
+    ] ;
+    sh:sparql [
+        sh:message "accessValidUntil must be strictly after accessValidFrom."@en ;
+        sh:severity sh:Violation ;
+        sh:prefixes <http://w3id.org/dpp/access-control#> ;
+        sh:select """""
+            PREFIX dpp-ac: <http://w3id.org/dpp/access-control#>
+            SELECT $this WHERE {
+                $this dpp-ac:accessValidFrom  ?from ;
+                      dpp-ac:accessValidUntil ?until .
+                FILTER (?until <= ?from)
+            }
+        """""
+    ] .
+
+
+# ============================================================
+# TASK 3.7 — DelegationShape (with SPARQL ownership check)
+# ============================================================
+
+dpp-ac:DelegationShape
+    rdf:type sh:NodeShape ;
+    sh:targetClass dpp-ac:Delegation ;
+    sh:property [
+        sh:path dpp-ac:delegatedBy ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class dpp-ac:Principal ;
+        sh:severity sh:Violation ;
+        sh:message "A Delegation must have exactly one delegating Principal."@en
+    ] ;
+    sh:property [
+        sh:path dpp-ac:delegatedTo ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class dpp-ac:Principal ;
+        sh:severity sh:Violation ;
+        sh:message "A Delegation must target exactly one receiving Principal."@en
+    ] ;
+    sh:property [
+        sh:path dpp-ac:delegationValidFrom ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:dateTime ;
+        sh:severity sh:Violation ;
+        sh:message "A Delegation must declare a valid-from timestamp."@en
+    ] ;
+    sh:property [
+        sh:path dpp-ac:delegationValidUntil ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:dateTime ;
+        sh:severity sh:Violation ;
+        sh:message "A Delegation must declare a valid-until timestamp."@en
+    ] ;
+    sh:property [
+        sh:path dpp-ac:delegationDepth ;
+        sh:maxInclusive 1 ;
+        sh:datatype xsd:integer ;
+        sh:severity sh:Violation ;
+        sh:message "Delegation depth must not exceed 1 (no sub-delegation)."@en
+    ] ;
+    sh:sparql [
+        sh:message "The delegating Principal must be the resource owner."@en ;
+        sh:severity sh:Violation ;
+        sh:select """""
+            PREFIX dpp-ac: <http://w3id.org/dpp/access-control#>
+            SELECT $this WHERE {
+                $this dpp-ac:delegatedBy             ?delegator ;
+                      dpp-ac:delegationCoversResource ?res .
+                ?res  dpp-ac:ownedBy                 ?owner .
+                FILTER (?delegator != ?owner)
+            }
+        """""
+    ] .
+
+
+# ============================================================
+# TASK 3.8 — PurposeContextShape (closed value set)
+# ============================================================
+
+dpp-ac:PurposeContextShape
+    rdf:type sh:NodeShape ;
+    sh:targetClass dpp-ac:PurposeContext ;
+    sh:property [
+        sh:path dpp-ac:declaredPurpose ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:in (
+            "MAINTENANCE"
+            "COMPLIANCE_AUDIT"
+            "RECYCLING_PROCESSING"
+            "MARKET_SURVEILLANCE"
+            "CUSTOMS_INSPECTION"
+            "CONSUMER_INFORMATION"
+            "RESEARCH_DEVELOPMENT"
+            "SUPPLY_CHAIN_DUE_DILIGENCE"
+        ) ;
+        sh:severity sh:Violation ;
+        sh:message "declaredPurpose must be one of the defined purpose codes."@en
+    ] .
+
+
+# ============================================================
+# ADDITIONAL SHAPES — DataCategory & Role (added in Phase 4)
+# ============================================================
+
+dpp-ac:DataCategoryShape
+    rdf:type sh:NodeShape ;
+    sh:targetClass dpp-data:DataCategory ;
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:minCount 1 ;
+        sh:datatype rdf:langString ;
+        sh:severity sh:Violation ;
+        sh:message "Every DataCategory must have a skos:prefLabel."@en
+    ] ;
+    sh:property [
+        sh:path dpp-ac:resourceSensitivity ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:in ( "PUBLIC" "RESTRICTED" "CONFIDENTIAL" "STRICTLY_CONFIDENTIAL" ) ;
+        sh:severity sh:Violation ;
+        sh:message "Every DataCategory must declare a sensitivity level."@en
+    ] .
+
+dpp-ac:RoleShape
+    rdf:type sh:NodeShape ;
+    sh:targetClass dpp-ac:Role ;
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:minCount 1 ;
+        sh:datatype rdf:langString ;
+        sh:severity sh:Violation ;
+        sh:message "Every Role must have a skos:prefLabel."@en
+    ] .
+
+dpp-ac:GeographicContextShape
+    rdf:type sh:NodeShape ;
+    sh:targetClass dpp-ac:GeographicContext ;
+    sh:property [
+        sh:path dpp-ac:jurisdictionCode ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:severity sh:Violation ;
+        sh:message "A GeographicContext must specify a jurisdictionCode."@en
+    ] .
+
+dpp-ac:TrustContextShape
+    rdf:type sh:NodeShape ;
+    sh:targetClass dpp-ac:TrustContext ;
+    sh:property [
+        sh:path dpp-ac:trustAssuranceLevel ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:in ( "LOW" "SUBSTANTIAL" "HIGH" ) ;
+        sh:severity sh:Violation ;
+        sh:message "trustAssuranceLevel must be LOW, SUBSTANTIAL, or HIGH."@en
+    ] .
+
+dpp-ac:CertificationContextShape
+    rdf:type sh:NodeShape ;
+    sh:targetClass dpp-ac:CertificationContext ;
+    sh:property [
+        sh:path dpp-ac:certificationScheme ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+        sh:severity sh:Violation ;
+        sh:message "A CertificationContext must name at least one certification scheme."@en
+    ] ;
+    sh:property [
+        sh:path dpp-ac:certificationIsValid ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:boolean ;
+        sh:severity sh:Violation ;
+        sh:message "A CertificationContext must assert certificationIsValid."@en
+    ] .
+
+
+# ============================================================
+# PHASE 5 — AttributeConstraintShape (ABAC)
+# ============================================================
+
+dpp-ac:AttributeConstraintShape
+    rdf:type sh:NodeShape ;
+    sh:targetClass dpp-ac:AttributeConstraint ;
+    sh:property [
+        sh:path dpp-ac:constraintAttribute ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:minLength 1 ;
+        sh:severity sh:Violation ;
+        sh:message "An AttributeConstraint must name the attribute being constrained."@en
+    ] ;
+    sh:property [
+        sh:path dpp-ac:constraintOperator ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:in ( "EQ" "NEQ" "GT" "LT" "GTE" "LTE" "IN" ) ;
+        sh:severity sh:Violation ;
+        sh:message "constraintOperator must be EQ, NEQ, GT, LT, GTE, LTE, or IN."@en
+    ] ;
+    sh:property [
+        sh:path dpp-ac:constraintValue ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:severity sh:Violation ;
+        sh:message "An AttributeConstraint must specify a constraintValue."@en
+    ] .

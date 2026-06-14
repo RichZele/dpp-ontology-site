@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:odrl="http://www.w3.org/ns/odrl/2/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <owl:Ontology rdf:about="http://w3id.org/dpp/access-control">
+    <owl:versionIRI rdf:resource="http://w3id.org/dpp/access-control/1.0.0"/>
+    <owl:imports rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+    <owl:imports rdf:resource="http://www.w3.org/ns/prov#"/>
+    <dcterms:title xml:lang="en">DPP Access Control Ontology Module</dcterms:title>
+    <dcterms:description xml:lang="en">A modular semantic framework for role-, attribute-, relationship-, and
+         purpose-based access control over Digital Product Passport data,
+         aligned with ESPR, GDPR, and ODRL 2.2.</dcterms:description>
+    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-01</dcterms:created>
+    <dcterms:creator xml:lang="en">Jönköping University — Semantic Web Lab</dcterms:creator>
+    <owl:versionInfo>1.0.0</owl:versionInfo>
+  </owl:Ontology>
+  <owl:ObjectProperty rdf:about="http://w3id.org/dpp/access-control#decidesOn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#AccessDecision"/>
+    <rdfs:range rdf:resource="http://w3id.org/dpp/access-control#AccessRequest"/>
+    <skos:prefLabel xml:lang="en">decides on</skos:prefLabel>
+    <skos:definition xml:lang="en">Links this AccessDecision to the AccessRequest it resolves.</skos:definition>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/dpp/access-control#constraintValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#AttributeConstraint"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <skos:prefLabel xml:lang="en">constraint value</skos:prefLabel>
+    <skos:definition xml:lang="en">The value against which the attribute is compared.</skos:definition>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/dpp/access-control#delegationDepth">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#Delegation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <skos:prefLabel xml:lang="en">delegation depth</skos:prefLabel>
+    <skos:definition xml:lang="en">The number of sub-delegation hops permitted from this delegation.</skos:definition>
+    <skos:scopeNote xml:lang="en">Maximum allowed value is 1. Sub-delegation is prohibited by policy.</skos:scopeNote>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://w3id.org/dpp/access-control#hasAttributeConstraint">
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#AccessPolicy"/>
+    <rdfs:range rdf:resource="http://w3id.org/dpp/access-control#AttributeConstraint"/>
+    <skos:prefLabel xml:lang="en">has attribute constraint</skos:prefLabel>
+    <skos:definition xml:lang="en">Links an AccessPolicy to one or more AttributeConstraints that
+         must all be satisfied for the policy's permissions to activate.</skos:definition>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/dpp/access-control#certificationIsValid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#CertificationContext"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <skos:prefLabel xml:lang="en">certification is valid</skos:prefLabel>
+    <skos:definition xml:lang="en">True if the referenced certification is currently valid and in good standing.</skos:definition>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/dpp/access-control#delegationValidFrom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#Delegation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <skos:prefLabel xml:lang="en">delegation valid from</skos:prefLabel>
+    <skos:definition xml:lang="en">The UTC date-time from which the delegation is active.</skos:definition>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://w3id.org/dpp/access-control#delegationCoversResource">
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#Delegation"/>
+    <rdfs:range rdf:resource="http://w3id.org/dpp/access-control#DPPResource"/>
+    <skos:prefLabel xml:lang="en">delegation covers resource</skos:prefLabel>
+    <skos:definition xml:lang="en">The DPP resource(s) over which delegated rights are granted.</skos:definition>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://w3id.org/dpp/access-control#requestContext">
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#AccessRequest"/>
+    <rdfs:range rdf:resource="http://w3id.org/dpp/access-control#AccessContext"/>
+    <skos:prefLabel xml:lang="en">request context</skos:prefLabel>
+    <skos:definition xml:lang="en">Environmental or situational metadata that conditions the evaluation
+         of this access request.</skos:definition>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://w3id.org/dpp/access-control#appliesToRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#AccessPolicy"/>
+    <rdfs:range rdf:resource="http://w3id.org/dpp/access-control#Role"/>
+    <skos:prefLabel xml:lang="en">applies to role</skos:prefLabel>
+    <skos:definition xml:lang="en">The Role to which this AccessPolicy is addressed.</skos:definition>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://w3id.org/dpp/access-control#requestedResource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#AccessRequest"/>
+    <rdfs:range rdf:resource="http://w3id.org/dpp/access-control#DPPResource"/>
+    <skos:prefLabel xml:lang="en">requested resource</skos:prefLabel>
+    <skos:definition xml:lang="en">The DPP resource the Principal intends to access.</skos:definition>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://w3id.org/dpp/access-control#OrganisationPrincipal">
+    <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/access-control#Principal"/>
+    <skos:prefLabel xml:lang="en">Organisation Principal</skos:prefLabel>
+    <skos:definition xml:lang="en">A legal entity or organisation acting as a DPP stakeholder.</skos:definition>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/dpp/access-control#constraintAttribute">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#AttributeConstraint"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <skos:prefLabel xml:lang="en">constraint attribute</skos:prefLabel>
+    <skos:definition xml:lang="en">The name of the attribute being constrained.</skos:definition>
+    <skos:scopeNote xml:lang="en">E.g., trustAssuranceLevel, resourceSensitivity, certificationIsValid.</skos:scopeNote>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/dpp/access-control#delegationIsActive">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#Delegation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <skos:prefLabel xml:lang="en">delegation is active</skos:prefLabel>
+    <skos:definition xml:lang="en">True if this delegation is currently within its valid time window
+         and has not been revoked.</skos:definition>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/dpp/access-control#delegationValidUntil">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#Delegation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <skos:prefLabel xml:lang="en">delegation valid until</skos:prefLabel>
+    <skos:definition xml:lang="en">The UTC date-time at which the delegation expires.</skos:definition>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://w3id.org/dpp/access-control#belongsToModule">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#DPPResource"/>
+    <rdfs:range rdf:resource="http://w3id.org/dpp/data-categories#DataCategory"/>
+    <skos:prefLabel xml:lang="en">belongs to module</skos:prefLabel>
+    <skos:definition xml:lang="en">The ESPR-defined data category (DPP module) that contains this resource.</skos:definition>
+  </owl:ObjectProperty>
+  <owl:NamedIndividual rdf:about="http://w3id.org/dpp/access-control#DeleteResource">
+    <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+    <skos:prefLabel xml:lang="en">Delete</skos:prefLabel>
+    <skos:definition xml:lang="en">Remove a DPP resource record, subject to data retention
+         obligations.</skos:definition>
+  </owl:NamedIndividual>
+  <owl:ObjectProperty rdf:about="http://w3id.org/dpp/access-control#policyOwner">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#AccessPolicy"/>
+    <rdfs:range rdf:resource="http://w3id.org/dpp/access-control#Principal"/>
+    <skos:prefLabel xml:lang="en">policy owner</skos:prefLabel>
+    <skos:definition xml:lang="en">The Principal responsible for the lifecycle of this policy.</skos:definition>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/dpp/access-control#permittedPurpose">
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#AccessPolicy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <skos:prefLabel xml:lang="en">permitted purpose</skos:prefLabel>
+    <skos:definition xml:lang="en">A purpose code that an access request must declare to activate
+         this policy's permissions.</skos:definition>
+    <skos:scopeNote xml:lang="en">Must be one of the purpose codes defined in PurposeContextShape:
+         MAINTENANCE, COMPLIANCE_AUDIT, RECYCLING_PROCESSING,
+         MARKET_SURVEILLANCE, CUSTOMS_INSPECTION, CONSUMER_INFORMATION,
+         RESEARCH_DEVELOPMENT, SUPPLY_CHAIN_DUE_DILIGENCE.</skos:scopeNote>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://w3id.org/dpp/access-control#delegationCoversAction">
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#Delegation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+    <skos:prefLabel xml:lang="en">delegation covers action</skos:prefLabel>
+    <skos:definition xml:lang="en">The action(s) the delegatee is authorised to perform.</skos:definition>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/dpp/access-control#trustAssuranceLevel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#TrustContext"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <skos:prefLabel xml:lang="en">trust assurance level</skos:prefLabel>
+    <skos:definition xml:lang="en">The eIDAS assurance level of the requester's authentication.</skos:definition>
+    <skos:scopeNote xml:lang="en">eIDAS values: LOW, SUBSTANTIAL, HIGH.</skos:scopeNote>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://w3id.org/dpp/access-control#requestedAction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#AccessRequest"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+    <skos:prefLabel xml:lang="en">requested action</skos:prefLabel>
+    <skos:definition xml:lang="en">The CRUD action the Principal intends to perform.</skos:definition>
+  </owl:ObjectProperty>
+  <owl:NamedIndividual rdf:about="http://w3id.org/dpp/access-control#ReadResource">
+    <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+    <skos:prefLabel xml:lang="en">Read</skos:prefLabel>
+    <skos:definition xml:lang="en">Retrieve and inspect the content of a DPP resource without
+         modifying it.</skos:definition>
+  </owl:NamedIndividual>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/dpp/access-control#decisionTimestamp">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#AccessDecision"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <skos:prefLabel xml:lang="en">decision timestamp</skos:prefLabel>
+    <skos:definition xml:lang="en">The UTC date-time at which the access decision was recorded.</skos:definition>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/dpp/access-control#accessValidUntil">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#TemporalContext"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <skos:prefLabel xml:lang="en">access valid until</skos:prefLabel>
+    <skos:definition xml:lang="en">The UTC date-time at which this temporal access window closes.</skos:definition>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://w3id.org/dpp/access-control#appliedPolicy">
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#AccessDecision"/>
+    <rdfs:range rdf:resource="http://w3id.org/dpp/access-control#AccessPolicy"/>
+    <skos:prefLabel xml:lang="en">applied policy</skos:prefLabel>
+    <skos:definition xml:lang="en">The AccessPolicy (or policies) that were evaluated to produce
+         this decision.</skos:definition>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/dpp/access-control#constraintOperator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#AttributeConstraint"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <skos:prefLabel xml:lang="en">constraint operator</skos:prefLabel>
+    <skos:definition xml:lang="en">The comparison operator applied to the attribute value.</skos:definition>
+    <skos:scopeNote xml:lang="en">Allowed values: EQ, NEQ, GT, LT, GTE, LTE, IN.</skos:scopeNote>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/dpp/access-control#resourceSensitivity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#DPPResource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <skos:prefLabel xml:lang="en">resource sensitivity</skos:prefLabel>
+    <skos:definition xml:lang="en">Classification of the sensitivity level of this DPP resource.</skos:definition>
+    <skos:scopeNote xml:lang="en">Allowed values: PUBLIC, RESTRICTED, CONFIDENTIAL,
+         STRICTLY_CONFIDENTIAL.</skos:scopeNote>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/dpp/access-control#policyValidUntil">
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#AccessPolicy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <skos:prefLabel xml:lang="en">policy valid until</skos:prefLabel>
+    <skos:definition xml:lang="en">The UTC date-time after which this policy expires.</skos:definition>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://w3id.org/dpp/access-control#requestedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#AccessRequest"/>
+    <rdfs:range rdf:resource="http://w3id.org/dpp/access-control#Principal"/>
+    <skos:prefLabel xml:lang="en">requested by</skos:prefLabel>
+    <skos:definition xml:lang="en">Links an AccessRequest to the Principal who submitted it.</skos:definition>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/dpp/access-control#decisionOutcome">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#AccessDecision"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <skos:prefLabel xml:lang="en">decision outcome</skos:prefLabel>
+    <skos:definition xml:lang="en">The result of evaluating the access request.</skos:definition>
+    <skos:scopeNote xml:lang="en">Allowed values: GRANT, DENY, DELEGATE, PENDING.</skos:scopeNote>
+  </owl:DatatypeProperty>
+  <owl:NamedIndividual rdf:about="http://w3id.org/dpp/access-control#DelegateAccess">
+    <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+    <skos:prefLabel xml:lang="en">Delegate</skos:prefLabel>
+    <skos:definition xml:lang="en">Transfer a subset of one's own access rights to another
+         Principal for a bounded scope and time period.</skos:definition>
+  </owl:NamedIndividual>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/dpp/access-control#declaredPurpose">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#PurposeContext"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <skos:prefLabel xml:lang="en">declared purpose</skos:prefLabel>
+    <skos:definition xml:lang="en">A textual description of the purpose for which data access is requested.</skos:definition>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/dpp/access-control#requestTimestamp">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#AccessRequest"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <skos:prefLabel xml:lang="en">request timestamp</skos:prefLabel>
+    <skos:definition xml:lang="en">The UTC date-time at which the AccessRequest was submitted.</skos:definition>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://w3id.org/dpp/access-control#hasRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#Principal"/>
+    <rdfs:range rdf:resource="http://w3id.org/dpp/access-control#Role"/>
+    <skos:prefLabel xml:lang="en">has role</skos:prefLabel>
+    <skos:definition xml:lang="en">Assigns a single Access Control Role to a Principal.</skos:definition>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/dpp/access-control#certificationScheme">
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#CertificationContext"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <skos:prefLabel xml:lang="en">certification scheme</skos:prefLabel>
+    <skos:definition xml:lang="en">The name or identifier of the certification scheme.</skos:definition>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://w3id.org/dpp/access-control#HumanPrincipal">
+    <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/access-control#Principal"/>
+    <skos:prefLabel xml:lang="en">Human Principal</skos:prefLabel>
+    <skos:definition xml:lang="en">A natural person acting as a DPP data requester or owner.</skos:definition>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://w3id.org/dpp/access-control#delegatedTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#Delegation"/>
+    <rdfs:range rdf:resource="http://w3id.org/dpp/access-control#Principal"/>
+    <skos:prefLabel xml:lang="en">delegated to</skos:prefLabel>
+    <skos:definition xml:lang="en">The Principal who receives delegated access rights.</skos:definition>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/dpp/access-control#policyValidFrom">
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#AccessPolicy"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <skos:prefLabel xml:lang="en">policy valid from</skos:prefLabel>
+    <skos:definition xml:lang="en">The UTC date-time from which this policy is active.</skos:definition>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://w3id.org/dpp/access-control#SystemPrincipal">
+    <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/access-control#Principal"/>
+    <skos:prefLabel xml:lang="en">System Principal</skos:prefLabel>
+    <skos:definition xml:lang="en">An automated agent or software system acting as a DPP data
+         consumer or producer.</skos:definition>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/dpp/access-control#accessValidFrom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#TemporalContext"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <skos:prefLabel xml:lang="en">access valid from</skos:prefLabel>
+    <skos:definition xml:lang="en">The UTC date-time from which this temporal access window opens.</skos:definition>
+  </owl:DatatypeProperty>
+  <owl:NamedIndividual rdf:about="http://w3id.org/dpp/access-control#UpdateResource">
+    <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+    <skos:prefLabel xml:lang="en">Update</skos:prefLabel>
+    <skos:definition xml:lang="en">Modify the content of an existing DPP resource record.</skos:definition>
+  </owl:NamedIndividual>
+  <owl:ObjectProperty rdf:about="http://w3id.org/dpp/access-control#delegatedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#Delegation"/>
+    <rdfs:range rdf:resource="http://w3id.org/dpp/access-control#Principal"/>
+    <skos:prefLabel xml:lang="en">delegated by</skos:prefLabel>
+    <skos:definition xml:lang="en">The Principal who grants delegated access rights.</skos:definition>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://w3id.org/dpp/access-control#ownedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#DPPResource"/>
+    <rdfs:range rdf:resource="http://w3id.org/dpp/access-control#Principal"/>
+    <skos:prefLabel xml:lang="en">owned by</skos:prefLabel>
+    <skos:definition xml:lang="en">The Principal who is the authoritative data owner of this
+         DPP resource and may grant or revoke access.</skos:definition>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/dpp/access-control#jurisdictionCode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#GeographicContext"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <skos:prefLabel xml:lang="en">jurisdiction code</skos:prefLabel>
+    <skos:definition xml:lang="en">The jurisdiction in which this access constraint applies.</skos:definition>
+    <skos:scopeNote xml:lang="en">ISO 3166-1 alpha-2 country code, or the literals EU or EEA.</skos:scopeNote>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/dpp/access-control#conflictResolutionApplied">
+    <rdfs:domain rdf:resource="http://w3id.org/dpp/access-control#AccessDecision"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <skos:prefLabel xml:lang="en">conflict resolution applied</skos:prefLabel>
+    <skos:definition xml:lang="en">True if a deny-overrides conflict resolution strategy was
+         invoked during this decision evaluation.</skos:definition>
+  </owl:DatatypeProperty>
+  <owl:NamedIndividual rdf:about="http://w3id.org/dpp/access-control#CreateResource">
+    <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+    <skos:prefLabel xml:lang="en">Create</skos:prefLabel>
+    <skos:definition xml:lang="en">Introduce a new data record into a DPP module where no prior
+         record exists for that resource identifier.</skos:definition>
+  </owl:NamedIndividual>
+  <owl:Class rdf:about="http://w3id.org/dpp/access-control#PurposeContext">
+    <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/access-control#AccessContext"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#Purpose"/>
+    <skos:prefLabel xml:lang="en">Purpose Context</skos:prefLabel>
+    <skos:definition xml:lang="en">The declared purpose for which a Principal requests access,
+         per GDPR Article 5(1)(b) purpose limitation.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/dpp/access-control#GeographicContext">
+    <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/access-control#AccessContext"/>
+    <skos:prefLabel xml:lang="en">Geographic Context</skos:prefLabel>
+    <skos:definition xml:lang="en">A jurisdictional constraint on where access may be exercised.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/dpp/access-control#AccessRequest">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <skos:prefLabel xml:lang="en">Access Request</skos:prefLabel>
+    <skos:definition xml:lang="en">A formal, time-stamped expression of intent by a Principal
+         to perform a specific Action on a specific DPP resource.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/dpp/access-control#AccessContext">
+    <skos:prefLabel xml:lang="en">Access Context</skos:prefLabel>
+    <skos:definition xml:lang="en">Environmental, temporal, geographic, or purpose-related
+         metadata that conditions the evaluation of an access
+         request.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/dpp/access-control#Principal">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/odrl/2/Party"/>
+    <skos:prefLabel xml:lang="en">Principal</skos:prefLabel>
+    <skos:definition xml:lang="en">Any entity — human, organisation, or automated system — that
+         may request access to DPP resources.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/dpp/access-control#DPPResource">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/odrl/2/Asset"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <skos:prefLabel xml:lang="en">DPP Resource</skos:prefLabel>
+    <skos:definition xml:lang="en">A discrete, addressable unit of data within a Digital Product
+         Passport that may be the target of an access request.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/dpp/access-control#AccessPolicy">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/odrl/2/Policy"/>
+    <skos:prefLabel xml:lang="en">DPP Access Policy</skos:prefLabel>
+    <skos:definition xml:lang="en">A declarative specification of permissions and prohibitions
+         over DPP resources, scoped to a Role and optionally
+         conditioned on contextual constraints.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/dpp/access-control#CertificationContext">
+    <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/access-control#AccessContext"/>
+    <skos:prefLabel xml:lang="en">Certification Context</skos:prefLabel>
+    <skos:definition xml:lang="en">Evidence of a certification held by the requesting Principal
+         that may unlock access to restricted DPP data.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/dpp/access-control#Delegation">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <skos:prefLabel xml:lang="en">Delegation</skos:prefLabel>
+    <skos:definition xml:lang="en">A bounded, time-limited transfer of a subset of access rights
+         from one Principal to another.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/dpp/access-control#Role">
+    <skos:prefLabel xml:lang="en">Access Control Role</skos:prefLabel>
+    <skos:definition xml:lang="en">A named function or responsibility assigned to a Principal
+         that determines which access policies apply.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/dpp/access-control#AccessDecision">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <skos:prefLabel xml:lang="en">Access Decision</skos:prefLabel>
+    <skos:definition xml:lang="en">An immutable, time-stamped record of the outcome of evaluating
+         an AccessRequest against applicable AccessPolicies.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/dpp/access-control#TrustContext">
+    <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/access-control#AccessContext"/>
+    <skos:prefLabel xml:lang="en">Trust Context</skos:prefLabel>
+    <skos:definition xml:lang="en">The assurance level of the authentication mechanism used
+         by the requesting Principal.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/dpp/access-control#AttributeConstraint">
+    <skos:prefLabel xml:lang="en">Attribute Constraint</skos:prefLabel>
+    <skos:definition xml:lang="en">A condition on a named attribute of the requesting Principal
+         or target resource that must be satisfied for a policy's
+         permissions to apply.</skos:definition>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/dpp/access-control#TemporalContext">
+    <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/access-control#AccessContext"/>
+    <skos:prefLabel xml:lang="en">Temporal Context</skos:prefLabel>
+    <skos:definition xml:lang="en">A time window within which access is permitted.</skos:definition>
+  </owl:Class>
+</rdf:RDF>

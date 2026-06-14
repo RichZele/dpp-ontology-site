@@ -1,0 +1,25 @@
+@prefix dpp-ac:    <http://w3id.org/dpp/access-control#> .
+@prefix sp:        <http://spinrdf.org/sp#> .
+@prefix spin:      <http://spinrdf.org/spin#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms:   <http://purl.org/dc/terms/> .
+
+# ============================================================
+# ONTOLOGY DECLARATION — SPARQL-BASED RULES MODULE
+# ============================================================
+
+<http://w3id.org/dpp/access-control/sparql-rules>
+    rdf:type owl:Ontology ;
+    owl:versionIRI <http://w3id.org/dpp/access-control/sparql-rules/1.0.0> ;
+    owl:imports <http://w3id.org/dpp/access-control> ;
+    dcterms:title "DPP Access Control — SPARQL Rule Set"@en ;
+    dcterms:description
+        """SPARQL CONSTRUCT rules implementing access decision logic for the
+         dpp-ac framework. Rule selection rationale documented in
+         docs/decisions/ADR-001-rule-mechanism.md."""@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2026-04-01"^^xsd:date ;
+    owl:versionInfo "1.0.0" .

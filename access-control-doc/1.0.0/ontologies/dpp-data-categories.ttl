@@ -1,0 +1,228 @@
+@prefix dpp-data:  <http://w3id.org/dpp/data-categories#> .
+@prefix dpp-ac:    <http://w3id.org/dpp/access-control#> .
+@prefix espr:      <http://w3id.org/espr/dpp#> .
+@prefix ifc:       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:   <http://purl.org/dc/terms/> .
+
+# ============================================================
+# ONTOLOGY DECLARATION — DPP DATA CATEGORIES (DOMAIN MODULE)
+# ============================================================
+
+<http://w3id.org/dpp/data-categories>
+    rdf:type owl:Ontology ;
+    owl:versionIRI <http://w3id.org/dpp/data-categories/1.0.0> ;
+    owl:imports <http://w3id.org/dpp/access-control> ;
+    dcterms:title "DPP Data Category Taxonomy"@en ;
+    dcterms:description
+        """ESPR Annex III-aligned taxonomy of Digital Product Passport data categories.
+         Used as the canonical resource classification for dpp-ac access control
+         policy scoping. Data categories are modelled as OWL classes (not individuals)
+         to enable subsumption-based policy inheritance."""@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2026-04-01"^^xsd:date ;
+    owl:versionInfo "1.0.0" .
+
+
+# ============================================================
+# ANNOTATION PROPERTY — ESPR Annex Reference
+# ============================================================
+
+dpp-data:espr-annex
+    rdf:type owl:AnnotationProperty ;
+    skos:prefLabel "ESPR Annex reference"@en ;
+    skos:definition
+        """References the ESPR Regulation Annex III section that
+         mandates this data category in the DPP."""@en .
+
+
+# ============================================================
+# BASE CLASS
+# ============================================================
+
+dpp-data:DataCategory
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-ac:DPPResource ;
+    skos:prefLabel "DPP Data Category"@en ;
+    skos:definition
+        """A typed grouping of DPP data fields as enumerated in
+         ESPR Annex III."""@en .
+
+
+# ============================================================
+# TIER 1 — TOP-LEVEL ESPR DATA CATEGORIES
+# ============================================================
+
+dpp-data:ProductIdentificationData
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-data:DataCategory ;
+    skos:prefLabel "Product Identification Data"@en ;
+    skos:definition
+        "GTIN, serial number, model designation, manufacturer identity."@en ;
+    dpp-data:espr-annex "III.1" ;
+    dpp-ac:resourceSensitivity "PUBLIC" .
+
+dpp-data:EnvironmentalPerformanceData
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-data:DataCategory ;
+    skos:prefLabel "Environmental Performance Data"@en ;
+    skos:definition
+        """Carbon footprint, energy efficiency, resource use, and other
+         environmental metrics as required by ESPR Annex III.2."""@en ;
+    dpp-data:espr-annex "III.2" ;
+    dpp-ac:resourceSensitivity "RESTRICTED" .
+
+dpp-data:MaterialCompositionData
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-data:DataCategory ;
+    skos:prefLabel "Material Composition Data"@en ;
+    skos:definition
+        """Substances, materials, and components including substances
+         of concern per ESPR Annex III.3."""@en ;
+    dpp-data:espr-annex "III.3" ;
+    dpp-ac:resourceSensitivity "RESTRICTED" .
+
+dpp-data:SupplyChainData
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-data:DataCategory ;
+    skos:prefLabel "Supply Chain Data"@en ;
+    skos:definition
+        """Supplier identity, sourcing geography, and due diligence
+         documentation per ESPR Annex III.4."""@en ;
+    dpp-data:espr-annex "III.4" ;
+    dpp-ac:resourceSensitivity "CONFIDENTIAL" .
+
+dpp-data:CertificationData
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-data:DataCategory ;
+    skos:prefLabel "Certification and Compliance Data"@en ;
+    skos:definition
+        """Conformity declarations, third-party certification evidence,
+         and test reports per ESPR Annex III.5."""@en ;
+    dpp-data:espr-annex "III.5" ;
+    dpp-ac:resourceSensitivity "RESTRICTED" .
+
+dpp-data:UseAndMaintenanceData
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-data:DataCategory ;
+    skos:prefLabel "Use and Maintenance Data"@en ;
+    skos:definition
+        """Instructions for use, repair, spare parts availability,
+         and maintenance schedules per ESPR Annex III.6."""@en ;
+    dpp-data:espr-annex "III.6" ;
+    dpp-ac:resourceSensitivity "RESTRICTED" .
+
+dpp-data:EndOfLifeData
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-data:DataCategory ;
+    skos:prefLabel "End-of-Life Data"@en ;
+    skos:definition
+        """Disassembly instructions, recyclability information, and
+         waste handling guidance per ESPR Annex III.7."""@en ;
+    dpp-data:espr-annex "III.7" ;
+    dpp-ac:resourceSensitivity "PUBLIC" .
+
+
+# ============================================================
+# TIER 2 — SPECIALISED SUB-CATEGORIES
+# ============================================================
+
+dpp-data:CarbonFootprintData
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-data:EnvironmentalPerformanceData ;
+    skos:prefLabel "Carbon Footprint Data"@en ;
+    skos:definition
+        "Product carbon footprint per ISO 14067 lifecycle stages."@en ;
+    skos:scopeNote "Per ISO 14067 and EU Battery Regulation Art. 7."@en ;
+    dpp-ac:resourceSensitivity "RESTRICTED" .
+
+dpp-data:RepairabilityData
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-data:UseAndMaintenanceData ;
+    skos:prefLabel "Repairability and Durability Data"@en ;
+    skos:definition
+        """Repairability score, spare parts availability, and durability
+         test results."""@en ;
+    dpp-ac:resourceSensitivity "RESTRICTED" .
+
+dpp-data:DisassemblyInstructionData
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-data:EndOfLifeData ;
+    skos:prefLabel "Disassembly Instruction Data"@en ;
+    skos:definition
+        """Step-by-step instructions for safe disassembly enabling
+         component recovery and material separation."""@en ;
+    dpp-ac:resourceSensitivity "PUBLIC" .
+
+dpp-data:HazardousSubstanceData
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-data:MaterialCompositionData ;
+    skos:prefLabel "Hazardous Substance Data"@en ;
+    skos:definition
+        """Substances of very high concern (SVHC) and other regulated
+         hazardous substances per REACH and ESPR."""@en ;
+    dpp-ac:resourceSensitivity "STRICTLY_CONFIDENTIAL" .
+
+dpp-data:EnergyEfficiencyData
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-data:EnvironmentalPerformanceData ;
+    skos:prefLabel "Energy Efficiency Data"@en ;
+    skos:definition
+        """Energy consumption ratings, efficiency class, and measured
+         performance data."""@en ;
+    dpp-ac:resourceSensitivity "PUBLIC" .
+
+
+# ============================================================
+# LIFECYCLE PHASE CLASSES
+# ============================================================
+
+dpp-ac:LifecyclePhase
+    rdf:type owl:Class ;
+    skos:prefLabel "Product Lifecycle Phase"@en ;
+    skos:definition
+        """A distinct stage in the product lifecycle during which
+         specific DPP data categories may be created or accessed."""@en .
+
+dpp-ac:ManufacturingPhase
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-ac:LifecyclePhase ;
+    skos:prefLabel "Manufacturing Phase"@en .
+
+dpp-ac:DistributionPhase
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-ac:LifecyclePhase ;
+    skos:prefLabel "Distribution Phase"@en .
+
+dpp-ac:UsePhase
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-ac:LifecyclePhase ;
+    skos:prefLabel "Use Phase"@en .
+
+dpp-ac:MaintenancePhase
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-ac:LifecyclePhase ;
+    skos:prefLabel "Maintenance Phase"@en .
+
+dpp-ac:EndOfLifePhase
+    rdf:type owl:Class ;
+    rdfs:subClassOf dpp-ac:LifecyclePhase ;
+    skos:prefLabel "End-of-Life Phase"@en .
+
+
+# ============================================================
+# LIFECYCLE PHASE LINKAGE PROPERTY
+# ============================================================
+
+dpp-data:accessibleDuringPhase
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain dpp-data:DataCategory ;
+    rdfs:range dpp-ac:LifecyclePhase ;
+    skos:prefLabel "accessible during phase"@en ;
+    skos:definition
+        """The product lifecycle phase(s) during which this data category
+         may be accessed. Used as a guard condition in access rules."""@en .

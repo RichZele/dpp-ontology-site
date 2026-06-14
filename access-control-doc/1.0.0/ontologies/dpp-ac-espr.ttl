@@ -1,0 +1,120 @@
+@prefix dpp-ac:    <http://w3id.org/dpp/access-control#> .
+@prefix dpp-data:  <http://w3id.org/dpp/data-categories#> .
+@prefix dpp-role:  <http://w3id.org/dpp/roles#> .
+@prefix espr:      <http://w3id.org/espr/dpp#> .
+@prefix odrl:      <http://www.w3.org/ns/odrl/2/> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:   <http://purl.org/dc/terms/> .
+
+# ============================================================
+# ONTOLOGY DECLARATION — ESPR REGULATORY ALIGNMENT MODULE
+# ============================================================
+
+<http://w3id.org/dpp/access-control/espr>
+    rdf:type owl:Ontology ;
+    owl:versionIRI <http://w3id.org/dpp/access-control/espr/1.0.0> ;
+    owl:imports <http://w3id.org/dpp/access-control> ;
+    owl:imports <http://w3id.org/dpp/access-control/gdpr> ;
+    owl:imports <http://w3id.org/dpp/data-categories> ;
+    owl:imports <http://w3id.org/dpp/roles> ;
+    dcterms:title "DPP Access Control — ESPR Regulatory Alignment"@en ;
+    dcterms:description
+        """ESPR Regulation (EU) 2024/1781-grounded access policies for DPP stakeholder
+         roles. Provides the canonical role-permission matrix as normative policy
+         instances, with legal basis assertions per dpp-ac-gdpr."""@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2026-04-01"^^xsd:date ;
+    owl:versionInfo "1.0.0" .
+
+
+# ============================================================
+# ESPR ARTICLE 14: MARKET SURVEILLANCE AUTHORITY
+# Full read access to all DPP modules for compliance audit
+# ============================================================
+
+<http://w3id.org/dpp/access-control/espr/MSAFullReadPolicy>
+    rdf:type dpp-ac:AccessPolicy ;
+    dpp-ac:appliesToRole dpp-role:MarketSurveillanceAuthorityRole ;
+    dpp-ac:hasLegalBasis dpp-ac:PublicTaskBasis ;
+    dpp-ac:permittedPurpose "MARKET_SURVEILLANCE" ;
+    dpp-ac:policyOwner <http://w3id.org/dpp/access-control/espr/ESPRAuthority> ;
+    odrl:permission <http://w3id.org/dpp/access-control/espr/MSAReadAllModulesPermission> ;
+    dcterms:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1781> ;
+    skos:scopeNote "ESPR Regulation (EU) 2024/1781, Article 14."@en .
+
+<http://w3id.org/dpp/access-control/espr/MSAReadAllModulesPermission>
+    rdf:type odrl:Permission ;
+    odrl:action dpp-ac:ReadResource ;
+    odrl:target dpp-data:DataCategory .
+
+
+# ============================================================
+# ESPR ARTICLE 4: MANUFACTURER — FULL ACCESS TO OWN DPP
+# ============================================================
+
+<http://w3id.org/dpp/access-control/espr/ManufacturerOwnDPPPolicy>
+    rdf:type dpp-ac:AccessPolicy ;
+    dpp-ac:appliesToRole dpp-role:ManufacturerRole ;
+    dpp-ac:hasLegalBasis dpp-ac:LegalObligation ;
+    dpp-ac:policyOwner <http://w3id.org/dpp/access-control/espr/ESPRAuthority> ;
+    odrl:permission <http://w3id.org/dpp/access-control/espr/ManufacturerReadWritePermission> ;
+    odrl:prohibition <http://w3id.org/dpp/access-control/espr/ManufacturerDeleteCertProhibition> ;
+    skos:scopeNote "ESPR Regulation (EU) 2024/1781, Article 4."@en .
+
+<http://w3id.org/dpp/access-control/espr/ManufacturerReadWritePermission>
+    rdf:type odrl:Permission ;
+    odrl:action dpp-ac:ReadResource ;
+    odrl:target dpp-data:DataCategory .
+
+<http://w3id.org/dpp/access-control/espr/ManufacturerDeleteCertProhibition>
+    rdf:type odrl:Prohibition ;
+    odrl:action dpp-ac:DeleteResource ;
+    odrl:target dpp-data:CertificationData ;
+    rdfs:comment
+        """Manufacturers may not delete certification data once issued
+         by a third-party conformity assessment body."""@en .
+
+
+# ============================================================
+# ESPR CUSTOMS AUTHORITY: BORDER INSPECTION
+# Read access to identification + certification for CUSTOMS_INSPECTION
+# ============================================================
+
+<http://w3id.org/dpp/access-control/espr/CustomsBorderInspectionPolicy>
+    rdf:type dpp-ac:AccessPolicy ;
+    dpp-ac:appliesToRole dpp-role:CustomsAuthorityRole ;
+    dpp-ac:hasLegalBasis dpp-ac:PublicTaskBasis ;
+    dpp-ac:permittedPurpose "CUSTOMS_INSPECTION" ;
+    dpp-ac:policyOwner <http://w3id.org/dpp/access-control/espr/ESPRAuthority> ;
+    odrl:permission <http://w3id.org/dpp/access-control/espr/CustomsReadIdPermission> ;
+    odrl:permission <http://w3id.org/dpp/access-control/espr/CustomsReadCertPermission> ;
+    skos:scopeNote "ESPR Regulation (EU) 2024/1781; Regulation (EU) 952/2013 (Union Customs Code)."@en .
+
+<http://w3id.org/dpp/access-control/espr/CustomsReadIdPermission>
+    rdf:type odrl:Permission ;
+    odrl:action dpp-ac:ReadResource ;
+    odrl:target dpp-data:ProductIdentificationData .
+
+<http://w3id.org/dpp/access-control/espr/CustomsReadCertPermission>
+    rdf:type odrl:Permission ;
+    odrl:action dpp-ac:ReadResource ;
+    odrl:target dpp-data:CertificationData .
+
+
+# ============================================================
+# AUTHORITY PRINCIPAL (system individual for policy ownership)
+# ============================================================
+
+<http://w3id.org/dpp/access-control/espr/ESPRAuthority>
+    rdf:type dpp-ac:SystemPrincipal ;
+    dcterms:identifier "ESPR-AUTHORITY-001" ;
+    skos:prefLabel "ESPR Regulatory Framework Authority"@en ;
+    dpp-ac:hasRole <http://w3id.org/dpp/access-control/espr/ESPRAuthorityRole> .
+
+<http://w3id.org/dpp/access-control/espr/ESPRAuthorityRole>
+    rdf:type dpp-ac:Role ;
+    skos:prefLabel "ESPR Framework Authority Role"@en .
