@@ -23,6 +23,8 @@
          to support ABAC attribute constraints via class-level SHACL shapes."""@en ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:created "2026-04-01"^^xsd:date ;
+    dcterms:creator "Rahel Kebede" ;
+    dcterms:contributor "Bincy Veena" , "Annika Moscati" , "Peter Johansson" ;
     owl:versionInfo "1.0.0" .
 
 

@@ -1,0 +1,406 @@
+[ {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/dpp/access-control#DPPResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/dpp/access-control#DistributionPhase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/dpp/access-control#LifecyclePhase"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Distribution Phase"
+  } ]
+}, {
+  "@id" : "http://w3id.org/dpp/access-control#EndOfLifePhase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/dpp/access-control#LifecyclePhase"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "End-of-Life Phase"
+  } ]
+}, {
+  "@id" : "http://w3id.org/dpp/access-control#LifecyclePhase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A distinct stage in the product lifecycle during which\n         specific DPP data categories may be created or accessed."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Product Lifecycle Phase"
+  } ]
+}, {
+  "@id" : "http://w3id.org/dpp/access-control#MaintenancePhase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/dpp/access-control#LifecyclePhase"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Maintenance Phase"
+  } ]
+}, {
+  "@id" : "http://w3id.org/dpp/access-control#ManufacturingPhase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/dpp/access-control#LifecyclePhase"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Manufacturing Phase"
+  } ]
+}, {
+  "@id" : "http://w3id.org/dpp/access-control#UsePhase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/dpp/access-control#LifecyclePhase"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Use Phase"
+  } ]
+}, {
+  "@id" : "http://w3id.org/dpp/access-control#resourceSensitivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/dpp/data-categories",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Annika Moscati"
+  }, {
+    "@value" : "Bincy Veena"
+  }, {
+    "@value" : "Peter Johansson"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-04-01"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Rahel Kebede"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "ESPR Annex III-aligned taxonomy of Digital Product Passport data categories.\n         Used as the canonical resource classification for dpp-ac access control\n         policy scoping. Data categories are modelled as OWL classes (not individuals)\n         to enable subsumption-based policy inheritance."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "DPP Data Category Taxonomy"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://w3id.org/dpp/access-control"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://w3id.org/dpp/data-categories/1.0.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0.0"
+  } ]
+}, {
+  "@id" : "http://w3id.org/dpp/data-categories#CarbonFootprintData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://w3id.org/dpp/access-control#resourceSensitivity" : [ {
+    "@value" : "RESTRICTED"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/dpp/data-categories#EnvironmentalPerformanceData"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Product carbon footprint per ISO 14067 lifecycle stages."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Carbon Footprint Data"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Per ISO 14067 and EU Battery Regulation Art. 7."
+  } ]
+}, {
+  "@id" : "http://w3id.org/dpp/data-categories#CertificationData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://w3id.org/dpp/access-control#resourceSensitivity" : [ {
+    "@value" : "RESTRICTED"
+  } ],
+  "http://w3id.org/dpp/data-categories#espr-annex" : [ {
+    "@value" : "III.5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/dpp/data-categories#DataCategory"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Conformity declarations, third-party certification evidence,\n         and test reports per ESPR Annex III.5."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Certification and Compliance Data"
+  } ]
+}, {
+  "@id" : "http://w3id.org/dpp/data-categories#DataCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/dpp/access-control#DPPResource"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A typed grouping of DPP data fields as enumerated in\n         ESPR Annex III."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "DPP Data Category"
+  } ]
+}, {
+  "@id" : "http://w3id.org/dpp/data-categories#DisassemblyInstructionData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://w3id.org/dpp/access-control#resourceSensitivity" : [ {
+    "@value" : "PUBLIC"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/dpp/data-categories#EndOfLifeData"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Step-by-step instructions for safe disassembly enabling\n         component recovery and material separation."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Disassembly Instruction Data"
+  } ]
+}, {
+  "@id" : "http://w3id.org/dpp/data-categories#EndOfLifeData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://w3id.org/dpp/access-control#resourceSensitivity" : [ {
+    "@value" : "PUBLIC"
+  } ],
+  "http://w3id.org/dpp/data-categories#espr-annex" : [ {
+    "@value" : "III.7"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/dpp/data-categories#DataCategory"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Disassembly instructions, recyclability information, and\n         waste handling guidance per ESPR Annex III.7."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "End-of-Life Data"
+  } ]
+}, {
+  "@id" : "http://w3id.org/dpp/data-categories#EnergyEfficiencyData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://w3id.org/dpp/access-control#resourceSensitivity" : [ {
+    "@value" : "PUBLIC"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/dpp/data-categories#EnvironmentalPerformanceData"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Energy consumption ratings, efficiency class, and measured\n         performance data."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Energy Efficiency Data"
+  } ]
+}, {
+  "@id" : "http://w3id.org/dpp/data-categories#EnvironmentalPerformanceData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://w3id.org/dpp/access-control#resourceSensitivity" : [ {
+    "@value" : "RESTRICTED"
+  } ],
+  "http://w3id.org/dpp/data-categories#espr-annex" : [ {
+    "@value" : "III.2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/dpp/data-categories#DataCategory"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Carbon footprint, energy efficiency, resource use, and other\n         environmental metrics as required by ESPR Annex III.2."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Environmental Performance Data"
+  } ]
+}, {
+  "@id" : "http://w3id.org/dpp/data-categories#HazardousSubstanceData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://w3id.org/dpp/access-control#resourceSensitivity" : [ {
+    "@value" : "STRICTLY_CONFIDENTIAL"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/dpp/data-categories#MaterialCompositionData"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Substances of very high concern (SVHC) and other regulated\n         hazardous substances per REACH and ESPR."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Hazardous Substance Data"
+  } ]
+}, {
+  "@id" : "http://w3id.org/dpp/data-categories#MaterialCompositionData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://w3id.org/dpp/access-control#resourceSensitivity" : [ {
+    "@value" : "RESTRICTED"
+  } ],
+  "http://w3id.org/dpp/data-categories#espr-annex" : [ {
+    "@value" : "III.3"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/dpp/data-categories#DataCategory"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Substances, materials, and components including substances\n         of concern per ESPR Annex III.3."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Material Composition Data"
+  } ]
+}, {
+  "@id" : "http://w3id.org/dpp/data-categories#ProductIdentificationData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://w3id.org/dpp/access-control#resourceSensitivity" : [ {
+    "@value" : "PUBLIC"
+  } ],
+  "http://w3id.org/dpp/data-categories#espr-annex" : [ {
+    "@value" : "III.1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/dpp/data-categories#DataCategory"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "GTIN, serial number, model designation, manufacturer identity."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Product Identification Data"
+  } ]
+}, {
+  "@id" : "http://w3id.org/dpp/data-categories#RepairabilityData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://w3id.org/dpp/access-control#resourceSensitivity" : [ {
+    "@value" : "RESTRICTED"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/dpp/data-categories#UseAndMaintenanceData"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Repairability score, spare parts availability, and durability\n         test results."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Repairability and Durability Data"
+  } ]
+}, {
+  "@id" : "http://w3id.org/dpp/data-categories#SupplyChainData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://w3id.org/dpp/access-control#resourceSensitivity" : [ {
+    "@value" : "CONFIDENTIAL"
+  } ],
+  "http://w3id.org/dpp/data-categories#espr-annex" : [ {
+    "@value" : "III.4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/dpp/data-categories#DataCategory"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Supplier identity, sourcing geography, and due diligence\n         documentation per ESPR Annex III.4."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Supply Chain Data"
+  } ]
+}, {
+  "@id" : "http://w3id.org/dpp/data-categories#UseAndMaintenanceData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://w3id.org/dpp/access-control#resourceSensitivity" : [ {
+    "@value" : "RESTRICTED"
+  } ],
+  "http://w3id.org/dpp/data-categories#espr-annex" : [ {
+    "@value" : "III.6"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/dpp/data-categories#DataCategory"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Instructions for use, repair, spare parts availability,\n         and maintenance schedules per ESPR Annex III.6."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Use and Maintenance Data"
+  } ]
+}, {
+  "@id" : "http://w3id.org/dpp/data-categories#accessibleDuringPhase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/dpp/data-categories#DataCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/dpp/access-control#LifecyclePhase"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The product lifecycle phase(s) during which this data category\n         may be accessed. Used as a guard condition in access rules."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "accessible during phase"
+  } ]
+}, {
+  "@id" : "http://w3id.org/dpp/data-categories#espr-annex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "References the ESPR Regulation Annex III section that\n         mandates this data category in the DPP."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "ESPR Annex reference"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#scopeNote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

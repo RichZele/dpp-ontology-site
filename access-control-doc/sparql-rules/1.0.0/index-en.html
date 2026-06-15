@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="resources/primer.css" media="screen"/>
+<link rel="stylesheet" href="resources/rec.css" media="screen"/>
+<link rel="stylesheet" href="resources/extra.css" media="screen"/>
+<link rel="stylesheet" href="resources/owl.css" media="screen"/>
+<link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="resources/slider.css" media="screen"/>
+<meta name="color-scheme" content="dark light">
+<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
+	<dark-mode-toggle class="slider"></dark-mode-toggle>
+</div>
+<link rel="icon" type="image/png" href="resources/rdf.icon"/> <title>DPP Access Control — SPARQL Rule Set</title>
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://w3id.org/dpp/access-control/sparql-rules","name":"DPP Access Control — SPARQL Rule Set", "headline":"SPARQL CONSTRUCT rules implementing access decision logic for the DPP Access Control framework", "dateReleased":"2026-04-01", "version":"1.0.0", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Rahel Kebede"}], "contributor":[{"@type":"Person","name":"Bincy Veena"},{"@type":"Person","name":"Annika Moscati"},{"@type":"Person","name":"Peter Johansson"}]}</script>
+</head>
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>DPP Access Control — SPARQL Rule Set</h1>
+<h2>Release: 2026-04-01</h2>
+
+<dl>
+<dt>This version:</dt>
+<dd><a href="http://w3id.org/dpp/access-control/sparql-rules/1.0.0">http://w3id.org/dpp/access-control/sparql-rules/1.0.0</a></dd>
+<dt>Latest version:</dt>
+<dd><a href="http://w3id.org/dpp/access-control/sparql-rules">http://w3id.org/dpp/access-control/sparql-rules</a></dd>
+<dt>Revision:</dt>
+<dd>1.0.0</dd>
+<dt>Authors:</dt>
+<dd>Rahel Kebede</dd>
+<dt>Contributors:</dt>
+<dd>Bincy Veena</dd><dd>Annika Moscati</dd><dd>Peter Johansson</dd>
+<dt>Imports:</dt>
+<dd><a href="../../core/1.0.0/index-en.html">DPP Access Control Ontology Module (dpp-ac core)</a></dd>
+<dt>Download serialization:</dt>
+<dd><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd>
+<dt>License:</dt>
+<dd><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-CC--BY--4.0-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/" /></a></dd>
+<dt>Cite as:</dt>
+<dd>Rahel Kebede. DPP Access Control — SPARQL Rule Set. Revision: 1.0.0. Retrieved from: http://w3id.org/dpp/access-control/sparql-rules/1.0.0</dd>
+</dl>
+<hr/>
+</div>
+<div class="status">
+<div><span>SPARQL Rule Set — Companion Artifact</span></div>
+</div>
+
+<div id="abstract">
+<h2 id="abstract-headline" class="list">Abstract</h2>
+<p>This module is the <strong>SPARQL CONSTRUCT rule set</strong> implementing the access
+decision logic for the
+<a href="../../core/1.0.0/index-en.html">DPP Access Control framework</a>. The rules
+operationalise how an <code>AccessRequest</code> is evaluated against applicable
+<code>AccessPolicy</code> instances to produce an <code>AccessDecision</code>.</p>
+<p>SPARQL rules are executable queries, not OWL vocabulary terms, so they are documented
+here as a companion artifact rather than with the WIDOCO vocabulary template used for the
+<code>dpp-ac</code> core, roles, data-categories and GDPR modules.</p>
+</div>
+
+<div id="status-section">
+<h2 id="ruleset-headline" class="list">Rule mechanism</h2>
+<p>The choice of a SPARQL-based rule mechanism (over SWRL or SHACL-AF rules) is recorded in
+the project decision record <code>docs/decisions/ADR-001-rule-mechanism.md</code>.</p>
+<p>The published <a href="ontology.ttl">Turtle source</a> currently carries the module
+declaration and provenance metadata. The CONSTRUCT rule bodies are maintained alongside the
+decision record; this page is the stable documentation endpoint for the
+<code>http://w3id.org/dpp/access-control/sparql-rules</code> IRI and will be updated as
+rules are published into the graph.</p>
+</div>
+
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments</h2>
+<p>This companion page follows the visual template produced by
+<a href="https://github.com/dgarijo/Widoco">WIDOCO</a> (Daniel Garijo) so that it is
+consistent with the vocabulary documentation generated for the other modules.</p>
+</div>
+
+</div>
+</body>
+</html>

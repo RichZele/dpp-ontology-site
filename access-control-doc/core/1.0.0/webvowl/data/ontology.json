@@ -1,0 +1,2285 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/ns/odrl/2", "http://w3id.org/dpp/data-categories", "https://w3id.org/dpv", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://w3id.org/dpp/access-control", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "en" : "DPP Access Control Ontology Module"
+    },
+    "iri" : "http://w3id.org/dpp/access-control",
+    "version" : "1.0.0",
+    "author" : [ "Rahel Kebede" ],
+    "description" : {
+      "en" : "A modular semantic framework for role-, attribute-, relationship-, and\n         purpose-based access control over Digital Product Passport data,\n         aligned with ESPR, GDPR, and ODRL 2.2."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Rahel Kebede",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Bincy Veena",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Annika Moscati",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Peter Johansson",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2026-04-01",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "DPP Access Control Ontology Module",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/ns/prov#Activity",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "annotations" : {
+      "component" : [ {
+        "identifier" : "component",
+        "language" : "undefined",
+        "value" : "entities-activities",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      } ],
+      "dm" : [ {
+        "identifier" : "dm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Activity",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "starting-point",
+        "type" : "label"
+      } ],
+      "constraints" : [ {
+        "identifier" : "constraints",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig",
+        "type" : "label"
+      } ],
+      "n" : [ {
+        "identifier" : "n",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Activity",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Activity",
+      "undefined" : "Activity"
+    },
+    "subClasses" : [ "7", "1" ],
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#AccessDecision",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Access Decision",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An immutable, time-stamped record of the outcome of evaluating\n         an AccessRequest against applicable AccessPolicies.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AccessDecision"
+    },
+    "id" : "13",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Entity",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "annotations" : {
+      "component" : [ {
+        "identifier" : "component",
+        "language" : "undefined",
+        "value" : "entities-activities",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      } ],
+      "dm" : [ {
+        "identifier" : "dm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-entity",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary. ",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "starting-point",
+        "type" : "label"
+      } ],
+      "constraints" : [ {
+        "identifier" : "constraints",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig",
+        "type" : "label"
+      } ],
+      "n" : [ {
+        "identifier" : "n",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Entity",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Entity",
+      "undefined" : "Entity"
+    },
+    "subClasses" : [ "13", "9" ],
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#AccessContext",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Access Context",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Environmental, temporal, geographic, or purpose-related\n         metadata that conditions the evaluation of an access\n         request.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AccessContext"
+    },
+    "subClasses" : [ "11", "19", "18", "16", "4" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#AttributeConstraint",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Attribute Constraint",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A condition on a named attribute of the requesting Principal\n         or target resource that must be satisfied for a policy's\n         permissions to apply.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AttributeConstraint"
+    },
+    "id" : "21"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#PurposeContext",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Purpose Context",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The declared purpose for which a Principal requests access,\n         per GDPR Article 5(1)(b) purpose limitation.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PurposeContext"
+    },
+    "id" : "11",
+    "superClasses" : [ "5", "31" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/Action",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Action"
+    },
+    "individuals" : [ {
+      "iri" : "http://w3id.org/dpp/access-control#CreateResource",
+      "baseIri" : "http://w3id.org/dpp/access-control",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Create",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Introduce a new data record into a DPP module where no prior\n         record exists for that resource identifier.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "CreateResource"
+      }
+    }, {
+      "iri" : "http://w3id.org/dpp/access-control#DelegateAccess",
+      "baseIri" : "http://w3id.org/dpp/access-control",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Delegate",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Transfer a subset of one's own access rights to another\n         Principal for a bounded scope and time period.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "DelegateAccess"
+      }
+    }, {
+      "iri" : "http://w3id.org/dpp/access-control#DeleteResource",
+      "baseIri" : "http://w3id.org/dpp/access-control",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Delete",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Remove a DPP resource record, subject to data retention\n         obligations.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "DeleteResource"
+      }
+    }, {
+      "iri" : "http://w3id.org/dpp/access-control#UpdateResource",
+      "baseIri" : "http://w3id.org/dpp/access-control",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Update",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Modify the content of an existing DPP resource record.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "UpdateResource"
+      }
+    }, {
+      "iri" : "http://w3id.org/dpp/access-control#ReadResource",
+      "baseIri" : "http://w3id.org/dpp/access-control",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Read",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Retrieve and inspect the content of a DPP resource without\n         modifying it.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ReadResource"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#HumanPrincipal",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Human Principal",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A natural person acting as a DPP data requester or owner.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HumanPrincipal"
+    },
+    "id" : "37",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Agent",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "annotations" : {
+      "component" : [ {
+        "identifier" : "component",
+        "language" : "undefined",
+        "value" : "agents-responsibility",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      } ],
+      "dm" : [ {
+        "identifier" : "dm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity. ",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "starting-point",
+        "type" : "label"
+      } ],
+      "n" : [ {
+        "identifier" : "n",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Agent",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Agent",
+      "undefined" : "Agent"
+    },
+    "subClasses" : [ "38" ],
+    "attributes" : [ "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#TrustContext",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Trust Context",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The assurance level of the authentication mechanism used\n         by the requesting Principal.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TrustContext"
+    },
+    "id" : "19",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#GeographicContext",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Geographic Context",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A jurisdictional constraint on where access may be exercised.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GeographicContext"
+    },
+    "id" : "18",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#Role",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Access Control Role",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A named function or responsibility assigned to a Principal\n         that determines which access policies apply.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Role"
+    },
+    "id" : "55"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#SystemPrincipal",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "System Principal",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An automated agent or software system acting as a DPP data\n         consumer or producer.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SystemPrincipal"
+    },
+    "id" : "56",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#Delegation",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Delegation",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A bounded, time-limited transfer of a subset of access rights\n         from one Principal to another.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Delegation"
+    },
+    "id" : "1",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#TemporalContext",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Temporal Context",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A time window within which access is permitted.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TemporalContext"
+    },
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/Policy",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Policy"
+    },
+    "subClasses" : [ "40" ],
+    "attributes" : [ "external" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://w3id.org/dpv#Purpose",
+    "baseIri" : "https://w3id.org/dpv",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Purpose"
+    },
+    "subClasses" : [ "11" ],
+    "attributes" : [ "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#AccessRequest",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Access Request",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A formal, time-stamped expression of intent by a Principal\n         to perform a specific Action on a specific DPP resource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AccessRequest"
+    },
+    "id" : "7",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#Principal",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Principal",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Any entity — human, organisation, or automated system — that\n         may request access to DPP resources.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Principal"
+    },
+    "subClasses" : [ "73", "56", "37" ],
+    "id" : "38",
+    "superClasses" : [ "68", "48" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#CertificationContext",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Certification Context",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Evidence of a certification held by the requesting Principal\n         that may unlock access to restricted DPP data.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CertificationContext"
+    },
+    "id" : "16",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#DPPResource",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "DPP Resource",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A discrete, addressable unit of data within a Digital Product\n         Passport that may be the target of an access request.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DPPResource"
+    },
+    "id" : "9",
+    "superClasses" : [ "14", "70" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/Party",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Party"
+    },
+    "subClasses" : [ "38" ],
+    "attributes" : [ "external" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#AccessPolicy",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "DPP Access Policy",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A declarative specification of permissions and prohibitions\n         over DPP resources, scoped to a Role and optionally\n         conditioned on contextual constraints.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AccessPolicy"
+    },
+    "id" : "40",
+    "superClasses" : [ "62" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "64",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "94",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "85",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "89",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "81",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#OrganisationPrincipal",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Organisation Principal",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A legal entity or organisation acting as a DPP stakeholder.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OrganisationPrincipal"
+    },
+    "id" : "73",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "96",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/Asset",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Asset"
+    },
+    "subClasses" : [ "9" ],
+    "attributes" : [ "external" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://w3id.org/dpp/data-categories#DataCategory",
+    "baseIri" : "http://w3id.org/dpp/data-categories",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataCategory"
+    },
+    "attributes" : [ "external" ],
+    "id" : "27"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://w3id.org/dpp/access-control#delegationDepth",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "2",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "delegation depth",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The number of sub-delegation hops permitted from this delegation.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "Maximum allowed value is 1. Sub-delegation is prohibited by policy.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "delegationDepth"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#delegationCoversResource",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "9",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "delegation covers resource",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The DPP resource(s) over which delegated rights are granted.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "delegationCoversResource"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#declaredPurpose",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "12",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "declared purpose",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A textual description of the purpose for which data access is requested.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "declaredPurpose"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "10"
+  }, {
+    "range" : "5",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "range" : "5",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "17"
+  }, {
+    "range" : "14",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
+  }, {
+    "range" : "14",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "range" : "5",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "range" : "5",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#belongsToModule",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "27",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "belongs to module",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The ESPR-defined data category (DPP module) that contains this resource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "belongsToModule"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "functional" ],
+    "id" : "26"
+  }, {
+    "range" : "6",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "range" : "6",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#conflictResolutionApplied",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "33",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "conflict resolution applied",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "True if a deny-overrides conflict resolution strategy was\n         invoked during this decision evaluation.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "conflictResolutionApplied"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#jurisdictionCode",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "35",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "jurisdiction code",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The jurisdiction in which this access constraint applies.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "ISO 3166-1 alpha-2 country code, or the literals EU or EEA.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "jurisdictionCode"
+    },
+    "domain" : "18",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#permittedPurpose",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "41",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "permitted purpose",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A purpose code that an access request must declare to activate\n         this policy's permissions.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "Must be one of the purpose codes defined in PurposeContextShape:\n         MAINTENANCE, COMPLIANCE_AUDIT, RECYCLING_PROCESSING,\n         MARKET_SURVEILLANCE, CUSTOMS_INSPECTION, CONSUMER_INFORMATION,\n         RESEARCH_DEVELOPMENT, SUPPLY_CHAIN_DUE_DILIGENCE.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "permittedPurpose"
+    },
+    "domain" : "40",
+    "attributes" : [ "datatype" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#requestedAction",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "36",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "requested action",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The CRUD action the Principal intends to perform.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "requestedAction"
+    },
+    "domain" : "7",
+    "attributes" : [ "object", "functional" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#constraintValue",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "50",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "constraint value",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The value against which the attribute is compared.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "constraintValue"
+    },
+    "domain" : "21",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#delegatedBy",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "38",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "delegated by",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The Principal who grants delegated access rights.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "delegatedBy"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "functional" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#certificationIsValid",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "54",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "certification is valid",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "True if the referenced certification is currently valid and in good standing.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "certificationIsValid"
+    },
+    "domain" : "16",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#delegationIsActive",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "51",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "delegation is active",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "True if this delegation is currently within its valid time window\n         and has not been revoked.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "delegationIsActive"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#hasAttributeConstraint",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "21",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has attribute constraint",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Links an AccessPolicy to one or more AttributeConstraints that\n         must all be satisfied for the policy's permissions to activate.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasAttributeConstraint"
+    },
+    "domain" : "40",
+    "attributes" : [ "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#accessValidUntil",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "60",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "access valid until",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The UTC date-time at which this temporal access window closes.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "accessValidUntil"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#delegationValidUntil",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "45",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "delegation valid until",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The UTC date-time at which the delegation expires.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "delegationValidUntil"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#certificationScheme",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "64",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "certification scheme",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The name or identifier of the certification scheme.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "certificationScheme"
+    },
+    "domain" : "16",
+    "attributes" : [ "datatype" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#policyOwner",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "38",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "policy owner",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The Principal responsible for the lifecycle of this policy.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "policyOwner"
+    },
+    "domain" : "40",
+    "attributes" : [ "object", "functional" ],
+    "id" : "65"
+  }, {
+    "range" : "48",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66"
+  }, {
+    "range" : "68",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "67"
+  }, {
+    "range" : "70",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
+  }, {
+    "range" : "62",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
+  }, {
+    "range" : "38",
+    "domain" : "73",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "range" : "31",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74"
+  }, {
+    "range" : "38",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75"
+  }, {
+    "range" : "38",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#ownedBy",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "38",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "owned by",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The Principal who is the authoritative data owner of this\n         DPP resource and may grant or revoke access.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ownedBy"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "functional" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#delegationCoversAction",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "36",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "delegation covers action",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The action(s) the delegatee is authorised to perform.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "delegationCoversAction"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#decidesOn",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "7",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "decides on",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Links this AccessDecision to the AccessRequest it resolves.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "decidesOn"
+    },
+    "domain" : "13",
+    "attributes" : [ "object", "functional" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#decisionTimestamp",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "81",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "decision timestamp",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The UTC date-time at which the access decision was recorded.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "decisionTimestamp"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#hasRole",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "55",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has role",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Assigns a single Access Control Role to a Principal.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasRole"
+    },
+    "domain" : "38",
+    "attributes" : [ "object", "functional" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#requestedBy",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "38",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "requested by",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Links an AccessRequest to the Principal who submitted it.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "requestedBy"
+    },
+    "domain" : "7",
+    "attributes" : [ "object", "functional" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#constraintOperator",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "85",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "constraint operator",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The comparison operator applied to the attribute value.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "Allowed values: EQ, NEQ, GT, LT, GTE, LTE, IN.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "constraintOperator"
+    },
+    "domain" : "21",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#delegatedTo",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "38",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "delegated to",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The Principal who receives delegated access rights.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "delegatedTo"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "functional" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#resourceSensitivity",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "28",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "resource sensitivity",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Classification of the sensitivity level of this DPP resource.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "Allowed values: PUBLIC, RESTRICTED, CONFIDENTIAL,\n         STRICTLY_CONFIDENTIAL.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "resourceSensitivity"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#decisionOutcome",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "89",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "decision outcome",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The result of evaluating the access request.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "Allowed values: GRANT, DENY, DELEGATE, PENDING.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "decisionOutcome"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#appliesToRole",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "55",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "applies to role",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The Role to which this AccessPolicy is addressed.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "appliesToRole"
+    },
+    "domain" : "40",
+    "attributes" : [ "object", "functional" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#appliedPolicy",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "40",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "applied policy",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The AccessPolicy (or policies) that were evaluated to produce\n         this decision.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "appliedPolicy"
+    },
+    "domain" : "13",
+    "attributes" : [ "object" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#policyValidUntil",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "42",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "policy valid until",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The UTC date-time after which this policy expires.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "policyValidUntil"
+    },
+    "domain" : "40",
+    "attributes" : [ "datatype" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#policyValidFrom",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "43",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "policy valid from",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The UTC date-time from which this policy is active.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "policyValidFrom"
+    },
+    "domain" : "40",
+    "attributes" : [ "datatype" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#requestContext",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "5",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "request context",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Environmental or situational metadata that conditions the evaluation\n         of this access request.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "requestContext"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#trustAssuranceLevel",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "25",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "trust assurance level",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The eIDAS assurance level of the requester's authentication.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "eIDAS values: LOW, SUBSTANTIAL, HIGH.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "trustAssuranceLevel"
+    },
+    "domain" : "19",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#constraintAttribute",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "94",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "constraint attribute",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The name of the attribute being constrained.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "E.g., trustAssuranceLevel, resourceSensitivity, certificationIsValid.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "constraintAttribute"
+    },
+    "domain" : "21",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#requestedResource",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "9",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "requested resource",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The DPP resource the Principal intends to access.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "requestedResource"
+    },
+    "domain" : "7",
+    "attributes" : [ "object", "functional" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#accessValidFrom",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "96",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "access valid from",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The UTC date-time from which this temporal access window opens.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "accessValidFrom"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#requestTimestamp",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "44",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "request timestamp",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The UTC date-time at which the AccessRequest was submitted.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "requestTimestamp"
+    },
+    "domain" : "7",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#delegationValidFrom",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "47",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "delegation valid from",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The UTC date-time from which the delegation is active.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "delegationValidFrom"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "102"
+  } ]
+}

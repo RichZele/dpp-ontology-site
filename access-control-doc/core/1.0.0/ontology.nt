@@ -1,0 +1,558 @@
+<http://w3id.org/dpp/access-control> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/dpp/access-control> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/dpp/access-control/1.0.0> .
+<http://w3id.org/dpp/access-control> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/prov#> .
+<http://w3id.org/dpp/access-control> <http://purl.org/dc/terms/contributor> "Annika Moscati" .
+<http://w3id.org/dpp/access-control> <http://purl.org/dc/terms/contributor> "Bincy Veena" .
+<http://w3id.org/dpp/access-control> <http://purl.org/dc/terms/contributor> "Peter Johansson" .
+<http://w3id.org/dpp/access-control> <http://purl.org/dc/terms/created> "2026-04-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://w3id.org/dpp/access-control> <http://purl.org/dc/terms/creator> "Rahel Kebede" .
+<http://w3id.org/dpp/access-control> <http://purl.org/dc/terms/description> "A modular semantic framework for role-, attribute-, relationship-, and\n         purpose-based access control over Digital Product Passport data,\n         aligned with ESPR, GDPR, and ODRL 2.2."@en .
+<http://w3id.org/dpp/access-control> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://w3id.org/dpp/access-control> <http://purl.org/dc/terms/title> "DPP Access Control Ontology Module"@en .
+<http://w3id.org/dpp/access-control> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#scopeNote
+<http://www.w3.org/2004/02/skos/core#scopeNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/dpp/access-control#appliedPolicy
+<http://w3id.org/dpp/access-control#appliedPolicy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/dpp/access-control#appliedPolicy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#AccessDecision> .
+<http://w3id.org/dpp/access-control#appliedPolicy> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/dpp/access-control#AccessPolicy> .
+<http://w3id.org/dpp/access-control#appliedPolicy> <http://www.w3.org/2004/02/skos/core#definition> "The AccessPolicy (or policies) that were evaluated to produce\n         this decision."@en .
+<http://w3id.org/dpp/access-control#appliedPolicy> <http://www.w3.org/2004/02/skos/core#prefLabel> "applied policy"@en .
+# 
+# http://w3id.org/dpp/access-control#appliesToRole
+<http://w3id.org/dpp/access-control#appliesToRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/dpp/access-control#appliesToRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#appliesToRole> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#AccessPolicy> .
+<http://w3id.org/dpp/access-control#appliesToRole> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/dpp/access-control#Role> .
+<http://w3id.org/dpp/access-control#appliesToRole> <http://www.w3.org/2004/02/skos/core#definition> "The Role to which this AccessPolicy is addressed."@en .
+<http://w3id.org/dpp/access-control#appliesToRole> <http://www.w3.org/2004/02/skos/core#prefLabel> "applies to role"@en .
+# 
+# http://w3id.org/dpp/access-control#belongsToModule
+<http://w3id.org/dpp/access-control#belongsToModule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/dpp/access-control#belongsToModule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#belongsToModule> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#DPPResource> .
+<http://w3id.org/dpp/access-control#belongsToModule> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/dpp/data-categories#DataCategory> .
+<http://w3id.org/dpp/data-categories#DataCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dpp/access-control#belongsToModule> <http://www.w3.org/2004/02/skos/core#definition> "The ESPR-defined data category (DPP module) that contains this resource."@en .
+<http://w3id.org/dpp/access-control#belongsToModule> <http://www.w3.org/2004/02/skos/core#prefLabel> "belongs to module"@en .
+# 
+# http://w3id.org/dpp/access-control#decidesOn
+<http://w3id.org/dpp/access-control#decidesOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/dpp/access-control#decidesOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#decidesOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#AccessDecision> .
+<http://w3id.org/dpp/access-control#decidesOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/dpp/access-control#AccessRequest> .
+<http://w3id.org/dpp/access-control#decidesOn> <http://www.w3.org/2004/02/skos/core#definition> "Links this AccessDecision to the AccessRequest it resolves."@en .
+<http://w3id.org/dpp/access-control#decidesOn> <http://www.w3.org/2004/02/skos/core#prefLabel> "decides on"@en .
+# 
+# http://w3id.org/dpp/access-control#delegatedBy
+<http://w3id.org/dpp/access-control#delegatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/dpp/access-control#delegatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#delegatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#Delegation> .
+<http://w3id.org/dpp/access-control#delegatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/dpp/access-control#Principal> .
+<http://w3id.org/dpp/access-control#delegatedBy> <http://www.w3.org/2004/02/skos/core#definition> "The Principal who grants delegated access rights."@en .
+<http://w3id.org/dpp/access-control#delegatedBy> <http://www.w3.org/2004/02/skos/core#prefLabel> "delegated by"@en .
+# 
+# http://w3id.org/dpp/access-control#delegatedTo
+<http://w3id.org/dpp/access-control#delegatedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/dpp/access-control#delegatedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#delegatedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#Delegation> .
+<http://w3id.org/dpp/access-control#delegatedTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/dpp/access-control#Principal> .
+<http://w3id.org/dpp/access-control#delegatedTo> <http://www.w3.org/2004/02/skos/core#definition> "The Principal who receives delegated access rights."@en .
+<http://w3id.org/dpp/access-control#delegatedTo> <http://www.w3.org/2004/02/skos/core#prefLabel> "delegated to"@en .
+# 
+# http://w3id.org/dpp/access-control#delegationCoversAction
+<http://w3id.org/dpp/access-control#delegationCoversAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/dpp/access-control#delegationCoversAction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#Delegation> .
+<http://w3id.org/dpp/access-control#delegationCoversAction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/odrl/2/Action> .
+<http://www.w3.org/ns/odrl/2/Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dpp/access-control#delegationCoversAction> <http://www.w3.org/2004/02/skos/core#definition> "The action(s) the delegatee is authorised to perform."@en .
+<http://w3id.org/dpp/access-control#delegationCoversAction> <http://www.w3.org/2004/02/skos/core#prefLabel> "delegation covers action"@en .
+# 
+# http://w3id.org/dpp/access-control#delegationCoversResource
+<http://w3id.org/dpp/access-control#delegationCoversResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/dpp/access-control#delegationCoversResource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#Delegation> .
+<http://w3id.org/dpp/access-control#delegationCoversResource> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/dpp/access-control#DPPResource> .
+<http://w3id.org/dpp/access-control#delegationCoversResource> <http://www.w3.org/2004/02/skos/core#definition> "The DPP resource(s) over which delegated rights are granted."@en .
+<http://w3id.org/dpp/access-control#delegationCoversResource> <http://www.w3.org/2004/02/skos/core#prefLabel> "delegation covers resource"@en .
+# 
+# http://w3id.org/dpp/access-control#hasAttributeConstraint
+<http://w3id.org/dpp/access-control#hasAttributeConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/dpp/access-control#hasAttributeConstraint> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#AccessPolicy> .
+<http://w3id.org/dpp/access-control#hasAttributeConstraint> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/dpp/access-control#AttributeConstraint> .
+<http://w3id.org/dpp/access-control#hasAttributeConstraint> <http://www.w3.org/2004/02/skos/core#definition> "Links an AccessPolicy to one or more AttributeConstraints that\n         must all be satisfied for the policy's permissions to activate."@en .
+<http://w3id.org/dpp/access-control#hasAttributeConstraint> <http://www.w3.org/2004/02/skos/core#prefLabel> "has attribute constraint"@en .
+# 
+# http://w3id.org/dpp/access-control#hasRole
+<http://w3id.org/dpp/access-control#hasRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/dpp/access-control#hasRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#hasRole> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#Principal> .
+<http://w3id.org/dpp/access-control#hasRole> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/dpp/access-control#Role> .
+<http://w3id.org/dpp/access-control#hasRole> <http://www.w3.org/2004/02/skos/core#definition> "Assigns a single Access Control Role to a Principal."@en .
+<http://w3id.org/dpp/access-control#hasRole> <http://www.w3.org/2004/02/skos/core#prefLabel> "has role"@en .
+# 
+# http://w3id.org/dpp/access-control#ownedBy
+<http://w3id.org/dpp/access-control#ownedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/dpp/access-control#ownedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#ownedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#DPPResource> .
+<http://w3id.org/dpp/access-control#ownedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/dpp/access-control#Principal> .
+<http://w3id.org/dpp/access-control#ownedBy> <http://www.w3.org/2004/02/skos/core#definition> "The Principal who is the authoritative data owner of this\n         DPP resource and may grant or revoke access."@en .
+<http://w3id.org/dpp/access-control#ownedBy> <http://www.w3.org/2004/02/skos/core#prefLabel> "owned by"@en .
+# 
+# http://w3id.org/dpp/access-control#policyOwner
+<http://w3id.org/dpp/access-control#policyOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/dpp/access-control#policyOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#policyOwner> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#AccessPolicy> .
+<http://w3id.org/dpp/access-control#policyOwner> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/dpp/access-control#Principal> .
+<http://w3id.org/dpp/access-control#policyOwner> <http://www.w3.org/2004/02/skos/core#definition> "The Principal responsible for the lifecycle of this policy."@en .
+<http://w3id.org/dpp/access-control#policyOwner> <http://www.w3.org/2004/02/skos/core#prefLabel> "policy owner"@en .
+# 
+# http://w3id.org/dpp/access-control#requestContext
+<http://w3id.org/dpp/access-control#requestContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/dpp/access-control#requestContext> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#AccessRequest> .
+<http://w3id.org/dpp/access-control#requestContext> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/dpp/access-control#AccessContext> .
+<http://w3id.org/dpp/access-control#requestContext> <http://www.w3.org/2004/02/skos/core#definition> "Environmental or situational metadata that conditions the evaluation\n         of this access request."@en .
+<http://w3id.org/dpp/access-control#requestContext> <http://www.w3.org/2004/02/skos/core#prefLabel> "request context"@en .
+# 
+# http://w3id.org/dpp/access-control#requestedAction
+<http://w3id.org/dpp/access-control#requestedAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/dpp/access-control#requestedAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#requestedAction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#AccessRequest> .
+<http://w3id.org/dpp/access-control#requestedAction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/odrl/2/Action> .
+<http://w3id.org/dpp/access-control#requestedAction> <http://www.w3.org/2004/02/skos/core#definition> "The CRUD action the Principal intends to perform."@en .
+<http://w3id.org/dpp/access-control#requestedAction> <http://www.w3.org/2004/02/skos/core#prefLabel> "requested action"@en .
+# 
+# http://w3id.org/dpp/access-control#requestedBy
+<http://w3id.org/dpp/access-control#requestedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/dpp/access-control#requestedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#requestedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#AccessRequest> .
+<http://w3id.org/dpp/access-control#requestedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/dpp/access-control#Principal> .
+<http://w3id.org/dpp/access-control#requestedBy> <http://www.w3.org/2004/02/skos/core#definition> "Links an AccessRequest to the Principal who submitted it."@en .
+<http://w3id.org/dpp/access-control#requestedBy> <http://www.w3.org/2004/02/skos/core#prefLabel> "requested by"@en .
+# 
+# http://w3id.org/dpp/access-control#requestedResource
+<http://w3id.org/dpp/access-control#requestedResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/dpp/access-control#requestedResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#requestedResource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#AccessRequest> .
+<http://w3id.org/dpp/access-control#requestedResource> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/dpp/access-control#DPPResource> .
+<http://w3id.org/dpp/access-control#requestedResource> <http://www.w3.org/2004/02/skos/core#definition> "The DPP resource the Principal intends to access."@en .
+<http://w3id.org/dpp/access-control#requestedResource> <http://www.w3.org/2004/02/skos/core#prefLabel> "requested resource"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/dpp/access-control#accessValidFrom
+<http://w3id.org/dpp/access-control#accessValidFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/dpp/access-control#accessValidFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#accessValidFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#TemporalContext> .
+<http://w3id.org/dpp/access-control#accessValidFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/dpp/access-control#accessValidFrom> <http://www.w3.org/2004/02/skos/core#definition> "The UTC date-time from which this temporal access window opens."@en .
+<http://w3id.org/dpp/access-control#accessValidFrom> <http://www.w3.org/2004/02/skos/core#prefLabel> "access valid from"@en .
+# 
+# http://w3id.org/dpp/access-control#accessValidUntil
+<http://w3id.org/dpp/access-control#accessValidUntil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/dpp/access-control#accessValidUntil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#accessValidUntil> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#TemporalContext> .
+<http://w3id.org/dpp/access-control#accessValidUntil> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/dpp/access-control#accessValidUntil> <http://www.w3.org/2004/02/skos/core#definition> "The UTC date-time at which this temporal access window closes."@en .
+<http://w3id.org/dpp/access-control#accessValidUntil> <http://www.w3.org/2004/02/skos/core#prefLabel> "access valid until"@en .
+# 
+# http://w3id.org/dpp/access-control#certificationIsValid
+<http://w3id.org/dpp/access-control#certificationIsValid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/dpp/access-control#certificationIsValid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#certificationIsValid> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#CertificationContext> .
+<http://w3id.org/dpp/access-control#certificationIsValid> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://w3id.org/dpp/access-control#certificationIsValid> <http://www.w3.org/2004/02/skos/core#definition> "True if the referenced certification is currently valid and in good standing."@en .
+<http://w3id.org/dpp/access-control#certificationIsValid> <http://www.w3.org/2004/02/skos/core#prefLabel> "certification is valid"@en .
+# 
+# http://w3id.org/dpp/access-control#certificationScheme
+<http://w3id.org/dpp/access-control#certificationScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/dpp/access-control#certificationScheme> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#CertificationContext> .
+<http://w3id.org/dpp/access-control#certificationScheme> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/dpp/access-control#certificationScheme> <http://www.w3.org/2004/02/skos/core#definition> "The name or identifier of the certification scheme."@en .
+<http://w3id.org/dpp/access-control#certificationScheme> <http://www.w3.org/2004/02/skos/core#prefLabel> "certification scheme"@en .
+# 
+# http://w3id.org/dpp/access-control#conflictResolutionApplied
+<http://w3id.org/dpp/access-control#conflictResolutionApplied> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/dpp/access-control#conflictResolutionApplied> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#AccessDecision> .
+<http://w3id.org/dpp/access-control#conflictResolutionApplied> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://w3id.org/dpp/access-control#conflictResolutionApplied> <http://www.w3.org/2004/02/skos/core#definition> "True if a deny-overrides conflict resolution strategy was\n         invoked during this decision evaluation."@en .
+<http://w3id.org/dpp/access-control#conflictResolutionApplied> <http://www.w3.org/2004/02/skos/core#prefLabel> "conflict resolution applied"@en .
+# 
+# http://w3id.org/dpp/access-control#constraintAttribute
+<http://w3id.org/dpp/access-control#constraintAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/dpp/access-control#constraintAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#constraintAttribute> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#AttributeConstraint> .
+<http://w3id.org/dpp/access-control#constraintAttribute> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/dpp/access-control#constraintAttribute> <http://www.w3.org/2004/02/skos/core#definition> "The name of the attribute being constrained."@en .
+<http://w3id.org/dpp/access-control#constraintAttribute> <http://www.w3.org/2004/02/skos/core#prefLabel> "constraint attribute"@en .
+<http://w3id.org/dpp/access-control#constraintAttribute> <http://www.w3.org/2004/02/skos/core#scopeNote> "E.g., trustAssuranceLevel, resourceSensitivity, certificationIsValid."@en .
+# 
+# http://w3id.org/dpp/access-control#constraintOperator
+<http://w3id.org/dpp/access-control#constraintOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/dpp/access-control#constraintOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#constraintOperator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#AttributeConstraint> .
+<http://w3id.org/dpp/access-control#constraintOperator> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/dpp/access-control#constraintOperator> <http://www.w3.org/2004/02/skos/core#definition> "The comparison operator applied to the attribute value."@en .
+<http://w3id.org/dpp/access-control#constraintOperator> <http://www.w3.org/2004/02/skos/core#prefLabel> "constraint operator"@en .
+<http://w3id.org/dpp/access-control#constraintOperator> <http://www.w3.org/2004/02/skos/core#scopeNote> "Allowed values: EQ, NEQ, GT, LT, GTE, LTE, IN."@en .
+# 
+# http://w3id.org/dpp/access-control#constraintValue
+<http://w3id.org/dpp/access-control#constraintValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/dpp/access-control#constraintValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#constraintValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#AttributeConstraint> .
+<http://w3id.org/dpp/access-control#constraintValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/dpp/access-control#constraintValue> <http://www.w3.org/2004/02/skos/core#definition> "The value against which the attribute is compared."@en .
+<http://w3id.org/dpp/access-control#constraintValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "constraint value"@en .
+# 
+# http://w3id.org/dpp/access-control#decisionOutcome
+<http://w3id.org/dpp/access-control#decisionOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/dpp/access-control#decisionOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#decisionOutcome> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#AccessDecision> .
+<http://w3id.org/dpp/access-control#decisionOutcome> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/dpp/access-control#decisionOutcome> <http://www.w3.org/2004/02/skos/core#definition> "The result of evaluating the access request."@en .
+<http://w3id.org/dpp/access-control#decisionOutcome> <http://www.w3.org/2004/02/skos/core#prefLabel> "decision outcome"@en .
+<http://w3id.org/dpp/access-control#decisionOutcome> <http://www.w3.org/2004/02/skos/core#scopeNote> "Allowed values: GRANT, DENY, DELEGATE, PENDING."@en .
+# 
+# http://w3id.org/dpp/access-control#decisionTimestamp
+<http://w3id.org/dpp/access-control#decisionTimestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/dpp/access-control#decisionTimestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#decisionTimestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#AccessDecision> .
+<http://w3id.org/dpp/access-control#decisionTimestamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/dpp/access-control#decisionTimestamp> <http://www.w3.org/2004/02/skos/core#definition> "The UTC date-time at which the access decision was recorded."@en .
+<http://w3id.org/dpp/access-control#decisionTimestamp> <http://www.w3.org/2004/02/skos/core#prefLabel> "decision timestamp"@en .
+# 
+# http://w3id.org/dpp/access-control#declaredPurpose
+<http://w3id.org/dpp/access-control#declaredPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/dpp/access-control#declaredPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#declaredPurpose> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#PurposeContext> .
+<http://w3id.org/dpp/access-control#declaredPurpose> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/dpp/access-control#declaredPurpose> <http://www.w3.org/2004/02/skos/core#definition> "A textual description of the purpose for which data access is requested."@en .
+<http://w3id.org/dpp/access-control#declaredPurpose> <http://www.w3.org/2004/02/skos/core#prefLabel> "declared purpose"@en .
+# 
+# http://w3id.org/dpp/access-control#delegationDepth
+<http://w3id.org/dpp/access-control#delegationDepth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/dpp/access-control#delegationDepth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#delegationDepth> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#Delegation> .
+<http://w3id.org/dpp/access-control#delegationDepth> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://w3id.org/dpp/access-control#delegationDepth> <http://www.w3.org/2004/02/skos/core#definition> "The number of sub-delegation hops permitted from this delegation."@en .
+<http://w3id.org/dpp/access-control#delegationDepth> <http://www.w3.org/2004/02/skos/core#prefLabel> "delegation depth"@en .
+<http://w3id.org/dpp/access-control#delegationDepth> <http://www.w3.org/2004/02/skos/core#scopeNote> "Maximum allowed value is 1. Sub-delegation is prohibited by policy."@en .
+# 
+# http://w3id.org/dpp/access-control#delegationIsActive
+<http://w3id.org/dpp/access-control#delegationIsActive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/dpp/access-control#delegationIsActive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#delegationIsActive> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#Delegation> .
+<http://w3id.org/dpp/access-control#delegationIsActive> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://w3id.org/dpp/access-control#delegationIsActive> <http://www.w3.org/2004/02/skos/core#definition> "True if this delegation is currently within its valid time window\n         and has not been revoked."@en .
+<http://w3id.org/dpp/access-control#delegationIsActive> <http://www.w3.org/2004/02/skos/core#prefLabel> "delegation is active"@en .
+# 
+# http://w3id.org/dpp/access-control#delegationValidFrom
+<http://w3id.org/dpp/access-control#delegationValidFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/dpp/access-control#delegationValidFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#delegationValidFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#Delegation> .
+<http://w3id.org/dpp/access-control#delegationValidFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/dpp/access-control#delegationValidFrom> <http://www.w3.org/2004/02/skos/core#definition> "The UTC date-time from which the delegation is active."@en .
+<http://w3id.org/dpp/access-control#delegationValidFrom> <http://www.w3.org/2004/02/skos/core#prefLabel> "delegation valid from"@en .
+# 
+# http://w3id.org/dpp/access-control#delegationValidUntil
+<http://w3id.org/dpp/access-control#delegationValidUntil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/dpp/access-control#delegationValidUntil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#delegationValidUntil> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#Delegation> .
+<http://w3id.org/dpp/access-control#delegationValidUntil> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/dpp/access-control#delegationValidUntil> <http://www.w3.org/2004/02/skos/core#definition> "The UTC date-time at which the delegation expires."@en .
+<http://w3id.org/dpp/access-control#delegationValidUntil> <http://www.w3.org/2004/02/skos/core#prefLabel> "delegation valid until"@en .
+# 
+# http://w3id.org/dpp/access-control#jurisdictionCode
+<http://w3id.org/dpp/access-control#jurisdictionCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/dpp/access-control#jurisdictionCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#jurisdictionCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#GeographicContext> .
+<http://w3id.org/dpp/access-control#jurisdictionCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/dpp/access-control#jurisdictionCode> <http://www.w3.org/2004/02/skos/core#definition> "The jurisdiction in which this access constraint applies."@en .
+<http://w3id.org/dpp/access-control#jurisdictionCode> <http://www.w3.org/2004/02/skos/core#prefLabel> "jurisdiction code"@en .
+<http://w3id.org/dpp/access-control#jurisdictionCode> <http://www.w3.org/2004/02/skos/core#scopeNote> "ISO 3166-1 alpha-2 country code, or the literals EU or EEA."@en .
+# 
+# http://w3id.org/dpp/access-control#permittedPurpose
+<http://w3id.org/dpp/access-control#permittedPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/dpp/access-control#permittedPurpose> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#AccessPolicy> .
+<http://w3id.org/dpp/access-control#permittedPurpose> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/dpp/access-control#permittedPurpose> <http://www.w3.org/2004/02/skos/core#definition> "A purpose code that an access request must declare to activate\n         this policy's permissions."@en .
+<http://w3id.org/dpp/access-control#permittedPurpose> <http://www.w3.org/2004/02/skos/core#prefLabel> "permitted purpose"@en .
+<http://w3id.org/dpp/access-control#permittedPurpose> <http://www.w3.org/2004/02/skos/core#scopeNote> "Must be one of the purpose codes defined in PurposeContextShape:\n         MAINTENANCE, COMPLIANCE_AUDIT, RECYCLING_PROCESSING,\n         MARKET_SURVEILLANCE, CUSTOMS_INSPECTION, CONSUMER_INFORMATION,\n         RESEARCH_DEVELOPMENT, SUPPLY_CHAIN_DUE_DILIGENCE."@en .
+# 
+# http://w3id.org/dpp/access-control#policyValidFrom
+<http://w3id.org/dpp/access-control#policyValidFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/dpp/access-control#policyValidFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#AccessPolicy> .
+<http://w3id.org/dpp/access-control#policyValidFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/dpp/access-control#policyValidFrom> <http://www.w3.org/2004/02/skos/core#definition> "The UTC date-time from which this policy is active."@en .
+<http://w3id.org/dpp/access-control#policyValidFrom> <http://www.w3.org/2004/02/skos/core#prefLabel> "policy valid from"@en .
+# 
+# http://w3id.org/dpp/access-control#policyValidUntil
+<http://w3id.org/dpp/access-control#policyValidUntil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/dpp/access-control#policyValidUntil> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#AccessPolicy> .
+<http://w3id.org/dpp/access-control#policyValidUntil> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/dpp/access-control#policyValidUntil> <http://www.w3.org/2004/02/skos/core#definition> "The UTC date-time after which this policy expires."@en .
+<http://w3id.org/dpp/access-control#policyValidUntil> <http://www.w3.org/2004/02/skos/core#prefLabel> "policy valid until"@en .
+# 
+# http://w3id.org/dpp/access-control#requestTimestamp
+<http://w3id.org/dpp/access-control#requestTimestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/dpp/access-control#requestTimestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#requestTimestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#AccessRequest> .
+<http://w3id.org/dpp/access-control#requestTimestamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/dpp/access-control#requestTimestamp> <http://www.w3.org/2004/02/skos/core#definition> "The UTC date-time at which the AccessRequest was submitted."@en .
+<http://w3id.org/dpp/access-control#requestTimestamp> <http://www.w3.org/2004/02/skos/core#prefLabel> "request timestamp"@en .
+# 
+# http://w3id.org/dpp/access-control#resourceSensitivity
+<http://w3id.org/dpp/access-control#resourceSensitivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/dpp/access-control#resourceSensitivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#resourceSensitivity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#DPPResource> .
+<http://w3id.org/dpp/access-control#resourceSensitivity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/dpp/access-control#resourceSensitivity> <http://www.w3.org/2004/02/skos/core#definition> "Classification of the sensitivity level of this DPP resource."@en .
+<http://w3id.org/dpp/access-control#resourceSensitivity> <http://www.w3.org/2004/02/skos/core#prefLabel> "resource sensitivity"@en .
+<http://w3id.org/dpp/access-control#resourceSensitivity> <http://www.w3.org/2004/02/skos/core#scopeNote> "Allowed values: PUBLIC, RESTRICTED, CONFIDENTIAL,\n         STRICTLY_CONFIDENTIAL."@en .
+# 
+# http://w3id.org/dpp/access-control#trustAssuranceLevel
+<http://w3id.org/dpp/access-control#trustAssuranceLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/dpp/access-control#trustAssuranceLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/dpp/access-control#trustAssuranceLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/dpp/access-control#TrustContext> .
+<http://w3id.org/dpp/access-control#trustAssuranceLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/dpp/access-control#trustAssuranceLevel> <http://www.w3.org/2004/02/skos/core#definition> "The eIDAS assurance level of the requester's authentication."@en .
+<http://w3id.org/dpp/access-control#trustAssuranceLevel> <http://www.w3.org/2004/02/skos/core#prefLabel> "trust assurance level"@en .
+<http://w3id.org/dpp/access-control#trustAssuranceLevel> <http://www.w3.org/2004/02/skos/core#scopeNote> "eIDAS values: LOW, SUBSTANTIAL, HIGH."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/dpp/access-control#AccessContext
+<http://w3id.org/dpp/access-control#AccessContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dpp/access-control#AccessContext> <http://www.w3.org/2004/02/skos/core#definition> "Environmental, temporal, geographic, or purpose-related\n         metadata that conditions the evaluation of an access\n         request."@en .
+<http://w3id.org/dpp/access-control#AccessContext> <http://www.w3.org/2004/02/skos/core#prefLabel> "Access Context"@en .
+# 
+# http://w3id.org/dpp/access-control#AccessDecision
+<http://w3id.org/dpp/access-control#AccessDecision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dpp/access-control#AccessDecision> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dpp/access-control#AccessDecision> <http://www.w3.org/2004/02/skos/core#definition> "An immutable, time-stamped record of the outcome of evaluating\n         an AccessRequest against applicable AccessPolicies."@en .
+<http://w3id.org/dpp/access-control#AccessDecision> <http://www.w3.org/2004/02/skos/core#prefLabel> "Access Decision"@en .
+# 
+# http://w3id.org/dpp/access-control#AccessPolicy
+<http://w3id.org/dpp/access-control#AccessPolicy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dpp/access-control#AccessPolicy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Policy> .
+<http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dpp/access-control#AccessPolicy> <http://www.w3.org/2004/02/skos/core#definition> "A declarative specification of permissions and prohibitions\n         over DPP resources, scoped to a Role and optionally\n         conditioned on contextual constraints."@en .
+<http://w3id.org/dpp/access-control#AccessPolicy> <http://www.w3.org/2004/02/skos/core#prefLabel> "DPP Access Policy"@en .
+# 
+# http://w3id.org/dpp/access-control#AccessRequest
+<http://w3id.org/dpp/access-control#AccessRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dpp/access-control#AccessRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dpp/access-control#AccessRequest> <http://www.w3.org/2004/02/skos/core#definition> "A formal, time-stamped expression of intent by a Principal\n         to perform a specific Action on a specific DPP resource."@en .
+<http://w3id.org/dpp/access-control#AccessRequest> <http://www.w3.org/2004/02/skos/core#prefLabel> "Access Request"@en .
+# 
+# http://w3id.org/dpp/access-control#AttributeConstraint
+<http://w3id.org/dpp/access-control#AttributeConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dpp/access-control#AttributeConstraint> <http://www.w3.org/2004/02/skos/core#definition> "A condition on a named attribute of the requesting Principal\n         or target resource that must be satisfied for a policy's\n         permissions to apply."@en .
+<http://w3id.org/dpp/access-control#AttributeConstraint> <http://www.w3.org/2004/02/skos/core#prefLabel> "Attribute Constraint"@en .
+# 
+# http://w3id.org/dpp/access-control#CertificationContext
+<http://w3id.org/dpp/access-control#CertificationContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dpp/access-control#CertificationContext> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/dpp/access-control#AccessContext> .
+<http://w3id.org/dpp/access-control#CertificationContext> <http://www.w3.org/2004/02/skos/core#definition> "Evidence of a certification held by the requesting Principal\n         that may unlock access to restricted DPP data."@en .
+<http://w3id.org/dpp/access-control#CertificationContext> <http://www.w3.org/2004/02/skos/core#prefLabel> "Certification Context"@en .
+# 
+# http://w3id.org/dpp/access-control#DPPResource
+<http://w3id.org/dpp/access-control#DPPResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dpp/access-control#DPPResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Asset> .
+<http://www.w3.org/ns/odrl/2/Asset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dpp/access-control#DPPResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://w3id.org/dpp/access-control#DPPResource> <http://www.w3.org/2004/02/skos/core#definition> "A discrete, addressable unit of data within a Digital Product\n         Passport that may be the target of an access request."@en .
+<http://w3id.org/dpp/access-control#DPPResource> <http://www.w3.org/2004/02/skos/core#prefLabel> "DPP Resource"@en .
+# 
+# http://w3id.org/dpp/access-control#Delegation
+<http://w3id.org/dpp/access-control#Delegation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dpp/access-control#Delegation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<http://w3id.org/dpp/access-control#Delegation> <http://www.w3.org/2004/02/skos/core#definition> "A bounded, time-limited transfer of a subset of access rights\n         from one Principal to another."@en .
+<http://w3id.org/dpp/access-control#Delegation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Delegation"@en .
+# 
+# http://w3id.org/dpp/access-control#GeographicContext
+<http://w3id.org/dpp/access-control#GeographicContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dpp/access-control#GeographicContext> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/dpp/access-control#AccessContext> .
+<http://w3id.org/dpp/access-control#GeographicContext> <http://www.w3.org/2004/02/skos/core#definition> "A jurisdictional constraint on where access may be exercised."@en .
+<http://w3id.org/dpp/access-control#GeographicContext> <http://www.w3.org/2004/02/skos/core#prefLabel> "Geographic Context"@en .
+# 
+# http://w3id.org/dpp/access-control#HumanPrincipal
+<http://w3id.org/dpp/access-control#HumanPrincipal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dpp/access-control#HumanPrincipal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/dpp/access-control#Principal> .
+<http://w3id.org/dpp/access-control#HumanPrincipal> <http://www.w3.org/2004/02/skos/core#definition> "A natural person acting as a DPP data requester or owner."@en .
+<http://w3id.org/dpp/access-control#HumanPrincipal> <http://www.w3.org/2004/02/skos/core#prefLabel> "Human Principal"@en .
+# 
+# http://w3id.org/dpp/access-control#OrganisationPrincipal
+<http://w3id.org/dpp/access-control#OrganisationPrincipal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dpp/access-control#OrganisationPrincipal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/dpp/access-control#Principal> .
+<http://w3id.org/dpp/access-control#OrganisationPrincipal> <http://www.w3.org/2004/02/skos/core#definition> "A legal entity or organisation acting as a DPP stakeholder."@en .
+<http://w3id.org/dpp/access-control#OrganisationPrincipal> <http://www.w3.org/2004/02/skos/core#prefLabel> "Organisation Principal"@en .
+# 
+# http://w3id.org/dpp/access-control#Principal
+<http://w3id.org/dpp/access-control#Principal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dpp/access-control#Principal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Party> .
+<http://www.w3.org/ns/odrl/2/Party> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dpp/access-control#Principal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dpp/access-control#Principal> <http://www.w3.org/2004/02/skos/core#definition> "Any entity — human, organisation, or automated system — that\n         may request access to DPP resources."@en .
+<http://w3id.org/dpp/access-control#Principal> <http://www.w3.org/2004/02/skos/core#prefLabel> "Principal"@en .
+# 
+# http://w3id.org/dpp/access-control#PurposeContext
+<http://w3id.org/dpp/access-control#PurposeContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dpp/access-control#PurposeContext> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/dpp/access-control#AccessContext> .
+<http://w3id.org/dpp/access-control#PurposeContext> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dpv#Purpose> .
+<https://w3id.org/dpv#Purpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dpp/access-control#PurposeContext> <http://www.w3.org/2004/02/skos/core#definition> "The declared purpose for which a Principal requests access,\n         per GDPR Article 5(1)(b) purpose limitation."@en .
+<http://w3id.org/dpp/access-control#PurposeContext> <http://www.w3.org/2004/02/skos/core#prefLabel> "Purpose Context"@en .
+# 
+# http://w3id.org/dpp/access-control#Role
+<http://w3id.org/dpp/access-control#Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dpp/access-control#Role> <http://www.w3.org/2004/02/skos/core#definition> "A named function or responsibility assigned to a Principal\n         that determines which access policies apply."@en .
+<http://w3id.org/dpp/access-control#Role> <http://www.w3.org/2004/02/skos/core#prefLabel> "Access Control Role"@en .
+# 
+# http://w3id.org/dpp/access-control#SystemPrincipal
+<http://w3id.org/dpp/access-control#SystemPrincipal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dpp/access-control#SystemPrincipal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/dpp/access-control#Principal> .
+<http://w3id.org/dpp/access-control#SystemPrincipal> <http://www.w3.org/2004/02/skos/core#definition> "An automated agent or software system acting as a DPP data\n         consumer or producer."@en .
+<http://w3id.org/dpp/access-control#SystemPrincipal> <http://www.w3.org/2004/02/skos/core#prefLabel> "System Principal"@en .
+# 
+# http://w3id.org/dpp/access-control#TemporalContext
+<http://w3id.org/dpp/access-control#TemporalContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dpp/access-control#TemporalContext> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/dpp/access-control#AccessContext> .
+<http://w3id.org/dpp/access-control#TemporalContext> <http://www.w3.org/2004/02/skos/core#definition> "A time window within which access is permitted."@en .
+<http://w3id.org/dpp/access-control#TemporalContext> <http://www.w3.org/2004/02/skos/core#prefLabel> "Temporal Context"@en .
+# 
+# http://w3id.org/dpp/access-control#TrustContext
+<http://w3id.org/dpp/access-control#TrustContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dpp/access-control#TrustContext> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/dpp/access-control#AccessContext> .
+<http://w3id.org/dpp/access-control#TrustContext> <http://www.w3.org/2004/02/skos/core#definition> "The assurance level of the authentication mechanism used\n         by the requesting Principal."@en .
+<http://w3id.org/dpp/access-control#TrustContext> <http://www.w3.org/2004/02/skos/core#prefLabel> "Trust Context"@en .
+# 
+# http://w3id.org/dpp/data-categories#DataCategory
+# 
+# http://www.w3.org/ns/odrl/2/Action
+# 
+# http://www.w3.org/ns/odrl/2/Asset
+# 
+# http://www.w3.org/ns/odrl/2/Party
+# 
+# http://www.w3.org/ns/odrl/2/Policy
+# 
+# http://www.w3.org/ns/prov#Activity
+# 
+# http://www.w3.org/ns/prov#Agent
+# 
+# http://www.w3.org/ns/prov#Entity
+# 
+# https://w3id.org/dpv#Purpose
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/dpp/access-control#CreateResource
+<http://w3id.org/dpp/access-control#CreateResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/dpp/access-control#CreateResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/odrl/2/Action> .
+<http://w3id.org/dpp/access-control#CreateResource> <http://www.w3.org/2004/02/skos/core#definition> "Introduce a new data record into a DPP module where no prior\n         record exists for that resource identifier."@en .
+<http://w3id.org/dpp/access-control#CreateResource> <http://www.w3.org/2004/02/skos/core#prefLabel> "Create"@en .
+# 
+# http://w3id.org/dpp/access-control#DelegateAccess
+<http://w3id.org/dpp/access-control#DelegateAccess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/dpp/access-control#DelegateAccess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/odrl/2/Action> .
+<http://w3id.org/dpp/access-control#DelegateAccess> <http://www.w3.org/2004/02/skos/core#definition> "Transfer a subset of one's own access rights to another\n         Principal for a bounded scope and time period."@en .
+<http://w3id.org/dpp/access-control#DelegateAccess> <http://www.w3.org/2004/02/skos/core#prefLabel> "Delegate"@en .
+# 
+# http://w3id.org/dpp/access-control#DeleteResource
+<http://w3id.org/dpp/access-control#DeleteResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/dpp/access-control#DeleteResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/odrl/2/Action> .
+<http://w3id.org/dpp/access-control#DeleteResource> <http://www.w3.org/2004/02/skos/core#definition> "Remove a DPP resource record, subject to data retention\n         obligations."@en .
+<http://w3id.org/dpp/access-control#DeleteResource> <http://www.w3.org/2004/02/skos/core#prefLabel> "Delete"@en .
+# 
+# http://w3id.org/dpp/access-control#ReadResource
+<http://w3id.org/dpp/access-control#ReadResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/dpp/access-control#ReadResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/odrl/2/Action> .
+<http://w3id.org/dpp/access-control#ReadResource> <http://www.w3.org/2004/02/skos/core#definition> "Retrieve and inspect the content of a DPP resource without\n         modifying it."@en .
+<http://w3id.org/dpp/access-control#ReadResource> <http://www.w3.org/2004/02/skos/core#prefLabel> "Read"@en .
+# 
+# http://w3id.org/dpp/access-control#UpdateResource
+<http://w3id.org/dpp/access-control#UpdateResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/dpp/access-control#UpdateResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/odrl/2/Action> .
+<http://w3id.org/dpp/access-control#UpdateResource> <http://www.w3.org/2004/02/skos/core#definition> "Modify the content of an existing DPP resource record."@en .
+<http://w3id.org/dpp/access-control#UpdateResource> <http://www.w3.org/2004/02/skos/core#prefLabel> "Update"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

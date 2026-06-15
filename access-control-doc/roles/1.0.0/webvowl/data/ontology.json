@@ -1,0 +1,523 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://w3id.org/dpp/roles", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://w3id.org/dpp/access-control", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "en" : "DPP Stakeholder Role Taxonomy"
+    },
+    "iri" : "http://w3id.org/dpp/roles",
+    "version" : "1.0.0",
+    "author" : [ "Rahel Kebede" ],
+    "description" : {
+      "en" : "OWL class hierarchy of stakeholder roles defined in the ESPR Digital\n         Product Passport framework. Roles are modelled as classes (not individuals)\n         to support ABAC attribute constraints via class-level SHACL shapes."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Rahel Kebede",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Annika Moscati",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Peter Johansson",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Bincy Veena",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2026-04-01",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "DPP Stakeholder Role Taxonomy",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://w3id.org/dpp/roles#AuthorisedRepresentativeRole",
+    "baseIri" : "http://w3id.org/dpp/roles",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Authorised Representative",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A natural or legal person established in the EU mandated by\n         the manufacturer to act on their behalf.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "ESPR Article 4(1)(d).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AuthorisedRepresentativeRole"
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/roles#CustomsAuthorityRole",
+    "baseIri" : "http://w3id.org/dpp/roles",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Customs Authority",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A customs enforcement authority with read access to\n         product identification and certification data at border control.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CustomsAuthorityRole"
+    },
+    "id" : "10",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/roles#RecyclerRole",
+    "baseIri" : "http://w3id.org/dpp/roles",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Recycler",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An entity processing products at end-of-life with read access\n         to material composition and disassembly instruction data.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RecyclerRole"
+    },
+    "id" : "11",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/roles#ManufacturerRole",
+    "baseIri" : "http://w3id.org/dpp/roles",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Manufacturer",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The entity that manufactures the product and is the primary\n         DPP data owner with full read/write access to all modules.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "ESPR Article 4(1)(a).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ManufacturerRole"
+    },
+    "id" : "7",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/roles#MaintenanceTechnicianRole",
+    "baseIri" : "http://w3id.org/dpp/roles",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Maintenance Technician",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A certified technician performing repair or maintenance with\n         read access to use-and-maintenance and repairability data.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MaintenanceTechnicianRole"
+    },
+    "id" : "21",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/roles#RegulatoryAuthority",
+    "baseIri" : "http://w3id.org/dpp/roles",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Regulatory Authority",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A public authority with statutory rights to access DPP data\n         for market surveillance or customs enforcement.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RegulatoryAuthority"
+    },
+    "subClasses" : [ "10", "3" ],
+    "id" : "4",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/roles#ImporterRole",
+    "baseIri" : "http://w3id.org/dpp/roles",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Importer",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An entity that places products manufactured outside the EU\n         on the EU market and assumes ESPR obligations.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "ESPR Article 4(1)(b).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ImporterRole"
+    },
+    "id" : "9",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/roles#EconomicOperator",
+    "baseIri" : "http://w3id.org/dpp/roles",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Economic Operator",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A role defined under ESPR Article 4 with specific DPP data\n         rights and obligations.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EconomicOperator"
+    },
+    "subClasses" : [ "0", "7", "9", "14" ],
+    "id" : "1",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#Role",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Role"
+    },
+    "subClasses" : [ "16", "18", "4", "1", "11" ],
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://w3id.org/dpp/roles#ConsumerRole",
+    "baseIri" : "http://w3id.org/dpp/roles",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Consumer",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An end user with read access to public and use-phase DPP data,\n         including product identification and energy efficiency data.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ConsumerRole"
+    },
+    "id" : "18",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/roles#DistributorRole",
+    "baseIri" : "http://w3id.org/dpp/roles",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Distributor",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An entity in the supply chain that makes a product available\n         on the market other than the manufacturer or importer.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "ESPR Article 4(1)(c).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DistributorRole"
+    },
+    "id" : "14",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/roles#MarketSurveillanceAuthorityRole",
+    "baseIri" : "http://w3id.org/dpp/roles",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Market Surveillance Authority",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A national authority with full read access to all DPP\n         modules per ESPR Article 14.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "ESPR Article 14; Regulation (EU) 2019/1020.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MarketSurveillanceAuthorityRole"
+    },
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/roles#ServiceProviderRole",
+    "baseIri" : "http://w3id.org/dpp/roles",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Service Provider",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An entity providing after-sales services such as repair,\n         maintenance, or refurbishment.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ServiceProviderRole"
+    },
+    "subClasses" : [ "21" ],
+    "id" : "16",
+    "superClasses" : [ "12" ]
+  } ],
+  "property" : [ {
+    "id" : "2",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "2"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "5"
+  }, {
+    "range" : "1",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "6"
+  }, {
+    "range" : "1",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "8"
+  }, {
+    "range" : "1",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "13"
+  }, {
+    "range" : "12",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "range" : "12",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "17"
+  }, {
+    "range" : "12",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "range" : "16",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
+  }, {
+    "range" : "4",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "range" : "12",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "range" : "12",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  } ]
+}

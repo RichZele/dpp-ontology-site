@@ -1,0 +1,848 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://w3id.org/dpp/data-categories", "http://www.w3.org/2000/01/rdf-schema", "http://w3id.org/dpp/access-control", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "en" : "DPP Data Category Taxonomy"
+    },
+    "iri" : "http://w3id.org/dpp/data-categories",
+    "version" : "1.0.0",
+    "author" : [ "Rahel Kebede" ],
+    "description" : {
+      "en" : "ESPR Annex III-aligned taxonomy of Digital Product Passport data categories.\n         Used as the canonical resource classification for dpp-ac access control\n         policy scoping. Data categories are modelled as OWL classes (not individuals)\n         to enable subsumption-based policy inheritance."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Rahel Kebede",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Bincy Veena",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Annika Moscati",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Peter Johansson",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2026-04-01",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "DPP Data Category Taxonomy",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://w3id.org/dpp/data-categories#MaterialCompositionData",
+    "baseIri" : "http://w3id.org/dpp/data-categories",
+    "instances" : 0,
+    "annotations" : {
+      "espr-annex" : [ {
+        "identifier" : "espr-annex",
+        "language" : "undefined",
+        "value" : "III.3",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Material Composition Data",
+        "type" : "label"
+      } ],
+      "resourceSensitivity" : [ {
+        "identifier" : "resourceSensitivity",
+        "language" : "undefined",
+        "value" : "RESTRICTED",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Substances, materials, and components including substances\n         of concern per ESPR Annex III.3.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MaterialCompositionData"
+    },
+    "subClasses" : [ "2" ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/data-categories#EndOfLifeData",
+    "baseIri" : "http://w3id.org/dpp/data-categories",
+    "instances" : 0,
+    "annotations" : {
+      "espr-annex" : [ {
+        "identifier" : "espr-annex",
+        "language" : "undefined",
+        "value" : "III.7",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "End-of-Life Data",
+        "type" : "label"
+      } ],
+      "resourceSensitivity" : [ {
+        "identifier" : "resourceSensitivity",
+        "language" : "undefined",
+        "value" : "PUBLIC",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Disassembly instructions, recyclability information, and\n         waste handling guidance per ESPR Annex III.7.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EndOfLifeData"
+    },
+    "subClasses" : [ "7" ],
+    "id" : "6",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/data-categories#ProductIdentificationData",
+    "baseIri" : "http://w3id.org/dpp/data-categories",
+    "instances" : 0,
+    "annotations" : {
+      "espr-annex" : [ {
+        "identifier" : "espr-annex",
+        "language" : "undefined",
+        "value" : "III.1",
+        "type" : "label"
+      } ],
+      "resourceSensitivity" : [ {
+        "identifier" : "resourceSensitivity",
+        "language" : "undefined",
+        "value" : "PUBLIC",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Product Identification Data",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "GTIN, serial number, model designation, manufacturer identity.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ProductIdentificationData"
+    },
+    "id" : "18",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/data-categories#SupplyChainData",
+    "baseIri" : "http://w3id.org/dpp/data-categories",
+    "instances" : 0,
+    "annotations" : {
+      "espr-annex" : [ {
+        "identifier" : "espr-annex",
+        "language" : "undefined",
+        "value" : "III.4",
+        "type" : "label"
+      } ],
+      "resourceSensitivity" : [ {
+        "identifier" : "resourceSensitivity",
+        "language" : "undefined",
+        "value" : "CONFIDENTIAL",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Supply Chain Data",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Supplier identity, sourcing geography, and due diligence\n         documentation per ESPR Annex III.4.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SupplyChainData"
+    },
+    "id" : "24",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#MaintenancePhase",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Maintenance Phase",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MaintenancePhase"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#ManufacturingPhase",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Manufacturing Phase",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ManufacturingPhase"
+    },
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#UsePhase",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Use Phase",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UsePhase"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/data-categories#EnergyEfficiencyData",
+    "baseIri" : "http://w3id.org/dpp/data-categories",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Energy Efficiency Data",
+        "type" : "label"
+      } ],
+      "resourceSensitivity" : [ {
+        "identifier" : "resourceSensitivity",
+        "language" : "undefined",
+        "value" : "PUBLIC",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Energy consumption ratings, efficiency class, and measured\n         performance data.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EnergyEfficiencyData"
+    },
+    "id" : "27",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#EndOfLifePhase",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "End-of-Life Phase",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EndOfLifePhase"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/data-categories#CarbonFootprintData",
+    "baseIri" : "http://w3id.org/dpp/data-categories",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Carbon Footprint Data",
+        "type" : "label"
+      } ],
+      "resourceSensitivity" : [ {
+        "identifier" : "resourceSensitivity",
+        "language" : "undefined",
+        "value" : "RESTRICTED",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Product carbon footprint per ISO 14067 lifecycle stages.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "Per ISO 14067 and EU Battery Regulation Art. 7.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CarbonFootprintData"
+    },
+    "id" : "29",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/data-categories#HazardousSubstanceData",
+    "baseIri" : "http://w3id.org/dpp/data-categories",
+    "instances" : 0,
+    "annotations" : {
+      "resourceSensitivity" : [ {
+        "identifier" : "resourceSensitivity",
+        "language" : "undefined",
+        "value" : "STRICTLY_CONFIDENTIAL",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Hazardous Substance Data",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Substances of very high concern (SVHC) and other regulated\n         hazardous substances per REACH and ESPR.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HazardousSubstanceData"
+    },
+    "id" : "2",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/data-categories#RepairabilityData",
+    "baseIri" : "http://w3id.org/dpp/data-categories",
+    "instances" : 0,
+    "annotations" : {
+      "resourceSensitivity" : [ {
+        "identifier" : "resourceSensitivity",
+        "language" : "undefined",
+        "value" : "RESTRICTED",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Repairability and Durability Data",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Repairability score, spare parts availability, and durability\n         test results.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RepairabilityData"
+    },
+    "id" : "20",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/data-categories#DisassemblyInstructionData",
+    "baseIri" : "http://w3id.org/dpp/data-categories",
+    "instances" : 0,
+    "annotations" : {
+      "resourceSensitivity" : [ {
+        "identifier" : "resourceSensitivity",
+        "language" : "undefined",
+        "value" : "PUBLIC",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Disassembly Instruction Data",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Step-by-step instructions for safe disassembly enabling\n         component recovery and material separation.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DisassemblyInstructionData"
+    },
+    "id" : "7",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#LifecyclePhase",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Product Lifecycle Phase",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A distinct stage in the product lifecycle during which\n         specific DPP data categories may be created or accessed.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LifecyclePhase"
+    },
+    "subClasses" : [ "4", "9", "11", "13", "15" ],
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#DPPResource",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DPPResource"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#DistributionPhase",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Distribution Phase",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DistributionPhase"
+    },
+    "attributes" : [ "external" ],
+    "id" : "15",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/data-categories#UseAndMaintenanceData",
+    "baseIri" : "http://w3id.org/dpp/data-categories",
+    "instances" : 0,
+    "annotations" : {
+      "espr-annex" : [ {
+        "identifier" : "espr-annex",
+        "language" : "undefined",
+        "value" : "III.6",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Use and Maintenance Data",
+        "type" : "label"
+      } ],
+      "resourceSensitivity" : [ {
+        "identifier" : "resourceSensitivity",
+        "language" : "undefined",
+        "value" : "RESTRICTED",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Instructions for use, repair, spare parts availability,\n         and maintenance schedules per ESPR Annex III.6.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UseAndMaintenanceData"
+    },
+    "subClasses" : [ "20" ],
+    "id" : "21",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/data-categories#DataCategory",
+    "baseIri" : "http://w3id.org/dpp/data-categories",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "DPP Data Category",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A typed grouping of DPP data fields as enumerated in\n         ESPR Annex III.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DataCategory"
+    },
+    "subClasses" : [ "0", "24", "6", "18", "33", "28", "21" ],
+    "id" : "1",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/data-categories#CertificationData",
+    "baseIri" : "http://w3id.org/dpp/data-categories",
+    "instances" : 0,
+    "annotations" : {
+      "espr-annex" : [ {
+        "identifier" : "espr-annex",
+        "language" : "undefined",
+        "value" : "III.5",
+        "type" : "label"
+      } ],
+      "resourceSensitivity" : [ {
+        "identifier" : "resourceSensitivity",
+        "language" : "undefined",
+        "value" : "RESTRICTED",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Certification and Compliance Data",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Conformity declarations, third-party certification evidence,\n         and test reports per ESPR Annex III.5.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CertificationData"
+    },
+    "id" : "33",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/data-categories#EnvironmentalPerformanceData",
+    "baseIri" : "http://w3id.org/dpp/data-categories",
+    "instances" : 0,
+    "annotations" : {
+      "espr-annex" : [ {
+        "identifier" : "espr-annex",
+        "language" : "undefined",
+        "value" : "III.2",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Environmental Performance Data",
+        "type" : "label"
+      } ],
+      "resourceSensitivity" : [ {
+        "identifier" : "resourceSensitivity",
+        "language" : "undefined",
+        "value" : "RESTRICTED",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Carbon footprint, energy efficiency, resource use, and other\n         environmental metrics as required by ESPR Annex III.2.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EnvironmentalPerformanceData"
+    },
+    "subClasses" : [ "27", "29" ],
+    "id" : "28",
+    "superClasses" : [ "1" ]
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+  }, {
+    "range" : "5",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "8"
+  }, {
+    "range" : "5",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "10"
+  }, {
+    "range" : "5",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "range" : "5",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "14"
+  }, {
+    "range" : "17",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "16"
+  }, {
+    "range" : "21",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://w3id.org/dpp/data-categories#accessibleDuringPhase",
+    "baseIri" : "http://w3id.org/dpp/data-categories",
+    "range" : "5",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "accessible during phase",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The product lifecycle phase(s) during which this data category\n         may be accessed. Used as a guard condition in access rules.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "accessibleDuringPhase"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "range" : "0",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "range" : "6",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "range" : "28",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30"
+  }, {
+    "range" : "1",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "range" : "1",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
+  }, {
+    "range" : "28",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "1",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "35"
+  }, {
+    "range" : "1",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "1",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "1",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  } ]
+}

@@ -1,0 +1,181 @@
+@prefix : <http://w3id.org/dpp/roles#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://w3id.org/dpp/roles#> .
+
+<http://w3id.org/dpp/roles> rdf:type owl:Ontology ;
+                             owl:versionIRI <http://w3id.org/dpp/roles/1.0.0> ;
+                             owl:imports <http://w3id.org/dpp/access-control> ;
+                             <http://purl.org/dc/terms/contributor> "Annika Moscati" ,
+                                                                    "Bincy Veena" ,
+                                                                    "Peter Johansson" ;
+                             <http://purl.org/dc/terms/created> "2026-04-01"^^xsd:date ;
+                             <http://purl.org/dc/terms/creator> "Rahel Kebede" ;
+                             <http://purl.org/dc/terms/description> """OWL class hierarchy of stakeholder roles defined in the ESPR Digital
+         Product Passport framework. Roles are modelled as classes (not individuals)
+         to support ABAC attribute constraints via class-level SHACL shapes."""@en ;
+                             <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                             <http://purl.org/dc/terms/title> "DPP Stakeholder Role Taxonomy"@en ;
+                             owl:versionInfo "1.0.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#scopeNote
+<http://www.w3.org/2004/02/skos/core#scopeNote> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/dpp/access-control#Role
+<http://w3id.org/dpp/access-control#Role> rdf:type owl:Class .
+
+
+###  http://w3id.org/dpp/roles#AuthorisedRepresentativeRole
+:AuthorisedRepresentativeRole rdf:type owl:Class ;
+                              rdfs:subClassOf :EconomicOperator ;
+                              <http://www.w3.org/2004/02/skos/core#definition> """A natural or legal person established in the EU mandated by
+         the manufacturer to act on their behalf."""@en ;
+                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Authorised Representative"@en ;
+                              <http://www.w3.org/2004/02/skos/core#scopeNote> "ESPR Article 4(1)(d)."@en .
+
+
+###  http://w3id.org/dpp/roles#ConsumerRole
+:ConsumerRole rdf:type owl:Class ;
+              rdfs:subClassOf <http://w3id.org/dpp/access-control#Role> ;
+              <http://www.w3.org/2004/02/skos/core#definition> """An end user with read access to public and use-phase DPP data,
+         including product identification and energy efficiency data."""@en ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Consumer"@en .
+
+
+###  http://w3id.org/dpp/roles#CustomsAuthorityRole
+:CustomsAuthorityRole rdf:type owl:Class ;
+                      rdfs:subClassOf :RegulatoryAuthority ;
+                      <http://www.w3.org/2004/02/skos/core#definition> """A customs enforcement authority with read access to
+         product identification and certification data at border control."""@en ;
+                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Customs Authority"@en .
+
+
+###  http://w3id.org/dpp/roles#DistributorRole
+:DistributorRole rdf:type owl:Class ;
+                 rdfs:subClassOf :EconomicOperator ;
+                 <http://www.w3.org/2004/02/skos/core#definition> """An entity in the supply chain that makes a product available
+         on the market other than the manufacturer or importer."""@en ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Distributor"@en ;
+                 <http://www.w3.org/2004/02/skos/core#scopeNote> "ESPR Article 4(1)(c)."@en .
+
+
+###  http://w3id.org/dpp/roles#EconomicOperator
+:EconomicOperator rdf:type owl:Class ;
+                  rdfs:subClassOf <http://w3id.org/dpp/access-control#Role> ;
+                  <http://www.w3.org/2004/02/skos/core#definition> """A role defined under ESPR Article 4 with specific DPP data
+         rights and obligations."""@en ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Economic Operator"@en .
+
+
+###  http://w3id.org/dpp/roles#ImporterRole
+:ImporterRole rdf:type owl:Class ;
+              rdfs:subClassOf :EconomicOperator ;
+              <http://www.w3.org/2004/02/skos/core#definition> """An entity that places products manufactured outside the EU
+         on the EU market and assumes ESPR obligations."""@en ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Importer"@en ;
+              <http://www.w3.org/2004/02/skos/core#scopeNote> "ESPR Article 4(1)(b)."@en .
+
+
+###  http://w3id.org/dpp/roles#MaintenanceTechnicianRole
+:MaintenanceTechnicianRole rdf:type owl:Class ;
+                           rdfs:subClassOf :ServiceProviderRole ;
+                           <http://www.w3.org/2004/02/skos/core#definition> """A certified technician performing repair or maintenance with
+         read access to use-and-maintenance and repairability data."""@en ;
+                           <http://www.w3.org/2004/02/skos/core#prefLabel> "Maintenance Technician"@en .
+
+
+###  http://w3id.org/dpp/roles#ManufacturerRole
+:ManufacturerRole rdf:type owl:Class ;
+                  rdfs:subClassOf :EconomicOperator ;
+                  <http://www.w3.org/2004/02/skos/core#definition> """The entity that manufactures the product and is the primary
+         DPP data owner with full read/write access to all modules."""@en ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Manufacturer"@en ;
+                  <http://www.w3.org/2004/02/skos/core#scopeNote> "ESPR Article 4(1)(a)."@en .
+
+
+###  http://w3id.org/dpp/roles#MarketSurveillanceAuthorityRole
+:MarketSurveillanceAuthorityRole rdf:type owl:Class ;
+                                 rdfs:subClassOf :RegulatoryAuthority ;
+                                 <http://www.w3.org/2004/02/skos/core#definition> """A national authority with full read access to all DPP
+         modules per ESPR Article 14."""@en ;
+                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Market Surveillance Authority"@en ;
+                                 <http://www.w3.org/2004/02/skos/core#scopeNote> "ESPR Article 14; Regulation (EU) 2019/1020."@en .
+
+
+###  http://w3id.org/dpp/roles#RecyclerRole
+:RecyclerRole rdf:type owl:Class ;
+              rdfs:subClassOf <http://w3id.org/dpp/access-control#Role> ;
+              <http://www.w3.org/2004/02/skos/core#definition> """An entity processing products at end-of-life with read access
+         to material composition and disassembly instruction data."""@en ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Recycler"@en .
+
+
+###  http://w3id.org/dpp/roles#RegulatoryAuthority
+:RegulatoryAuthority rdf:type owl:Class ;
+                     rdfs:subClassOf <http://w3id.org/dpp/access-control#Role> ;
+                     <http://www.w3.org/2004/02/skos/core#definition> """A public authority with statutory rights to access DPP data
+         for market surveillance or customs enforcement."""@en ;
+                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Regulatory Authority"@en .
+
+
+###  http://w3id.org/dpp/roles#ServiceProviderRole
+:ServiceProviderRole rdf:type owl:Class ;
+                     rdfs:subClassOf <http://w3id.org/dpp/access-control#Role> ;
+                     <http://www.w3.org/2004/02/skos/core#definition> """An entity providing after-sales services such as repair,
+         maintenance, or refurbishment."""@en ;
+                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Service Provider"@en .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

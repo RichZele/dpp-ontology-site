@@ -1,0 +1,525 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://w3id.org/dpp/data-categories", "https://w3id.org/dpv", "http://www.w3.org/2000/01/rdf-schema", "http://w3id.org/dpp/access-control", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "en" : "DPP Access Control — GDPR Regulatory Alignment"
+    },
+    "iri" : "http://w3id.org/dpp/access-control/gdpr",
+    "version" : "1.0.0",
+    "author" : [ "Rahel Kebede" ],
+    "description" : {
+      "en" : "Legal basis declarations, purpose limitation patterns, data subject rights,\n         and data retention policies connecting the dpp-ac framework to GDPR via the\n         Data Privacy Vocabulary (DPVO)."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Rahel Kebede",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Annika Moscati",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Peter Johansson",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Bincy Veena",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2026-04-01",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "DPP Access Control — GDPR Regulatory Alignment",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://w3id.org/dpp/access-control#DataSubjectRight",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Data Subject Right",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A GDPR Chapter III right held by a natural person whose personal data\n         is processed in the context of DPP operations.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DataSubjectRight"
+    },
+    "individuals" : [ {
+      "iri" : "http://w3id.org/dpp/access-control#RightToDataPortability",
+      "baseIri" : "http://w3id.org/dpp/access-control",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Right to Data Portability (Art. 20)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "The right to receive personal data in a structured, commonly used,\n         and machine-readable format.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "RightToDataPortability"
+      }
+    }, {
+      "iri" : "http://w3id.org/dpp/access-control#RightToErasure",
+      "baseIri" : "http://w3id.org/dpp/access-control",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Right to Erasure (Art. 17)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "The right to have personal data erased where it is no longer\n         necessary for the purpose for which it was collected.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "RightToErasure"
+      }
+    }, {
+      "iri" : "http://w3id.org/dpp/access-control#RightToRectification",
+      "baseIri" : "http://w3id.org/dpp/access-control",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Right to Rectification (Art. 16)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "The right to have inaccurate personal data corrected without undue delay.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "RightToRectification"
+      }
+    }, {
+      "iri" : "http://w3id.org/dpp/access-control#RightOfAccess",
+      "baseIri" : "http://w3id.org/dpp/access-control",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Right of Access (Art. 15)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "The right to obtain confirmation of whether personal data is being\n         processed and to access that data.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "RightOfAccess"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#AccessPolicy",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AccessPolicy"
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "https://w3id.org/dpv#Policy",
+    "baseIri" : "https://w3id.org/dpv",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Policy"
+    },
+    "subClasses" : [ "6" ],
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#DataRetentionPolicy",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Data Retention Policy",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A time-bound policy governing how long a DPP data category may be\n         retained before erasure or anonymisation.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DataRetentionPolicy"
+    },
+    "individuals" : [ {
+      "iri" : "http://w3id.org/dpp/access-control/gdpr/RetentionPolicy-ProductId",
+      "baseIri" : "http://w3id.org/dpp/access-control/gdpr",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Product Identification Data Retention — 15 years",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "RetentionPolicy-ProductId"
+      }
+    }, {
+      "iri" : "http://w3id.org/dpp/access-control/gdpr/RetentionPolicy-SupplyChain",
+      "baseIri" : "http://w3id.org/dpp/access-control/gdpr",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Supply Chain Data Retention — 10 years",
+          "type" : "label"
+        } ],
+        "scopeNote" : [ {
+          "identifier" : "scopeNote",
+          "language" : "en",
+          "value" : "ESPR supply chain data must be retained for the product's\n         service life plus 10 years per proposed delegated acts.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "RetentionPolicy-SupplyChain"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://w3id.org/dpv#LegalBasis",
+    "baseIri" : "https://w3id.org/dpv",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LegalBasis"
+    },
+    "subClasses" : [ "4" ],
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#LegalBasis",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "DPP Legal Basis",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The GDPR Article 6 legal basis justifying the processing of personal\n         data in the context of a DPP access operation.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LegalBasis"
+    },
+    "individuals" : [ {
+      "iri" : "http://w3id.org/dpp/access-control#PublicTaskBasis",
+      "baseIri" : "http://w3id.org/dpp/access-control",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Public Task (Art. 6(1)(e))",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Processing is necessary for the performance of a task carried out in\n         the public interest or in the exercise of official authority — relevant\n         for Market Surveillance Authority access.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PublicTaskBasis"
+      }
+    }, {
+      "iri" : "http://w3id.org/dpp/access-control#ConsentBasis",
+      "baseIri" : "http://w3id.org/dpp/access-control",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Consent (Art. 6(1)(a))",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "The data subject has given consent to the processing of their personal\n         data for one or more specific purposes.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ConsentBasis"
+      }
+    }, {
+      "iri" : "http://w3id.org/dpp/access-control#LegitimateInterest",
+      "baseIri" : "http://w3id.org/dpp/access-control",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Legitimate Interest (Art. 6(1)(f))",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Processing is necessary for the purposes of the legitimate interests\n         pursued by the controller or a third party.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "LegitimateInterest"
+      }
+    }, {
+      "iri" : "http://w3id.org/dpp/access-control#LegalObligation",
+      "baseIri" : "http://w3id.org/dpp/access-control",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Legal Obligation (Art. 6(1)(c))",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Processing is necessary for compliance with a legal obligation to which\n         the controller is subject — including ESPR data disclosure obligations.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "LegalObligation"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://w3id.org/dpp/data-categories#DataCategory",
+    "baseIri" : "http://w3id.org/dpp/data-categories",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataCategory"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://w3id.org/dpv#Right",
+    "baseIri" : "https://w3id.org/dpv",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Right"
+    },
+    "subClasses" : [ "0" ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://w3id.org/dpp/access-control#hasLegalBasis",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "4",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has legal basis",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The GDPR Article 6 legal basis that justifies issuing this policy.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasLegalBasis"
+    },
+    "domain" : "2",
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#retentionPeriodYears",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "7",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "retention period (years)",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The number of years for which data in this category must be retained\n         before erasure or anonymisation is triggered.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "retentionPeriodYears"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "functional", "datatype" ],
+    "id" : "5"
+  }, {
+    "range" : "9",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "8"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "10"
+  }, {
+    "range" : "11",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://w3id.org/dpp/access-control#hasRetentionPolicy",
+    "baseIri" : "http://w3id.org/dpp/access-control",
+    "range" : "6",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has retention policy",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Links a DPP data category to its applicable data retention policy.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasRetentionPolicy"
+    },
+    "domain" : "13",
+    "attributes" : [ "object", "external" ],
+    "id" : "14"
+  } ]
+}

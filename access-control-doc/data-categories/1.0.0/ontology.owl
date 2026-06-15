@@ -1,0 +1,426 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/dpp/data-categories#"
+     xml:base="http://w3id.org/dpp/data-categories"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:access-control="http://w3id.org/dpp/access-control#"
+     xmlns:data-categories="http://w3id.org/dpp/data-categories#">
+    <owl:Ontology rdf:about="http://w3id.org/dpp/data-categories">
+        <owl:versionIRI rdf:resource="http://w3id.org/dpp/data-categories/1.0.0"/>
+        <owl:imports rdf:resource="http://w3id.org/dpp/access-control"/>
+        <terms:contributor>Annika Moscati</terms:contributor>
+        <terms:contributor>Bincy Veena</terms:contributor>
+        <terms:contributor>Peter Johansson</terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-01</terms:created>
+        <terms:creator>Rahel Kebede</terms:creator>
+        <terms:description xml:lang="en">ESPR Annex III-aligned taxonomy of Digital Product Passport data categories.
+         Used as the canonical resource classification for dpp-ac access control
+         policy scoping. Data categories are modelled as OWL classes (not individuals)
+         to enable subsumption-based policy inheritance.</terms:description>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:title xml:lang="en">DPP Data Category Taxonomy</terms:title>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://w3id.org/dpp/access-control#resourceSensitivity -->
+
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/dpp/access-control#resourceSensitivity"/>
+    
+
+
+    <!-- http://w3id.org/dpp/data-categories#espr-annex -->
+
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/dpp/data-categories#espr-annex">
+        <skos:definition xml:lang="en">References the ESPR Regulation Annex III section that
+         mandates this data category in the DPP.</skos:definition>
+        <skos:prefLabel xml:lang="en">ESPR Annex reference</skos:prefLabel>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/dpp/data-categories#accessibleDuringPhase -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/dpp/data-categories#accessibleDuringPhase">
+        <rdfs:domain rdf:resource="http://w3id.org/dpp/data-categories#DataCategory"/>
+        <rdfs:range rdf:resource="http://w3id.org/dpp/access-control#LifecyclePhase"/>
+        <skos:definition xml:lang="en">The product lifecycle phase(s) during which this data category
+         may be accessed. Used as a guard condition in access rules.</skos:definition>
+        <skos:prefLabel xml:lang="en">accessible during phase</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/dpp/access-control#DPPResource -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/access-control#DPPResource"/>
+    
+
+
+    <!-- http://w3id.org/dpp/access-control#DistributionPhase -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/access-control#DistributionPhase">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/access-control#LifecyclePhase"/>
+        <skos:prefLabel xml:lang="en">Distribution Phase</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/access-control#EndOfLifePhase -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/access-control#EndOfLifePhase">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/access-control#LifecyclePhase"/>
+        <skos:prefLabel xml:lang="en">End-of-Life Phase</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/access-control#LifecyclePhase -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/access-control#LifecyclePhase">
+        <skos:definition xml:lang="en">A distinct stage in the product lifecycle during which
+         specific DPP data categories may be created or accessed.</skos:definition>
+        <skos:prefLabel xml:lang="en">Product Lifecycle Phase</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/access-control#MaintenancePhase -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/access-control#MaintenancePhase">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/access-control#LifecyclePhase"/>
+        <skos:prefLabel xml:lang="en">Maintenance Phase</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/access-control#ManufacturingPhase -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/access-control#ManufacturingPhase">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/access-control#LifecyclePhase"/>
+        <skos:prefLabel xml:lang="en">Manufacturing Phase</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/access-control#UsePhase -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/access-control#UsePhase">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/access-control#LifecyclePhase"/>
+        <skos:prefLabel xml:lang="en">Use Phase</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/data-categories#CarbonFootprintData -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/data-categories#CarbonFootprintData">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/data-categories#EnvironmentalPerformanceData"/>
+        <access-control:resourceSensitivity>RESTRICTED</access-control:resourceSensitivity>
+        <skos:definition xml:lang="en">Product carbon footprint per ISO 14067 lifecycle stages.</skos:definition>
+        <skos:prefLabel xml:lang="en">Carbon Footprint Data</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">Per ISO 14067 and EU Battery Regulation Art. 7.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/data-categories#CertificationData -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/data-categories#CertificationData">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/data-categories#DataCategory"/>
+        <access-control:resourceSensitivity>RESTRICTED</access-control:resourceSensitivity>
+        <espr-annex>III.5</espr-annex>
+        <skos:definition xml:lang="en">Conformity declarations, third-party certification evidence,
+         and test reports per ESPR Annex III.5.</skos:definition>
+        <skos:prefLabel xml:lang="en">Certification and Compliance Data</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/data-categories#DataCategory -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/data-categories#DataCategory">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/access-control#DPPResource"/>
+        <skos:definition xml:lang="en">A typed grouping of DPP data fields as enumerated in
+         ESPR Annex III.</skos:definition>
+        <skos:prefLabel xml:lang="en">DPP Data Category</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/data-categories#DisassemblyInstructionData -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/data-categories#DisassemblyInstructionData">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/data-categories#EndOfLifeData"/>
+        <access-control:resourceSensitivity>PUBLIC</access-control:resourceSensitivity>
+        <skos:definition xml:lang="en">Step-by-step instructions for safe disassembly enabling
+         component recovery and material separation.</skos:definition>
+        <skos:prefLabel xml:lang="en">Disassembly Instruction Data</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/data-categories#EndOfLifeData -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/data-categories#EndOfLifeData">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/data-categories#DataCategory"/>
+        <access-control:resourceSensitivity>PUBLIC</access-control:resourceSensitivity>
+        <espr-annex>III.7</espr-annex>
+        <skos:definition xml:lang="en">Disassembly instructions, recyclability information, and
+         waste handling guidance per ESPR Annex III.7.</skos:definition>
+        <skos:prefLabel xml:lang="en">End-of-Life Data</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/data-categories#EnergyEfficiencyData -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/data-categories#EnergyEfficiencyData">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/data-categories#EnvironmentalPerformanceData"/>
+        <access-control:resourceSensitivity>PUBLIC</access-control:resourceSensitivity>
+        <skos:definition xml:lang="en">Energy consumption ratings, efficiency class, and measured
+         performance data.</skos:definition>
+        <skos:prefLabel xml:lang="en">Energy Efficiency Data</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/data-categories#EnvironmentalPerformanceData -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/data-categories#EnvironmentalPerformanceData">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/data-categories#DataCategory"/>
+        <access-control:resourceSensitivity>RESTRICTED</access-control:resourceSensitivity>
+        <espr-annex>III.2</espr-annex>
+        <skos:definition xml:lang="en">Carbon footprint, energy efficiency, resource use, and other
+         environmental metrics as required by ESPR Annex III.2.</skos:definition>
+        <skos:prefLabel xml:lang="en">Environmental Performance Data</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/data-categories#HazardousSubstanceData -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/data-categories#HazardousSubstanceData">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/data-categories#MaterialCompositionData"/>
+        <access-control:resourceSensitivity>STRICTLY_CONFIDENTIAL</access-control:resourceSensitivity>
+        <skos:definition xml:lang="en">Substances of very high concern (SVHC) and other regulated
+         hazardous substances per REACH and ESPR.</skos:definition>
+        <skos:prefLabel xml:lang="en">Hazardous Substance Data</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/data-categories#MaterialCompositionData -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/data-categories#MaterialCompositionData">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/data-categories#DataCategory"/>
+        <access-control:resourceSensitivity>RESTRICTED</access-control:resourceSensitivity>
+        <espr-annex>III.3</espr-annex>
+        <skos:definition xml:lang="en">Substances, materials, and components including substances
+         of concern per ESPR Annex III.3.</skos:definition>
+        <skos:prefLabel xml:lang="en">Material Composition Data</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/data-categories#ProductIdentificationData -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/data-categories#ProductIdentificationData">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/data-categories#DataCategory"/>
+        <access-control:resourceSensitivity>PUBLIC</access-control:resourceSensitivity>
+        <espr-annex>III.1</espr-annex>
+        <skos:definition xml:lang="en">GTIN, serial number, model designation, manufacturer identity.</skos:definition>
+        <skos:prefLabel xml:lang="en">Product Identification Data</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/data-categories#RepairabilityData -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/data-categories#RepairabilityData">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/data-categories#UseAndMaintenanceData"/>
+        <access-control:resourceSensitivity>RESTRICTED</access-control:resourceSensitivity>
+        <skos:definition xml:lang="en">Repairability score, spare parts availability, and durability
+         test results.</skos:definition>
+        <skos:prefLabel xml:lang="en">Repairability and Durability Data</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/data-categories#SupplyChainData -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/data-categories#SupplyChainData">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/data-categories#DataCategory"/>
+        <access-control:resourceSensitivity>CONFIDENTIAL</access-control:resourceSensitivity>
+        <espr-annex>III.4</espr-annex>
+        <skos:definition xml:lang="en">Supplier identity, sourcing geography, and due diligence
+         documentation per ESPR Annex III.4.</skos:definition>
+        <skos:prefLabel xml:lang="en">Supply Chain Data</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/data-categories#UseAndMaintenanceData -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/data-categories#UseAndMaintenanceData">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/data-categories#DataCategory"/>
+        <access-control:resourceSensitivity>RESTRICTED</access-control:resourceSensitivity>
+        <espr-annex>III.6</espr-annex>
+        <skos:definition xml:lang="en">Instructions for use, repair, spare parts availability,
+         and maintenance schedules per ESPR Annex III.6.</skos:definition>
+        <skos:prefLabel xml:lang="en">Use and Maintenance Data</skos:prefLabel>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

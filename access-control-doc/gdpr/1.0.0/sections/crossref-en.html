@@ -1,0 +1,481 @@
+<h2 id="crossreference" class="list">Cross-reference for DPP Access Control — GDPR Regulatory Alignment classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by DPP Access Control — GDPR Regulatory Alignment.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#http://w3id.org/dpp/access-control#DataRetentionPolicy" title="http://w3id.org/dpp/access-control#DataRetentionPolicy">Data Retention Policy</a></li>
+  <li><a href="#http://w3id.org/dpp/access-control#DataSubjectRight" title="http://w3id.org/dpp/access-control#DataSubjectRight">Data Subject Right</a></li>
+  <li><a href="#http://w3id.org/dpp/access-control#LegalBasis" title="http://w3id.org/dpp/access-control#LegalBasis">DPP Legal Basis</a></li>
+ </ul>
+ <div class="entity" id="http://w3id.org/dpp/access-control#DataRetentionPolicy">
+  <h3>Data Retention Policy<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#DataRetentionPolicy</p>
+  <div class="comment">
+   <span class="markdown">A time-bound policy governing how long a DPP data category may be retained before erasure or anonymisation.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://w3id.org/dpv#Policy" target="_blank" title="https://w3id.org/dpv#Policy">Policy</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/dpp/access-control#retentionPeriodYears" title="http://w3id.org/dpp/access-control#retentionPeriodYears">retention period (years)</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/dpp/access-control#hasRetentionPolicy" title="http://w3id.org/dpp/access-control#hasRetentionPolicy">has retention policy</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#/RetentionPolicy-ProductId" title="http://w3id.org/dpp/access-control/gdpr/RetentionPolicy-ProductId">Product Identification Data Retention — 15 years</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/RetentionPolicy-SupplyChain" title="http://w3id.org/dpp/access-control/gdpr/RetentionPolicy-SupplyChain">Supply Chain Data Retention — 10 years</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://w3id.org/dpp/access-control#DataSubjectRight">
+  <h3>Data Subject Right<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#DataSubjectRight</p>
+  <div class="comment">
+   <span class="markdown">A GDPR Chapter III right held by a natural person whose personal data is processed in the context of DPP operations.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://w3id.org/dpv#Right" target="_blank" title="https://w3id.org/dpv#Right">Right</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/dpp/access-control#RightOfAccess" title="http://w3id.org/dpp/access-control#RightOfAccess">Right of Access (Art. 15)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://w3id.org/dpp/access-control#RightToDataPortability" title="http://w3id.org/dpp/access-control#RightToDataPortability">Right to Data Portability (Art. 20)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://w3id.org/dpp/access-control#RightToErasure" title="http://w3id.org/dpp/access-control#RightToErasure">Right to Erasure (Art. 17)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://w3id.org/dpp/access-control#RightToRectification" title="http://w3id.org/dpp/access-control#RightToRectification">Right to Rectification (Art. 16)</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://w3id.org/dpp/access-control#LegalBasis">
+  <h3>DPP Legal Basis<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#LegalBasis</p>
+  <div class="comment">
+   <span class="markdown">The GDPR Article 6 legal basis justifying the processing of personal data in the context of a DPP access operation.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://w3id.org/dpv#LegalBasis" target="_blank" title="https://w3id.org/dpv#LegalBasis">Legal Basis</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/dpp/access-control#hasLegalBasis" title="http://w3id.org/dpp/access-control#hasLegalBasis">has legal basis</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/dpp/access-control#ConsentBasis" title="http://w3id.org/dpp/access-control#ConsentBasis">Consent (Art. 6(1)(a))</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://w3id.org/dpp/access-control#LegalObligation" title="http://w3id.org/dpp/access-control#LegalObligation">Legal Obligation (Art. 6(1)(c))</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://w3id.org/dpp/access-control#LegitimateInterest" title="http://w3id.org/dpp/access-control#LegitimateInterest">Legitimate Interest (Art. 6(1)(f))</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://w3id.org/dpp/access-control#PublicTaskBasis" title="http://w3id.org/dpp/access-control#PublicTaskBasis">Public Task (Art. 6(1)(e))</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#http://w3id.org/dpp/access-control#hasLegalBasis" title="http://w3id.org/dpp/access-control#hasLegalBasis">has legal basis</a></li>
+  <li><a href="#http://w3id.org/dpp/access-control#hasRetentionPolicy" title="http://w3id.org/dpp/access-control#hasRetentionPolicy">has retention policy</a></li>
+ </ul>
+ <div class="entity" id="http://w3id.org/dpp/access-control#hasLegalBasis">
+  <h3>has legal basis<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#hasLegalBasis</p>
+  <div class="comment">
+   <span class="markdown">The GDPR Article 6 legal basis that justifies issuing this policy.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://w3id.org/dpp/access-control#AccessPolicy" target="_blank" title="http://w3id.org/dpp/access-control#AccessPolicy">Access Policy</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://w3id.org/dpp/access-control#LegalBasis" title="http://w3id.org/dpp/access-control#LegalBasis">DPP Legal Basis</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://w3id.org/dpp/access-control#hasRetentionPolicy">
+  <h3>has retention policy<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#hasRetentionPolicy</p>
+  <div class="comment">
+   <span class="markdown">Links a DPP data category to its applicable data retention policy.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://w3id.org/dpp/data-categories#DataCategory" target="_blank" title="http://w3id.org/dpp/data-categories#DataCategory">Data Category</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://w3id.org/dpp/access-control#DataRetentionPolicy" title="http://w3id.org/dpp/access-control#DataRetentionPolicy">Data Retention Policy</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#http://w3id.org/dpp/access-control#retentionPeriodYears" title="http://w3id.org/dpp/access-control#retentionPeriodYears">retention period (years)</a></li>
+ </ul>
+ <div class="entity" id="http://w3id.org/dpp/access-control#retentionPeriodYears">
+  <h3>retention period (years)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#retentionPeriodYears</p>
+  <div class="comment">
+   <span class="markdown">The number of years for which data in this category must be retained before erasure or anonymisation is triggered.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://w3id.org/dpp/access-control#DataRetentionPolicy" title="http://w3id.org/dpp/access-control#DataRetentionPolicy">Data Retention Policy</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="annotationproperties">
+ <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+ <ul class="hlist">
+  <li><a href="#http://purl.org/dc/terms/contributor" title="http://purl.org/dc/terms/contributor"> <span>contributor</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created"> <span>created</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator"> <span>creator</span> </a></li>
+  <li><a href="#http://www.w3.org/2004/02/skos/core#definition" title="http://www.w3.org/2004/02/skos/core#definition"> <span>definition</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description"> <span>description</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license"> <span>license</span> </a></li>
+  <li><a href="#http://www.w3.org/2004/02/skos/core#prefLabel" title="http://www.w3.org/2004/02/skos/core#prefLabel"> <span>pref Label</span> </a></li>
+  <li><a href="#http://www.w3.org/2004/02/skos/core#scopeNote" title="http://www.w3.org/2004/02/skos/core#scopeNote"> <span>scope Note</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title"> <span>title</span> </a></li>
+ </ul>
+ <div class="entity" id="http://purl.org/dc/terms/contributor">
+  <h3>contributor<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/contributor</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/created">
+  <h3>created<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/created</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/creator">
+  <h3>creator<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/creator</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/2004/02/skos/core#definition">
+  <h3>definition<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#definition</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/description">
+  <h3>description<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/description</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/license">
+  <h3>license<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/license</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/2004/02/skos/core#prefLabel">
+  <h3>pref Label<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#prefLabel</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/2004/02/skos/core#scopeNote">
+  <h3>scope Note<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#scopeNote</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/title">
+  <h3>title<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/title</p>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+ <h3 id="namedindividuals" class="list">Named Individuals</h3>
+ <ul class="hlist">
+  <li><a href="#http://w3id.org/dpp/access-control#ConsentBasis" title="http://w3id.org/dpp/access-control#ConsentBasis">Consent (Art. 6(1)(a))</a></li>
+  <li><a href="#http://w3id.org/dpp/access-control#LegalObligation" title="http://w3id.org/dpp/access-control#LegalObligation">Legal Obligation (Art. 6(1)(c))</a></li>
+  <li><a href="#http://w3id.org/dpp/access-control#LegitimateInterest" title="http://w3id.org/dpp/access-control#LegitimateInterest">Legitimate Interest (Art. 6(1)(f))</a></li>
+  <li><a href="#/RetentionPolicy-ProductId" title="http://w3id.org/dpp/access-control/gdpr/RetentionPolicy-ProductId">Product Identification Data Retention — 15 years</a></li>
+  <li><a href="#http://w3id.org/dpp/access-control#PublicTaskBasis" title="http://w3id.org/dpp/access-control#PublicTaskBasis">Public Task (Art. 6(1)(e))</a></li>
+  <li><a href="#http://w3id.org/dpp/access-control#RightOfAccess" title="http://w3id.org/dpp/access-control#RightOfAccess">Right of Access (Art. 15)</a></li>
+  <li><a href="#http://w3id.org/dpp/access-control#RightToDataPortability" title="http://w3id.org/dpp/access-control#RightToDataPortability">Right to Data Portability (Art. 20)</a></li>
+  <li><a href="#http://w3id.org/dpp/access-control#RightToErasure" title="http://w3id.org/dpp/access-control#RightToErasure">Right to Erasure (Art. 17)</a></li>
+  <li><a href="#http://w3id.org/dpp/access-control#RightToRectification" title="http://w3id.org/dpp/access-control#RightToRectification">Right to Rectification (Art. 16)</a></li>
+  <li><a href="#/RetentionPolicy-SupplyChain" title="http://w3id.org/dpp/access-control/gdpr/RetentionPolicy-SupplyChain">Supply Chain Data Retention — 10 years</a></li>
+ </ul>
+ <div class="entity" id="http://w3id.org/dpp/access-control#ConsentBasis">
+  <h3>Consent (Art. 6(1)(a))<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#ConsentBasis</p>
+  <div class="comment">
+   <span class="markdown">The data subject has given consent to the processing of their personal data for one or more specific purposes.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/dpp/access-control#LegalBasis" title="http://w3id.org/dpp/access-control#LegalBasis">DPP Legal Basis</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"The data subject has given consent to the processing of their personal data for one or more specific purposes."@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Consent (Art. 6(1)(a))"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://w3id.org/dpp/access-control#LegalObligation">
+  <h3>Legal Obligation (Art. 6(1)(c))<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#LegalObligation</p>
+  <div class="comment">
+   <span class="markdown">Processing is necessary for compliance with a legal obligation to which the controller is subject — including ESPR data disclosure obligations.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/dpp/access-control#LegalBasis" title="http://w3id.org/dpp/access-control#LegalBasis">DPP Legal Basis</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Processing is necessary for compliance with a legal obligation to which the controller is subject — including ESPR data disclosure obligations."@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Legal Obligation (Art. 6(1)(c))"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://w3id.org/dpp/access-control#LegitimateInterest">
+  <h3>Legitimate Interest (Art. 6(1)(f))<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#LegitimateInterest</p>
+  <div class="comment">
+   <span class="markdown">Processing is necessary for the purposes of the legitimate interests pursued by the controller or a third party.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/dpp/access-control#LegalBasis" title="http://w3id.org/dpp/access-control#LegalBasis">DPP Legal Basis</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Processing is necessary for the purposes of the legitimate interests pursued by the controller or a third party."@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Legitimate Interest (Art. 6(1)(f))"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/RetentionPolicy-ProductId">
+  <h3>Product Identification Data Retention — 15 years<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control/gdpr/RetentionPolicy-ProductId</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/dpp/access-control#DataRetentionPolicy" title="http://w3id.org/dpp/access-control#DataRetentionPolicy">Data Retention Policy</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/dpp/access-control#retentionPeriodYears" title="http://w3id.org/dpp/access-control#retentionPeriodYears">retention period (years)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"15"^^<a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a> </span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Product Identification Data Retention — 15 years"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://w3id.org/dpp/access-control#PublicTaskBasis">
+  <h3>Public Task (Art. 6(1)(e))<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#PublicTaskBasis</p>
+  <div class="comment">
+   <span class="markdown">Processing is necessary for the performance of a task carried out in the public interest or in the exercise of official authority — relevant for Market Surveillance Authority access.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/dpp/access-control#LegalBasis" title="http://w3id.org/dpp/access-control#LegalBasis">DPP Legal Basis</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Processing is necessary for the performance of a task carried out in the public interest or in the exercise of official authority — relevant for Market Surveillance Authority access."@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Public Task (Art. 6(1)(e))"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://w3id.org/dpp/access-control#RightOfAccess">
+  <h3>Right of Access (Art. 15)<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#RightOfAccess</p>
+  <div class="comment">
+   <span class="markdown">The right to obtain confirmation of whether personal data is being processed and to access that data.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/dpp/access-control#DataSubjectRight" title="http://w3id.org/dpp/access-control#DataSubjectRight">Data Subject Right</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"The right to obtain confirmation of whether personal data is being processed and to access that data."@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Right of Access (Art. 15)"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://w3id.org/dpp/access-control#RightToDataPortability">
+  <h3>Right to Data Portability (Art. 20)<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#RightToDataPortability</p>
+  <div class="comment">
+   <span class="markdown">The right to receive personal data in a structured, commonly used, and machine-readable format.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/dpp/access-control#DataSubjectRight" title="http://w3id.org/dpp/access-control#DataSubjectRight">Data Subject Right</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"The right to receive personal data in a structured, commonly used, and machine-readable format."@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Right to Data Portability (Art. 20)"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://w3id.org/dpp/access-control#RightToErasure">
+  <h3>Right to Erasure (Art. 17)<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#RightToErasure</p>
+  <div class="comment">
+   <span class="markdown">The right to have personal data erased where it is no longer necessary for the purpose for which it was collected.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/dpp/access-control#DataSubjectRight" title="http://w3id.org/dpp/access-control#DataSubjectRight">Data Subject Right</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"The right to have personal data erased where it is no longer necessary for the purpose for which it was collected."@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Right to Erasure (Art. 17)"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://w3id.org/dpp/access-control#RightToRectification">
+  <h3>Right to Rectification (Art. 16)<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#RightToRectification</p>
+  <div class="comment">
+   <span class="markdown">The right to have inaccurate personal data corrected without undue delay.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/dpp/access-control#DataSubjectRight" title="http://w3id.org/dpp/access-control#DataSubjectRight">Data Subject Right</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"The right to have inaccurate personal data corrected without undue delay."@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Right to Rectification (Art. 16)"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/RetentionPolicy-SupplyChain">
+  <h3>Supply Chain Data Retention — 10 years<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control/gdpr/RetentionPolicy-SupplyChain</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/dpp/access-control#DataRetentionPolicy" title="http://w3id.org/dpp/access-control#DataRetentionPolicy">Data Retention Policy</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/dpp/access-control#retentionPeriodYears" title="http://w3id.org/dpp/access-control#retentionPeriodYears">retention period (years)</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"10"^^<a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a> </span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Supply Chain Data Retention — 10 years"@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#scopeNote" target="_blank" title="http://www.w3.org/2004/02/skos/core#scopeNote">scope Note</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"ESPR supply chain data must be retained for the product's service life plus 10 years per proposed delegated acts."@en</span>
+   </dd>
+  </dl>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
+</div>
+</div>

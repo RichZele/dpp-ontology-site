@@ -1,0 +1,294 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/dpp/roles#"
+     xml:base="http://w3id.org/dpp/roles"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://w3id.org/dpp/roles">
+        <owl:versionIRI rdf:resource="http://w3id.org/dpp/roles/1.0.0"/>
+        <owl:imports rdf:resource="http://w3id.org/dpp/access-control"/>
+        <terms:contributor>Annika Moscati</terms:contributor>
+        <terms:contributor>Bincy Veena</terms:contributor>
+        <terms:contributor>Peter Johansson</terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-01</terms:created>
+        <terms:creator>Rahel Kebede</terms:creator>
+        <terms:description xml:lang="en">OWL class hierarchy of stakeholder roles defined in the ESPR Digital
+         Product Passport framework. Roles are modelled as classes (not individuals)
+         to support ABAC attribute constraints via class-level SHACL shapes.</terms:description>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:title xml:lang="en">DPP Stakeholder Role Taxonomy</terms:title>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/dpp/access-control#Role -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/access-control#Role"/>
+    
+
+
+    <!-- http://w3id.org/dpp/roles#AuthorisedRepresentativeRole -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/roles#AuthorisedRepresentativeRole">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/roles#EconomicOperator"/>
+        <skos:definition xml:lang="en">A natural or legal person established in the EU mandated by
+         the manufacturer to act on their behalf.</skos:definition>
+        <skos:prefLabel xml:lang="en">Authorised Representative</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">ESPR Article 4(1)(d).</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/roles#ConsumerRole -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/roles#ConsumerRole">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/access-control#Role"/>
+        <skos:definition xml:lang="en">An end user with read access to public and use-phase DPP data,
+         including product identification and energy efficiency data.</skos:definition>
+        <skos:prefLabel xml:lang="en">Consumer</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/roles#CustomsAuthorityRole -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/roles#CustomsAuthorityRole">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/roles#RegulatoryAuthority"/>
+        <skos:definition xml:lang="en">A customs enforcement authority with read access to
+         product identification and certification data at border control.</skos:definition>
+        <skos:prefLabel xml:lang="en">Customs Authority</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/roles#DistributorRole -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/roles#DistributorRole">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/roles#EconomicOperator"/>
+        <skos:definition xml:lang="en">An entity in the supply chain that makes a product available
+         on the market other than the manufacturer or importer.</skos:definition>
+        <skos:prefLabel xml:lang="en">Distributor</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">ESPR Article 4(1)(c).</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/roles#EconomicOperator -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/roles#EconomicOperator">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/access-control#Role"/>
+        <skos:definition xml:lang="en">A role defined under ESPR Article 4 with specific DPP data
+         rights and obligations.</skos:definition>
+        <skos:prefLabel xml:lang="en">Economic Operator</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/roles#ImporterRole -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/roles#ImporterRole">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/roles#EconomicOperator"/>
+        <skos:definition xml:lang="en">An entity that places products manufactured outside the EU
+         on the EU market and assumes ESPR obligations.</skos:definition>
+        <skos:prefLabel xml:lang="en">Importer</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">ESPR Article 4(1)(b).</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/roles#MaintenanceTechnicianRole -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/roles#MaintenanceTechnicianRole">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/roles#ServiceProviderRole"/>
+        <skos:definition xml:lang="en">A certified technician performing repair or maintenance with
+         read access to use-and-maintenance and repairability data.</skos:definition>
+        <skos:prefLabel xml:lang="en">Maintenance Technician</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/roles#ManufacturerRole -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/roles#ManufacturerRole">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/roles#EconomicOperator"/>
+        <skos:definition xml:lang="en">The entity that manufactures the product and is the primary
+         DPP data owner with full read/write access to all modules.</skos:definition>
+        <skos:prefLabel xml:lang="en">Manufacturer</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">ESPR Article 4(1)(a).</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/roles#MarketSurveillanceAuthorityRole -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/roles#MarketSurveillanceAuthorityRole">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/roles#RegulatoryAuthority"/>
+        <skos:definition xml:lang="en">A national authority with full read access to all DPP
+         modules per ESPR Article 14.</skos:definition>
+        <skos:prefLabel xml:lang="en">Market Surveillance Authority</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">ESPR Article 14; Regulation (EU) 2019/1020.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/roles#RecyclerRole -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/roles#RecyclerRole">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/access-control#Role"/>
+        <skos:definition xml:lang="en">An entity processing products at end-of-life with read access
+         to material composition and disassembly instruction data.</skos:definition>
+        <skos:prefLabel xml:lang="en">Recycler</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/roles#RegulatoryAuthority -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/roles#RegulatoryAuthority">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/access-control#Role"/>
+        <skos:definition xml:lang="en">A public authority with statutory rights to access DPP data
+         for market surveillance or customs enforcement.</skos:definition>
+        <skos:prefLabel xml:lang="en">Regulatory Authority</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/dpp/roles#ServiceProviderRole -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp/roles#ServiceProviderRole">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/access-control#Role"/>
+        <skos:definition xml:lang="en">An entity providing after-sales services such as repair,
+         maintenance, or refurbishment.</skos:definition>
+        <skos:prefLabel xml:lang="en">Service Provider</skos:prefLabel>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

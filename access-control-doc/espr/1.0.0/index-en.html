@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="resources/primer.css" media="screen"/>
+<link rel="stylesheet" href="resources/rec.css" media="screen"/>
+<link rel="stylesheet" href="resources/extra.css" media="screen"/>
+<link rel="stylesheet" href="resources/owl.css" media="screen"/>
+<link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="resources/slider.css" media="screen"/>
+<meta name="color-scheme" content="dark light">
+<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
+	<dark-mode-toggle class="slider"></dark-mode-toggle>
+</div>
+<link rel="icon" type="image/png" href="resources/rdf.icon"/> <title>DPP Access Control — ESPR Regulatory Alignment</title>
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://w3id.org/dpp/access-control/espr","name":"DPP Access Control — ESPR Regulatory Alignment", "headline":"ESPR Regulation (EU) 2024/1781-grounded access policies for DPP stakeholder roles", "dateReleased":"2026-04-01", "version":"1.0.0", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Rahel Kebede"}], "contributor":[{"@type":"Person","name":"Bincy Veena"},{"@type":"Person","name":"Annika Moscati"},{"@type":"Person","name":"Peter Johansson"}]}</script>
+
+<style>
+table.pol{border-collapse:collapse;width:100%;margin:1rem 0}
+table.pol th,table.pol td{border:1px solid #d0d7de;padding:.45rem .6rem;text-align:left;vertical-align:top;font-size:.92rem}
+table.pol th{background:#f3f5f9}
+table.pol code{font-size:.85rem}
+.perm{color:#1a7f37;font-weight:600}
+.proh{color:#b3261e;font-weight:600}
+</style>
+</head>
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>DPP Access Control — ESPR Regulatory Alignment</h1>
+<h2>Release: 2026-04-01</h2>
+
+<dl>
+<dt>This version:</dt>
+<dd><a href="http://w3id.org/dpp/access-control/espr/1.0.0">http://w3id.org/dpp/access-control/espr/1.0.0</a></dd>
+<dt>Latest version:</dt>
+<dd><a href="http://w3id.org/dpp/access-control/espr">http://w3id.org/dpp/access-control/espr</a></dd>
+<dt>Revision:</dt>
+<dd>1.0.0</dd>
+<dt>Authors:</dt>
+<dd>Rahel Kebede</dd>
+<dt>Contributors:</dt>
+<dd>Bincy Veena</dd><dd>Annika Moscati</dd><dd>Peter Johansson</dd>
+<dt>Imports:</dt>
+<dd><a href="../../core/1.0.0/index-en.html">dpp-ac core</a>,
+    <a href="../../gdpr/1.0.0/index-en.html">dpp-ac gdpr</a>,
+    <a href="../../data-categories/1.0.0/index-en.html">data-categories</a>,
+    <a href="../../roles/1.0.0/index-en.html">roles</a></dd>
+<dt>Download serialization:</dt>
+<dd><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd>
+<dt>License:</dt>
+<dd><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-CC--BY--4.0-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/" /></a></dd>
+<dt>Legal source:</dt>
+<dd><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1781" target="_blank">ESPR Regulation (EU) 2024/1781</a></dd>
+<dt>Cite as:</dt>
+<dd>Rahel Kebede. DPP Access Control — ESPR Regulatory Alignment. Revision: 1.0.0. Retrieved from: http://w3id.org/dpp/access-control/espr/1.0.0</dd>
+</dl>
+<hr/>
+</div>
+<div class="status">
+<div><span>Regulatory Policy Set — Companion Artifact</span></div>
+</div>
+
+<div id="abstract">
+<h2 id="abstract-headline" class="list">Abstract</h2>
+<p>This module provides the canonical <strong>role–permission matrix</strong> for the
+<a href="../../core/1.0.0/index-en.html">DPP Access Control framework</a> as normative
+<code>AccessPolicy</code> instances grounded in
+<a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1781">ESPR
+Regulation (EU) 2024/1781</a>, with legal-basis assertions per the
+<a href="../../gdpr/1.0.0/index-en.html">GDPR module</a>.</p>
+<p>This module is composed of policy <em>instances</em> (ABox), not new vocabulary terms, so
+it is documented here as a companion artifact rather than with the WIDOCO vocabulary template
+used for the <code>dpp-ac</code> core, roles, data-categories and GDPR modules.</p>
+</div>
+
+<div id="policies">
+<h2 id="policies-headline" class="list">Policy matrix <span class="count">(3 policies)</span></h2>
+<table class="pol">
+<thead><tr><th>Policy</th><th>Role</th><th>Legal basis</th><th>Purpose</th><th>Permissions / prohibitions</th><th>ESPR ref.</th></tr></thead>
+<tbody>
+<tr>
+  <td><code>MSAFullReadPolicy</code></td>
+  <td><code>MarketSurveillanceAuthorityRole</code></td>
+  <td><code>PublicTaskBasis</code></td>
+  <td>MARKET_SURVEILLANCE</td>
+  <td><span class="perm">Permit</span> Read on all <code>DataCategory</code> modules</td>
+  <td>Article 14</td>
+</tr>
+<tr>
+  <td><code>ManufacturerOwnDPPPolicy</code></td>
+  <td><code>ManufacturerRole</code></td>
+  <td><code>LegalObligation</code></td>
+  <td>—</td>
+  <td><span class="perm">Permit</span> Read/Write on own DPP;
+      <span class="proh">Prohibit</span> Delete of <code>CertificationData</code></td>
+  <td>Article 4</td>
+</tr>
+<tr>
+  <td><code>CustomsBorderInspectionPolicy</code></td>
+  <td><code>CustomsAuthorityRole</code></td>
+  <td><code>PublicTaskBasis</code></td>
+  <td>CUSTOMS_INSPECTION</td>
+  <td><span class="perm">Permit</span> Read on
+      <code>ProductIdentificationData</code> and <code>CertificationData</code></td>
+  <td>ESPR + Union Customs Code (EU) 952/2013</td>
+</tr>
+</tbody>
+</table>
+<p>Policies are owned by the system principal
+<code>ESPRAuthority</code> (ESPR Regulatory Framework Authority). The complete policy,
+permission and prohibition definitions are in the
+<a href="ontology.ttl">Turtle source</a>.</p>
+</div>
+
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments</h2>
+<p>This companion page follows the visual template produced by
+<a href="https://github.com/dgarijo/Widoco">WIDOCO</a> (Daniel Garijo) so that it is
+consistent with the vocabulary documentation generated for the other modules.</p>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,1521 @@
+<h2 id="crossreference" class="list">Cross-reference for DPP Access Control Ontology Module classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by DPP Access Control Ontology Module.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#AccessContext" title="http://w3id.org/dpp/access-control#AccessContext">Access Context</a></li>
+  <li><a href="#Role" title="http://w3id.org/dpp/access-control#Role">Access Control Role</a></li>
+  <li><a href="#AccessDecision" title="http://w3id.org/dpp/access-control#AccessDecision">Access Decision</a></li>
+  <li><a href="#AccessRequest" title="http://w3id.org/dpp/access-control#AccessRequest">Access Request</a></li>
+  <li><a href="#AttributeConstraint" title="http://w3id.org/dpp/access-control#AttributeConstraint">Attribute Constraint</a></li>
+  <li><a href="#CertificationContext" title="http://w3id.org/dpp/access-control#CertificationContext">Certification Context</a></li>
+  <li><a href="#Delegation" title="http://w3id.org/dpp/access-control#Delegation">Delegation</a></li>
+  <li><a href="#AccessPolicy" title="http://w3id.org/dpp/access-control#AccessPolicy">DPP Access Policy</a></li>
+  <li><a href="#DPPResource" title="http://w3id.org/dpp/access-control#DPPResource">DPP Resource</a></li>
+  <li><a href="#GeographicContext" title="http://w3id.org/dpp/access-control#GeographicContext">Geographic Context</a></li>
+  <li><a href="#HumanPrincipal" title="http://w3id.org/dpp/access-control#HumanPrincipal">Human Principal</a></li>
+  <li><a href="#OrganisationPrincipal" title="http://w3id.org/dpp/access-control#OrganisationPrincipal">Organisation Principal</a></li>
+  <li><a href="#Principal" title="http://w3id.org/dpp/access-control#Principal">Principal</a></li>
+  <li><a href="#PurposeContext" title="http://w3id.org/dpp/access-control#PurposeContext">Purpose Context</a></li>
+  <li><a href="#SystemPrincipal" title="http://w3id.org/dpp/access-control#SystemPrincipal">System Principal</a></li>
+  <li><a href="#TemporalContext" title="http://w3id.org/dpp/access-control#TemporalContext">Temporal Context</a></li>
+  <li><a href="#TrustContext" title="http://w3id.org/dpp/access-control#TrustContext">Trust Context</a></li>
+ </ul>
+ <div class="entity" id="AccessContext">
+  <h3>Access Context<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#AccessContext</p>
+  <div class="comment">
+   <span class="markdown">Environmental, temporal, geographic, or purpose-related metadata that conditions the evaluation of an access request.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#CertificationContext" title="http://w3id.org/dpp/access-control#CertificationContext">Certification Context</a> <sup class="type-c" title="class">c</sup>, <a href="#GeographicContext" title="http://w3id.org/dpp/access-control#GeographicContext">Geographic Context</a> <sup class="type-c" title="class">c</sup>, <a href="#PurposeContext" title="http://w3id.org/dpp/access-control#PurposeContext">Purpose Context</a> <sup class="type-c" title="class">c</sup>, <a href="#TemporalContext" title="http://w3id.org/dpp/access-control#TemporalContext">Temporal Context</a> <sup class="type-c" title="class">c</sup>, <a href="#TrustContext" title="http://w3id.org/dpp/access-control#TrustContext">Trust Context</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#requestContext" title="http://w3id.org/dpp/access-control#requestContext">request context</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Role">
+  <h3>Access Control Role<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#Role</p>
+  <div class="comment">
+   <span class="markdown">A named function or responsibility assigned to a Principal that determines which access policies apply.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#appliesToRole" title="http://w3id.org/dpp/access-control#appliesToRole">applies to role</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasRole" title="http://w3id.org/dpp/access-control#hasRole">has role</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="AccessDecision">
+  <h3>Access Decision<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#AccessDecision</p>
+  <div class="comment">
+   <span class="markdown">An immutable, time-stamped record of the outcome of evaluating an AccessRequest against applicable AccessPolicies.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#appliedPolicy" title="http://w3id.org/dpp/access-control#appliedPolicy">applied policy</a> <sup class="type-op" title="object property">op</sup>, <a href="#conflictResolutionApplied" title="http://w3id.org/dpp/access-control#conflictResolutionApplied">conflict resolution applied</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#decidesOn" title="http://w3id.org/dpp/access-control#decidesOn">decides on</a> <sup class="type-op" title="object property">op</sup>, <a href="#decisionOutcome" title="http://w3id.org/dpp/access-control#decisionOutcome">decision outcome</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#decisionTimestamp" title="http://w3id.org/dpp/access-control#decisionTimestamp">decision timestamp</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="AccessRequest">
+  <h3>Access Request<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#AccessRequest</p>
+  <div class="comment">
+   <span class="markdown">A formal, time-stamped expression of intent by a Principal to perform a specific Action on a specific DPP resource.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#requestContext" title="http://w3id.org/dpp/access-control#requestContext">request context</a> <sup class="type-op" title="object property">op</sup>, <a href="#requestTimestamp" title="http://w3id.org/dpp/access-control#requestTimestamp">request timestamp</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#requestedAction" title="http://w3id.org/dpp/access-control#requestedAction">requested action</a> <sup class="type-op" title="object property">op</sup>, <a href="#requestedBy" title="http://w3id.org/dpp/access-control#requestedBy">requested by</a> <sup class="type-op" title="object property">op</sup>, <a href="#requestedResource" title="http://w3id.org/dpp/access-control#requestedResource">requested resource</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#decidesOn" title="http://w3id.org/dpp/access-control#decidesOn">decides on</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="AttributeConstraint">
+  <h3>Attribute Constraint<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#AttributeConstraint</p>
+  <div class="comment">
+   <span class="markdown">A condition on a named attribute of the requesting Principal or target resource that must be satisfied for a policy's permissions to apply.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#constraintAttribute" title="http://w3id.org/dpp/access-control#constraintAttribute">constraint attribute</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#constraintOperator" title="http://w3id.org/dpp/access-control#constraintOperator">constraint operator</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#constraintValue" title="http://w3id.org/dpp/access-control#constraintValue">constraint value</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasAttributeConstraint" title="http://w3id.org/dpp/access-control#hasAttributeConstraint">has attribute constraint</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="CertificationContext">
+  <h3>Certification Context<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#CertificationContext</p>
+  <div class="comment">
+   <span class="markdown">Evidence of a certification held by the requesting Principal that may unlock access to restricted DPP data.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#AccessContext" title="http://w3id.org/dpp/access-control#AccessContext">Access Context</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#certificationIsValid" title="http://w3id.org/dpp/access-control#certificationIsValid">certification is valid</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#certificationScheme" title="http://w3id.org/dpp/access-control#certificationScheme">certification scheme</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Delegation">
+  <h3>Delegation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#Delegation</p>
+  <div class="comment">
+   <span class="markdown">A bounded, time-limited transfer of a subset of access rights from one Principal to another.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#delegatedBy" title="http://w3id.org/dpp/access-control#delegatedBy">delegated by</a> <sup class="type-op" title="object property">op</sup>, <a href="#delegatedTo" title="http://w3id.org/dpp/access-control#delegatedTo">delegated to</a> <sup class="type-op" title="object property">op</sup>, <a href="#delegationCoversAction" title="http://w3id.org/dpp/access-control#delegationCoversAction">delegation covers action</a> <sup class="type-op" title="object property">op</sup>, <a href="#delegationCoversResource" title="http://w3id.org/dpp/access-control#delegationCoversResource">delegation covers resource</a> <sup class="type-op" title="object property">op</sup>, <a href="#delegationDepth" title="http://w3id.org/dpp/access-control#delegationDepth">delegation depth</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#delegationIsActive" title="http://w3id.org/dpp/access-control#delegationIsActive">delegation is active</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#delegationValidFrom" title="http://w3id.org/dpp/access-control#delegationValidFrom">delegation valid from</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#delegationValidUntil" title="http://w3id.org/dpp/access-control#delegationValidUntil">delegation valid until</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="AccessPolicy">
+  <h3>DPP Access Policy<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#AccessPolicy</p>
+  <div class="comment">
+   <span class="markdown">A declarative specification of permissions and prohibitions over DPP resources, scoped to a Role and optionally conditioned on contextual constraints.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/odrl/2/Policy" target="_blank" title="http://www.w3.org/ns/odrl/2/Policy">Policy</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#appliesToRole" title="http://w3id.org/dpp/access-control#appliesToRole">applies to role</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasAttributeConstraint" title="http://w3id.org/dpp/access-control#hasAttributeConstraint">has attribute constraint</a> <sup class="type-op" title="object property">op</sup>, <a href="#permittedPurpose" title="http://w3id.org/dpp/access-control#permittedPurpose">permitted purpose</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#policyOwner" title="http://w3id.org/dpp/access-control#policyOwner">policy owner</a> <sup class="type-op" title="object property">op</sup>, <a href="#policyValidFrom" title="http://w3id.org/dpp/access-control#policyValidFrom">policy valid from</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#policyValidUntil" title="http://w3id.org/dpp/access-control#policyValidUntil">policy valid until</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#appliedPolicy" title="http://w3id.org/dpp/access-control#appliedPolicy">applied policy</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DPPResource">
+  <h3>DPP Resource<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#DPPResource</p>
+  <div class="comment">
+   <span class="markdown">A discrete, addressable unit of data within a Digital Product Passport that may be the target of an access request.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/odrl/2/Asset" target="_blank" title="http://www.w3.org/ns/odrl/2/Asset">Asset</a> <sup class="type-c" title="class">c</sup>, <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#belongsToModule" title="http://w3id.org/dpp/access-control#belongsToModule">belongs to module</a> <sup class="type-op" title="object property">op</sup>, <a href="#ownedBy" title="http://w3id.org/dpp/access-control#ownedBy">owned by</a> <sup class="type-op" title="object property">op</sup>, <a href="#resourceSensitivity" title="http://w3id.org/dpp/access-control#resourceSensitivity">resource sensitivity</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#delegationCoversResource" title="http://w3id.org/dpp/access-control#delegationCoversResource">delegation covers resource</a> <sup class="type-op" title="object property">op</sup>, <a href="#requestedResource" title="http://w3id.org/dpp/access-control#requestedResource">requested resource</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="GeographicContext">
+  <h3>Geographic Context<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#GeographicContext</p>
+  <div class="comment">
+   <span class="markdown">A jurisdictional constraint on where access may be exercised.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#AccessContext" title="http://w3id.org/dpp/access-control#AccessContext">Access Context</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#jurisdictionCode" title="http://w3id.org/dpp/access-control#jurisdictionCode">jurisdiction code</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="HumanPrincipal">
+  <h3>Human Principal<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#HumanPrincipal</p>
+  <div class="comment">
+   <span class="markdown">A natural person acting as a DPP data requester or owner.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Principal" title="http://w3id.org/dpp/access-control#Principal">Principal</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="OrganisationPrincipal">
+  <h3>Organisation Principal<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#OrganisationPrincipal</p>
+  <div class="comment">
+   <span class="markdown">A legal entity or organisation acting as a DPP stakeholder.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Principal" title="http://w3id.org/dpp/access-control#Principal">Principal</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Principal">
+  <h3>Principal<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#Principal</p>
+  <div class="comment">
+   <span class="markdown">Any entity — human, organisation, or automated system — that may request access to DPP resources.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>, <a href="http://www.w3.org/ns/odrl/2/Party" target="_blank" title="http://www.w3.org/ns/odrl/2/Party">Party</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#HumanPrincipal" title="http://w3id.org/dpp/access-control#HumanPrincipal">Human Principal</a> <sup class="type-c" title="class">c</sup>, <a href="#OrganisationPrincipal" title="http://w3id.org/dpp/access-control#OrganisationPrincipal">Organisation Principal</a> <sup class="type-c" title="class">c</sup>, <a href="#SystemPrincipal" title="http://w3id.org/dpp/access-control#SystemPrincipal">System Principal</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasRole" title="http://w3id.org/dpp/access-control#hasRole">has role</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#delegatedBy" title="http://w3id.org/dpp/access-control#delegatedBy">delegated by</a> <sup class="type-op" title="object property">op</sup>, <a href="#delegatedTo" title="http://w3id.org/dpp/access-control#delegatedTo">delegated to</a> <sup class="type-op" title="object property">op</sup>, <a href="#ownedBy" title="http://w3id.org/dpp/access-control#ownedBy">owned by</a> <sup class="type-op" title="object property">op</sup>, <a href="#policyOwner" title="http://w3id.org/dpp/access-control#policyOwner">policy owner</a> <sup class="type-op" title="object property">op</sup>, <a href="#requestedBy" title="http://w3id.org/dpp/access-control#requestedBy">requested by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="PurposeContext">
+  <h3>Purpose Context<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#PurposeContext</p>
+  <div class="comment">
+   <span class="markdown">The declared purpose for which a Principal requests access, per GDPR Article 5(1)(b) purpose limitation.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#AccessContext" title="http://w3id.org/dpp/access-control#AccessContext">Access Context</a> <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/dpv#Purpose" target="_blank" title="https://w3id.org/dpv#Purpose">Purpose</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#declaredPurpose" title="http://w3id.org/dpp/access-control#declaredPurpose">declared purpose</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SystemPrincipal">
+  <h3>System Principal<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#SystemPrincipal</p>
+  <div class="comment">
+   <span class="markdown">An automated agent or software system acting as a DPP data consumer or producer.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Principal" title="http://w3id.org/dpp/access-control#Principal">Principal</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="TemporalContext">
+  <h3>Temporal Context<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#TemporalContext</p>
+  <div class="comment">
+   <span class="markdown">A time window within which access is permitted.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#AccessContext" title="http://w3id.org/dpp/access-control#AccessContext">Access Context</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#accessValidFrom" title="http://w3id.org/dpp/access-control#accessValidFrom">access valid from</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#accessValidUntil" title="http://w3id.org/dpp/access-control#accessValidUntil">access valid until</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="TrustContext">
+  <h3>Trust Context<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#TrustContext</p>
+  <div class="comment">
+   <span class="markdown">The assurance level of the authentication mechanism used by the requesting Principal.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#AccessContext" title="http://w3id.org/dpp/access-control#AccessContext">Access Context</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#trustAssuranceLevel" title="http://w3id.org/dpp/access-control#trustAssuranceLevel">trust assurance level</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#appliedPolicy" title="http://w3id.org/dpp/access-control#appliedPolicy">applied policy</a></li>
+  <li><a href="#appliesToRole" title="http://w3id.org/dpp/access-control#appliesToRole">applies to role</a></li>
+  <li><a href="#belongsToModule" title="http://w3id.org/dpp/access-control#belongsToModule">belongs to module</a></li>
+  <li><a href="#decidesOn" title="http://w3id.org/dpp/access-control#decidesOn">decides on</a></li>
+  <li><a href="#delegatedBy" title="http://w3id.org/dpp/access-control#delegatedBy">delegated by</a></li>
+  <li><a href="#delegatedTo" title="http://w3id.org/dpp/access-control#delegatedTo">delegated to</a></li>
+  <li><a href="#delegationCoversAction" title="http://w3id.org/dpp/access-control#delegationCoversAction">delegation covers action</a></li>
+  <li><a href="#delegationCoversResource" title="http://w3id.org/dpp/access-control#delegationCoversResource">delegation covers resource</a></li>
+  <li><a href="#hasAttributeConstraint" title="http://w3id.org/dpp/access-control#hasAttributeConstraint">has attribute constraint</a></li>
+  <li><a href="#hasRole" title="http://w3id.org/dpp/access-control#hasRole">has role</a></li>
+  <li><a href="#ownedBy" title="http://w3id.org/dpp/access-control#ownedBy">owned by</a></li>
+  <li><a href="#policyOwner" title="http://w3id.org/dpp/access-control#policyOwner">policy owner</a></li>
+  <li><a href="#requestContext" title="http://w3id.org/dpp/access-control#requestContext">request context</a></li>
+  <li><a href="#requestedAction" title="http://w3id.org/dpp/access-control#requestedAction">requested action</a></li>
+  <li><a href="#requestedBy" title="http://w3id.org/dpp/access-control#requestedBy">requested by</a></li>
+  <li><a href="#requestedResource" title="http://w3id.org/dpp/access-control#requestedResource">requested resource</a></li>
+ </ul>
+ <div class="entity" id="appliedPolicy">
+  <h3>applied policy<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#appliedPolicy</p>
+  <div class="comment">
+   <span class="markdown">The AccessPolicy (or policies) that were evaluated to produce this decision.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AccessDecision" title="http://w3id.org/dpp/access-control#AccessDecision">Access Decision</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#AccessPolicy" title="http://w3id.org/dpp/access-control#AccessPolicy">DPP Access Policy</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="appliesToRole">
+  <h3>applies to role<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#appliesToRole</p>
+  <div class="comment">
+   <span class="markdown">The Role to which this AccessPolicy is addressed.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AccessPolicy" title="http://w3id.org/dpp/access-control#AccessPolicy">DPP Access Policy</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Role" title="http://w3id.org/dpp/access-control#Role">Access Control Role</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="belongsToModule">
+  <h3>belongs to module<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#belongsToModule</p>
+  <div class="comment">
+   <span class="markdown">The ESPR-defined data category (DPP module) that contains this resource.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#DPPResource" title="http://w3id.org/dpp/access-control#DPPResource">DPP Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://w3id.org/dpp/data-categories#DataCategory" target="_blank" title="http://w3id.org/dpp/data-categories#DataCategory">Data Category</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="decidesOn">
+  <h3>decides on<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#decidesOn</p>
+  <div class="comment">
+   <span class="markdown">Links this AccessDecision to the AccessRequest it resolves.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AccessDecision" title="http://w3id.org/dpp/access-control#AccessDecision">Access Decision</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#AccessRequest" title="http://w3id.org/dpp/access-control#AccessRequest">Access Request</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="delegatedBy">
+  <h3>delegated by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#delegatedBy</p>
+  <div class="comment">
+   <span class="markdown">The Principal who grants delegated access rights.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Delegation" title="http://w3id.org/dpp/access-control#Delegation">Delegation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Principal" title="http://w3id.org/dpp/access-control#Principal">Principal</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="delegatedTo">
+  <h3>delegated to<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#delegatedTo</p>
+  <div class="comment">
+   <span class="markdown">The Principal who receives delegated access rights.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Delegation" title="http://w3id.org/dpp/access-control#Delegation">Delegation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Principal" title="http://w3id.org/dpp/access-control#Principal">Principal</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="delegationCoversAction">
+  <h3>delegation covers action<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#delegationCoversAction</p>
+  <div class="comment">
+   <span class="markdown">The action(s) the delegatee is authorised to perform.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Delegation" title="http://w3id.org/dpp/access-control#Delegation">Delegation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/odrl/2/Action" target="_blank" title="http://www.w3.org/ns/odrl/2/Action">Action</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="delegationCoversResource">
+  <h3>delegation covers resource<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#delegationCoversResource</p>
+  <div class="comment">
+   <span class="markdown">The DPP resource(s) over which delegated rights are granted.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Delegation" title="http://w3id.org/dpp/access-control#Delegation">Delegation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#DPPResource" title="http://w3id.org/dpp/access-control#DPPResource">DPP Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasAttributeConstraint">
+  <h3>has attribute constraint<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#hasAttributeConstraint</p>
+  <div class="comment">
+   <span class="markdown">Links an AccessPolicy to one or more AttributeConstraints that must all be satisfied for the policy's permissions to activate.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AccessPolicy" title="http://w3id.org/dpp/access-control#AccessPolicy">DPP Access Policy</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#AttributeConstraint" title="http://w3id.org/dpp/access-control#AttributeConstraint">Attribute Constraint</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasRole">
+  <h3>has role<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#hasRole</p>
+  <div class="comment">
+   <span class="markdown">Assigns a single Access Control Role to a Principal.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Principal" title="http://w3id.org/dpp/access-control#Principal">Principal</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Role" title="http://w3id.org/dpp/access-control#Role">Access Control Role</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ownedBy">
+  <h3>owned by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#ownedBy</p>
+  <div class="comment">
+   <span class="markdown">The Principal who is the authoritative data owner of this DPP resource and may grant or revoke access.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#DPPResource" title="http://w3id.org/dpp/access-control#DPPResource">DPP Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Principal" title="http://w3id.org/dpp/access-control#Principal">Principal</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="policyOwner">
+  <h3>policy owner<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#policyOwner</p>
+  <div class="comment">
+   <span class="markdown">The Principal responsible for the lifecycle of this policy.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AccessPolicy" title="http://w3id.org/dpp/access-control#AccessPolicy">DPP Access Policy</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Principal" title="http://w3id.org/dpp/access-control#Principal">Principal</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="requestContext">
+  <h3>request context<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#requestContext</p>
+  <div class="comment">
+   <span class="markdown">Environmental or situational metadata that conditions the evaluation of this access request.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AccessRequest" title="http://w3id.org/dpp/access-control#AccessRequest">Access Request</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#AccessContext" title="http://w3id.org/dpp/access-control#AccessContext">Access Context</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="requestedAction">
+  <h3>requested action<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#requestedAction</p>
+  <div class="comment">
+   <span class="markdown">The CRUD action the Principal intends to perform.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AccessRequest" title="http://w3id.org/dpp/access-control#AccessRequest">Access Request</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/odrl/2/Action" target="_blank" title="http://www.w3.org/ns/odrl/2/Action">Action</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="requestedBy">
+  <h3>requested by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#requestedBy</p>
+  <div class="comment">
+   <span class="markdown">Links an AccessRequest to the Principal who submitted it.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AccessRequest" title="http://w3id.org/dpp/access-control#AccessRequest">Access Request</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Principal" title="http://w3id.org/dpp/access-control#Principal">Principal</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="requestedResource">
+  <h3>requested resource<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#requestedResource</p>
+  <div class="comment">
+   <span class="markdown">The DPP resource the Principal intends to access.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AccessRequest" title="http://w3id.org/dpp/access-control#AccessRequest">Access Request</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#DPPResource" title="http://w3id.org/dpp/access-control#DPPResource">DPP Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#accessValidFrom" title="http://w3id.org/dpp/access-control#accessValidFrom">access valid from</a></li>
+  <li><a href="#accessValidUntil" title="http://w3id.org/dpp/access-control#accessValidUntil">access valid until</a></li>
+  <li><a href="#certificationIsValid" title="http://w3id.org/dpp/access-control#certificationIsValid">certification is valid</a></li>
+  <li><a href="#certificationScheme" title="http://w3id.org/dpp/access-control#certificationScheme">certification scheme</a></li>
+  <li><a href="#conflictResolutionApplied" title="http://w3id.org/dpp/access-control#conflictResolutionApplied">conflict resolution applied</a></li>
+  <li><a href="#constraintAttribute" title="http://w3id.org/dpp/access-control#constraintAttribute">constraint attribute</a></li>
+  <li><a href="#constraintOperator" title="http://w3id.org/dpp/access-control#constraintOperator">constraint operator</a></li>
+  <li><a href="#constraintValue" title="http://w3id.org/dpp/access-control#constraintValue">constraint value</a></li>
+  <li><a href="#decisionOutcome" title="http://w3id.org/dpp/access-control#decisionOutcome">decision outcome</a></li>
+  <li><a href="#decisionTimestamp" title="http://w3id.org/dpp/access-control#decisionTimestamp">decision timestamp</a></li>
+  <li><a href="#declaredPurpose" title="http://w3id.org/dpp/access-control#declaredPurpose">declared purpose</a></li>
+  <li><a href="#delegationDepth" title="http://w3id.org/dpp/access-control#delegationDepth">delegation depth</a></li>
+  <li><a href="#delegationIsActive" title="http://w3id.org/dpp/access-control#delegationIsActive">delegation is active</a></li>
+  <li><a href="#delegationValidFrom" title="http://w3id.org/dpp/access-control#delegationValidFrom">delegation valid from</a></li>
+  <li><a href="#delegationValidUntil" title="http://w3id.org/dpp/access-control#delegationValidUntil">delegation valid until</a></li>
+  <li><a href="#jurisdictionCode" title="http://w3id.org/dpp/access-control#jurisdictionCode">jurisdiction code</a></li>
+  <li><a href="#permittedPurpose" title="http://w3id.org/dpp/access-control#permittedPurpose">permitted purpose</a></li>
+  <li><a href="#policyValidFrom" title="http://w3id.org/dpp/access-control#policyValidFrom">policy valid from</a></li>
+  <li><a href="#policyValidUntil" title="http://w3id.org/dpp/access-control#policyValidUntil">policy valid until</a></li>
+  <li><a href="#requestTimestamp" title="http://w3id.org/dpp/access-control#requestTimestamp">request timestamp</a></li>
+  <li><a href="#resourceSensitivity" title="http://w3id.org/dpp/access-control#resourceSensitivity">resource sensitivity</a></li>
+  <li><a href="#trustAssuranceLevel" title="http://w3id.org/dpp/access-control#trustAssuranceLevel">trust assurance level</a></li>
+ </ul>
+ <div class="entity" id="accessValidFrom">
+  <h3>access valid from<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#accessValidFrom</p>
+  <div class="comment">
+   <span class="markdown">The UTC date-time from which this temporal access window opens.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#TemporalContext" title="http://w3id.org/dpp/access-control#TemporalContext">Temporal Context</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="accessValidUntil">
+  <h3>access valid until<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#accessValidUntil</p>
+  <div class="comment">
+   <span class="markdown">The UTC date-time at which this temporal access window closes.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#TemporalContext" title="http://w3id.org/dpp/access-control#TemporalContext">Temporal Context</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="certificationIsValid">
+  <h3>certification is valid<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#certificationIsValid</p>
+  <div class="comment">
+   <span class="markdown">True if the referenced certification is currently valid and in good standing.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#CertificationContext" title="http://w3id.org/dpp/access-control#CertificationContext">Certification Context</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="certificationScheme">
+  <h3>certification scheme<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#certificationScheme</p>
+  <div class="comment">
+   <span class="markdown">The name or identifier of the certification scheme.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#CertificationContext" title="http://w3id.org/dpp/access-control#CertificationContext">Certification Context</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="conflictResolutionApplied">
+  <h3>conflict resolution applied<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#conflictResolutionApplied</p>
+  <div class="comment">
+   <span class="markdown">True if a deny-overrides conflict resolution strategy was invoked during this decision evaluation.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AccessDecision" title="http://w3id.org/dpp/access-control#AccessDecision">Access Decision</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="constraintAttribute">
+  <h3>constraint attribute<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#constraintAttribute</p>
+  <div class="comment">
+   <span class="markdown">The name of the attribute being constrained.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AttributeConstraint" title="http://w3id.org/dpp/access-control#AttributeConstraint">Attribute Constraint</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="constraintOperator">
+  <h3>constraint operator<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#constraintOperator</p>
+  <div class="comment">
+   <span class="markdown">The comparison operator applied to the attribute value.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AttributeConstraint" title="http://w3id.org/dpp/access-control#AttributeConstraint">Attribute Constraint</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="constraintValue">
+  <h3>constraint value<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#constraintValue</p>
+  <div class="comment">
+   <span class="markdown">The value against which the attribute is compared.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AttributeConstraint" title="http://w3id.org/dpp/access-control#AttributeConstraint">Attribute Constraint</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="decisionOutcome">
+  <h3>decision outcome<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#decisionOutcome</p>
+  <div class="comment">
+   <span class="markdown">The result of evaluating the access request.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AccessDecision" title="http://w3id.org/dpp/access-control#AccessDecision">Access Decision</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="decisionTimestamp">
+  <h3>decision timestamp<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#decisionTimestamp</p>
+  <div class="comment">
+   <span class="markdown">The UTC date-time at which the access decision was recorded.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AccessDecision" title="http://w3id.org/dpp/access-control#AccessDecision">Access Decision</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="declaredPurpose">
+  <h3>declared purpose<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#declaredPurpose</p>
+  <div class="comment">
+   <span class="markdown">A textual description of the purpose for which data access is requested.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PurposeContext" title="http://w3id.org/dpp/access-control#PurposeContext">Purpose Context</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="delegationDepth">
+  <h3>delegation depth<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#delegationDepth</p>
+  <div class="comment">
+   <span class="markdown">The number of sub-delegation hops permitted from this delegation.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Delegation" title="http://w3id.org/dpp/access-control#Delegation">Delegation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="delegationIsActive">
+  <h3>delegation is active<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#delegationIsActive</p>
+  <div class="comment">
+   <span class="markdown">True if this delegation is currently within its valid time window and has not been revoked.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Delegation" title="http://w3id.org/dpp/access-control#Delegation">Delegation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="delegationValidFrom">
+  <h3>delegation valid from<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#delegationValidFrom</p>
+  <div class="comment">
+   <span class="markdown">The UTC date-time from which the delegation is active.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Delegation" title="http://w3id.org/dpp/access-control#Delegation">Delegation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="delegationValidUntil">
+  <h3>delegation valid until<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#delegationValidUntil</p>
+  <div class="comment">
+   <span class="markdown">The UTC date-time at which the delegation expires.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Delegation" title="http://w3id.org/dpp/access-control#Delegation">Delegation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="jurisdictionCode">
+  <h3>jurisdiction code<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#jurisdictionCode</p>
+  <div class="comment">
+   <span class="markdown">The jurisdiction in which this access constraint applies.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#GeographicContext" title="http://w3id.org/dpp/access-control#GeographicContext">Geographic Context</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="permittedPurpose">
+  <h3>permitted purpose<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#permittedPurpose</p>
+  <div class="comment">
+   <span class="markdown">A purpose code that an access request must declare to activate this policy's permissions.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AccessPolicy" title="http://w3id.org/dpp/access-control#AccessPolicy">DPP Access Policy</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="policyValidFrom">
+  <h3>policy valid from<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#policyValidFrom</p>
+  <div class="comment">
+   <span class="markdown">The UTC date-time from which this policy is active.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AccessPolicy" title="http://w3id.org/dpp/access-control#AccessPolicy">DPP Access Policy</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="policyValidUntil">
+  <h3>policy valid until<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#policyValidUntil</p>
+  <div class="comment">
+   <span class="markdown">The UTC date-time after which this policy expires.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AccessPolicy" title="http://w3id.org/dpp/access-control#AccessPolicy">DPP Access Policy</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="requestTimestamp">
+  <h3>request timestamp<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#requestTimestamp</p>
+  <div class="comment">
+   <span class="markdown">The UTC date-time at which the AccessRequest was submitted.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AccessRequest" title="http://w3id.org/dpp/access-control#AccessRequest">Access Request</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="resourceSensitivity">
+  <h3>resource sensitivity<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#resourceSensitivity</p>
+  <div class="comment">
+   <span class="markdown">Classification of the sensitivity level of this DPP resource.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#DPPResource" title="http://w3id.org/dpp/access-control#DPPResource">DPP Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="trustAssuranceLevel">
+  <h3>trust assurance level<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#trustAssuranceLevel</p>
+  <div class="comment">
+   <span class="markdown">The eIDAS assurance level of the requester's authentication.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#TrustContext" title="http://w3id.org/dpp/access-control#TrustContext">Trust Context</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="annotationproperties">
+ <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+ <ul class="hlist">
+  <li><a href="#http://purl.org/dc/terms/contributor" title="http://purl.org/dc/terms/contributor"> <span>contributor</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created"> <span>created</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator"> <span>creator</span> </a></li>
+  <li><a href="#http://www.w3.org/2004/02/skos/core#definition" title="http://www.w3.org/2004/02/skos/core#definition"> <span>definition</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description"> <span>description</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license"> <span>license</span> </a></li>
+  <li><a href="#http://www.w3.org/2004/02/skos/core#prefLabel" title="http://www.w3.org/2004/02/skos/core#prefLabel"> <span>pref Label</span> </a></li>
+  <li><a href="#http://www.w3.org/2004/02/skos/core#scopeNote" title="http://www.w3.org/2004/02/skos/core#scopeNote"> <span>scope Note</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title"> <span>title</span> </a></li>
+ </ul>
+ <div class="entity" id="http://purl.org/dc/terms/contributor">
+  <h3>contributor<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/contributor</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/created">
+  <h3>created<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/created</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/creator">
+  <h3>creator<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/creator</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/2004/02/skos/core#definition">
+  <h3>definition<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#definition</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/description">
+  <h3>description<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/description</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/license">
+  <h3>license<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/license</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/2004/02/skos/core#prefLabel">
+  <h3>pref Label<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#prefLabel</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/2004/02/skos/core#scopeNote">
+  <h3>scope Note<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#scopeNote</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/title">
+  <h3>title<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/title</p>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+ <h3 id="namedindividuals" class="list">Named Individuals</h3>
+ <ul class="hlist">
+  <li><a href="#CreateResource" title="http://w3id.org/dpp/access-control#CreateResource">Create</a></li>
+  <li><a href="#DelegateAccess" title="http://w3id.org/dpp/access-control#DelegateAccess">Delegate</a></li>
+  <li><a href="#DeleteResource" title="http://w3id.org/dpp/access-control#DeleteResource">Delete</a></li>
+  <li><a href="#ReadResource" title="http://w3id.org/dpp/access-control#ReadResource">Read</a></li>
+  <li><a href="#UpdateResource" title="http://w3id.org/dpp/access-control#UpdateResource">Update</a></li>
+ </ul>
+ <div class="entity" id="CreateResource">
+  <h3>Create<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#CreateResource</p>
+  <div class="comment">
+   <span class="markdown">Introduce a new data record into a DPP module where no prior record exists for that resource identifier.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/odrl/2/Action" target="_blank" title="http://www.w3.org/ns/odrl/2/Action">Action</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Introduce a new data record into a DPP module where no prior record exists for that resource identifier."@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Create"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DelegateAccess">
+  <h3>Delegate<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#DelegateAccess</p>
+  <div class="comment">
+   <span class="markdown">Transfer a subset of one's own access rights to another Principal for a bounded scope and time period.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/odrl/2/Action" target="_blank" title="http://www.w3.org/ns/odrl/2/Action">Action</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Transfer a subset of one's own access rights to another Principal for a bounded scope and time period."@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Delegate"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DeleteResource">
+  <h3>Delete<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#DeleteResource</p>
+  <div class="comment">
+   <span class="markdown">Remove a DPP resource record, subject to data retention obligations.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/odrl/2/Action" target="_blank" title="http://www.w3.org/ns/odrl/2/Action">Action</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Remove a DPP resource record, subject to data retention obligations."@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Delete"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ReadResource">
+  <h3>Read<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#ReadResource</p>
+  <div class="comment">
+   <span class="markdown">Retrieve and inspect the content of a DPP resource without modifying it.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/odrl/2/Action" target="_blank" title="http://www.w3.org/ns/odrl/2/Action">Action</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Retrieve and inspect the content of a DPP resource without modifying it."@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Read"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="UpdateResource">
+  <h3>Update<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/dpp/access-control#UpdateResource</p>
+  <div class="comment">
+   <span class="markdown">Modify the content of an existing DPP resource record.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/odrl/2/Action" target="_blank" title="http://www.w3.org/ns/odrl/2/Action">Action</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Modify the content of an existing DPP resource record."@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Update"@en</span>
+   </dd>
+  </dl>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
+</div>
+</div>

@@ -1,0 +1,240 @@
+@prefix : <http://w3id.org/dpp/access-control/gdpr#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://w3id.org/dpp/access-control/gdpr#> .
+
+<http://w3id.org/dpp/access-control/gdpr> rdf:type owl:Ontology ;
+                                           owl:versionIRI <http://w3id.org/dpp/access-control/gdpr/1.0.0> ;
+                                           owl:imports <http://w3id.org/dpp/access-control> ,
+                                                       <https://w3id.org/dpv#> ;
+                                           <http://purl.org/dc/terms/contributor> "Annika Moscati" ,
+                                                                                  "Bincy Veena" ,
+                                                                                  "Peter Johansson" ;
+                                           <http://purl.org/dc/terms/created> "2026-04-01"^^xsd:date ;
+                                           <http://purl.org/dc/terms/creator> "Rahel Kebede" ;
+                                           <http://purl.org/dc/terms/description> """Legal basis declarations, purpose limitation patterns, data subject rights,
+         and data retention policies connecting the dpp-ac framework to GDPR via the
+         Data Privacy Vocabulary (DPVO)."""@en ;
+                                           <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                           <http://purl.org/dc/terms/title> "DPP Access Control — GDPR Regulatory Alignment"@en ;
+                                           owl:versionInfo "1.0.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#scopeNote
+<http://www.w3.org/2004/02/skos/core#scopeNote> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://w3id.org/dpp/access-control#hasLegalBasis
+<http://w3id.org/dpp/access-control#hasLegalBasis> rdf:type owl:ObjectProperty ,
+                                                            owl:FunctionalProperty ;
+                                                   rdfs:domain <http://w3id.org/dpp/access-control#AccessPolicy> ;
+                                                   rdfs:range <http://w3id.org/dpp/access-control#LegalBasis> ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "The GDPR Article 6 legal basis that justifies issuing this policy."@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "has legal basis"@en .
+
+
+###  http://w3id.org/dpp/access-control#hasRetentionPolicy
+<http://w3id.org/dpp/access-control#hasRetentionPolicy> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain <http://w3id.org/dpp/data-categories#DataCategory> ;
+                                                        rdfs:range <http://w3id.org/dpp/access-control#DataRetentionPolicy> ;
+                                                        <http://www.w3.org/2004/02/skos/core#definition> "Links a DPP data category to its applicable data retention policy."@en ;
+                                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "has retention policy"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://w3id.org/dpp/access-control#retentionPeriodYears
+<http://w3id.org/dpp/access-control#retentionPeriodYears> rdf:type owl:DatatypeProperty ,
+                                                                   owl:FunctionalProperty ;
+                                                          rdfs:domain <http://w3id.org/dpp/access-control#DataRetentionPolicy> ;
+                                                          rdfs:range xsd:integer ;
+                                                          <http://www.w3.org/2004/02/skos/core#definition> """The number of years for which data in this category must be retained
+         before erasure or anonymisation is triggered."""@en ;
+                                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "retention period (years)"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/dpp/access-control#AccessPolicy
+<http://w3id.org/dpp/access-control#AccessPolicy> rdf:type owl:Class .
+
+
+###  http://w3id.org/dpp/access-control#DataRetentionPolicy
+<http://w3id.org/dpp/access-control#DataRetentionPolicy> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <https://w3id.org/dpv#Policy> ;
+                                                         <http://www.w3.org/2004/02/skos/core#definition> """A time-bound policy governing how long a DPP data category may be
+         retained before erasure or anonymisation."""@en ;
+                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Retention Policy"@en .
+
+
+###  http://w3id.org/dpp/access-control#DataSubjectRight
+<http://w3id.org/dpp/access-control#DataSubjectRight> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://w3id.org/dpv#Right> ;
+                                                      <http://www.w3.org/2004/02/skos/core#definition> """A GDPR Chapter III right held by a natural person whose personal data
+         is processed in the context of DPP operations."""@en ;
+                                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Subject Right"@en .
+
+
+###  http://w3id.org/dpp/access-control#LegalBasis
+<http://w3id.org/dpp/access-control#LegalBasis> rdf:type owl:Class ;
+                                                rdfs:subClassOf <https://w3id.org/dpv#LegalBasis> ;
+                                                <http://www.w3.org/2004/02/skos/core#definition> """The GDPR Article 6 legal basis justifying the processing of personal
+         data in the context of a DPP access operation."""@en ;
+                                                <http://www.w3.org/2004/02/skos/core#prefLabel> "DPP Legal Basis"@en .
+
+
+###  http://w3id.org/dpp/data-categories#DataCategory
+<http://w3id.org/dpp/data-categories#DataCategory> rdf:type owl:Class .
+
+
+###  https://w3id.org/dpv#LegalBasis
+<https://w3id.org/dpv#LegalBasis> rdf:type owl:Class .
+
+
+###  https://w3id.org/dpv#Policy
+<https://w3id.org/dpv#Policy> rdf:type owl:Class .
+
+
+###  https://w3id.org/dpv#Right
+<https://w3id.org/dpv#Right> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://w3id.org/dpp/access-control#ConsentBasis
+<http://w3id.org/dpp/access-control#ConsentBasis> rdf:type owl:NamedIndividual ,
+                                                           <http://w3id.org/dpp/access-control#LegalBasis> ;
+                                                  <http://www.w3.org/2004/02/skos/core#definition> """The data subject has given consent to the processing of their personal
+         data for one or more specific purposes."""@en ;
+                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Consent (Art. 6(1)(a))"@en .
+
+
+###  http://w3id.org/dpp/access-control#LegalObligation
+<http://w3id.org/dpp/access-control#LegalObligation> rdf:type owl:NamedIndividual ,
+                                                              <http://w3id.org/dpp/access-control#LegalBasis> ;
+                                                     <http://www.w3.org/2004/02/skos/core#definition> """Processing is necessary for compliance with a legal obligation to which
+         the controller is subject — including ESPR data disclosure obligations."""@en ;
+                                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Legal Obligation (Art. 6(1)(c))"@en .
+
+
+###  http://w3id.org/dpp/access-control#LegitimateInterest
+<http://w3id.org/dpp/access-control#LegitimateInterest> rdf:type owl:NamedIndividual ,
+                                                                 <http://w3id.org/dpp/access-control#LegalBasis> ;
+                                                        <http://www.w3.org/2004/02/skos/core#definition> """Processing is necessary for the purposes of the legitimate interests
+         pursued by the controller or a third party."""@en ;
+                                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "Legitimate Interest (Art. 6(1)(f))"@en .
+
+
+###  http://w3id.org/dpp/access-control#PublicTaskBasis
+<http://w3id.org/dpp/access-control#PublicTaskBasis> rdf:type owl:NamedIndividual ,
+                                                              <http://w3id.org/dpp/access-control#LegalBasis> ;
+                                                     <http://www.w3.org/2004/02/skos/core#definition> """Processing is necessary for the performance of a task carried out in
+         the public interest or in the exercise of official authority — relevant
+         for Market Surveillance Authority access."""@en ;
+                                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Public Task (Art. 6(1)(e))"@en .
+
+
+###  http://w3id.org/dpp/access-control#RightOfAccess
+<http://w3id.org/dpp/access-control#RightOfAccess> rdf:type owl:NamedIndividual ,
+                                                            <http://w3id.org/dpp/access-control#DataSubjectRight> ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> """The right to obtain confirmation of whether personal data is being
+         processed and to access that data."""@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Right of Access (Art. 15)"@en .
+
+
+###  http://w3id.org/dpp/access-control#RightToDataPortability
+<http://w3id.org/dpp/access-control#RightToDataPortability> rdf:type owl:NamedIndividual ,
+                                                                     <http://w3id.org/dpp/access-control#DataSubjectRight> ;
+                                                            <http://www.w3.org/2004/02/skos/core#definition> """The right to receive personal data in a structured, commonly used,
+         and machine-readable format."""@en ;
+                                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "Right to Data Portability (Art. 20)"@en .
+
+
+###  http://w3id.org/dpp/access-control#RightToErasure
+<http://w3id.org/dpp/access-control#RightToErasure> rdf:type owl:NamedIndividual ,
+                                                             <http://w3id.org/dpp/access-control#DataSubjectRight> ;
+                                                    <http://www.w3.org/2004/02/skos/core#definition> """The right to have personal data erased where it is no longer
+         necessary for the purpose for which it was collected."""@en ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Right to Erasure (Art. 17)"@en .
+
+
+###  http://w3id.org/dpp/access-control#RightToRectification
+<http://w3id.org/dpp/access-control#RightToRectification> rdf:type owl:NamedIndividual ,
+                                                                   <http://w3id.org/dpp/access-control#DataSubjectRight> ;
+                                                          <http://www.w3.org/2004/02/skos/core#definition> "The right to have inaccurate personal data corrected without undue delay."@en ;
+                                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "Right to Rectification (Art. 16)"@en .
+
+
+###  http://w3id.org/dpp/access-control/gdpr/RetentionPolicy-ProductId
+<http://w3id.org/dpp/access-control/gdpr/RetentionPolicy-ProductId> rdf:type owl:NamedIndividual ,
+                                                                             <http://w3id.org/dpp/access-control#DataRetentionPolicy> ;
+                                                                    <http://w3id.org/dpp/access-control#retentionPeriodYears> 15 ;
+                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Product Identification Data Retention — 15 years"@en .
+
+
+###  http://w3id.org/dpp/access-control/gdpr/RetentionPolicy-SupplyChain
+<http://w3id.org/dpp/access-control/gdpr/RetentionPolicy-SupplyChain> rdf:type owl:NamedIndividual ,
+                                                                               <http://w3id.org/dpp/access-control#DataRetentionPolicy> ;
+                                                                      <http://w3id.org/dpp/access-control#retentionPeriodYears> 10 ;
+                                                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Supply Chain Data Retention — 10 years"@en ;
+                                                                      <http://www.w3.org/2004/02/skos/core#scopeNote> """ESPR supply chain data must be retained for the product's
+         service life plus 10 years per proposed delegated acts."""@en .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

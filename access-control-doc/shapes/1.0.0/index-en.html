@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="resources/primer.css" media="screen"/>
+<link rel="stylesheet" href="resources/rec.css" media="screen"/>
+<link rel="stylesheet" href="resources/extra.css" media="screen"/>
+<link rel="stylesheet" href="resources/owl.css" media="screen"/>
+<link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="resources/slider.css" media="screen"/>
+<meta name="color-scheme" content="dark light">
+<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
+	<dark-mode-toggle class="slider"></dark-mode-toggle>
+</div>
+<link rel="icon" type="image/png" href="resources/rdf.icon"/> <title>DPP Access Control SHACL Shapes</title>
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://w3id.org/dpp/access-control/shapes","name":"DPP Access Control SHACL Shapes", "headline":"SHACL validation shapes for the DPP Access Control ontology", "dateReleased":"2026-04-01", "version":"1.0.0", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Rahel Kebede"}], "contributor":[{"@type":"Person","name":"Bincy Veena"},{"@type":"Person","name":"Annika Moscati"},{"@type":"Person","name":"Peter Johansson"}]}</script>
+
+<style>
+table.shapes{border-collapse:collapse;width:100%;margin:1rem 0}
+table.shapes th,table.shapes td{border:1px solid #d0d7de;padding:.45rem .6rem;text-align:left;vertical-align:top;font-size:.92rem}
+table.shapes th{background:#f3f5f9}
+table.shapes code{font-size:.85rem}
+.sev-v{color:#b3261e;font-weight:600}
+.sev-w{color:#9a6700;font-weight:600}
+.sparqlnote{font-size:.85rem;color:#555;font-style:italic}
+</style>
+</head>
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>DPP Access Control SHACL Shapes</h1>
+<h2>Release: 2026-04-01</h2>
+
+<dl>
+<dt>This version:</dt>
+<dd><a href="http://w3id.org/dpp/access-control/shapes/1.0.0">http://w3id.org/dpp/access-control/shapes/1.0.0</a></dd>
+<dt>Latest version:</dt>
+<dd><a href="http://w3id.org/dpp/access-control/shapes">http://w3id.org/dpp/access-control/shapes</a></dd>
+<dt>Revision:</dt>
+<dd>1.0.0</dd>
+<dt>Authors:</dt>
+<dd>Rahel Kebede</dd>
+<dt>Contributors:</dt>
+<dd>Bincy Veena</dd><dd>Annika Moscati</dd><dd>Peter Johansson</dd>
+<dt>Imports:</dt>
+<dd><a href="../../core/1.0.0/index-en.html">DPP Access Control Ontology Module (dpp-ac core)</a></dd>
+<dt>Download serialization:</dt>
+<dd><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd>
+<dt>License:</dt>
+<dd><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-CC--BY--4.0-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/" /></a></dd>
+<dt>Cite as:</dt>
+<dd>Rahel Kebede. DPP Access Control SHACL Shapes. Revision: 1.0.0. Retrieved from: http://w3id.org/dpp/access-control/shapes/1.0.0</dd>
+</dl>
+<hr/>
+</div>
+<div class="status">
+<div><span>SHACL Shapes Graph — Companion Artifact</span></div>
+</div>
+
+<div id="abstract">
+<h2 id="abstract-headline" class="list">Abstract</h2>
+<p>This is the <strong>SHACL shapes graph</strong> for the
+<a href="../../core/1.0.0/index-en.html">DPP Access Control ontology</a>. It defines
+node and property shapes co-designed with the <code>dpp-ac</code> core T-Box, operating
+under the Closed World Assumption. The shapes are kept separate from the OWL ontology to
+prevent reasoner misinterpretation of SHACL triples.</p>
+<p class="sparqlnote">Note: SHACL shapes are validation constraints, not OWL vocabulary terms. They are
+therefore documented here as a companion artifact rather than with the WIDOCO vocabulary
+template used for the <code>dpp-ac</code> core, roles, data-categories and GDPR modules.</p>
+</div>
+
+<div id="shapes">
+<h2 id="shapes-headline" class="list">Shapes overview <span class="count">(14 node shapes)</span></h2>
+<table class="shapes">
+<thead><tr><th>Node shape</th><th>Target class</th><th>Key constraints</th></tr></thead>
+<tbody>
+<tr><td><code>PrincipalShape</code></td><td><code>dpp-ac:Principal</code></td><td>closed; exactly 1 <code>hasRole</code> (a <code>Role</code>); non-empty <code>dcterms:identifier</code> (min length 3). <span class="sev-v">Violation</span></td></tr>
+<tr><td><code>AccessRequestShape</code></td><td><code>dpp-ac:AccessRequest</code></td><td>closed; exactly 1 each of <code>requestedBy</code>, <code>requestedAction</code>, <code>requestedResource</code>, <code>requestTimestamp</code>; <code>requestContext</code> recommended. <span class="sev-v">Violation</span> / <span class="sev-w">Warning</span></td></tr>
+<tr><td><code>DPPResourceShape</code></td><td><code>dpp-ac:DPPResource</code></td><td>exactly 1 <code>resourceSensitivity</code> ∈ {PUBLIC, RESTRICTED, CONFIDENTIAL, STRICTLY_CONFIDENTIAL}; exactly 1 <code>belongsToModule</code>; exactly 1 <code>ownedBy</code>. <span class="sev-v">Violation</span></td></tr>
+<tr><td><code>AccessPolicyShape</code></td><td><code>dpp-ac:AccessPolicy</code></td><td>exactly 1 <code>appliesToRole</code>; ≥1 <code>odrl:permission</code>; exactly 1 <code>policyOwner</code>. <span class="sev-v">Violation</span></td></tr>
+<tr><td><code>AccessDecisionShape</code></td><td><code>dpp-ac:AccessDecision</code></td><td>exactly 1 <code>decidesOn</code>; <code>decisionOutcome</code> ∈ {GRANT, DENY, DELEGATE, PENDING}; exactly 1 <code>decisionTimestamp</code>. <span class="sev-v">Violation</span></td></tr>
+<tr><td><code>TemporalContextShape</code></td><td><code>dpp-ac:TemporalContext</code></td><td>requires <code>accessValidFrom</code> and <code>accessValidUntil</code>; <strong>SPARQL</strong> constraint: <code>accessValidUntil</code> must be strictly after <code>accessValidFrom</code>. <span class="sev-v">Violation</span></td></tr>
+<tr><td><code>DelegationShape</code></td><td><code>dpp-ac:Delegation</code></td><td>requires <code>delegatedBy</code>, <code>delegatedTo</code>, valid-from/until; <code>delegationDepth</code> ≤ 1 (no sub-delegation); <strong>SPARQL</strong> constraint: delegator must be the resource owner. <span class="sev-v">Violation</span></td></tr>
+<tr><td><code>PurposeContextShape</code></td><td><code>dpp-ac:PurposeContext</code></td><td>exactly 1 <code>declaredPurpose</code> from the 8 GDPR-aligned purpose codes. <span class="sev-v">Violation</span></td></tr>
+<tr><td><code>DataCategoryShape</code></td><td><code>dpp-data:DataCategory</code></td><td>≥1 <code>skos:prefLabel</code>; exactly 1 <code>resourceSensitivity</code> from the sensitivity value set. <span class="sev-v">Violation</span></td></tr>
+<tr><td><code>RoleShape</code></td><td><code>dpp-ac:Role</code></td><td>≥1 <code>skos:prefLabel</code>. <span class="sev-v">Violation</span></td></tr>
+<tr><td><code>GeographicContextShape</code></td><td><code>dpp-ac:GeographicContext</code></td><td>exactly 1 <code>jurisdictionCode</code>. <span class="sev-v">Violation</span></td></tr>
+<tr><td><code>TrustContextShape</code></td><td><code>dpp-ac:TrustContext</code></td><td>exactly 1 <code>trustAssuranceLevel</code> ∈ {LOW, SUBSTANTIAL, HIGH} (eIDAS). <span class="sev-v">Violation</span></td></tr>
+<tr><td><code>CertificationContextShape</code></td><td><code>dpp-ac:CertificationContext</code></td><td>≥1 <code>certificationScheme</code>; exactly 1 boolean <code>certificationIsValid</code>. <span class="sev-v">Violation</span></td></tr>
+<tr><td><code>AttributeConstraintShape</code></td><td><code>dpp-ac:AttributeConstraint</code></td><td>exactly 1 <code>constraintAttribute</code>; <code>constraintOperator</code> ∈ {EQ, NEQ, GT, LT, GTE, LTE, IN}; exactly 1 <code>constraintValue</code>. <span class="sev-v">Violation</span></td></tr>
+</tbody>
+</table>
+<p>The complete, authoritative definitions — including all <code>sh:message</code> texts,
+<code>sh:ignoredProperties</code> and the embedded <code>sh:sparql</code> constraints —
+are in the <a href="ontology.ttl">Turtle source</a>.</p>
+</div>
+
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments</h2>
+<p>This companion page follows the visual template produced by
+<a href="https://github.com/dgarijo/Widoco">WIDOCO</a> (Daniel Garijo) so that it is
+consistent with the vocabulary documentation generated for the other modules.</p>
+</div>
+
+</div>
+</body>
+</html>
