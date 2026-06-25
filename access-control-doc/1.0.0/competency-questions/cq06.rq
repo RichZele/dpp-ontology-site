@@ -1,0 +1,23 @@
+# CQ6 — For each request, what decision was reached, at what time, under
+#        which policy, and on which originating request?
+# Competency check: can the ontology represent an access decision as a
+# provenance-aware entity that records its outcome, its timestamp, the
+# originating request, and, where one drove the outcome, the applied policy?
+# Producing the decision individuals is the job of the R10 CONSTRUCT rule;
+# this query checks that the AccessDecision class can carry the required
+# provenance and returns it.
+# Evaluate over: scenario knowledge graph (the recorded decisions).
+# Expected: one decision per scenario, each with an outcome, a timestamp, and
+# the originating request.
+
+PREFIX dpp-ac: <http://w3id.org/dpp/access-control#>
+
+SELECT ?decision ?outcome ?timestamp ?request ?policy
+WHERE {
+    ?decision a dpp-ac:AccessDecision ;
+              dpp-ac:decidesOn         ?request ;
+              dpp-ac:decisionOutcome   ?outcome ;
+              dpp-ac:decisionTimestamp ?timestamp .
+    OPTIONAL { ?decision dpp-ac:appliedPolicy ?policy }
+}
+ORDER BY ?request

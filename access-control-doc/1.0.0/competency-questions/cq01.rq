@@ -1,0 +1,30 @@
+# CQ1 — Which principal, acting in which role, may perform a given action
+#        on a given DPP resource of a given sensitivity level?
+# Competency check: can the ontology represent and return the permission
+# model that links a role to its permitted actions on resource categories,
+# and a resource to its sensitivity level?
+# This query interrogates the modeled structure (policies, permissions,
+# resource sensitivity). It does NOT compute a permit or deny decision;
+# deriving the decision is the job of the R01..R10 CONSTRUCT rules.
+# Evaluate over: core ontology + role taxonomy + data categories +
+# example policies + scenario knowledge graph.
+# Expected: a non-empty mapping, for example the recycler role permitted to
+# read end-of-life data (PUBLIC) and the manufacturer role permitted to read
+# and update the data categories.
+
+PREFIX dpp-ac: <http://w3id.org/dpp/access-control#>
+PREFIX odrl:   <http://www.w3.org/ns/odrl/2/>
+
+SELECT ?role ?action ?category ?sensitivity
+WHERE {
+    ?policy a dpp-ac:AccessPolicy ;
+            dpp-ac:appliesToRole ?role ;
+            odrl:permission ?perm .
+    ?perm odrl:action ?action ;
+          odrl:target  ?category .
+    OPTIONAL {
+        ?resource dpp-ac:belongsToModule     ?category ;
+                  dpp-ac:resourceSensitivity ?sensitivity .
+    }
+}
+ORDER BY ?role ?category

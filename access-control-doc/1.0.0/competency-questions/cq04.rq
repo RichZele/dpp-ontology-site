@@ -1,0 +1,23 @@
+# CQ4 — May a principal obtain access through a time-bounded delegation
+#        rather than a direct role permission?
+# Competency check: can the ontology represent and return a delegation, with
+# its delegating and receiving parties, the resource and action it covers,
+# and its validity window? Deciding whether a specific request falls within
+# an active delegation is the job of the R07 CONSTRUCT rule.
+# Evaluate over: scenario knowledge graph.
+# Expected: the manufacturer's delegation to the maintenance technician for
+# reading the maintenance data, valid for April 2026.
+
+PREFIX dpp-ac: <http://w3id.org/dpp/access-control#>
+
+SELECT ?delegatedBy ?delegatedTo ?resource ?action ?validFrom ?validUntil ?active
+WHERE {
+    ?delegation a dpp-ac:Delegation ;
+                dpp-ac:delegatedBy              ?delegatedBy ;
+                dpp-ac:delegatedTo              ?delegatedTo ;
+                dpp-ac:delegationCoversResource ?resource ;
+                dpp-ac:delegationCoversAction   ?action ;
+                dpp-ac:delegationValidFrom      ?validFrom ;
+                dpp-ac:delegationValidUntil     ?validUntil .
+    OPTIONAL { ?delegation dpp-ac:delegationIsActive ?active }
+}

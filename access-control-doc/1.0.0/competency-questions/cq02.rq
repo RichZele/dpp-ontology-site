@@ -1,0 +1,21 @@
+# CQ2 — When no explicit permission applies to a role, can that absence be
+#        identified (the structural basis for closed-world default-deny)?
+# Competency check: can the ontology determine, for any stakeholder role,
+# whether an AccessPolicy applies to it? A role with no applicable policy is
+# the configuration under which the R09 default-deny rule denies access.
+# This query interrogates the modeled structure. Enforcing the deny outcome
+# itself is the job of the R09 CONSTRUCT rule.
+# Evaluate over: core ontology + role taxonomy + example policies.
+# Expected: every role in the taxonomy listed with "yes" or "no" according to
+# whether a policy applies, with at least one role of each kind present.
+
+PREFIX dpp-ac: <http://w3id.org/dpp/access-control#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?role (IF(BOUND(?policy), "yes", "no") AS ?hasApplicablePolicy)
+WHERE {
+    ?role rdfs:subClassOf* dpp-ac:Role .
+    FILTER (?role != dpp-ac:Role)
+    OPTIONAL { ?policy dpp-ac:appliesToRole ?role }
+}
+ORDER BY ?role

@@ -1,0 +1,31 @@
+# CQ5 — For which declared purpose may access proceed, and is the declared
+#        purpose retained with the request?
+# Competency check: can the ontology represent purpose on both sides, namely
+# the permitted purpose declared on a policy and the declared purpose carried
+# by a request context? The first UNION branch returns purpose-restricted
+# policies, the second returns the purpose retained on each request.
+# Enforcing purpose is opt-in per policy and is the job of the R04 rule.
+# Evaluate over: example policies + scenario knowledge graph.
+# Expected: permitted purposes such as COMPLIANCE_AUDIT and CUSTOMS_INSPECTION
+# on policies, and declared purposes such as MARKET_SURVEILLANCE retained on
+# the corresponding requests.  
+
+PREFIX dpp-ac: <http://w3id.org/dpp/access-control#>
+
+SELECT ?facet ?subject ?purpose
+WHERE {
+    {
+        ?policy a dpp-ac:AccessPolicy ;
+                dpp-ac:permittedPurpose ?purpose .
+        BIND(?policy AS ?subject)
+        BIND("permitted by policy" AS ?facet)
+    }
+    UNION
+    {
+        ?subject a dpp-ac:AccessRequest ;
+                 dpp-ac:requestContext ?ctx .
+        ?ctx dpp-ac:declaredPurpose ?purpose .
+        BIND("declared on request" AS ?facet)
+    }
+}
+ORDER BY ?facet ?subject

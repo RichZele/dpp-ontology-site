@@ -1,0 +1,23 @@
+# CQ3 — Under which attribute conditions, such as a valid certification or a
+#        required trust assurance level, is access to a resource permitted?
+# Competency check: can the ontology represent and return the attribute
+# conditions attached to a policy (the attribute, the operator, and the
+# required value)? Evaluating those conditions against a request is the job
+# of the R05 and R01 CONSTRUCT rules.
+# Evaluate over: core ontology + example policies.
+# Expected: two conditions, namely the recycler policy requiring
+# certificationIsValid EQ true and the maintenance policy requiring
+# trustAssuranceLevel IN SUBSTANTIAL,HIGH.
+
+PREFIX dpp-ac: <http://w3id.org/dpp/access-control#>
+
+SELECT ?policy ?role ?attribute ?operator ?value
+WHERE {
+    ?policy a dpp-ac:AccessPolicy ;
+            dpp-ac:appliesToRole          ?role ;
+            dpp-ac:hasAttributeConstraint ?constraint .
+    ?constraint dpp-ac:constraintAttribute ?attribute ;
+                dpp-ac:constraintOperator  ?operator ;
+                dpp-ac:constraintValue     ?value .
+}
+ORDER BY ?policy

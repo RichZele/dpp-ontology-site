@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Competency Questions - DPP Access Control (dpp-ac)</title>
+  <style>
+    body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+           max-width: 860px; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; line-height: 1.5; }
+    h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
+    .sub { color: #555; margin-top: 0; }
+    .cq { border: 1px solid #e2e2e2; border-radius: 8px; padding: 0.8rem 1rem; margin: 0.8rem 0; }
+    .cq h2 { font-size: 1.05rem; margin: 0 0 0.3rem 0; }
+    .cq p { margin: 0.2rem 0 0.5rem 0; }
+    .cq a { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 0.9rem; }
+    footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e2e2e2; color: #555; font-size: 0.9rem; }
+    code { background: #f4f4f4; padding: 0 0.25rem; border-radius: 3px; }
+  </style>
+</head>
+<body>
+  <h1>Competency Questions</h1>
+  <p class="sub">Digital Product Passport Access Control ontology (<code>dpp-ac</code>) - version 1.0.0</p>
+
+  <p>The six competency questions below were used to evaluate the representational adequacy of the
+     ontology. Each is formalized as a SPARQL SELECT query, evaluated over the ontology together with
+     the example policies and the scenario knowledge graph, independently of the rule pipeline.
+     A non-empty and correct answer indicates that the ontology can represent and return the knowledge
+     the question asks for.</p>
+
+  <div class="cq">
+    <h2>CQ1 - Role permissions</h2>
+    <p>Which role is permitted which action on a given DPP resource category, and at what sensitivity level?</p>
+    <a href="competency-questions/cq01.rq">competency-questions/cq01.rq</a>
+  </div>
+
+  <div class="cq">
+    <h2>CQ2 - Permission coverage</h2>
+    <p>When no access policy applies to a stakeholder role, can that absence be identified as the
+       structural basis for closed-world default-deny?</p>
+    <a href="competency-questions/cq02.rq">competency-questions/cq02.rq</a>
+  </div>
+
+  <div class="cq">
+    <h2>CQ3 - Attribute conditions</h2>
+    <p>Which attribute conditions, such as a valid certification or a required trust assurance level,
+       does an access policy attach to a resource?</p>
+    <a href="competency-questions/cq03.rq">competency-questions/cq03.rq</a>
+  </div>
+
+  <div class="cq">
+    <h2>CQ4 - Delegation</h2>
+    <p>Which time-bounded delegations does the ontology represent, with their parties, covered resource
+       and action, and validity window?</p>
+    <a href="competency-questions/cq04.rq">competency-questions/cq04.rq</a>
+  </div>
+
+  <div class="cq">
+    <h2>CQ5 - Purpose</h2>
+    <p>Which purposes does a policy permit, and which declared purpose is retained on a request?</p>
+    <a href="competency-questions/cq05.rq">competency-questions/cq05.rq</a>
+  </div>
+
+  <div class="cq">
+    <h2>CQ6 - Decision provenance</h2>
+    <p>For each recorded decision, can the ontology return its outcome, timestamp, originating request,
+       and applied policy?</p>
+    <a href="competency-questions/cq06.rq">competency-questions/cq06.rq</a>
+  </div>
+
+  <footer>
+    Part of the dpp-ac framework. Ontology documentation: <a href="index-en.html">index-en.html</a>.
+    Persistent identifier: <a href="https://w3id.org/dpp/access-control/competency-questions">https://w3id.org/dpp/access-control/competency-questions</a>.
+  </footer>
+</body>
+</html>

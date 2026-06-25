@@ -1,0 +1,282 @@
+@prefix dpp-ac:    <http://w3id.org/dpp/access-control#> .
+@prefix dpp-data:  <http://w3id.org/dpp/data-categories#> .
+@prefix dpp-role:  <http://w3id.org/dpp/roles#> .
+@prefix odrl:      <http://www.w3.org/ns/odrl/2/> .
+@prefix ex:        <http://w3id.org/dpp/examples/built-env#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:   <http://purl.org/dc/terms/> .
+
+# ============================================================
+# BUILT ENVIRONMENT SCENARIO — Window Frame W42
+# Product: Prefabricated aluminium window frame
+# Manufacturer: WinCo GmbH
+#
+# Six access scenarios:
+#   S1 — RBAC Grant: Manufacturer reads own material data
+#   S2 — RBAC Grant: Market Surveillance Authority reads all modules
+#   S3 — RBAC Denial: Consumer attempts to read CONFIDENTIAL supply chain data
+#   S4 — ReBAC Delegation Grant: Maintenance tech accesses via manufacturer delegation
+#   S5 — ABAC Denial: Recycler reads EoL data with an INVALID certification
+#   S6 — ABAC Grant: Same recycler and resource with a VALID certification
+#
+# S5 and S6 form a matched pair on RecyclerEndOfLifePolicy that differs only
+# in the certificationIsValid boolean, isolating the effect of the ABAC
+# attribute constraint on the decision.
+# ============================================================
+
+# ============================================================
+# PRINCIPALS
+# ============================================================
+
+ex:WinCoManufacturer
+    rdf:type dpp-ac:HumanPrincipal ;
+    dpp-ac:hasRole ex:WinCoManufacturerRole ;
+    dcterms:identifier "PRINCIPAL-WINCO-001" ;
+    skos:prefLabel "WinCo GmbH — Manufacturer"@en .
+
+ex:WinCoManufacturerRole
+    rdf:type dpp-role:ManufacturerRole ;
+    skos:prefLabel "WinCo GmbH manufacturer role assignment"@en .
+
+ex:GreenRecyclerAG
+    rdf:type dpp-ac:OrganisationPrincipal ;
+    dpp-ac:hasRole ex:GreenRecyclerRole ;
+    dcterms:identifier "PRINCIPAL-RECYCLER-001" ;
+    skos:prefLabel "GreenRecycler AG"@en .
+
+ex:GreenRecyclerRole
+    rdf:type dpp-role:RecyclerRole ;
+    skos:prefLabel "GreenRecycler AG recycler role assignment"@en .
+
+ex:EUMarketAuthority
+    rdf:type dpp-ac:OrganisationPrincipal ;
+    dpp-ac:hasRole ex:EUMSARole ;
+    dcterms:identifier "PRINCIPAL-MSA-EU-001" ;
+    skos:prefLabel "EU Market Surveillance Authority"@en .
+
+ex:EUMSARole
+    rdf:type dpp-role:MarketSurveillanceAuthorityRole ;
+    skos:prefLabel "EU market surveillance authority role assignment"@en .
+
+ex:BuildingConsumer
+    rdf:type dpp-ac:HumanPrincipal ;
+    dpp-ac:hasRole ex:BuildingConsumerRole ;
+    dcterms:identifier "PRINCIPAL-CONSUMER-001" ;
+    skos:prefLabel "Building Owner / Consumer"@en .
+
+ex:BuildingConsumerRole
+    rdf:type dpp-role:ConsumerRole ;
+    skos:prefLabel "Building owner consumer role assignment"@en .
+
+ex:MaintenanceTech
+    rdf:type dpp-ac:HumanPrincipal ;
+    dpp-ac:hasRole ex:MaintenanceTechRole ;
+    dcterms:identifier "PRINCIPAL-TECH-001" ;
+    skos:prefLabel "Certified Maintenance Technician"@en .
+
+ex:MaintenanceTechRole
+    rdf:type dpp-role:MaintenanceTechnicianRole ;
+    skos:prefLabel "Certified maintenance technician role assignment"@en .
+
+
+# ============================================================
+# DPP RESOURCES
+# ============================================================
+
+ex:WindowFrame_W42_MaterialData
+    rdf:type dpp-data:MaterialCompositionData ;
+    dpp-ac:resourceSensitivity "RESTRICTED" ;
+    dpp-ac:ownedBy ex:WinCoManufacturer ;
+    dpp-ac:belongsToModule dpp-data:MaterialCompositionData ;
+    dcterms:identifier "RESOURCE-W42-MATERIAL" ;
+    skos:prefLabel "W42 Material Composition Data"@en .
+
+ex:WindowFrame_W42_EndOfLifeData
+    rdf:type dpp-data:EndOfLifeData ;
+    dpp-ac:resourceSensitivity "PUBLIC" ;
+    dpp-ac:ownedBy ex:WinCoManufacturer ;
+    dpp-ac:belongsToModule dpp-data:EndOfLifeData ;
+    dcterms:identifier "RESOURCE-W42-EOL" ;
+    skos:prefLabel "W42 End-of-Life Instructions"@en .
+
+ex:WindowFrame_W42_SupplyChainData
+    rdf:type dpp-data:SupplyChainData ;
+    dpp-ac:resourceSensitivity "CONFIDENTIAL" ;
+    dpp-ac:ownedBy ex:WinCoManufacturer ;
+    dpp-ac:belongsToModule dpp-data:SupplyChainData ;
+    dcterms:identifier "RESOURCE-W42-SUPPLY" ;
+    skos:prefLabel "W42 Supply Chain Data"@en .
+
+ex:WindowFrame_W42_MaintenanceData
+    rdf:type dpp-data:UseAndMaintenanceData ;
+    dpp-ac:resourceSensitivity "RESTRICTED" ;
+    dpp-ac:ownedBy ex:WinCoManufacturer ;
+    dpp-ac:belongsToModule dpp-data:UseAndMaintenanceData ;
+    dcterms:identifier "RESOURCE-W42-MAINTENANCE" ;
+    skos:prefLabel "W42 Maintenance Instructions"@en .
+
+
+# ============================================================
+# SCENARIO S1 — RBAC GRANT
+# Manufacturer reads their own material composition data.
+# Expected outcome: GRANT (ManufacturerRole has read permission on DataCategory)
+# ============================================================
+
+ex:Request_S1_Manufacturer_Material
+    rdf:type dpp-ac:AccessRequest ;
+    dpp-ac:requestedBy       ex:WinCoManufacturer ;
+    dpp-ac:requestedAction   dpp-ac:ReadResource ;
+    dpp-ac:requestedResource ex:WindowFrame_W42_MaterialData ;
+    dpp-ac:requestTimestamp  "2026-04-10T08:00:00Z"^^xsd:dateTime .
+
+ex:Decision_S1
+    rdf:type dpp-ac:AccessDecision ;
+    dpp-ac:decidesOn         ex:Request_S1_Manufacturer_Material ;
+    dpp-ac:decisionOutcome   "GRANT" ;
+    dpp-ac:decisionTimestamp "2026-04-10T08:00:01Z"^^xsd:dateTime ;
+    dpp-ac:conflictResolutionApplied false .
+
+
+# ============================================================
+# SCENARIO S2 — RBAC GRANT (Regulatory)
+# Market Surveillance Authority reads all modules for compliance audit.
+# Expected outcome: GRANT (MSA role + COMPLIANCE_AUDIT purpose)
+# ============================================================
+
+ex:Request_S2_MSA_AllData
+    rdf:type dpp-ac:AccessRequest ;
+    dpp-ac:requestedBy       ex:EUMarketAuthority ;
+    dpp-ac:requestedAction   dpp-ac:ReadResource ;
+    dpp-ac:requestedResource ex:WindowFrame_W42_SupplyChainData ;
+    dpp-ac:requestTimestamp  "2026-04-10T09:00:00Z"^^xsd:dateTime ;
+    dpp-ac:requestContext    ex:MSA_PurposeContext .
+
+ex:MSA_PurposeContext
+    rdf:type dpp-ac:PurposeContext ;
+    dpp-ac:declaredPurpose "MARKET_SURVEILLANCE" .
+
+ex:Decision_S2
+    rdf:type dpp-ac:AccessDecision ;
+    dpp-ac:decidesOn         ex:Request_S2_MSA_AllData ;
+    dpp-ac:decisionOutcome   "GRANT" ;
+    dpp-ac:decisionTimestamp "2026-04-10T09:00:01Z"^^xsd:dateTime ;
+    dpp-ac:conflictResolutionApplied false .
+
+
+# ============================================================
+# SCENARIO S3 — RBAC DENIAL
+# Consumer attempts to read CONFIDENTIAL supply chain data.
+# Expected outcome: DENY (ConsumerRole has no permission on SupplyChainData)
+# ============================================================
+
+ex:Request_S3_Consumer_SupplyChain
+    rdf:type dpp-ac:AccessRequest ;
+    dpp-ac:requestedBy       ex:BuildingConsumer ;
+    dpp-ac:requestedAction   dpp-ac:ReadResource ;
+    dpp-ac:requestedResource ex:WindowFrame_W42_SupplyChainData ;
+    dpp-ac:requestTimestamp  "2026-04-10T10:00:00Z"^^xsd:dateTime .
+
+ex:Decision_S3
+    rdf:type dpp-ac:AccessDecision ;
+    dpp-ac:decidesOn         ex:Request_S3_Consumer_SupplyChain ;
+    dpp-ac:decisionOutcome   "DENY" ;
+    dpp-ac:decisionTimestamp "2026-04-10T10:00:01Z"^^xsd:dateTime ;
+    dpp-ac:conflictResolutionApplied false .
+
+
+# ============================================================
+# SCENARIO S4 — ReBAC DELEGATION GRANT
+# Manufacturer delegates maintenance data access to a technician.
+# Expected outcome: GRANT (active delegation covers resource + action)
+# ============================================================
+
+ex:Delegation_WinCo_to_Tech
+    rdf:type dpp-ac:Delegation ;
+    dpp-ac:delegatedBy              ex:WinCoManufacturer ;
+    dpp-ac:delegatedTo              ex:MaintenanceTech ;
+    dpp-ac:delegationCoversResource ex:WindowFrame_W42_MaintenanceData ;
+    dpp-ac:delegationCoversAction   dpp-ac:ReadResource ;
+    dpp-ac:delegationValidFrom      "2026-04-01T00:00:00Z"^^xsd:dateTime ;
+    dpp-ac:delegationValidUntil     "2026-04-30T23:59:59Z"^^xsd:dateTime ;
+    dpp-ac:delegationDepth          1 ;
+    dpp-ac:delegationIsActive       true .
+
+ex:Request_S4_Tech_Maintenance
+    rdf:type dpp-ac:AccessRequest ;
+    dpp-ac:requestedBy       ex:MaintenanceTech ;
+    dpp-ac:requestedAction   dpp-ac:ReadResource ;
+    dpp-ac:requestedResource ex:WindowFrame_W42_MaintenanceData ;
+    dpp-ac:requestTimestamp  "2026-04-10T11:00:00Z"^^xsd:dateTime .
+
+ex:Decision_S4
+    rdf:type dpp-ac:AccessDecision ;
+    dpp-ac:decidesOn         ex:Request_S4_Tech_Maintenance ;
+    dpp-ac:decisionOutcome   "GRANT" ;
+    dpp-ac:decisionTimestamp "2026-04-10T11:00:01Z"^^xsd:dateTime ;
+    dpp-ac:conflictResolutionApplied false .
+
+
+# ============================================================
+# SCENARIO S5 — ABAC NEGATIVE (certification invalid)
+# Same recycler and resource as S6, but the request carries a
+# CertificationContext with certificationIsValid = false, leaving the
+# attribute constraint on the RecyclerEndOfLifePolicy unsatisfied.
+# Expected outcome: DENY (RBAC permission gated off by failed ABAC constraint).
+# Contrast with S6 isolates the effect of the certificationIsValid boolean.
+# ============================================================
+
+ex:Request_S5_Recycler_InvalidCert
+    rdf:type dpp-ac:AccessRequest ;
+    dpp-ac:requestedBy       ex:GreenRecyclerAG ;
+    dpp-ac:requestedAction   dpp-ac:ReadResource ;
+    dpp-ac:requestedResource ex:WindowFrame_W42_EndOfLifeData ;
+    dpp-ac:requestTimestamp  "2026-04-10T12:00:00Z"^^xsd:dateTime ;
+    dpp-ac:requestContext    ex:RecyclerInvalidCertContext .
+
+ex:RecyclerInvalidCertContext
+    rdf:type dpp-ac:CertificationContext ;
+    dpp-ac:certificationScheme "ISO 14001" ;
+    dpp-ac:certificationIsValid false ;
+    skos:prefLabel "Expired recycler ISO 14001 certification"@en .
+
+ex:Decision_S5
+    rdf:type dpp-ac:AccessDecision ;
+    dpp-ac:decidesOn         ex:Request_S5_Recycler_InvalidCert ;
+    dpp-ac:decisionOutcome   "DENY" ;
+    dpp-ac:decisionTimestamp "2026-04-10T12:00:01Z"^^xsd:dateTime ;
+    dpp-ac:conflictResolutionApplied false .
+
+
+# ============================================================
+# SCENARIO S6 — ABAC POSITIVE (certification satisfied)
+# Same recycler and resource as S5, but the request now carries a
+# CertificationContext with certificationIsValid = true, satisfying the
+# attribute constraint on the RecyclerEndOfLifePolicy.
+# Expected outcome: GRANT (RBAC permission + satisfied ABAC constraint).
+# Contrast with S5 isolates the effect of the attribute constraint.
+# ============================================================
+
+ex:Request_S6_CertRecycler_EoL
+    rdf:type dpp-ac:AccessRequest ;
+    dpp-ac:requestedBy       ex:GreenRecyclerAG ;
+    dpp-ac:requestedAction   dpp-ac:ReadResource ;
+    dpp-ac:requestedResource ex:WindowFrame_W42_EndOfLifeData ;
+    dpp-ac:requestTimestamp  "2026-04-10T13:00:00Z"^^xsd:dateTime ;
+    dpp-ac:requestContext    ex:RecyclerCertContext .
+
+ex:RecyclerCertContext
+    rdf:type dpp-ac:CertificationContext ;
+    dpp-ac:certificationScheme "ISO 14001" ;
+    dpp-ac:certificationIsValid true ;
+    skos:prefLabel "Valid recycler ISO 14001 certification"@en .
+
+ex:Decision_S6
+    rdf:type dpp-ac:AccessDecision ;
+    dpp-ac:decidesOn         ex:Request_S6_CertRecycler_EoL ;
+    dpp-ac:decisionOutcome   "GRANT" ;
+    dpp-ac:decisionTimestamp "2026-04-10T13:00:01Z"^^xsd:dateTime ;
+    dpp-ac:conflictResolutionApplied false .
