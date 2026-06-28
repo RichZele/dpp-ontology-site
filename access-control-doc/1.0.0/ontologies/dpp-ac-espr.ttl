@@ -34,7 +34,7 @@
 
 
 # ============================================================
-# ESPR ARTICLE 14: MARKET SURVEILLANCE AUTHORITY
+# ESPR ARTICLE 11(b) AND REG (EU) 2019/1020: MARKET SURVEILLANCE AUTHORITY
 # Full read access to all DPP modules for compliance audit
 # ============================================================
 
@@ -46,7 +46,7 @@
     dpp-ac:policyOwner <http://w3id.org/dpp/access-control/espr/ESPRAuthority> ;
     odrl:permission <http://w3id.org/dpp/access-control/espr/MSAReadAllModulesPermission> ;
     dcterms:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1781> ;
-    skos:scopeNote "ESPR Regulation (EU) 2024/1781, Article 14."@en .
+    skos:scopeNote "ESPR Regulation (EU) 2024/1781, Article 11(b); Regulation (EU) 2019/1020."@en .
 
 <http://w3id.org/dpp/access-control/espr/MSAReadAllModulesPermission>
     rdf:type odrl:Permission ;
@@ -55,7 +55,7 @@
 
 
 # ============================================================
-# ESPR ARTICLE 4: MANUFACTURER — FULL ACCESS TO OWN DPP
+# ESPR ARTICLE 27: MANUFACTURER — FULL ACCESS TO OWN DPP
 # ============================================================
 
 <http://w3id.org/dpp/access-control/espr/ManufacturerOwnDPPPolicy>
@@ -65,7 +65,7 @@
     dpp-ac:policyOwner <http://w3id.org/dpp/access-control/espr/ESPRAuthority> ;
     odrl:permission <http://w3id.org/dpp/access-control/espr/ManufacturerReadWritePermission> ;
     odrl:prohibition <http://w3id.org/dpp/access-control/espr/ManufacturerDeleteCertProhibition> ;
-    skos:scopeNote "ESPR Regulation (EU) 2024/1781, Article 4."@en .
+    skos:scopeNote "ESPR Regulation (EU) 2024/1781, Article 27."@en .
 
 <http://w3id.org/dpp/access-control/espr/ManufacturerReadWritePermission>
     rdf:type odrl:Permission ;

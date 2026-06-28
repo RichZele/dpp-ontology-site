@@ -122,7 +122,7 @@
       "scopeNote" : [ {
         "identifier" : "scopeNote",
         "language" : "en",
-        "value" : "ESPR Article 4(1)(d).",
+        "value" : "ESPR Article 2(43).",
         "type" : "label"
       } ]
     },
@@ -197,7 +197,7 @@
       "scopeNote" : [ {
         "identifier" : "scopeNote",
         "language" : "en",
-        "value" : "ESPR Article 4(1)(a).",
+        "value" : "ESPR Article 2(42).",
         "type" : "label"
       } ]
     },
@@ -273,7 +273,7 @@
       "scopeNote" : [ {
         "identifier" : "scopeNote",
         "language" : "en",
-        "value" : "ESPR Article 4(1)(b).",
+        "value" : "ESPR Article 2(44).",
         "type" : "label"
       } ]
     },
@@ -296,7 +296,7 @@
       "definition" : [ {
         "identifier" : "definition",
         "language" : "en",
-        "value" : "A role defined under ESPR Article 4 with specific DPP data\n         rights and obligations.",
+        "value" : "A role defined under ESPR Article 2(46) with specific DPP data\n         rights and obligations.",
         "type" : "label"
       } ]
     },
@@ -359,7 +359,7 @@
       "scopeNote" : [ {
         "identifier" : "scopeNote",
         "language" : "en",
-        "value" : "ESPR Article 4(1)(c).",
+        "value" : "ESPR Article 2(45).",
         "type" : "label"
       } ]
     },
@@ -382,13 +382,13 @@
       "definition" : [ {
         "identifier" : "definition",
         "language" : "en",
-        "value" : "A national authority with full read access to all DPP\n         modules per ESPR Article 14.",
+        "value" : "A national authority with full read access to all DPP\n         modules per Regulation (EU) 2019/1020.",
         "type" : "label"
       } ],
       "scopeNote" : [ {
         "identifier" : "scopeNote",
         "language" : "en",
-        "value" : "ESPR Article 14; Regulation (EU) 2019/1020.",
+        "value" : "ESPR Article 11(b); Regulation (EU) 2019/1020.",
         "type" : "label"
       } ]
     },

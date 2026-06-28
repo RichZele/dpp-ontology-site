@@ -37,7 +37,7 @@ dpp-role:EconomicOperator
     rdfs:subClassOf dpp-ac:Role ;
     skos:prefLabel "Economic Operator"@en ;
     skos:definition
-        """A role defined under ESPR Article 4 with specific DPP data
+        """A role defined under ESPR Article 2(46) with specific DPP data
          rights and obligations."""@en .
 
 dpp-role:ManufacturerRole
@@ -47,7 +47,7 @@ dpp-role:ManufacturerRole
     skos:definition
         """The entity that manufactures the product and is the primary
          DPP data owner with full read/write access to all modules."""@en ;
-    skos:scopeNote "ESPR Article 4(1)(a)."@en .
+    skos:scopeNote "ESPR Article 2(42)."@en .
 
 dpp-role:ImporterRole
     rdf:type owl:Class ;
@@ -56,7 +56,7 @@ dpp-role:ImporterRole
     skos:definition
         """An entity that places products manufactured outside the EU
          on the EU market and assumes ESPR obligations."""@en ;
-    skos:scopeNote "ESPR Article 4(1)(b)."@en .
+    skos:scopeNote "ESPR Article 2(44)."@en .
 
 dpp-role:DistributorRole
     rdf:type owl:Class ;
@@ -65,7 +65,7 @@ dpp-role:DistributorRole
     skos:definition
         """An entity in the supply chain that makes a product available
          on the market other than the manufacturer or importer."""@en ;
-    skos:scopeNote "ESPR Article 4(1)(c)."@en .
+    skos:scopeNote "ESPR Article 2(45)."@en .
 
 dpp-role:AuthorisedRepresentativeRole
     rdf:type owl:Class ;
@@ -74,7 +74,7 @@ dpp-role:AuthorisedRepresentativeRole
     skos:definition
         """A natural or legal person established in the EU mandated by
          the manufacturer to act on their behalf."""@en ;
-    skos:scopeNote "ESPR Article 4(1)(d)."@en .
+    skos:scopeNote "ESPR Article 2(43)."@en .
 
 
 # ============================================================
@@ -95,8 +95,8 @@ dpp-role:MarketSurveillanceAuthorityRole
     skos:prefLabel "Market Surveillance Authority"@en ;
     skos:definition
         """A national authority with full read access to all DPP
-         modules per ESPR Article 14."""@en ;
-    skos:scopeNote "ESPR Article 14; Regulation (EU) 2019/1020."@en .
+         modules per Regulation (EU) 2019/1020."""@en ;
+    skos:scopeNote "ESPR Article 11(b); Regulation (EU) 2019/1020."@en .
 
 dpp-role:CustomsAuthorityRole
     rdf:type owl:Class ;

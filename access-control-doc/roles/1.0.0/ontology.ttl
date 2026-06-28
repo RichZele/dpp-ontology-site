@@ -83,7 +83,7 @@ xsd:date rdf:type rdfs:Datatype .
                               <http://www.w3.org/2004/02/skos/core#definition> """A natural or legal person established in the EU mandated by
          the manufacturer to act on their behalf."""@en ;
                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Authorised Representative"@en ;
-                              <http://www.w3.org/2004/02/skos/core#scopeNote> "ESPR Article 4(1)(d)."@en .
+                              <http://www.w3.org/2004/02/skos/core#scopeNote> "ESPR Article 2(43)."@en .
 
 
 ###  http://w3id.org/dpp/roles#ConsumerRole
@@ -108,13 +108,13 @@ xsd:date rdf:type rdfs:Datatype .
                  <http://www.w3.org/2004/02/skos/core#definition> """An entity in the supply chain that makes a product available
          on the market other than the manufacturer or importer."""@en ;
                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Distributor"@en ;
-                 <http://www.w3.org/2004/02/skos/core#scopeNote> "ESPR Article 4(1)(c)."@en .
+                 <http://www.w3.org/2004/02/skos/core#scopeNote> "ESPR Article 2(45)."@en .
 
 
 ###  http://w3id.org/dpp/roles#EconomicOperator
 :EconomicOperator rdf:type owl:Class ;
                   rdfs:subClassOf <http://w3id.org/dpp/access-control#Role> ;
-                  <http://www.w3.org/2004/02/skos/core#definition> """A role defined under ESPR Article 4 with specific DPP data
+                  <http://www.w3.org/2004/02/skos/core#definition> """A role defined under ESPR Article 2(46) with specific DPP data
          rights and obligations."""@en ;
                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Economic Operator"@en .
 
@@ -125,7 +125,7 @@ xsd:date rdf:type rdfs:Datatype .
               <http://www.w3.org/2004/02/skos/core#definition> """An entity that places products manufactured outside the EU
          on the EU market and assumes ESPR obligations."""@en ;
               <http://www.w3.org/2004/02/skos/core#prefLabel> "Importer"@en ;
-              <http://www.w3.org/2004/02/skos/core#scopeNote> "ESPR Article 4(1)(b)."@en .
+              <http://www.w3.org/2004/02/skos/core#scopeNote> "ESPR Article 2(44)."@en .
 
 
 ###  http://w3id.org/dpp/roles#MaintenanceTechnicianRole
@@ -142,16 +142,16 @@ xsd:date rdf:type rdfs:Datatype .
                   <http://www.w3.org/2004/02/skos/core#definition> """The entity that manufactures the product and is the primary
          DPP data owner with full read/write access to all modules."""@en ;
                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Manufacturer"@en ;
-                  <http://www.w3.org/2004/02/skos/core#scopeNote> "ESPR Article 4(1)(a)."@en .
+                  <http://www.w3.org/2004/02/skos/core#scopeNote> "ESPR Article 2(42)."@en .
 
 
 ###  http://w3id.org/dpp/roles#MarketSurveillanceAuthorityRole
 :MarketSurveillanceAuthorityRole rdf:type owl:Class ;
                                  rdfs:subClassOf :RegulatoryAuthority ;
                                  <http://www.w3.org/2004/02/skos/core#definition> """A national authority with full read access to all DPP
-         modules per ESPR Article 14."""@en ;
+         modules per Regulation (EU) 2019/1020."""@en ;
                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Market Surveillance Authority"@en ;
-                                 <http://www.w3.org/2004/02/skos/core#scopeNote> "ESPR Article 14; Regulation (EU) 2019/1020."@en .
+                                 <http://www.w3.org/2004/02/skos/core#scopeNote> "ESPR Article 11(b); Regulation (EU) 2019/1020."@en .
 
 
 ###  http://w3id.org/dpp/roles#RecyclerRole

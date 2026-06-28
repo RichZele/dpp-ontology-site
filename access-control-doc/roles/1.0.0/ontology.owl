@@ -147,7 +147,7 @@
         <skos:definition xml:lang="en">A natural or legal person established in the EU mandated by
          the manufacturer to act on their behalf.</skos:definition>
         <skos:prefLabel xml:lang="en">Authorised Representative</skos:prefLabel>
-        <skos:scopeNote xml:lang="en">ESPR Article 4(1)(d).</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">ESPR Article 2(43).</skos:scopeNote>
     </owl:Class>
     
 
@@ -184,7 +184,7 @@
         <skos:definition xml:lang="en">An entity in the supply chain that makes a product available
          on the market other than the manufacturer or importer.</skos:definition>
         <skos:prefLabel xml:lang="en">Distributor</skos:prefLabel>
-        <skos:scopeNote xml:lang="en">ESPR Article 4(1)(c).</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">ESPR Article 2(45).</skos:scopeNote>
     </owl:Class>
     
 
@@ -194,7 +194,7 @@
 
     <owl:Class rdf:about="http://w3id.org/dpp/roles#EconomicOperator">
         <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/access-control#Role"/>
-        <skos:definition xml:lang="en">A role defined under ESPR Article 4 with specific DPP data
+        <skos:definition xml:lang="en">A role defined under ESPR Article 2(46) with specific DPP data
          rights and obligations.</skos:definition>
         <skos:prefLabel xml:lang="en">Economic Operator</skos:prefLabel>
     </owl:Class>
@@ -209,7 +209,7 @@
         <skos:definition xml:lang="en">An entity that places products manufactured outside the EU
          on the EU market and assumes ESPR obligations.</skos:definition>
         <skos:prefLabel xml:lang="en">Importer</skos:prefLabel>
-        <skos:scopeNote xml:lang="en">ESPR Article 4(1)(b).</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">ESPR Article 2(44).</skos:scopeNote>
     </owl:Class>
     
 
@@ -234,7 +234,7 @@
         <skos:definition xml:lang="en">The entity that manufactures the product and is the primary
          DPP data owner with full read/write access to all modules.</skos:definition>
         <skos:prefLabel xml:lang="en">Manufacturer</skos:prefLabel>
-        <skos:scopeNote xml:lang="en">ESPR Article 4(1)(a).</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">ESPR Article 2(42).</skos:scopeNote>
     </owl:Class>
     
 
@@ -245,9 +245,9 @@
     <owl:Class rdf:about="http://w3id.org/dpp/roles#MarketSurveillanceAuthorityRole">
         <rdfs:subClassOf rdf:resource="http://w3id.org/dpp/roles#RegulatoryAuthority"/>
         <skos:definition xml:lang="en">A national authority with full read access to all DPP
-         modules per ESPR Article 14.</skos:definition>
+         modules per Regulation (EU) 2019/1020.</skos:definition>
         <skos:prefLabel xml:lang="en">Market Surveillance Authority</skos:prefLabel>
-        <skos:scopeNote xml:lang="en">ESPR Article 14; Regulation (EU) 2019/1020.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">ESPR Article 11(b); Regulation (EU) 2019/1020.</skos:scopeNote>
     </owl:Class>
     
 

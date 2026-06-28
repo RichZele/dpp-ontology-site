@@ -72,7 +72,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "en",
-    "@value" : "ESPR Article 4(1)(d)."
+    "@value" : "ESPR Article 2(43)."
   } ]
 }, {
   "@id" : "http://w3id.org/dpp/roles#ConsumerRole",
@@ -118,7 +118,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "en",
-    "@value" : "ESPR Article 4(1)(c)."
+    "@value" : "ESPR Article 2(45)."
   } ]
 }, {
   "@id" : "http://w3id.org/dpp/roles#EconomicOperator",
@@ -128,7 +128,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "A role defined under ESPR Article 4 with specific DPP data\n         rights and obligations."
+    "@value" : "A role defined under ESPR Article 2(46) with specific DPP data\n         rights and obligations."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -150,7 +150,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "en",
-    "@value" : "ESPR Article 4(1)(b)."
+    "@value" : "ESPR Article 2(44)."
   } ]
 }, {
   "@id" : "http://w3id.org/dpp/roles#MaintenanceTechnicianRole",
@@ -182,7 +182,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "en",
-    "@value" : "ESPR Article 4(1)(a)."
+    "@value" : "ESPR Article 2(42)."
   } ]
 }, {
   "@id" : "http://w3id.org/dpp/roles#MarketSurveillanceAuthorityRole",
@@ -192,7 +192,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "A national authority with full read access to all DPP\n         modules per ESPR Article 14."
+    "@value" : "A national authority with full read access to all DPP\n         modules per Regulation (EU) 2019/1020."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -200,7 +200,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "en",
-    "@value" : "ESPR Article 14; Regulation (EU) 2019/1020."
+    "@value" : "ESPR Article 11(b); Regulation (EU) 2019/1020."
   } ]
 }, {
   "@id" : "http://w3id.org/dpp/roles#RecyclerRole",
