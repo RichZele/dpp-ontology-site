@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DPP Access Control — ASP Verification Layer</title>
+  <style>
+    :root { --accent:#a04588; --secondary:#5aa0c8; }
+    body{font-family:'Inter',-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:900px;margin:0 auto;padding:2rem 1.2rem 4rem;line-height:1.6;color:#ddd;background:#1e1e1e}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    h1{margin-bottom:.2rem} .ns{font-family:monospace;color:#9aa}
+    h2{color:var(--secondary);border-bottom:1px solid #333;padding-bottom:.3rem;margin-top:2rem}
+    .files a{display:inline-block;margin:.2rem .8rem .2rem 0;padding:.35rem .7rem;background:#2a2a2a;border:1px solid #3a3a3a;border-radius:6px}
+    table{border-collapse:collapse;width:100%;margin:.5rem 0} th,td{border:1px solid #3a3a3a;padding:.4rem .6rem;text-align:left} th{background:#262626}
+    pre{background:#141414;border:1px solid #333;border-radius:6px;padding:1rem;overflow:auto;font-size:.85rem;color:#cfc}
+    .meta{color:#999;font-size:.9rem;margin-top:2rem;border-top:1px solid #333;padding-top:1rem}
+  </style>
+</head>
+<body>
+  <h1>ASP Verification Layer</h1>
+  <p class="ns">http://w3id.org/dpp/access-control/asp &nbsp;·&nbsp; Version 1.0.0</p>
+  <p>A design-time formal-verification layer for the <b>dpp-ac</b> access-control
+  policy set. The encoding is a faithful bounded abstraction of the runtime
+  SPARQL decision pipeline (rules R01 to R10 over the OWL 2 DL and SHACL model),
+  evaluated with the <a href="https://potassco.org/clingo/">clingo</a> answer-set
+  solver. It checks, over the whole policy space at once, properties that
+  per-request evaluation cannot establish exhaustively.</p>
+
+  <h2>Files</h2>
+  <div class="files">
+    <a href="dpp-ac-verification.lp">dpp-ac-verification.lp (ASP program)</a>
+    <a href="run_verification.py">run_verification.py (driver)</a>
+    <a href="verification-report.txt">verification-report.txt (solver output)</a>
+    <a href="README.md">README.md</a>
+  </div>
+
+  <h2>What is verified</h2>
+  <p>The abstraction mirrors only the decision-relevant rules (R01, R02, R06,
+  R07, R08, R09). The temporal and purpose rules (R03, R04) are provenance
+  markers that do not gate the decision, and R05 duplicates the gate already in
+  R01. The six built-environment scenarios are reproduced exactly (four grants,
+  two denials) as a faithfulness gate before any property is asserted.</p>
+  <table>
+    <tr><th>Property</th><th>Meaning</th></tr>
+    <tr><td>P1 Conflict-freeness</td><td>No combination is both permitted and prohibited.</td></tr>
+    <tr><td>P2 Determinism and totality</td><td>Every combination receives exactly one outcome.</td></tr>
+    <tr><td>P3 Role and policy coverage</td><td>Reproduces the SPARQL role-coverage result.</td></tr>
+    <tr><td>P4 Exhaustive enumeration</td><td>The full role by action by category decision surface.</td></tr>
+  </table>
+
+  <h2>Reproduce</h2>
+  <pre>pip install clingo
+python run_verification.py</pre>
+  <p>The program is deterministic, so it yields a single stable model and the
+  same report on every run. The saved report is linked above.</p>
+
+  <div class="meta">
+    <p><b>Creator:</b> Rahel Kebede &nbsp;·&nbsp; <b>License:</b>
+    <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+    &nbsp;·&nbsp; <a href="../../1.0.0/index-en.html">Back to the DPP Access Control documentation</a></p>
+  </div>
+</body>
+</html>

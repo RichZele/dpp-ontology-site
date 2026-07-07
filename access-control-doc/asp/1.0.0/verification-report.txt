@@ -1,0 +1,60 @@
+==================================================================
+dpp-ac ASP VERIFICATION REPORT
+==================================================================
+
+[P1] CONFLICT-FREENESS (permission vs prohibition overlap)
+     PASS -- 0 conflicts; deny-overrides (R08) is never triggered.
+
+[P2] DECISION DETERMINISM & TOTALITY
+     Determinism: PASS (0 multi-outcome cells)
+     Totality:    PASS (0 undecided cells)
+
+[P3] ROLE / POLICY COVERAGE
+     Uncovered role classes (4): auth_rep, economic_operator, regulatory_authority, service_provider
+     (expected: the 4 abstract classes economic_operator,
+      regulatory_authority, service_provider, auth_rep)
+
+[P4] EXHAUSTIVE DECISION SURFACE (role x action x Tier-1 category)
+     role/action           produ env_p mater suppl certi use_m end_o
+     manufacturer/read         G     G     G     G     G     G     G
+     manufacturer/update       G     G     G     G     G     G     G
+     manufacturer/delete       .     .     .     .     .     .     .
+     importer/read             G     G     G     G     G     G     G
+     importer/update           .     .     .     G     .     .     .
+     importer/delete           .     .     .     .     .     .     .
+     distributor/read          G     .     .     .     G     .     .
+     distributor/update        .     .     .     .     .     .     .
+     distributor/delete        .     .     .     .     .     .     .
+     msa/read                  G     G     G     G     G     G     G
+     msa/update                .     .     .     .     .     .     .
+     msa/delete                .     .     .     .     .     .     .
+     customs/read              G     .     .     .     G     .     .
+     customs/update            .     .     .     .     .     .     .
+     customs/delete            .     .     .     .     .     .     .
+     maintenance_tech/read     .     .     .     .     .     C     .
+     maintenance_tech/update    .     .     .     .     .     .     .
+     maintenance_tech/delete    .     .     .     .     .     .     .
+     recycler/read             .     .     C     .     .     .     C
+     recycler/update           .     .     .     .     .     .     .
+     recycler/delete           .     .     .     .     .     .     .
+     consumer/read             G     .     .     .     .     .     G
+     consumer/update           .     .     .     .     .     .     .
+     consumer/delete           .     .     .     .     .     .     .
+
+     legend: G=grant  C=conditional(ABAC/PBAC-gated)  .=deny
+     168 decisions enumerated: 35 grant, 3 conditional, 130 deny
+
+==================================================================
+FAITHFULNESS GATE -- six built-environment scenarios vs runtime pipeline
+==================================================================
+     S1  expected=grant  got=grant  [OK ]
+     S2  expected=grant  got=grant  [OK ]
+     S3  expected=deny   got=deny   [OK ]
+     S4  expected=grant  got=grant  [OK ]
+     S5  expected=deny   got=deny   [OK ]
+     S6  expected=grant  got=grant  [OK ]
+
+     aggregate: 4 GRANT / 2 DENY (runtime pipeline: 4 GRANT / 2 DENY)
+
+     RESULT: PASS -- ASP layer reproduces all six runtime outcomes.
+==================================================================
