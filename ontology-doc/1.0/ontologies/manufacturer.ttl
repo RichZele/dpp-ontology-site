@@ -36,33 +36,33 @@
 
 ###  http://ontologydesignpatterns.org/opla-sd#entityPosition
 <http://ontologydesignpatterns.org/opla-sd#entityPosition> rdf:type owl:AnnotationProperty ;
-                                                           <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/manufacturer-modules/bf8f94bf-f3cb-4b1e-89c2-37994517f2ad> ,
-                                                                                                               <http://www.w3id.org/dpp/manufacturer-modules/410a8fee-7fb5-45fd-8bff-a33369869949> ,
-                                                                                                               <http://www.w3id.org/dpp/manufacturer-modules/528b84d3-f9c4-485a-98e9-a63dda52c14e> ,
-                                                                                                               <http://www.w3id.org/dpp/manufacturer-modules/7f802e88-02a4-498d-8fb8-45247042356a> .
+                                                           <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/manufacturer-modules/bf8f94bf-f3cb-4b1e-89c2-37994517f2ad> ,
+                                                                                                               <http://w3id.org/dpp/manufacturer-modules/410a8fee-7fb5-45fd-8bff-a33369869949> ,
+                                                                                                               <http://w3id.org/dpp/manufacturer-modules/528b84d3-f9c4-485a-98e9-a63dda52c14e> ,
+                                                                                                               <http://w3id.org/dpp/manufacturer-modules/7f802e88-02a4-498d-8fb8-45247042356a> .
 
 
 ###  http://ontologydesignpatterns.org/opla-sd#entityPositionX
 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> rdf:type owl:AnnotationProperty ;
-                                                            <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/manufacturer-modules/bf8f94bf-f3cb-4b1e-89c2-37994517f2ad> ,
-                                                                                                                <http://www.w3id.org/dpp/manufacturer-modules/410a8fee-7fb5-45fd-8bff-a33369869949> ,
-                                                                                                                <http://www.w3id.org/dpp/manufacturer-modules/528b84d3-f9c4-485a-98e9-a63dda52c14e> ,
-                                                                                                                <http://www.w3id.org/dpp/manufacturer-modules/7f802e88-02a4-498d-8fb8-45247042356a> .
+                                                            <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/manufacturer-modules/bf8f94bf-f3cb-4b1e-89c2-37994517f2ad> ,
+                                                                                                                <http://w3id.org/dpp/manufacturer-modules/410a8fee-7fb5-45fd-8bff-a33369869949> ,
+                                                                                                                <http://w3id.org/dpp/manufacturer-modules/528b84d3-f9c4-485a-98e9-a63dda52c14e> ,
+                                                                                                                <http://w3id.org/dpp/manufacturer-modules/7f802e88-02a4-498d-8fb8-45247042356a> .
 
 
 ###  http://ontologydesignpatterns.org/opla-sd#entityPositionY
 <http://ontologydesignpatterns.org/opla-sd#entityPositionY> rdf:type owl:AnnotationProperty ;
-                                                            <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/manufacturer-modules/bf8f94bf-f3cb-4b1e-89c2-37994517f2ad> ,
-                                                                                                                <http://www.w3id.org/dpp/manufacturer-modules/410a8fee-7fb5-45fd-8bff-a33369869949> ,
-                                                                                                                <http://www.w3id.org/dpp/manufacturer-modules/528b84d3-f9c4-485a-98e9-a63dda52c14e> ,
-                                                                                                                <http://www.w3id.org/dpp/manufacturer-modules/7f802e88-02a4-498d-8fb8-45247042356a> .
+                                                            <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/manufacturer-modules/bf8f94bf-f3cb-4b1e-89c2-37994517f2ad> ,
+                                                                                                                <http://w3id.org/dpp/manufacturer-modules/410a8fee-7fb5-45fd-8bff-a33369869949> ,
+                                                                                                                <http://w3id.org/dpp/manufacturer-modules/528b84d3-f9c4-485a-98e9-a63dda52c14e> ,
+                                                                                                                <http://w3id.org/dpp/manufacturer-modules/7f802e88-02a4-498d-8fb8-45247042356a> .
 
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.w3id.org/dpp#hasManufacturer
+###  http://w3id.org/dpp#hasManufacturer
 dpp:hasManufacturer rdf:type owl:ObjectProperty ;
                     rdfs:domain dpp:Product ;
                     rdfs:range dpp:Manufacturer ;
@@ -70,71 +70,71 @@ dpp:hasManufacturer rdf:type owl:ObjectProperty ;
                     rdfs:label "hasManufacturer" .
 
 
-###  http://www.w3id.org/dpp/manufacturer#detailsOfProcess
+###  http://w3id.org/dpp/manufacturer#detailsOfProcess
 :detailsOfProcess rdf:type owl:ObjectProperty ;
                   rdfs:domain :ManufacturingDetails ;
                   rdfs:range :ManufacturingProcess .
 
 
-###  http://www.w3id.org/dpp/manufacturer#hasContactInformation
+###  http://w3id.org/dpp/manufacturer#hasContactInformation
 :hasContactInformation rdf:type owl:ObjectProperty ;
                        rdfs:domain dpp:Manufacturer ;
                        rdfs:range :ContactInformation .
 
 
-###  http://www.w3id.org/dpp/manufacturer#hasContext
+###  http://w3id.org/dpp/manufacturer#hasContext
 :hasContext rdf:type owl:ObjectProperty ;
             rdfs:domain :PropertyToBeReified ;
             rdfs:range :Context ;
-            <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/manufacturer-modules/410a8fee-7fb5-45fd-8bff-a33369869949> .
+            <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/manufacturer-modules/410a8fee-7fb5-45fd-8bff-a33369869949> .
 
 
-###  http://www.w3id.org/dpp/manufacturer#hasIdentifier
+###  http://w3id.org/dpp/manufacturer#hasIdentifier
 :hasIdentifier rdf:type owl:ObjectProperty ;
                rdfs:domain dpp:Manufacturer ;
                rdfs:range :Identifier ;
-               <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/manufacturer-modules/7f802e88-02a4-498d-8fb8-45247042356a> .
+               <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/manufacturer-modules/7f802e88-02a4-498d-8fb8-45247042356a> .
 
 
-###  http://www.w3id.org/dpp/manufacturer#hasIdentifierType
+###  http://w3id.org/dpp/manufacturer#hasIdentifierType
 :hasIdentifierType rdf:type owl:ObjectProperty ;
                    rdfs:domain :Identifier ;
                    rdfs:range :IDType ;
-                   <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/manufacturer-modules/7f802e88-02a4-498d-8fb8-45247042356a> .
+                   <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/manufacturer-modules/7f802e88-02a4-498d-8fb8-45247042356a> .
 
 
-###  http://www.w3id.org/dpp/manufacturer#hasLocation
+###  http://w3id.org/dpp/manufacturer#hasLocation
 :hasLocation rdf:type owl:ObjectProperty ;
              rdfs:domain dpp:Manufacturer ;
              rdfs:range :Location .
 
 
-###  http://www.w3id.org/dpp/manufacturer#hasManufacturingDetails
+###  http://w3id.org/dpp/manufacturer#hasManufacturingDetails
 :hasManufacturingDetails rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf :reifiedPropertyFrom .
 
 
-###  http://www.w3id.org/dpp/manufacturer#hasName
+###  http://w3id.org/dpp/manufacturer#hasName
 :hasName rdf:type owl:ObjectProperty ;
          rdfs:domain dpp:Manufacturer ;
          rdfs:range :NameStub .
 
 
-###  http://www.w3id.org/dpp/manufacturer#hasTemporalExtent
+###  http://w3id.org/dpp/manufacturer#hasTemporalExtent
 :hasTemporalExtent rdf:type owl:ObjectProperty ;
                    rdfs:domain :AgentRole ;
                    rdfs:range :TemporalExtent ;
-                   <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/manufacturer-modules/528b84d3-f9c4-485a-98e9-a63dda52c14e> .
+                   <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/manufacturer-modules/528b84d3-f9c4-485a-98e9-a63dda52c14e> .
 
 
-###  http://www.w3id.org/dpp/manufacturer#performsAgentRole
+###  http://w3id.org/dpp/manufacturer#performsAgentRole
 :performsAgentRole rdf:type owl:ObjectProperty ;
                    rdfs:domain :Agent ;
                    rdfs:range :AgentRole ;
-                   <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/manufacturer-modules/528b84d3-f9c4-485a-98e9-a63dda52c14e> .
+                   <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/manufacturer-modules/528b84d3-f9c4-485a-98e9-a63dda52c14e> .
 
 
-###  http://www.w3id.org/dpp/manufacturer#proivdesAgentRole
+###  http://w3id.org/dpp/manufacturer#proivdesAgentRole
 :proivdesAgentRole rdf:type owl:ObjectProperty ;
                    rdfs:domain :ManufacturingProcess ,
                                [ rdf:type owl:Class ;
@@ -143,34 +143,34 @@ dpp:hasManufacturer rdf:type owl:ObjectProperty ;
                                              )
                                ] ;
                    rdfs:range :AgentRole ;
-                   <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/manufacturer-modules/528b84d3-f9c4-485a-98e9-a63dda52c14e> .
+                   <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/manufacturer-modules/528b84d3-f9c4-485a-98e9-a63dda52c14e> .
 
 
-###  http://www.w3id.org/dpp/manufacturer#providesProductTo
+###  http://w3id.org/dpp/manufacturer#providesProductTo
 :providesProductTo rdf:type owl:ObjectProperty ;
                    rdfs:domain dpp:Manufacturer ;
                    rdfs:range :SupplyChain .
 
 
-###  http://www.w3id.org/dpp/manufacturer#reifiedPropertyFrom
+###  http://w3id.org/dpp/manufacturer#reifiedPropertyFrom
 :reifiedPropertyFrom rdf:type owl:ObjectProperty ;
                      rdfs:domain :Domain ;
                      rdfs:range :PropertyToBeReified ;
-                     <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/manufacturer-modules/410a8fee-7fb5-45fd-8bff-a33369869949> .
+                     <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/manufacturer-modules/410a8fee-7fb5-45fd-8bff-a33369869949> .
 
 
-###  http://www.w3id.org/dpp/manufacturer#reifiedPropertyTo
+###  http://w3id.org/dpp/manufacturer#reifiedPropertyTo
 :reifiedPropertyTo rdf:type owl:ObjectProperty ;
                    rdfs:domain :PropertyToBeReified ;
                    rdfs:range :Range ;
-                   <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/manufacturer-modules/410a8fee-7fb5-45fd-8bff-a33369869949> .
+                   <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/manufacturer-modules/410a8fee-7fb5-45fd-8bff-a33369869949> .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://www.w3id.org/dpp/manufacturer#city
+###  http://w3id.org/dpp/manufacturer#city
 :city rdf:type owl:DatatypeProperty ;
       rdfs:domain :Location ;
       rdfs:range xsd:string ;
@@ -180,7 +180,7 @@ dpp:hasManufacturer rdf:type owl:ObjectProperty ;
                                                                  ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#country
+###  http://w3id.org/dpp/manufacturer#country
 :country rdf:type owl:DatatypeProperty ;
          rdfs:domain :Location ;
          rdfs:range xsd:string ;
@@ -190,7 +190,7 @@ dpp:hasManufacturer rdf:type owl:ObjectProperty ;
                                                                     ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#emailAddress
+###  http://w3id.org/dpp/manufacturer#emailAddress
 :emailAddress rdf:type owl:DatatypeProperty ;
               rdfs:domain :ContactInformation ;
               rdfs:range xsd:string ;
@@ -200,18 +200,18 @@ dpp:hasManufacturer rdf:type owl:ObjectProperty ;
                                                                          ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#identifierAsText
+###  http://w3id.org/dpp/manufacturer#identifierAsText
 :identifierAsText rdf:type owl:DatatypeProperty ;
                   rdfs:domain :Identifier ;
                   rdfs:range xsd:string ;
-                  <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/manufacturer-modules/7f802e88-02a4-498d-8fb8-45247042356a> ;
+                  <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/manufacturer-modules/7f802e88-02a4-498d-8fb8-45247042356a> ;
                   <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "40.48321744658483"^^xsd:double ;
                                                                                <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "600.2815184407156"^^xsd:double ;
                                                                                rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                              ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#latitude
+###  http://w3id.org/dpp/manufacturer#latitude
 :latitude rdf:type owl:DatatypeProperty ;
           rdfs:domain :Location ;
           rdfs:range xsd:decimal ;
@@ -221,7 +221,7 @@ dpp:hasManufacturer rdf:type owl:ObjectProperty ;
                                                                      ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#longitude
+###  http://w3id.org/dpp/manufacturer#longitude
 :longitude rdf:type owl:DatatypeProperty ;
            rdfs:domain :Location ;
            rdfs:range xsd:decimal ;
@@ -231,7 +231,7 @@ dpp:hasManufacturer rdf:type owl:ObjectProperty ;
                                                                       ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#machineryUsed
+###  http://w3id.org/dpp/manufacturer#machineryUsed
 :machineryUsed rdf:type owl:DatatypeProperty ;
                rdfs:domain :ManufacturingDetails ;
                rdfs:range xsd:string ;
@@ -241,7 +241,7 @@ dpp:hasManufacturer rdf:type owl:ObjectProperty ;
                                                                           ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#mailingAddress
+###  http://w3id.org/dpp/manufacturer#mailingAddress
 :mailingAddress rdf:type owl:DatatypeProperty ;
                 rdfs:domain :ContactInformation ;
                 rdfs:range xsd:string ;
@@ -251,18 +251,18 @@ dpp:hasManufacturer rdf:type owl:ObjectProperty ;
                                                                            ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#nameAsString
+###  http://w3id.org/dpp/manufacturer#nameAsString
 :nameAsString rdf:type owl:DatatypeProperty ;
               rdfs:domain :NameStub ;
               rdfs:range xsd:string ;
-              <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/manufacturer-modules/bf8f94bf-f3cb-4b1e-89c2-37994517f2ad> ;
+              <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/manufacturer-modules/bf8f94bf-f3cb-4b1e-89c2-37994517f2ad> ;
               <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "770.0244734273219"^^xsd:double ;
                                                                            <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "479.92786864468576"^^xsd:double ;
                                                                            rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                          ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#phoneNumber
+###  http://w3id.org/dpp/manufacturer#phoneNumber
 :phoneNumber rdf:type owl:DatatypeProperty ;
              rdfs:domain :ContactInformation ;
              rdfs:range xsd:string ;
@@ -272,7 +272,7 @@ dpp:hasManufacturer rdf:type owl:ObjectProperty ;
                                                                         ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#postalCode
+###  http://w3id.org/dpp/manufacturer#postalCode
 :postalCode rdf:type owl:DatatypeProperty ;
             rdfs:domain :Location ;
             rdfs:range xsd:string ;
@@ -282,7 +282,7 @@ dpp:hasManufacturer rdf:type owl:ObjectProperty ;
                                                                        ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#streetAddress
+###  http://w3id.org/dpp/manufacturer#streetAddress
 :streetAddress rdf:type owl:DatatypeProperty ;
                rdfs:domain :Location ;
                rdfs:range xsd:string ;
@@ -304,7 +304,7 @@ dpp:hasManufacturer rdf:type owl:ObjectProperty ;
 <http://ontologydesignpatterns.org/opla#Pattern> rdf:type owl:Class .
 
 
-###  http://www.w3id.org/dpp#Manufacturer
+###  http://w3id.org/dpp#Manufacturer
 dpp:Manufacturer rdf:type owl:Class ;
                  rdfs:subClassOf :Agent ,
                                  :Domain ;
@@ -316,7 +316,7 @@ dpp:Manufacturer rdf:type owl:Class ;
                  rdfs:label "Manufacturer"@en .
 
 
-###  http://www.w3id.org/dpp#Product
+###  http://w3id.org/dpp#Product
 dpp:Product rdf:type owl:Class ;
             rdfs:subClassOf :Range ;
             <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "339.7006743712691"^^xsd:double ;
@@ -325,25 +325,25 @@ dpp:Product rdf:type owl:Class ;
                                                                        ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#Agent
+###  http://w3id.org/dpp/manufacturer#Agent
 :Agent rdf:type owl:Class ;
-       <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/manufacturer-modules/528b84d3-f9c4-485a-98e9-a63dda52c14e> ;
+       <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/manufacturer-modules/528b84d3-f9c4-485a-98e9-a63dda52c14e> ;
        <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "589.7473051568223"^^xsd:double ;
                                                                     <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "420.39872752164547"^^xsd:double ;
                                                                     rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                   ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#AgentRole
+###  http://w3id.org/dpp/manufacturer#AgentRole
 :AgentRole rdf:type owl:Class ;
-           <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/manufacturer-modules/528b84d3-f9c4-485a-98e9-a63dda52c14e> ;
+           <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/manufacturer-modules/528b84d3-f9c4-485a-98e9-a63dda52c14e> ;
            <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "590.1465844687829"^^xsd:double ;
                                                                         <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "520.0464756162913"^^xsd:double ;
                                                                         rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                       ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#AssemblyLine
+###  http://w3id.org/dpp/manufacturer#AssemblyLine
 :AssemblyLine rdf:type owl:Class ;
               rdfs:subClassOf :ManufacturingProcess ;
               <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "30.03897440568693"^^xsd:double ;
@@ -352,7 +352,7 @@ dpp:Product rdf:type owl:Class ;
                                                                          ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#ComponentFabrication
+###  http://w3id.org/dpp/manufacturer#ComponentFabrication
 :ComponentFabrication rdf:type owl:Class ;
                       rdfs:subClassOf :ManufacturingProcess ;
                       <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "19.530118516541478"^^xsd:double ;
@@ -361,7 +361,7 @@ dpp:Product rdf:type owl:Class ;
                                                                                  ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#ContactInformation
+###  http://w3id.org/dpp/manufacturer#ContactInformation
 :ContactInformation rdf:type owl:Class ;
                     <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "230.0129786188898"^^xsd:double ;
                                                                                  <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "99.77435812670103"^^xsd:double ;
@@ -369,16 +369,16 @@ dpp:Product rdf:type owl:Class ;
                                                                                ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#Context
+###  http://w3id.org/dpp/manufacturer#Context
 :Context rdf:type owl:Class ;
-         <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/manufacturer-modules/410a8fee-7fb5-45fd-8bff-a33369869949> ;
+         <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/manufacturer-modules/410a8fee-7fb5-45fd-8bff-a33369869949> ;
          <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "480.3838822614381"^^xsd:double ;
                                                                       <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "759.9605146236192"^^xsd:double ;
                                                                       rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                     ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#DesignProcess
+###  http://w3id.org/dpp/manufacturer#DesignProcess
 :DesignProcess rdf:type owl:Class ;
                rdfs:subClassOf :ManufacturingProcess ;
                <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "40.02147417397407"^^xsd:double ;
@@ -387,7 +387,7 @@ dpp:Product rdf:type owl:Class ;
                                                                           ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#DistributionProcess
+###  http://w3id.org/dpp/manufacturer#DistributionProcess
 :DistributionProcess rdf:type owl:Class ;
                      rdfs:subClassOf :ManufacturingProcess ;
                      <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "10.462330391423535"^^xsd:double ;
@@ -396,16 +396,16 @@ dpp:Product rdf:type owl:Class ;
                                                                                 ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#Domain
+###  http://w3id.org/dpp/manufacturer#Domain
 :Domain rdf:type owl:Class ;
-        <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/manufacturer-modules/410a8fee-7fb5-45fd-8bff-a33369869949> ;
+        <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/manufacturer-modules/410a8fee-7fb5-45fd-8bff-a33369869949> ;
         <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "800.1482389374795"^^xsd:double ;
                                                                      <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "1000.208934887557"^^xsd:double ;
                                                                      rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                    ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#EORINumber
+###  http://w3id.org/dpp/manufacturer#EORINumber
 :EORINumber rdf:type owl:Class ;
             rdfs:subClassOf :IDType ;
             <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "20.133992905367563"^^xsd:double ;
@@ -414,25 +414,25 @@ dpp:Product rdf:type owl:Class ;
                                                                        ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#IDType
+###  http://w3id.org/dpp/manufacturer#IDType
 :IDType rdf:type owl:Class ;
-        <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/manufacturer-modules/7f802e88-02a4-498d-8fb8-45247042356a> ;
+        <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/manufacturer-modules/7f802e88-02a4-498d-8fb8-45247042356a> ;
         <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "30.306975654691712"^^xsd:double ;
                                                                      <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "410.2199389262453"^^xsd:double ;
                                                                      rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                    ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#Identifier
+###  http://w3id.org/dpp/manufacturer#Identifier
 :Identifier rdf:type owl:Class ;
-            <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/manufacturer-modules/7f802e88-02a4-498d-8fb8-45247042356a> ;
+            <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/manufacturer-modules/7f802e88-02a4-498d-8fb8-45247042356a> ;
             <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "260.06705314625185"^^xsd:double ;
                                                                          <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "450.02008527223245"^^xsd:double ;
                                                                          rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                        ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#Location
+###  http://w3id.org/dpp/manufacturer#Location
 :Location rdf:type owl:Class ;
           <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "579.7839030929383"^^xsd:double ;
                                                                        <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "90.2801529292449"^^xsd:double ;
@@ -440,7 +440,7 @@ dpp:Product rdf:type owl:Class ;
                                                                      ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#MaintenanceService
+###  http://w3id.org/dpp/manufacturer#MaintenanceService
 :MaintenanceService rdf:type owl:Class ;
                     rdfs:subClassOf :ManufacturingProcess ;
                     <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "10.494563922382184"^^xsd:double ;
@@ -449,7 +449,7 @@ dpp:Product rdf:type owl:Class ;
                                                                                ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#ManufacturingContext
+###  http://w3id.org/dpp/manufacturer#ManufacturingContext
 :ManufacturingContext rdf:type owl:Class ;
                       rdfs:subClassOf :Context ;
                       <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "470.317566688621"^^xsd:double ;
@@ -458,7 +458,7 @@ dpp:Product rdf:type owl:Class ;
                                                                                  ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#ManufacturingDetails
+###  http://w3id.org/dpp/manufacturer#ManufacturingDetails
 :ManufacturingDetails rdf:type owl:Class ;
                       rdfs:subClassOf :PropertyToBeReified ;
                       <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "509.814286309256"^^xsd:double ;
@@ -468,16 +468,16 @@ dpp:Product rdf:type owl:Class ;
                       rdfs:comment "contain information about a particular occurrence of a ManufacturingProcess (e.g., the specific details of the quality control process for a batch of products)" .
 
 
-###  http://www.w3id.org/dpp/manufacturer#ManufacturingProcess
+###  http://w3id.org/dpp/manufacturer#ManufacturingProcess
 :ManufacturingProcess rdf:type owl:Class ;
-                      <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/manufacturer-modules/528b84d3-f9c4-485a-98e9-a63dda52c14e> ;
+                      <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/manufacturer-modules/528b84d3-f9c4-485a-98e9-a63dda52c14e> ;
                       <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "260.0248594899956"^^xsd:double ;
                                                                                    <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "609.7299247704574"^^xsd:double ;
                                                                                    rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                                  ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#MaterialProcurement
+###  http://w3id.org/dpp/manufacturer#MaterialProcurement
 :MaterialProcurement rdf:type owl:Class ;
                      rdfs:subClassOf :ManufacturingProcess ;
                      <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "29.62046200628754"^^xsd:double ;
@@ -486,16 +486,16 @@ dpp:Product rdf:type owl:Class ;
                                                                                 ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#NameStub
+###  http://w3id.org/dpp/manufacturer#NameStub
 :NameStub rdf:type owl:Class ;
-          <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/manufacturer-modules/bf8f94bf-f3cb-4b1e-89c2-37994517f2ad> ;
+          <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/manufacturer-modules/bf8f94bf-f3cb-4b1e-89c2-37994517f2ad> ;
           <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "630.0495452355486"^^xsd:double ;
                                                                        <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "330.20579825738537"^^xsd:double ;
                                                                        rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                      ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#Packaging
+###  http://w3id.org/dpp/manufacturer#Packaging
 :Packaging rdf:type owl:Class ;
            rdfs:subClassOf :ManufacturingProcess ;
            <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "79.53383259428068"^^xsd:double ;
@@ -504,16 +504,16 @@ dpp:Product rdf:type owl:Class ;
                                                                       ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#PropertyToBeReified
+###  http://w3id.org/dpp/manufacturer#PropertyToBeReified
 :PropertyToBeReified rdf:type owl:Class ;
-                     <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/manufacturer-modules/410a8fee-7fb5-45fd-8bff-a33369869949> ;
+                     <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/manufacturer-modules/410a8fee-7fb5-45fd-8bff-a33369869949> ;
                      <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "520.3099583184874"^^xsd:double ;
                                                                                   <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "900.1258497407862"^^xsd:double ;
                                                                                   rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                                 ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#QualityControl
+###  http://w3id.org/dpp/manufacturer#QualityControl
 :QualityControl rdf:type owl:Class ;
                 rdfs:subClassOf :ManufacturingProcess ;
                 <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "29.719233964346756"^^xsd:double ;
@@ -522,16 +522,16 @@ dpp:Product rdf:type owl:Class ;
                                                                            ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#Range
+###  http://w3id.org/dpp/manufacturer#Range
 :Range rdf:type owl:Class ;
-       <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/manufacturer-modules/410a8fee-7fb5-45fd-8bff-a33369869949> ;
+       <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/manufacturer-modules/410a8fee-7fb5-45fd-8bff-a33369869949> ;
        <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "800.1397623300559"^^xsd:double ;
                                                                     <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "770.0646116885055"^^xsd:double ;
                                                                     rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                   ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#SupplyChain
+###  http://w3id.org/dpp/manufacturer#SupplyChain
 :SupplyChain rdf:type owl:Class ;
              <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "130.07601143461198"^^xsd:double ;
                                                                           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "339.56939869841653"^^xsd:double ;
@@ -539,16 +539,16 @@ dpp:Product rdf:type owl:Class ;
                                                                         ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#TemporalExtent
+###  http://w3id.org/dpp/manufacturer#TemporalExtent
 :TemporalExtent rdf:type owl:Class ;
-                <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/manufacturer-modules/528b84d3-f9c4-485a-98e9-a63dda52c14e> ;
+                <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/manufacturer-modules/528b84d3-f9c4-485a-98e9-a63dda52c14e> ;
                 <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "739.8115692753297"^^xsd:double ;
                                                                              <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "600.3884127798827"^^xsd:double ;
                                                                              rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                            ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#UniqueOperatorIdentifier
+###  http://w3id.org/dpp/manufacturer#UniqueOperatorIdentifier
 :UniqueOperatorIdentifier rdf:type owl:Class ;
                           rdfs:subClassOf :IDType ;
                           <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "10.156104768172355"^^xsd:double ;
@@ -557,7 +557,7 @@ dpp:Product rdf:type owl:Class ;
                                                                                      ] .
 
 
-###  http://www.w3id.org/dpp/manufacturer#Warehousing
+###  http://w3id.org/dpp/manufacturer#Warehousing
 :Warehousing rdf:type owl:Class ;
              rdfs:subClassOf :ManufacturingProcess ;
              <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "40.487940926543914"^^xsd:double ;
@@ -571,29 +571,29 @@ dpp:Product rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-###  http://www.w3id.org/dpp/manufacturer-modules/bf8f94bf-f3cb-4b1e-89c2-37994517f2ad
-<http://www.w3id.org/dpp/manufacturer-modules/bf8f94bf-f3cb-4b1e-89c2-37994517f2ad> rdf:type owl:NamedIndividual ,
+###  http://w3id.org/dpp/manufacturer-modules/bf8f94bf-f3cb-4b1e-89c2-37994517f2ad
+<http://w3id.org/dpp/manufacturer-modules/bf8f94bf-f3cb-4b1e-89c2-37994517f2ad> rdf:type owl:NamedIndividual ,
                                                                                              <http://ontologydesignpatterns.org/opla#Module> ;
                                                                                     <http://ontologydesignpatterns.org/opla#reusesPatternAsTemplate> <https://archive.org/services/purl/domain/modular_ontology_design_library/namestub> ;
                                                                                     rdfs:label "'Name Stub' ODP Instantiation Module" .
 
 
-###  http://www.w3id.org/dpp/manufacturer-modules/410a8fee-7fb5-45fd-8bff-a33369869949
-<http://www.w3id.org/dpp/manufacturer-modules/410a8fee-7fb5-45fd-8bff-a33369869949> rdf:type owl:NamedIndividual ,
+###  http://w3id.org/dpp/manufacturer-modules/410a8fee-7fb5-45fd-8bff-a33369869949
+<http://w3id.org/dpp/manufacturer-modules/410a8fee-7fb5-45fd-8bff-a33369869949> rdf:type owl:NamedIndividual ,
                                                                                              <http://ontologydesignpatterns.org/opla#Module> ;
                                                                                     <http://ontologydesignpatterns.org/opla#reusesPatternAsTemplate> <https://archive.org/services/purl/domain/modular_ontology_design_library/propertyreification> ;
                                                                                     rdfs:label "'Property Reification' ODP Instantiation Module" .
 
 
-###  http://www.w3id.org/dpp/manufacturer-modules/528b84d3-f9c4-485a-98e9-a63dda52c14e
-<http://www.w3id.org/dpp/manufacturer-modules/528b84d3-f9c4-485a-98e9-a63dda52c14e> rdf:type owl:NamedIndividual ,
+###  http://w3id.org/dpp/manufacturer-modules/528b84d3-f9c4-485a-98e9-a63dda52c14e
+<http://w3id.org/dpp/manufacturer-modules/528b84d3-f9c4-485a-98e9-a63dda52c14e> rdf:type owl:NamedIndividual ,
                                                                                              <http://ontologydesignpatterns.org/opla#Module> ;
                                                                                     <http://ontologydesignpatterns.org/opla#reusesPatternAsTemplate> <https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole> ;
                                                                                     rdfs:label "'Agent Role' ODP Instantiation Module" .
 
 
-###  http://www.w3id.org/dpp/manufacturer-modules/7f802e88-02a4-498d-8fb8-45247042356a
-<http://www.w3id.org/dpp/manufacturer-modules/7f802e88-02a4-498d-8fb8-45247042356a> rdf:type owl:NamedIndividual ,
+###  http://w3id.org/dpp/manufacturer-modules/7f802e88-02a4-498d-8fb8-45247042356a
+<http://w3id.org/dpp/manufacturer-modules/7f802e88-02a4-498d-8fb8-45247042356a> rdf:type owl:NamedIndividual ,
                                                                                              <http://ontologydesignpatterns.org/opla#Module> ;
                                                                                     <http://ontologydesignpatterns.org/opla#reusesPatternAsTemplate> <https://archive.org/services/purl/domain/modular_ontology_design_library/identifier> ;
                                                                                     rdfs:label "'Identifier' ODP Instantiation Module" .

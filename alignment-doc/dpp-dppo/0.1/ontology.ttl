@@ -82,8 +82,8 @@ xsd:date rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  http://www.w3id.org/dpp#hasComponent
-<http://www.w3id.org/dpp#hasComponent> rdf:type owl:ObjectProperty ;
+###  http://w3id.org/dpp#hasComponent
+<http://w3id.org/dpp#hasComponent> rdf:type owl:ObjectProperty ;
                                        rdfs:subPropertyOf <https://w3id.org/dppo/ontology/dpp-odp/hasPart> .
 
 
@@ -95,28 +95,28 @@ xsd:date rdf:type rdfs:Datatype .
 #    Classes
 #################################################################
 
-###  http://www.w3id.org/dpp#Agent
-<http://www.w3id.org/dpp#Agent> rdf:type owl:Class ;
+###  http://w3id.org/dpp#Agent
+<http://w3id.org/dpp#Agent> rdf:type owl:Class ;
                                 owl:equivalentClass <https://w3id.org/dppo/ontology/dpp-prov/Actor> .
 
 
-###  http://www.w3id.org/dpp#Component
-<http://www.w3id.org/dpp#Component> rdf:type owl:Class ;
+###  http://w3id.org/dpp#Component
+<http://w3id.org/dpp#Component> rdf:type owl:Class ;
                                     owl:equivalentClass <https://w3id.org/dppo/ontology/dpp-core/Component> .
 
 
-###  http://www.w3id.org/dpp#Material
-<http://www.w3id.org/dpp#Material> rdf:type owl:Class ;
+###  http://w3id.org/dpp#Material
+<http://w3id.org/dpp#Material> rdf:type owl:Class ;
                                    rdfs:subClassOf <https://w3id.org/dppo/ontology/dpp-core/Material> .
 
 
-###  http://www.w3id.org/dpp#MaterialComposition
-<http://www.w3id.org/dpp#MaterialComposition> rdf:type owl:Class ;
+###  http://w3id.org/dpp#MaterialComposition
+<http://w3id.org/dpp#MaterialComposition> rdf:type owl:Class ;
                                               rdfs:subClassOf <https://w3id.org/dppo/ontology/dpp-info/CompositionInformation> .
 
 
-###  http://www.w3id.org/dpp#Product
-<http://www.w3id.org/dpp#Product> rdf:type owl:Class ;
+###  http://w3id.org/dpp#Product
+<http://w3id.org/dpp#Product> rdf:type owl:Class ;
                                   rdfs:subClassOf <https://w3id.org/dppo/ontology/dpp-odp/Product> .
 
 

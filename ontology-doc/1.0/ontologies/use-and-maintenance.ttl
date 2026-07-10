@@ -35,36 +35,36 @@
 
 ###  http://ontologydesignpatterns.org/opla-sd#entityPosition
 <http://ontologydesignpatterns.org/opla-sd#entityPosition> rdf:type owl:AnnotationProperty ;
-                                                           <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/e69a1c0c-bdf8-472b-8b5f-6cf8952bd8df> ,
-                                                                                                               <http://www.w3id.org/dpp/UseAndMaintenance-modules/f5199444-758a-40b7-ad67-4a2a99ee3d2c> ,
-                                                                                                               <http://www.w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> ,
-                                                                                                               <http://www.w3id.org/dpp/UseAndMaintenance-modules/3688421d-d7b1-45c5-b117-5cfe3320ffd4> ,
-                                                                                                               <http://www.w3id.org/dpp/UseAndMaintenance-modules/9892962b-836d-4b8e-b823-bfbc6d2d1e7b> .
+                                                           <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/e69a1c0c-bdf8-472b-8b5f-6cf8952bd8df> ,
+                                                                                                               <http://w3id.org/dpp/UseAndMaintenance-modules/f5199444-758a-40b7-ad67-4a2a99ee3d2c> ,
+                                                                                                               <http://w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> ,
+                                                                                                               <http://w3id.org/dpp/UseAndMaintenance-modules/3688421d-d7b1-45c5-b117-5cfe3320ffd4> ,
+                                                                                                               <http://w3id.org/dpp/UseAndMaintenance-modules/9892962b-836d-4b8e-b823-bfbc6d2d1e7b> .
 
 
 ###  http://ontologydesignpatterns.org/opla-sd#entityPositionX
 <http://ontologydesignpatterns.org/opla-sd#entityPositionX> rdf:type owl:AnnotationProperty ;
-                                                            <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/e69a1c0c-bdf8-472b-8b5f-6cf8952bd8df> ,
-                                                                                                                <http://www.w3id.org/dpp/UseAndMaintenance-modules/f5199444-758a-40b7-ad67-4a2a99ee3d2c> ,
-                                                                                                                <http://www.w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> ,
-                                                                                                                <http://www.w3id.org/dpp/UseAndMaintenance-modules/3688421d-d7b1-45c5-b117-5cfe3320ffd4> ,
-                                                                                                                <http://www.w3id.org/dpp/UseAndMaintenance-modules/9892962b-836d-4b8e-b823-bfbc6d2d1e7b> .
+                                                            <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/e69a1c0c-bdf8-472b-8b5f-6cf8952bd8df> ,
+                                                                                                                <http://w3id.org/dpp/UseAndMaintenance-modules/f5199444-758a-40b7-ad67-4a2a99ee3d2c> ,
+                                                                                                                <http://w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> ,
+                                                                                                                <http://w3id.org/dpp/UseAndMaintenance-modules/3688421d-d7b1-45c5-b117-5cfe3320ffd4> ,
+                                                                                                                <http://w3id.org/dpp/UseAndMaintenance-modules/9892962b-836d-4b8e-b823-bfbc6d2d1e7b> .
 
 
 ###  http://ontologydesignpatterns.org/opla-sd#entityPositionY
 <http://ontologydesignpatterns.org/opla-sd#entityPositionY> rdf:type owl:AnnotationProperty ;
-                                                            <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/e69a1c0c-bdf8-472b-8b5f-6cf8952bd8df> ,
-                                                                                                                <http://www.w3id.org/dpp/UseAndMaintenance-modules/f5199444-758a-40b7-ad67-4a2a99ee3d2c> ,
-                                                                                                                <http://www.w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> ,
-                                                                                                                <http://www.w3id.org/dpp/UseAndMaintenance-modules/3688421d-d7b1-45c5-b117-5cfe3320ffd4> ,
-                                                                                                                <http://www.w3id.org/dpp/UseAndMaintenance-modules/9892962b-836d-4b8e-b823-bfbc6d2d1e7b> .
+                                                            <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/e69a1c0c-bdf8-472b-8b5f-6cf8952bd8df> ,
+                                                                                                                <http://w3id.org/dpp/UseAndMaintenance-modules/f5199444-758a-40b7-ad67-4a2a99ee3d2c> ,
+                                                                                                                <http://w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> ,
+                                                                                                                <http://w3id.org/dpp/UseAndMaintenance-modules/3688421d-d7b1-45c5-b117-5cfe3320ffd4> ,
+                                                                                                                <http://w3id.org/dpp/UseAndMaintenance-modules/9892962b-836d-4b8e-b823-bfbc6d2d1e7b> .
 
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.w3id.org/dpp#hasActivity
+###  http://w3id.org/dpp#hasActivity
 dpp:hasActivity rdf:type owl:ObjectProperty ;
                 rdfs:domain dpp:MaintenanceTask ;
                 rdfs:range dpp:Activity ;
@@ -72,7 +72,7 @@ dpp:hasActivity rdf:type owl:ObjectProperty ;
                 rdfs:label "hasActivity"@en .
 
 
-###  http://www.w3id.org/dpp#hasCleaningInstruction
+###  http://w3id.org/dpp#hasCleaningInstruction
 dpp:hasCleaningInstruction rdf:type owl:ObjectProperty ;
                            rdfs:domain dpp:MaintenanceTask ;
                            rdfs:range dpp:Cleaning ;
@@ -80,7 +80,7 @@ dpp:hasCleaningInstruction rdf:type owl:ObjectProperty ;
                            rdfs:label "hasCleaningInstruction"@en .
 
 
-###  http://www.w3id.org/dpp#hasFailureData
+###  http://w3id.org/dpp#hasFailureData
 dpp:hasFailureData rdf:type owl:ObjectProperty ;
                    rdfs:domain dpp:Product ;
                    rdfs:range dpp:FailureData ;
@@ -88,7 +88,7 @@ dpp:hasFailureData rdf:type owl:ObjectProperty ;
                    rdfs:label "hasFailureData"@en .
 
 
-###  http://www.w3id.org/dpp#hasMaintenanceRecord
+###  http://w3id.org/dpp#hasMaintenanceRecord
 dpp:hasMaintenanceRecord rdf:type owl:ObjectProperty ;
                          rdfs:domain dpp:MaintenanceTask ;
                          rdfs:range dpp:MaintenanceRecord ;
@@ -96,7 +96,7 @@ dpp:hasMaintenanceRecord rdf:type owl:ObjectProperty ;
                          rdfs:label "hasMaintenanceRecord"@en .
 
 
-###  http://www.w3id.org/dpp#hasManual
+###  http://w3id.org/dpp#hasManual
 dpp:hasManual rdf:type owl:ObjectProperty ;
               rdfs:domain dpp:Product ;
               rdfs:range dpp:Manual ;
@@ -104,7 +104,7 @@ dpp:hasManual rdf:type owl:ObjectProperty ;
               rdfs:label "hasManual"@en .
 
 
-###  http://www.w3id.org/dpp#hasOwnershipStatus
+###  http://w3id.org/dpp#hasOwnershipStatus
 dpp:hasOwnershipStatus rdf:type owl:ObjectProperty ;
                        rdfs:domain dpp:Product ;
                        rdfs:range dpp:OwnershipStatus ;
@@ -112,7 +112,7 @@ dpp:hasOwnershipStatus rdf:type owl:ObjectProperty ;
                        rdfs:label "hasOwnershipStatus"@en .
 
 
-###  http://www.w3id.org/dpp#hasRealUseInformation
+###  http://w3id.org/dpp#hasRealUseInformation
 dpp:hasRealUseInformation rdf:type owl:ObjectProperty ;
                           rdfs:domain dpp:Product ;
                           rdfs:range dpp:RealUseInformation ;
@@ -120,7 +120,7 @@ dpp:hasRealUseInformation rdf:type owl:ObjectProperty ;
                           rdfs:label "hasRealUseInformation"@en .
 
 
-###  http://www.w3id.org/dpp#hasServiceHistory
+###  http://w3id.org/dpp#hasServiceHistory
 dpp:hasServiceHistory rdf:type owl:ObjectProperty ;
                       rdfs:domain dpp:Product ;
                       rdfs:range dpp:ServiceHistory ;
@@ -128,7 +128,7 @@ dpp:hasServiceHistory rdf:type owl:ObjectProperty ;
                       rdfs:label "hasServiceHistory"@en .
 
 
-###  http://www.w3id.org/dpp#hasUpdate
+###  http://w3id.org/dpp#hasUpdate
 dpp:hasUpdate rdf:type owl:ObjectProperty ;
               rdfs:domain dpp:Product ;
               rdfs:range dpp:Update ;
@@ -136,7 +136,7 @@ dpp:hasUpdate rdf:type owl:ObjectProperty ;
               rdfs:label "hasUpdate"@en .
 
 
-###  http://www.w3id.org/dpp#hasUseCondition
+###  http://w3id.org/dpp#hasUseCondition
 dpp:hasUseCondition rdf:type owl:ObjectProperty ;
                     rdfs:domain dpp:Product ;
                     rdfs:range dpp:UseCondition ;
@@ -144,7 +144,7 @@ dpp:hasUseCondition rdf:type owl:ObjectProperty ;
                     rdfs:label "hasUseCondition"@en .
 
 
-###  http://www.w3id.org/dpp#hasVerification
+###  http://w3id.org/dpp#hasVerification
 dpp:hasVerification rdf:type owl:ObjectProperty ;
                     rdfs:domain dpp:Product ;
                     rdfs:range dpp:Verification ;
@@ -152,7 +152,7 @@ dpp:hasVerification rdf:type owl:ObjectProperty ;
                     rdfs:label "hasVerification"@en .
 
 
-###  http://www.w3id.org/dpp#locatedIn
+###  http://w3id.org/dpp#locatedIn
 dpp:locatedIn rdf:type owl:ObjectProperty ;
               rdfs:domain dpp:Product ;
               rdfs:range dpp:Building ;
@@ -160,7 +160,7 @@ dpp:locatedIn rdf:type owl:ObjectProperty ;
               rdfs:label "locatedIn"@en .
 
 
-###  http://www.w3id.org/dpp#requiresConsumable
+###  http://w3id.org/dpp#requiresConsumable
 dpp:requiresConsumable rdf:type owl:ObjectProperty ;
                        rdfs:domain dpp:Product ;
                        rdfs:range dpp:Consumable ;
@@ -168,7 +168,7 @@ dpp:requiresConsumable rdf:type owl:ObjectProperty ;
                        rdfs:label "requiresConsumable"@en .
 
 
-###  http://www.w3id.org/dpp#requiresMaintenance
+###  http://w3id.org/dpp#requiresMaintenance
 dpp:requiresMaintenance rdf:type owl:ObjectProperty ;
                         rdfs:domain dpp:Product ;
                         rdfs:range dpp:MaintenanceTask ;
@@ -176,7 +176,7 @@ dpp:requiresMaintenance rdf:type owl:ObjectProperty ;
                         rdfs:label "requiresMaintenance"@en .
 
 
-###  http://www.w3id.org/dpp#usesProduct
+###  http://w3id.org/dpp#usesProduct
 dpp:usesProduct rdf:type owl:ObjectProperty ;
                 rdfs:domain dpp:User ;
                 rdfs:range dpp:Product ;
@@ -184,61 +184,61 @@ dpp:usesProduct rdf:type owl:ObjectProperty ;
                 rdfs:label "usesProduct"@en .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#attributedTo
+###  http://w3id.org/dpp/UseAndMaintenance#attributedTo
 :attributedTo rdf:type owl:ObjectProperty ;
               rdfs:domain :EntityWithProvenance ;
               rdfs:range :Agent ;
-              <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/9892962b-836d-4b8e-b823-bfbc6d2d1e7b> .
+              <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/9892962b-836d-4b8e-b823-bfbc6d2d1e7b> .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#contains
+###  http://w3id.org/dpp/UseAndMaintenance#contains
 :contains rdf:type owl:ObjectProperty ;
           rdfs:domain :TemporalExtent ;
           rdfs:range :ComplexTemporalExtent ;
-          <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> .
+          <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#coveredBy
+###  http://w3id.org/dpp/UseAndMaintenance#coveredBy
 :coveredBy rdf:type owl:ObjectProperty ;
            rdfs:domain dpp:Product ;
            rdfs:range :Warranty .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#derivedFrom
+###  http://w3id.org/dpp/UseAndMaintenance#derivedFrom
 :derivedFrom rdf:type owl:ObjectProperty ;
              rdfs:domain :EntityWithProvenance ;
              rdfs:range :EntityWithProvenance ;
-             <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/9892962b-836d-4b8e-b823-bfbc6d2d1e7b> .
+             <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/9892962b-836d-4b8e-b823-bfbc6d2d1e7b> .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#endsAt
+###  http://w3id.org/dpp/UseAndMaintenance#endsAt
 :endsAt rdf:type owl:ObjectProperty ;
         rdfs:domain :TimeInterval ;
         rdfs:range :PointInTime ;
-        <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> .
+        <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#followsSchedule
+###  http://w3id.org/dpp/UseAndMaintenance#followsSchedule
 :followsSchedule rdf:type owl:ObjectProperty ;
                  rdfs:domain dpp:MaintenanceTask ;
                  rdfs:range :MaintenanceSchedule .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#generatedBy
+###  http://w3id.org/dpp/UseAndMaintenance#generatedBy
 :generatedBy rdf:type owl:ObjectProperty ;
              rdfs:domain :EntityWithProvenance ;
              rdfs:range :ProvenanceActivity ;
-             <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/9892962b-836d-4b8e-b823-bfbc6d2d1e7b> .
+             <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/9892962b-836d-4b8e-b823-bfbc6d2d1e7b> .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#hasConsumableQuantity
+###  http://w3id.org/dpp/UseAndMaintenance#hasConsumableQuantity
 :hasConsumableQuantity rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf :hasQuantity ;
                        rdfs:domain dpp:Consumable ;
                        rdfs:range :Quantity .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#hasContactInformation
+###  http://w3id.org/dpp/UseAndMaintenance#hasContactInformation
 :hasContactInformation rdf:type owl:ObjectProperty ;
                        rdfs:domain dpp:User ,
                                    [ rdf:type owl:Class ;
@@ -249,117 +249,117 @@ dpp:usesProduct rdf:type owl:ObjectProperty ;
                        rdfs:range :ContactInformation .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#hasCostQuantityKind
+###  http://w3id.org/dpp/UseAndMaintenance#hasCostQuantityKind
 :hasCostQuantityKind rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf :hasQuantityKind ;
                      rdfs:domain :CostQuantity ;
                      rdfs:range :MaintenanceCost .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#hasLifespanQuantity
+###  http://w3id.org/dpp/UseAndMaintenance#hasLifespanQuantity
 :hasLifespanQuantity rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf :hasQuantity ;
                      rdfs:domain dpp:Product ;
                      rdfs:range :LifespanQuantity .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#hasMaintenanceCost
+###  http://w3id.org/dpp/UseAndMaintenance#hasMaintenanceCost
 :hasMaintenanceCost rdf:type owl:ObjectProperty ;
                     rdfs:domain dpp:MaintenanceTask ;
                     rdfs:range :CostQuantity .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#hasQualityLossQuantity
+###  http://w3id.org/dpp/UseAndMaintenance#hasQualityLossQuantity
 :hasQualityLossQuantity rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf :hasQuantity ;
                         rdfs:domain dpp:Product ;
                         rdfs:range :QualityLossQuantity .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#hasQuantity
+###  http://w3id.org/dpp/UseAndMaintenance#hasQuantity
 :hasQuantity rdf:type owl:ObjectProperty ;
              rdfs:domain dpp:MaintenanceTask ;
              rdfs:range :Quantity .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#hasQuantityKind
+###  http://w3id.org/dpp/UseAndMaintenance#hasQuantityKind
 :hasQuantityKind rdf:type owl:ObjectProperty ;
                  rdfs:domain :Quantity ;
                  rdfs:range :QuantityKind ;
-                 <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/3688421d-d7b1-45c5-b117-5cfe3320ffd4> .
+                 <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/3688421d-d7b1-45c5-b117-5cfe3320ffd4> .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#hasQuantityValue
+###  http://w3id.org/dpp/UseAndMaintenance#hasQuantityValue
 :hasQuantityValue rdf:type owl:ObjectProperty ;
                   rdfs:domain :Quantity ;
                   rdfs:range :QuantityValue ;
-                  <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/3688421d-d7b1-45c5-b117-5cfe3320ffd4> .
+                  <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/3688421d-d7b1-45c5-b117-5cfe3320ffd4> .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#hasReferenceSystem
+###  http://w3id.org/dpp/UseAndMaintenance#hasReferenceSystem
 :hasReferenceSystem rdf:type owl:ObjectProperty ;
                     rdfs:domain :PointInTime ;
                     rdfs:range :ReferenceSystem ;
-                    <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> .
+                    <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#hasSafetyMeasure
+###  http://w3id.org/dpp/UseAndMaintenance#hasSafetyMeasure
 :hasSafetyMeasure rdf:type owl:ObjectProperty ;
                   rdfs:domain dpp:MaintenanceTask ;
                   rdfs:range :SafetyMeasure ;
                   rdfs:label "hasSafetyMeasure" .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#hasTemporalExtent
+###  http://w3id.org/dpp/UseAndMaintenance#hasTemporalExtent
 :hasTemporalExtent rdf:type owl:ObjectProperty ;
                    rdfs:domain :AgentRole ;
                    rdfs:range :TemporalExtent ;
-                   <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/f5199444-758a-40b7-ad67-4a2a99ee3d2c> .
+                   <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/f5199444-758a-40b7-ad67-4a2a99ee3d2c> .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#hasUnit
+###  http://w3id.org/dpp/UseAndMaintenance#hasUnit
 :hasUnit rdf:type owl:ObjectProperty ;
          rdfs:domain :QuantityValue ;
          rdfs:range :Unit ;
-         <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/3688421d-d7b1-45c5-b117-5cfe3320ffd4> .
+         <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/3688421d-d7b1-45c5-b117-5cfe3320ffd4> .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#hasValue
+###  http://w3id.org/dpp/UseAndMaintenance#hasValue
 :hasValue rdf:type owl:ObjectProperty ;
           rdfs:domain :PointInTime ;
           rdfs:range :Value ;
-          <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> .
+          <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#performedBy
+###  http://w3id.org/dpp/UseAndMaintenance#performedBy
 :performedBy rdf:type owl:ObjectProperty ;
              rdfs:domain :ProvenanceActivity ;
              rdfs:range :Agent ;
-             <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/9892962b-836d-4b8e-b823-bfbc6d2d1e7b> .
+             <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/9892962b-836d-4b8e-b823-bfbc6d2d1e7b> .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#performsAgentRole
+###  http://w3id.org/dpp/UseAndMaintenance#performsAgentRole
 :performsAgentRole rdf:type owl:ObjectProperty ;
                    rdfs:domain :Agent ;
                    rdfs:range :AgentRole ;
-                   <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/f5199444-758a-40b7-ad67-4a2a99ee3d2c> .
+                   <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/f5199444-758a-40b7-ad67-4a2a99ee3d2c> .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#providesAgentRole
+###  http://w3id.org/dpp/UseAndMaintenance#providesAgentRole
 :providesAgentRole rdf:type owl:ObjectProperty ;
                    rdfs:domain dpp:MaintenanceTask ;
                    rdfs:range :AgentRole ;
-                   <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/f5199444-758a-40b7-ad67-4a2a99ee3d2c> .
+                   <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/f5199444-758a-40b7-ad67-4a2a99ee3d2c> .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#startsFrom
+###  http://w3id.org/dpp/UseAndMaintenance#startsFrom
 :startsFrom rdf:type owl:ObjectProperty ;
             rdfs:domain :TimeInterval ;
             rdfs:range :PointInTime ;
-            <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> .
+            <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#targetUser
+###  http://w3id.org/dpp/UseAndMaintenance#targetUser
 :targetUser rdf:type owl:ObjectProperty ;
             rdfs:domain :IntendedUse ;
             rdfs:range dpp:User ;
@@ -370,7 +370,7 @@ dpp:usesProduct rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  http://www.w3id.org/dpp#availability
+###  http://w3id.org/dpp#availability
 dpp:availability rdf:type owl:DatatypeProperty ;
                  rdfs:domain dpp:Consumable ;
                  rdfs:range xsd:string ;
@@ -382,7 +382,7 @@ dpp:availability rdf:type owl:DatatypeProperty ;
                  rdfs:label "availability"@en .
 
 
-###  http://www.w3id.org/dpp#lifeSpan
+###  http://w3id.org/dpp#lifeSpan
 dpp:lifeSpan rdf:type owl:DatatypeProperty ;
              rdfs:domain dpp:Product ;
              rdfs:range xsd:integer ;
@@ -394,7 +394,7 @@ dpp:lifeSpan rdf:type owl:DatatypeProperty ;
              rdfs:label "lifeSpan"@en .
 
 
-###  http://www.w3id.org/dpp#maintenanceInstructions
+###  http://w3id.org/dpp#maintenanceInstructions
 dpp:maintenanceInstructions rdf:type owl:DatatypeProperty ;
                             rdfs:domain dpp:MaintenanceTask ;
                             rdfs:range xsd:string ;
@@ -406,7 +406,7 @@ dpp:maintenanceInstructions rdf:type owl:DatatypeProperty ;
                             rdfs:label "maintenanceInstructions"@en .
 
 
-###  http://www.w3id.org/dpp#qualityLossOverTime
+###  http://w3id.org/dpp#qualityLossOverTime
 dpp:qualityLossOverTime rdf:type owl:DatatypeProperty ;
                         rdfs:domain dpp:Product ;
                         rdfs:range xsd:float ;
@@ -418,7 +418,7 @@ dpp:qualityLossOverTime rdf:type owl:DatatypeProperty ;
                         rdfs:label "qualityLossOvertime"@en .
 
 
-###  http://www.w3id.org/dpp#taskDescription
+###  http://w3id.org/dpp#taskDescription
 dpp:taskDescription rdf:type owl:DatatypeProperty ;
                     rdfs:domain dpp:MaintenanceTask ;
                     rdfs:range xsd:string ;
@@ -430,7 +430,7 @@ dpp:taskDescription rdf:type owl:DatatypeProperty ;
                     rdfs:label "taskDescription"@en .
 
 
-###  http://www.w3id.org/dpp#taskFrequency
+###  http://w3id.org/dpp#taskFrequency
 dpp:taskFrequency rdf:type owl:DatatypeProperty ;
                   rdfs:domain dpp:MaintenanceTask ;
                   rdfs:range xsd:integer ;
@@ -442,7 +442,7 @@ dpp:taskFrequency rdf:type owl:DatatypeProperty ;
                   rdfs:label "taskFrequency"@en .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#activityName
+###  http://w3id.org/dpp/UseAndMaintenance#activityName
 :activityName rdf:type owl:DatatypeProperty ;
               rdfs:domain dpp:Activity ;
               rdfs:range xsd:Name ;
@@ -453,7 +453,7 @@ dpp:taskFrequency rdf:type owl:DatatypeProperty ;
               rdfs:label "activityName" .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#coverageDetails
+###  http://w3id.org/dpp/UseAndMaintenance#coverageDetails
 :coverageDetails rdf:type owl:DatatypeProperty ;
                  rdfs:domain :Warranty ;
                  rdfs:range xsd:string ;
@@ -463,18 +463,18 @@ dpp:taskFrequency rdf:type owl:DatatypeProperty ;
                                                                             ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#hasNumericValue
+###  http://w3id.org/dpp/UseAndMaintenance#hasNumericValue
 :hasNumericValue rdf:type owl:DatatypeProperty ;
                  rdfs:domain :QuantityValue ;
                  rdfs:range xsd:double ;
-                 <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/3688421d-d7b1-45c5-b117-5cfe3320ffd4> ;
+                 <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/3688421d-d7b1-45c5-b117-5cfe3320ffd4> ;
                  <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "-379.54606828843237"^^xsd:double ;
                                                                               <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "259.68463598533674"^^xsd:double ;
                                                                               rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                             ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#toolsRequired
+###  http://w3id.org/dpp/UseAndMaintenance#toolsRequired
 :toolsRequired rdf:type owl:DatatypeProperty ;
                rdfs:domain dpp:MaintenanceTask ;
                rdfs:range xsd:string ;
@@ -484,7 +484,7 @@ dpp:taskFrequency rdf:type owl:DatatypeProperty ;
                                                                           ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#useDescription
+###  http://w3id.org/dpp/UseAndMaintenance#useDescription
 :useDescription rdf:type owl:DatatypeProperty ;
                 rdfs:domain :IntendedUse ;
                 rdfs:range xsd:string ;
@@ -495,7 +495,7 @@ dpp:taskFrequency rdf:type owl:DatatypeProperty ;
                 rdfs:comment "textual description of how the product is intended to be used" .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#useGuidelines
+###  http://w3id.org/dpp/UseAndMaintenance#useGuidelines
 :useGuidelines rdf:type owl:DatatypeProperty ;
                rdfs:domain :IntendedUse ;
                rdfs:range xsd:string ;
@@ -505,7 +505,7 @@ dpp:taskFrequency rdf:type owl:DatatypeProperty ;
                                                                           ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#userID
+###  http://w3id.org/dpp/UseAndMaintenance#userID
 :userID rdf:type owl:DatatypeProperty ;
         rdfs:domain dpp:User ;
         rdfs:range xsd:string ;
@@ -515,7 +515,7 @@ dpp:taskFrequency rdf:type owl:DatatypeProperty ;
                                                                    ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#userName
+###  http://w3id.org/dpp/UseAndMaintenance#userName
 :userName rdf:type owl:DatatypeProperty ;
           rdfs:domain dpp:User ;
           rdfs:range xsd:Name ;
@@ -525,7 +525,7 @@ dpp:taskFrequency rdf:type owl:DatatypeProperty ;
                                                                      ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#warrantyID
+###  http://w3id.org/dpp/UseAndMaintenance#warrantyID
 :warrantyID rdf:type owl:DatatypeProperty ;
             rdfs:domain :Warranty ;
             rdfs:range xsd:string ;
@@ -536,7 +536,7 @@ dpp:taskFrequency rdf:type owl:DatatypeProperty ;
             rdfs:label "warrantyID" .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#warrantyPeriod
+###  http://w3id.org/dpp/UseAndMaintenance#warrantyPeriod
 :warrantyPeriod rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Warranty ;
                 <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "789.5669412223012"^^xsd:double ;
@@ -558,7 +558,7 @@ dpp:taskFrequency rdf:type owl:DatatypeProperty ;
 <http://ontologydesignpatterns.org/opla#Pattern> rdf:type owl:Class .
 
 
-###  http://www.w3id.org/dpp#Activity
+###  http://w3id.org/dpp#Activity
 dpp:Activity rdf:type owl:Class ;
              <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "450.20777348425247"^^xsd:double ;
                                                                           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "450.3812582974209"^^xsd:double ;
@@ -568,7 +568,7 @@ dpp:Activity rdf:type owl:Class ;
              rdfs:label "Activity"@en .
 
 
-###  http://www.w3id.org/dpp#Building
+###  http://w3id.org/dpp#Building
 dpp:Building rdf:type owl:Class ;
              <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "369.9034683238495"^^xsd:double ;
                                                                           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "1019.7458805745496"^^xsd:double ;
@@ -578,7 +578,7 @@ dpp:Building rdf:type owl:Class ;
              rdfs:label "Building"@en .
 
 
-###  http://www.w3id.org/dpp#Cleaning
+###  http://w3id.org/dpp#Cleaning
 dpp:Cleaning rdf:type owl:Class ;
              <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "30.114152337418474"^^xsd:double ;
                                                                           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "280.27989584958414"^^xsd:double ;
@@ -588,7 +588,7 @@ dpp:Cleaning rdf:type owl:Class ;
              rdfs:label "Cleaning"@en .
 
 
-###  http://www.w3id.org/dpp#Consumable
+###  http://w3id.org/dpp#Consumable
 dpp:Consumable rdf:type owl:Class ;
                <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "29.58440368208494"^^xsd:double ;
                                                                             <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "400.0700960770059"^^xsd:double ;
@@ -598,7 +598,7 @@ dpp:Consumable rdf:type owl:Class ;
                rdfs:label "Consumable"@en .
 
 
-###  http://www.w3id.org/dpp#FailureData
+###  http://w3id.org/dpp#FailureData
 dpp:FailureData rdf:type owl:Class ;
                 <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "-139.52853569224231"^^xsd:double ;
                                                                              <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "619.9717881705479"^^xsd:double ;
@@ -608,7 +608,7 @@ dpp:FailureData rdf:type owl:Class ;
                 rdfs:label "FailureData"@en .
 
 
-###  http://www.w3id.org/dpp#MaintenanceRecord
+###  http://w3id.org/dpp#MaintenanceRecord
 dpp:MaintenanceRecord rdf:type owl:Class ;
                       <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "819.9062618694126"^^xsd:double ;
                                                                                    <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "-339.6987149948836"^^xsd:double ;
@@ -618,7 +618,7 @@ dpp:MaintenanceRecord rdf:type owl:Class ;
                       rdfs:label "MaintenanceRecord"@en .
 
 
-###  http://www.w3id.org/dpp#MaintenanceTask
+###  http://w3id.org/dpp#MaintenanceTask
 dpp:MaintenanceTask rdf:type owl:Class ;
                     rdfs:subClassOf :ProvenanceActivity ;
                     <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "229.7862732656149"^^xsd:double ;
@@ -629,7 +629,7 @@ dpp:MaintenanceTask rdf:type owl:Class ;
                     rdfs:label "MaintenanceTask"@en .
 
 
-###  http://www.w3id.org/dpp#MaintenanceTechnician
+###  http://w3id.org/dpp#MaintenanceTechnician
 dpp:MaintenanceTechnician rdf:type owl:Class ;
                           rdfs:subClassOf :AgentRole ;
                           <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "880.1508236685033"^^xsd:double ;
@@ -640,7 +640,7 @@ dpp:MaintenanceTechnician rdf:type owl:Class ;
                           rdfs:label "MaintenanceTechnician"@en .
 
 
-###  http://www.w3id.org/dpp#Manual
+###  http://w3id.org/dpp#Manual
 dpp:Manual rdf:type owl:Class ;
            <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "440.0180560035367"^^xsd:double ;
                                                                         <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "529.8487622450107"^^xsd:double ;
@@ -650,7 +650,7 @@ dpp:Manual rdf:type owl:Class ;
            rdfs:label "Manual"@en .
 
 
-###  http://www.w3id.org/dpp#OwnershipStatus
+###  http://w3id.org/dpp#OwnershipStatus
 dpp:OwnershipStatus rdf:type owl:Class ;
                     <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "-119.84651102701923"^^xsd:double ;
                                                                                  <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "1059.6554950959444"^^xsd:double ;
@@ -660,7 +660,7 @@ dpp:OwnershipStatus rdf:type owl:Class ;
                     rdfs:label "OwnershipStatus"@en .
 
 
-###  http://www.w3id.org/dpp#Product
+###  http://w3id.org/dpp#Product
 dpp:Product rdf:type owl:Class ;
             rdfs:subClassOf :EntityWithProvenance ;
             <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "189.9827136371448"^^xsd:double ;
@@ -669,7 +669,7 @@ dpp:Product rdf:type owl:Class ;
                                                                        ] .
 
 
-###  http://www.w3id.org/dpp#RealUseInformation
+###  http://w3id.org/dpp#RealUseInformation
 dpp:RealUseInformation rdf:type owl:Class ;
                        <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "19.61545798835698"^^xsd:double ;
                                                                                     <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "1090.143678273247"^^xsd:double ;
@@ -679,7 +679,7 @@ dpp:RealUseInformation rdf:type owl:Class ;
                        rdfs:label "RealUseInformation"@en .
 
 
-###  http://www.w3id.org/dpp#ServiceHistory
+###  http://w3id.org/dpp#ServiceHistory
 dpp:ServiceHistory rdf:type owl:Class ;
                    <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "-210.22397890913754"^^xsd:double ;
                                                                                 <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "979.989158018367"^^xsd:double ;
@@ -689,7 +689,7 @@ dpp:ServiceHistory rdf:type owl:Class ;
                    rdfs:label "ServiceHistory"@en .
 
 
-###  http://www.w3id.org/dpp#Update
+###  http://w3id.org/dpp#Update
 dpp:Update rdf:type owl:Class ;
            <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "-229.60356196472242"^^xsd:double ;
                                                                         <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "890.4985577232903"^^xsd:double ;
@@ -699,7 +699,7 @@ dpp:Update rdf:type owl:Class ;
            rdfs:label "Update"@en .
 
 
-###  http://www.w3id.org/dpp#UseCondition
+###  http://w3id.org/dpp#UseCondition
 dpp:UseCondition rdf:type owl:Class ;
                  <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "599.9186215387032"^^xsd:double ;
                                                                               <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "570.4841283281769"^^xsd:double ;
@@ -709,7 +709,7 @@ dpp:UseCondition rdf:type owl:Class ;
                  rdfs:label "UseCondition"@en .
 
 
-###  http://www.w3id.org/dpp#User
+###  http://w3id.org/dpp#User
 dpp:User rdf:type owl:Class ;
          rdfs:subClassOf :Agent ;
          <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "470.3111154451776"^^xsd:double ;
@@ -720,7 +720,7 @@ dpp:User rdf:type owl:Class ;
          rdfs:label "User"@en .
 
 
-###  http://www.w3id.org/dpp#Verification
+###  http://w3id.org/dpp#Verification
 dpp:Verification rdf:type owl:Class ;
                  <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "329.60851902073136"^^xsd:double ;
                                                                               <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "489.86607079155283"^^xsd:double ;
@@ -730,35 +730,35 @@ dpp:Verification rdf:type owl:Class ;
                  rdfs:label "Verification"@en .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#Agent
+###  http://w3id.org/dpp/UseAndMaintenance#Agent
 :Agent rdf:type owl:Class ;
-       <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/f5199444-758a-40b7-ad67-4a2a99ee3d2c> ,
-                                                           <http://www.w3id.org/dpp/UseAndMaintenance-modules/9892962b-836d-4b8e-b823-bfbc6d2d1e7b> ;
+       <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/f5199444-758a-40b7-ad67-4a2a99ee3d2c> ,
+                                                           <http://w3id.org/dpp/UseAndMaintenance-modules/9892962b-836d-4b8e-b823-bfbc6d2d1e7b> ;
        <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "1139.7473051568222"^^xsd:double ;
                                                                     <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "140.3987275216454"^^xsd:double ;
                                                                     rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                   ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#AgentRole
+###  http://w3id.org/dpp/UseAndMaintenance#AgentRole
 :AgentRole rdf:type owl:Class ;
-           <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/f5199444-758a-40b7-ad67-4a2a99ee3d2c> ;
+           <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/f5199444-758a-40b7-ad67-4a2a99ee3d2c> ;
            <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "960.1465844687827"^^xsd:double ;
                                                                         <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "460.04647561629133"^^xsd:double ;
                                                                         rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                       ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#ComplexTemporalExtent
+###  http://w3id.org/dpp/UseAndMaintenance#ComplexTemporalExtent
 :ComplexTemporalExtent rdf:type owl:Class ;
-                       <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> ;
+                       <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> ;
                        <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "1119.9006684392307"^^xsd:double ;
                                                                                     <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "859.6858696623075"^^xsd:double ;
                                                                                     rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                                   ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#ContactInformation
+###  http://w3id.org/dpp/UseAndMaintenance#ContactInformation
 :ContactInformation rdf:type owl:Class ;
                     <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "659.9206080002205"^^xsd:double ;
                                                                                  <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "1070.0695144555148"^^xsd:double ;
@@ -766,7 +766,7 @@ dpp:Verification rdf:type owl:Class ;
                                                                                ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#CostQuantity
+###  http://w3id.org/dpp/UseAndMaintenance#CostQuantity
 :CostQuantity rdf:type owl:Class ;
               rdfs:subClassOf :Quantity ;
               <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "-510.45684302859206"^^xsd:double ;
@@ -778,16 +778,16 @@ dpp:Verification rdf:type owl:Class ;
 hasNumericValue decimal/float value either in USD or SEK ....""" .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#EntityWithProvenance
+###  http://w3id.org/dpp/UseAndMaintenance#EntityWithProvenance
 :EntityWithProvenance rdf:type owl:Class ;
-                      <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/9892962b-836d-4b8e-b823-bfbc6d2d1e7b> ;
+                      <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/9892962b-836d-4b8e-b823-bfbc6d2d1e7b> ;
                       <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "739.6461703386256"^^xsd:double ;
                                                                                    <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "-129.84375229740618"^^xsd:double ;
                                                                                    rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                                  ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#IntendedUse
+###  http://w3id.org/dpp/UseAndMaintenance#IntendedUse
 :IntendedUse rdf:type owl:Class ;
              <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "570.2379536636882"^^xsd:double ;
                                                                           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "820.1486635044242"^^xsd:double ;
@@ -795,7 +795,7 @@ hasNumericValue decimal/float value either in USD or SEK ....""" .
                                                                         ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#Lifespan
+###  http://w3id.org/dpp/UseAndMaintenance#Lifespan
 :Lifespan rdf:type owl:Class ;
           rdfs:subClassOf :QuantityKind ;
           <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "-69.628143224486"^^xsd:double ;
@@ -804,7 +804,7 @@ hasNumericValue decimal/float value either in USD or SEK ....""" .
                                                                      ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#LifespanQuantity
+###  http://w3id.org/dpp/UseAndMaintenance#LifespanQuantity
 :LifespanQuantity rdf:type owl:Class ;
                   rdfs:subClassOf :Quantity ;
                   <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "-799.5825005177697"^^xsd:double ;
@@ -818,7 +818,7 @@ hasNumericValue value in Years (lifespan in years)
 If a product has a lifespan of 10 years, set the hasNumericValue of the corresponding QuantityValue instance to 10.""" .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#MaintenanceCost
+###  http://w3id.org/dpp/UseAndMaintenance#MaintenanceCost
 :MaintenanceCost rdf:type owl:Class ;
                  rdfs:subClassOf :QuantityKind ;
                  <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "-250.166201330006"^^xsd:double ;
@@ -827,7 +827,7 @@ If a product has a lifespan of 10 years, set the hasNumericValue of the correspo
                                                                             ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#MaintenanceSchedule
+###  http://w3id.org/dpp/UseAndMaintenance#MaintenanceSchedule
 :MaintenanceSchedule rdf:type owl:Class ;
                      <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "209.94271890682217"^^xsd:double ;
                                                                                   <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "-449.9538005302725"^^xsd:double ;
@@ -835,7 +835,7 @@ If a product has a lifespan of 10 years, set the hasNumericValue of the correspo
                                                                                 ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#MaintenanceTeam
+###  http://w3id.org/dpp/UseAndMaintenance#MaintenanceTeam
 :MaintenanceTeam rdf:type owl:Class ;
                  rdfs:subClassOf :Agent ;
                  <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "1219.7780526813644"^^xsd:double ;
@@ -844,7 +844,7 @@ If a product has a lifespan of 10 years, set the hasNumericValue of the correspo
                                                                             ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#PercentagePerYear
+###  http://w3id.org/dpp/UseAndMaintenance#PercentagePerYear
 :PercentagePerYear rdf:type owl:Class ;
                    rdfs:subClassOf :Unit ;
                    <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "-379.83118397240804"^^xsd:double ;
@@ -854,26 +854,26 @@ If a product has a lifespan of 10 years, set the hasNumericValue of the correspo
                    rdfs:comment "Unit for quantity loss rate measured as a percentage per year" .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#PointInTime
+###  http://w3id.org/dpp/UseAndMaintenance#PointInTime
 :PointInTime rdf:type owl:Class ;
              rdfs:subClassOf :ComplexTemporalExtent ;
-             <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> ;
+             <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> ;
              <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "1260.0883095878094"^^xsd:double ;
                                                                           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "650.2246202219453"^^xsd:double ;
                                                                           rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                         ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#ProvenanceActivity
+###  http://w3id.org/dpp/UseAndMaintenance#ProvenanceActivity
 :ProvenanceActivity rdf:type owl:Class ;
-                    <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/9892962b-836d-4b8e-b823-bfbc6d2d1e7b> ;
+                    <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/9892962b-836d-4b8e-b823-bfbc6d2d1e7b> ;
                     <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "1279.6534420535577"^^xsd:double ;
                                                                                  <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "-210.49897419100995"^^xsd:double ;
                                                                                  rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                                ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#QualityLossQuantity
+###  http://w3id.org/dpp/UseAndMaintenance#QualityLossQuantity
 :QualityLossQuantity rdf:type owl:Class ;
                      rdfs:subClassOf :Quantity ;
                      <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "-699.7905687986009"^^xsd:double ;
@@ -885,7 +885,7 @@ If a product has a lifespan of 10 years, set the hasNumericValue of the correspo
 hasNumericValue  value in percentagePerYear""" .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#QualityLossRate
+###  http://w3id.org/dpp/UseAndMaintenance#QualityLossRate
 :QualityLossRate rdf:type owl:Class ;
                  rdfs:subClassOf :QuantityKind ;
                  <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "40.02409722035871"^^xsd:double ;
@@ -894,48 +894,48 @@ hasNumericValue  value in percentagePerYear""" .
                                                                             ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#Quantity
+###  http://w3id.org/dpp/UseAndMaintenance#Quantity
 :Quantity rdf:type owl:Class ;
-          <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/3688421d-d7b1-45c5-b117-5cfe3320ffd4> ;
+          <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/3688421d-d7b1-45c5-b117-5cfe3320ffd4> ;
           <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "-519.7525483346735"^^xsd:double ;
                                                                        <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "10.20215781171072"^^xsd:double ;
                                                                        rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                      ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#QuantityKind
+###  http://w3id.org/dpp/UseAndMaintenance#QuantityKind
 :QuantityKind rdf:type owl:Class ;
-              <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/3688421d-d7b1-45c5-b117-5cfe3320ffd4> ;
+              <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/3688421d-d7b1-45c5-b117-5cfe3320ffd4> ;
               <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "-320.36328028277296"^^xsd:double ;
                                                                            <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "-59.77605585233971"^^xsd:double ;
                                                                            rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                          ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#QuantityValue
+###  http://w3id.org/dpp/UseAndMaintenance#QuantityValue
 :QuantityValue rdf:type owl:Class ;
-               <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/3688421d-d7b1-45c5-b117-5cfe3320ffd4> ;
+               <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/3688421d-d7b1-45c5-b117-5cfe3320ffd4> ;
                <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "-540.4823538796089"^^xsd:double ;
                                                                             <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "160.14059370729905"^^xsd:double ;
                                                                             rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                           ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#ReferenceSystem
+###  http://w3id.org/dpp/UseAndMaintenance#ReferenceSystem
 :ReferenceSystem rdf:type owl:Class ;
-                 <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> ;
+                 <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> ;
                  <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "1380.401137192358"^^xsd:double ;
                                                                               <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "979.8768357316287"^^xsd:double ;
                                                                               rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                             ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#SEK
+###  http://w3id.org/dpp/UseAndMaintenance#SEK
 :SEK rdf:type owl:Class ;
      rdfs:subClassOf :Unit .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#SafetyMeasure
+###  http://w3id.org/dpp/UseAndMaintenance#SafetyMeasure
 :SafetyMeasure rdf:type owl:Class ;
                <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "900.304217085686"^^xsd:double ;
                                                                             <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "-250.40355247499497"^^xsd:double ;
@@ -943,50 +943,50 @@ hasNumericValue  value in percentagePerYear""" .
                                                                           ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#TemporalExtent
+###  http://w3id.org/dpp/UseAndMaintenance#TemporalExtent
 :TemporalExtent rdf:type owl:Class ;
-                <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/f5199444-758a-40b7-ad67-4a2a99ee3d2c> ,
-                                                                    <http://www.w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> ;
+                <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/f5199444-758a-40b7-ad67-4a2a99ee3d2c> ,
+                                                                    <http://w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> ;
                 <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "1159.8115692753297"^^xsd:double ;
                                                                              <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "560.3884127798827"^^xsd:double ;
                                                                              rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                            ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#TimeInterval
+###  http://w3id.org/dpp/UseAndMaintenance#TimeInterval
 :TimeInterval rdf:type owl:Class ;
               rdfs:subClassOf :ComplexTemporalExtent ;
-              <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> ;
+              <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> ;
               <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "900.0048825899992"^^xsd:double ;
                                                                            <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "730.277472641532"^^xsd:double ;
                                                                            rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                          ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#USD
+###  http://w3id.org/dpp/UseAndMaintenance#USD
 :USD rdf:type owl:Class ;
      rdfs:subClassOf :Unit .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#Unit
+###  http://w3id.org/dpp/UseAndMaintenance#Unit
 :Unit rdf:type owl:Class ;
-      <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/3688421d-d7b1-45c5-b117-5cfe3320ffd4> ;
+      <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/3688421d-d7b1-45c5-b117-5cfe3320ffd4> ;
       <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "-340.1769035504625"^^xsd:double ;
                                                                    <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "90.12565484859402"^^xsd:double ;
                                                                    rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                  ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#Value
+###  http://w3id.org/dpp/UseAndMaintenance#Value
 :Value rdf:type owl:Class ;
-       <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> ;
+       <http://ontologydesignpatterns.org/opla#isNativeTo> <http://w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> ;
        <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "1319.5496841371391"^^xsd:double ;
                                                                     <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "539.9011347429973"^^xsd:double ;
                                                                     rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                   ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#Warranty
+###  http://w3id.org/dpp/UseAndMaintenance#Warranty
 :Warranty rdf:type owl:Class ;
           <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "659.8619229431249"^^xsd:double ;
                                                                        <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "729.649485074669"^^xsd:double ;
@@ -994,7 +994,7 @@ hasNumericValue  value in percentagePerYear""" .
                                                                      ] .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#Years
+###  http://w3id.org/dpp/UseAndMaintenance#Years
 :Years rdf:type owl:Class ;
        rdfs:subClassOf :Unit .
 
@@ -1003,61 +1003,61 @@ hasNumericValue  value in percentagePerYear""" .
 #    Individuals
 #################################################################
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#SEK
+###  http://w3id.org/dpp/UseAndMaintenance#SEK
 :SEK rdf:type owl:NamedIndividual ,
               :SEK .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#USD
+###  http://w3id.org/dpp/UseAndMaintenance#USD
 :USD rdf:type owl:NamedIndividual ,
               :USD .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#Years
+###  http://w3id.org/dpp/UseAndMaintenance#Years
 :Years rdf:type owl:NamedIndividual ,
                 :Years .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#annualMaintenanceCost
+###  http://w3id.org/dpp/UseAndMaintenance#annualMaintenanceCost
 :annualMaintenanceCost rdf:type owl:NamedIndividual ,
                                 :MaintenanceCost .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance#percentagePerYear
+###  http://w3id.org/dpp/UseAndMaintenance#percentagePerYear
 :percentagePerYear rdf:type owl:NamedIndividual ,
                             :PercentagePerYear .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance-modules/e69a1c0c-bdf8-472b-8b5f-6cf8952bd8df
-<http://www.w3id.org/dpp/UseAndMaintenance-modules/e69a1c0c-bdf8-472b-8b5f-6cf8952bd8df> rdf:type owl:NamedIndividual ,
+###  http://w3id.org/dpp/UseAndMaintenance-modules/e69a1c0c-bdf8-472b-8b5f-6cf8952bd8df
+<http://w3id.org/dpp/UseAndMaintenance-modules/e69a1c0c-bdf8-472b-8b5f-6cf8952bd8df> rdf:type owl:NamedIndividual ,
                                                                                                   <http://ontologydesignpatterns.org/opla#Module> ;
                                                                                          <http://ontologydesignpatterns.org/opla#reusesPatternAsTemplate> <https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent> ;
                                                                                          rdfs:label "'Spatial Extent' ODP Instantiation Module" .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance-modules/f5199444-758a-40b7-ad67-4a2a99ee3d2c
-<http://www.w3id.org/dpp/UseAndMaintenance-modules/f5199444-758a-40b7-ad67-4a2a99ee3d2c> rdf:type owl:NamedIndividual ,
+###  http://w3id.org/dpp/UseAndMaintenance-modules/f5199444-758a-40b7-ad67-4a2a99ee3d2c
+<http://w3id.org/dpp/UseAndMaintenance-modules/f5199444-758a-40b7-ad67-4a2a99ee3d2c> rdf:type owl:NamedIndividual ,
                                                                                                   <http://ontologydesignpatterns.org/opla#Module> ;
                                                                                          <http://ontologydesignpatterns.org/opla#reusesPatternAsTemplate> <https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole> ;
                                                                                          rdfs:label "'Agent Role' ODP Instantiation Module" .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c
-<http://www.w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> rdf:type owl:NamedIndividual ,
+###  http://w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c
+<http://w3id.org/dpp/UseAndMaintenance-modules/35950a21-8fcd-4fbd-a876-e4ec20d5007c> rdf:type owl:NamedIndividual ,
                                                                                                   <http://ontologydesignpatterns.org/opla#Module> ;
                                                                                          <http://ontologydesignpatterns.org/opla#reusesPatternAsTemplate> <https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent> ;
                                                                                          rdfs:label "'Temporal Extent' ODP Instantiation Module" .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance-modules/3688421d-d7b1-45c5-b117-5cfe3320ffd4
-<http://www.w3id.org/dpp/UseAndMaintenance-modules/3688421d-d7b1-45c5-b117-5cfe3320ffd4> rdf:type owl:NamedIndividual ,
+###  http://w3id.org/dpp/UseAndMaintenance-modules/3688421d-d7b1-45c5-b117-5cfe3320ffd4
+<http://w3id.org/dpp/UseAndMaintenance-modules/3688421d-d7b1-45c5-b117-5cfe3320ffd4> rdf:type owl:NamedIndividual ,
                                                                                                   <http://ontologydesignpatterns.org/opla#Module> ;
                                                                                          <http://ontologydesignpatterns.org/opla#reusesPatternAsTemplate> <https://archive.org/services/purl/domain/modular_ontology_design_library/quantity> ;
                                                                                          rdfs:label "'Quantities and Units' ODP Instantiation Module" .
 
 
-###  http://www.w3id.org/dpp/UseAndMaintenance-modules/9892962b-836d-4b8e-b823-bfbc6d2d1e7b
-<http://www.w3id.org/dpp/UseAndMaintenance-modules/9892962b-836d-4b8e-b823-bfbc6d2d1e7b> rdf:type owl:NamedIndividual ,
+###  http://w3id.org/dpp/UseAndMaintenance-modules/9892962b-836d-4b8e-b823-bfbc6d2d1e7b
+<http://w3id.org/dpp/UseAndMaintenance-modules/9892962b-836d-4b8e-b823-bfbc6d2d1e7b> rdf:type owl:NamedIndividual ,
                                                                                                   <http://ontologydesignpatterns.org/opla#Module> ;
                                                                                          <http://ontologydesignpatterns.org/opla#reusesPatternAsTemplate> <https://archive.org/services/purl/domain/modular_ontology_design_library/provenance> ;
                                                                                          rdfs:label "'Provenance' ODP Instantiation Module" .

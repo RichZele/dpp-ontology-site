@@ -1,33 +1,33 @@
 [
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#atTime",
+    "@id": "http://w3id.org/dpp/SupplyChain#atTime",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Fix"
+        "@id": "http://w3id.org/dpp/SupplyChain#Fix"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Time"
+        "@id": "http://w3id.org/dpp/SupplyChain#Time"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#QuantityValue",
+    "@id": "http://w3id.org/dpp/SupplyChain#QuantityValue",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/49a8451a-d550-420d-8257-af6836070338"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/49a8451a-d550-420d-8257-af6836070338"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -58,13 +58,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#ParticipantRole",
+    "@id": "http://w3id.org/dpp/SupplyChain#ParticipantRole",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/296e36c4-b130-4bd6-9f1b-6b773af43522"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/296e36c4-b130-4bd6-9f1b-6b773af43522"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -95,18 +95,18 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#hasQuantity",
+    "@id": "http://w3id.org/dpp/SupplyChain#hasQuantity",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#PhysicalEntity"
+        "@id": "http://w3id.org/dpp/SupplyChain#PhysicalEntity"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Quantity"
+        "@id": "http://w3id.org/dpp/SupplyChain#Quantity"
       }
     ]
   },
@@ -138,13 +138,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#Time",
+    "@id": "http://w3id.org/dpp/SupplyChain#Time",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -229,34 +229,34 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#atPlace",
+    "@id": "http://w3id.org/dpp/SupplyChain#atPlace",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Fix"
+        "@id": "http://w3id.org/dpp/SupplyChain#Fix"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Place"
+        "@id": "http://w3id.org/dpp/SupplyChain#Place"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#StartingFix",
+    "@id": "http://w3id.org/dpp/SupplyChain#StartingFix",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -266,7 +266,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Fix"
+        "@id": "http://w3id.org/dpp/SupplyChain#Fix"
       }
     ]
   },
@@ -292,23 +292,23 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#isManagedBy",
+    "@id": "http://w3id.org/dpp/SupplyChain#isManagedBy",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#PhysicalEntity"
+        "@id": "http://w3id.org/dpp/SupplyChain#PhysicalEntity"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#SupplyChainManagement"
+        "@id": "http://w3id.org/dpp#SupplyChainManagement"
       }
     ],
     "http://www.w3.org/2002/07/owl#inverseOf": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#manages"
+        "@id": "http://w3id.org/dpp/SupplyChain#manages"
       }
     ]
   },
@@ -319,7 +319,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#ManufacturingEvent",
+    "@id": "http://w3id.org/dpp/SupplyChain#ManufacturingEvent",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -330,7 +330,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#SupplyChainEvent"
+        "@id": "http://w3id.org/dpp/SupplyChain#SupplyChainEvent"
       }
     ]
   },
@@ -356,39 +356,39 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#encompassesEvent",
+    "@id": "http://w3id.org/dpp/SupplyChain#encompassesEvent",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#SupplyChainManagement"
+        "@id": "http://w3id.org/dpp#SupplyChainManagement"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#SupplyChainEvent"
+        "@id": "http://w3id.org/dpp/SupplyChain#SupplyChainEvent"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#startsFrom",
+    "@id": "http://w3id.org/dpp/SupplyChain#startsFrom",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Segment"
+        "@id": "http://w3id.org/dpp/SupplyChain#Segment"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Fix"
+        "@id": "http://w3id.org/dpp/SupplyChain#Fix"
       }
     ]
   },
@@ -414,16 +414,16 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#SpatiotemporalExtent",
+    "@id": "http://w3id.org/dpp/SupplyChain#SpatiotemporalExtent",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
       },
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/296e36c4-b130-4bd6-9f1b-6b773af43522"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/296e36c4-b130-4bd6-9f1b-6b773af43522"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -454,37 +454,37 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#hasIdentifier",
+    "@id": "http://w3id.org/dpp/SupplyChain#hasIdentifier",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/7e9e6881-4ad1-450e-a98c-1600d0e1e41b"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/7e9e6881-4ad1-450e-a98c-1600d0e1e41b"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#PhysicalEntity"
+        "@id": "http://w3id.org/dpp/SupplyChain#PhysicalEntity"
       },
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#SupplyChainEvent"
+        "@id": "http://w3id.org/dpp/SupplyChain#SupplyChainEvent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Identifier"
+        "@id": "http://w3id.org/dpp/SupplyChain#Identifier"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#Place",
+    "@id": "http://w3id.org/dpp/SupplyChain#Place",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -515,7 +515,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasReverseLogisticsInfo",
+    "@id": "http://w3id.org/dpp#hasReverseLogisticsInfo",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -527,7 +527,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#PhysicalEntity"
+        "@id": "http://w3id.org/dpp/SupplyChain#PhysicalEntity"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -537,7 +537,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#ReverseLogistics"
+        "@id": "http://w3id.org/dpp#ReverseLogistics"
       }
     ]
   },
@@ -563,13 +563,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#Identifier",
+    "@id": "http://w3id.org/dpp/SupplyChain#Identifier",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/7e9e6881-4ad1-450e-a98c-1600d0e1e41b"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/7e9e6881-4ad1-450e-a98c-1600d0e1e41b"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -600,13 +600,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#QuantityKind",
+    "@id": "http://w3id.org/dpp/SupplyChain#QuantityKind",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/49a8451a-d550-420d-8257-af6836070338"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/49a8451a-d550-420d-8257-af6836070338"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -697,7 +697,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Product",
+    "@id": "http://w3id.org/dpp#Product",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -708,7 +708,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#PhysicalEntity"
+        "@id": "http://w3id.org/dpp/SupplyChain#PhysicalEntity"
       }
     ]
   },
@@ -734,7 +734,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain-modules/296e36c4-b130-4bd6-9f1b-6b773af43522",
+    "@id": "http://w3id.org/dpp/SupplyChain-modules/296e36c4-b130-4bd6-9f1b-6b773af43522",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "http://ontologydesignpatterns.org/opla#Module"
@@ -778,16 +778,16 @@
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
       },
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/296e36c4-b130-4bd6-9f1b-6b773af43522"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/296e36c4-b130-4bd6-9f1b-6b773af43522"
       },
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/49a8451a-d550-420d-8257-af6836070338"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/49a8451a-d550-420d-8257-af6836070338"
       },
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/7e9e6881-4ad1-450e-a98c-1600d0e1e41b"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/7e9e6881-4ad1-450e-a98c-1600d0e1e41b"
       }
     ]
   },
@@ -813,7 +813,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#ReverseLogistics",
+    "@id": "http://w3id.org/dpp#ReverseLogistics",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -845,13 +845,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#Segment",
+    "@id": "http://w3id.org/dpp/SupplyChain#Segment",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -882,23 +882,23 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#hasIdentifierType",
+    "@id": "http://w3id.org/dpp/SupplyChain#hasIdentifierType",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/7e9e6881-4ad1-450e-a98c-1600d0e1e41b"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/7e9e6881-4ad1-450e-a98c-1600d0e1e41b"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Identifier"
+        "@id": "http://w3id.org/dpp/SupplyChain#Identifier"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#IDType"
+        "@id": "http://w3id.org/dpp/SupplyChain#IDType"
       }
     ]
   },
@@ -924,7 +924,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain-modules/7e9e6881-4ad1-450e-a98c-1600d0e1e41b",
+    "@id": "http://w3id.org/dpp/SupplyChain-modules/7e9e6881-4ad1-450e-a98c-1600d0e1e41b",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "http://ontologydesignpatterns.org/opla#Module"
@@ -941,55 +941,55 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#hasUnit",
+    "@id": "http://w3id.org/dpp/SupplyChain#hasUnit",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/49a8451a-d550-420d-8257-af6836070338"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/49a8451a-d550-420d-8257-af6836070338"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#QuantityValue"
+        "@id": "http://w3id.org/dpp/SupplyChain#QuantityValue"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Unit"
+        "@id": "http://w3id.org/dpp/SupplyChain#Unit"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#subeventOf",
+    "@id": "http://w3id.org/dpp/SupplyChain#subeventOf",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/296e36c4-b130-4bd6-9f1b-6b773af43522"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/296e36c4-b130-4bd6-9f1b-6b773af43522"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Event"
+        "@id": "http://w3id.org/dpp/SupplyChain#Event"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Event"
+        "@id": "http://w3id.org/dpp/SupplyChain#Event"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#Unit",
+    "@id": "http://w3id.org/dpp/SupplyChain#Unit",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/49a8451a-d550-420d-8257-af6836070338"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/49a8451a-d550-420d-8257-af6836070338"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -1020,13 +1020,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#Event",
+    "@id": "http://w3id.org/dpp/SupplyChain#Event",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/296e36c4-b130-4bd6-9f1b-6b773af43522"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/296e36c4-b130-4bd6-9f1b-6b773af43522"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -1057,7 +1057,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#SupplyChainEvent",
+    "@id": "http://w3id.org/dpp/SupplyChain#SupplyChainEvent",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1068,7 +1068,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Event"
+        "@id": "http://w3id.org/dpp/SupplyChain#Event"
       }
     ]
   },
@@ -1136,23 +1136,23 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#isPartOf",
+    "@id": "http://w3id.org/dpp/SupplyChain#isPartOf",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#ReverseLogistics"
+        "@id": "http://w3id.org/dpp#ReverseLogistics"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#SupplyChainManagement"
+        "@id": "http://w3id.org/dpp#SupplyChainManagement"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#SupplyChainManagement",
+    "@id": "http://w3id.org/dpp#SupplyChainManagement",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1196,23 +1196,23 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#hasSpatiotemporalExtent",
+    "@id": "http://w3id.org/dpp/SupplyChain#hasSpatiotemporalExtent",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/296e36c4-b130-4bd6-9f1b-6b773af43522"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/296e36c4-b130-4bd6-9f1b-6b773af43522"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Event"
+        "@id": "http://w3id.org/dpp/SupplyChain#Event"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#SpatiotemporalExtent"
+        "@id": "http://w3id.org/dpp/SupplyChain#SpatiotemporalExtent"
       }
     ]
   },
@@ -1223,13 +1223,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#Fix",
+    "@id": "http://w3id.org/dpp/SupplyChain#Fix",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -1260,55 +1260,55 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#hasTrajectory",
+    "@id": "http://w3id.org/dpp/SupplyChain#hasTrajectory",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#SpatiotemporalExtent"
+        "@id": "http://w3id.org/dpp/SupplyChain#SpatiotemporalExtent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Trajectory"
+        "@id": "http://w3id.org/dpp/SupplyChain#Trajectory"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#hasQuantityKind",
+    "@id": "http://w3id.org/dpp/SupplyChain#hasQuantityKind",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/49a8451a-d550-420d-8257-af6836070338"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/49a8451a-d550-420d-8257-af6836070338"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Quantity"
+        "@id": "http://w3id.org/dpp/SupplyChain#Quantity"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#QuantityKind"
+        "@id": "http://w3id.org/dpp/SupplyChain#QuantityKind"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#IDType",
+    "@id": "http://w3id.org/dpp/SupplyChain#IDType",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/7e9e6881-4ad1-450e-a98c-1600d0e1e41b"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/7e9e6881-4ad1-450e-a98c-1600d0e1e41b"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -1339,7 +1339,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain-modules/49a8451a-d550-420d-8257-af6836070338",
+    "@id": "http://w3id.org/dpp/SupplyChain-modules/49a8451a-d550-420d-8257-af6836070338",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "http://ontologydesignpatterns.org/opla#Module"
@@ -1356,7 +1356,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#Material",
+    "@id": "http://w3id.org/dpp/SupplyChain#Material",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1367,7 +1367,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#PhysicalEntity"
+        "@id": "http://w3id.org/dpp/SupplyChain#PhysicalEntity"
       }
     ]
   },
@@ -1393,7 +1393,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain",
+    "@id": "http://w3id.org/dpp/SupplyChain",
     "@type": [
       "http://www.w3.org/2002/07/owl#Ontology"
     ],
@@ -1433,7 +1433,7 @@
     ],
     "http://www.w3.org/2002/07/owl#versionIRI": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain/1.0"
+        "@id": "http://w3id.org/dpp/SupplyChain/1.0"
       }
     ],
     "http://www.w3.org/2002/07/owl#versionInfo": [
@@ -1443,13 +1443,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#Trajectory",
+    "@id": "http://w3id.org/dpp/SupplyChain#Trajectory",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -1486,21 +1486,21 @@
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
       },
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/296e36c4-b130-4bd6-9f1b-6b773af43522"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/296e36c4-b130-4bd6-9f1b-6b773af43522"
       },
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/49a8451a-d550-420d-8257-af6836070338"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/49a8451a-d550-420d-8257-af6836070338"
       },
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/7e9e6881-4ad1-450e-a98c-1600d0e1e41b"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/7e9e6881-4ad1-450e-a98c-1600d0e1e41b"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#PackagingEvent",
+    "@id": "http://w3id.org/dpp/SupplyChain#PackagingEvent",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1511,7 +1511,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#SupplyChainEvent"
+        "@id": "http://w3id.org/dpp/SupplyChain#SupplyChainEvent"
       }
     ]
   },
@@ -1537,13 +1537,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#hasNumericValue",
+    "@id": "http://w3id.org/dpp/SupplyChain#hasNumericValue",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/49a8451a-d550-420d-8257-af6836070338"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/49a8451a-d550-420d-8257-af6836070338"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -1553,7 +1553,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#QuantityValue"
+        "@id": "http://w3id.org/dpp/SupplyChain#QuantityValue"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -1584,28 +1584,28 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#nextFix",
+    "@id": "http://w3id.org/dpp/SupplyChain#nextFix",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Fix"
+        "@id": "http://w3id.org/dpp/SupplyChain#Fix"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Fix"
+        "@id": "http://w3id.org/dpp/SupplyChain#Fix"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#PhysicalEntity",
+    "@id": "http://w3id.org/dpp/SupplyChain#PhysicalEntity",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1637,7 +1637,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#DistributionEvent",
+    "@id": "http://w3id.org/dpp/SupplyChain#DistributionEvent",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1648,7 +1648,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#SupplyChainEvent"
+        "@id": "http://w3id.org/dpp/SupplyChain#SupplyChainEvent"
       }
     ]
   },
@@ -1674,34 +1674,34 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#hasSegment",
+    "@id": "http://w3id.org/dpp/SupplyChain#hasSegment",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Trajectory"
+        "@id": "http://w3id.org/dpp/SupplyChain#Trajectory"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Segment"
+        "@id": "http://w3id.org/dpp/SupplyChain#Segment"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#identifierAsText",
+    "@id": "http://w3id.org/dpp/SupplyChain#identifierAsText",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/7e9e6881-4ad1-450e-a98c-1600d0e1e41b"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/7e9e6881-4ad1-450e-a98c-1600d0e1e41b"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -1711,7 +1711,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Identifier"
+        "@id": "http://w3id.org/dpp/SupplyChain#Identifier"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -1742,7 +1742,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#LogisticsEvent",
+    "@id": "http://w3id.org/dpp/SupplyChain#LogisticsEvent",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1753,7 +1753,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#SupplyChainEvent"
+        "@id": "http://w3id.org/dpp/SupplyChain#SupplyChainEvent"
       }
     ]
   },
@@ -1779,13 +1779,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#EndingFix",
+    "@id": "http://w3id.org/dpp/SupplyChain#EndingFix",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -1795,7 +1795,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Fix"
+        "@id": "http://w3id.org/dpp/SupplyChain#Fix"
       }
     ]
   },
@@ -1827,16 +1827,16 @@
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
       },
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/296e36c4-b130-4bd6-9f1b-6b773af43522"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/296e36c4-b130-4bd6-9f1b-6b773af43522"
       },
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/49a8451a-d550-420d-8257-af6836070338"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/49a8451a-d550-420d-8257-af6836070338"
       },
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/7e9e6881-4ad1-450e-a98c-1600d0e1e41b"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/7e9e6881-4ad1-450e-a98c-1600d0e1e41b"
       }
     ]
   },
@@ -1862,39 +1862,39 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#manages",
+    "@id": "http://w3id.org/dpp/SupplyChain#manages",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#SupplyChainManagement"
+        "@id": "http://w3id.org/dpp#SupplyChainManagement"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#PhysicalEntity"
+        "@id": "http://w3id.org/dpp/SupplyChain#PhysicalEntity"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#endsAt",
+    "@id": "http://w3id.org/dpp/SupplyChain#endsAt",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Segment"
+        "@id": "http://w3id.org/dpp/SupplyChain#Segment"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Fix"
+        "@id": "http://w3id.org/dpp/SupplyChain#Fix"
       }
     ]
   },
@@ -1941,49 +1941,49 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#hasFix",
+    "@id": "http://w3id.org/dpp/SupplyChain#hasFix",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Trajectory"
+        "@id": "http://w3id.org/dpp/SupplyChain#Trajectory"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Fix"
+        "@id": "http://w3id.org/dpp/SupplyChain#Fix"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#providesParticipantRole",
+    "@id": "http://w3id.org/dpp/SupplyChain#providesParticipantRole",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/296e36c4-b130-4bd6-9f1b-6b773af43522"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/296e36c4-b130-4bd6-9f1b-6b773af43522"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Event"
+        "@id": "http://w3id.org/dpp/SupplyChain#Event"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#ParticipantRole"
+        "@id": "http://w3id.org/dpp/SupplyChain#ParticipantRole"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#TransportationEvent",
+    "@id": "http://w3id.org/dpp/SupplyChain#TransportationEvent",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1994,7 +1994,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#SupplyChainEvent"
+        "@id": "http://w3id.org/dpp/SupplyChain#SupplyChainEvent"
       }
     ]
   },
@@ -2020,7 +2020,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#StorageEvent",
+    "@id": "http://w3id.org/dpp/SupplyChain#StorageEvent",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -2031,7 +2031,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#SupplyChainEvent"
+        "@id": "http://w3id.org/dpp/SupplyChain#SupplyChainEvent"
       }
     ]
   },
@@ -2078,29 +2078,29 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#isInvolvedIn",
+    "@id": "http://w3id.org/dpp/SupplyChain#isInvolvedIn",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#PhysicalEntity"
+        "@id": "http://w3id.org/dpp/SupplyChain#PhysicalEntity"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#SupplyChainEvent"
+        "@id": "http://w3id.org/dpp/SupplyChain#SupplyChainEvent"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#Quantity",
+    "@id": "http://w3id.org/dpp/SupplyChain#Quantity",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/49a8451a-d550-420d-8257-af6836070338"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/49a8451a-d550-420d-8257-af6836070338"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -2143,28 +2143,28 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#hasQuantityValue",
+    "@id": "http://w3id.org/dpp/SupplyChain#hasQuantityValue",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain-modules/49a8451a-d550-420d-8257-af6836070338"
+        "@id": "http://w3id.org/dpp/SupplyChain-modules/49a8451a-d550-420d-8257-af6836070338"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#Quantity"
+        "@id": "http://w3id.org/dpp/SupplyChain#Quantity"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#QuantityValue"
+        "@id": "http://w3id.org/dpp/SupplyChain#QuantityValue"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#DeliveryEvent",
+    "@id": "http://w3id.org/dpp/SupplyChain#DeliveryEvent",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -2175,7 +2175,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#SupplyChainEvent"
+        "@id": "http://w3id.org/dpp/SupplyChain#SupplyChainEvent"
       }
     ]
   },
@@ -2213,7 +2213,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae",
+    "@id": "http://w3id.org/dpp/SupplyChain-modules/ec237f93-642e-4b82-8309-c0dc815b3fae",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "http://ontologydesignpatterns.org/opla#Module"
@@ -2251,18 +2251,18 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/SupplyChain#undergoesReverseLogistics",
+    "@id": "http://w3id.org/dpp/SupplyChain#undergoesReverseLogistics",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/SupplyChain#PhysicalEntity"
+        "@id": "http://w3id.org/dpp/SupplyChain#PhysicalEntity"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#ReverseLogistics"
+        "@id": "http://w3id.org/dpp#ReverseLogistics"
       }
     ]
   }

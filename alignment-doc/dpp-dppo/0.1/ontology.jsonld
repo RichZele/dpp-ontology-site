@@ -23,31 +23,31 @@
   "@id" : "http://www.w3.org/2001/XMLSchema#date",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
-  "@id" : "http://www.w3id.org/dpp#Agent",
+  "@id" : "http://w3id.org/dpp#Agent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "https://w3id.org/dppo/ontology/dpp-prov/Actor"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/dpp#Component",
+  "@id" : "http://w3id.org/dpp#Component",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "https://w3id.org/dppo/ontology/dpp-core/Component"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/dpp#Material",
+  "@id" : "http://w3id.org/dpp#Material",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dppo/ontology/dpp-core/Material"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/dpp#MaterialComposition",
+  "@id" : "http://w3id.org/dpp#MaterialComposition",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dppo/ontology/dpp-info/CompositionInformation"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/dpp#Product",
+  "@id" : "http://w3id.org/dpp#Product",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dppo/ontology/dpp-odp/Product"
@@ -268,7 +268,7 @@
   "@id" : "https://w3id.org/sssom/subject_type",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.w3id.org/dpp#hasComponent",
+  "@id" : "http://w3id.org/dpp#hasComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/dppo/ontology/dpp-odp/hasPart"

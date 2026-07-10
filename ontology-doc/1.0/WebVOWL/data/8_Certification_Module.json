@@ -1,6 +1,6 @@
 [
   {
-    "@id": "http://www.w3id.org/dpp#certificationIdentifier",
+    "@id": "http://w3id.org/dpp#certificationIdentifier",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -12,7 +12,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Certification"
+        "@id": "http://w3id.org/dpp#Certification"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -28,7 +28,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#certificationAuthority",
+    "@id": "http://w3id.org/dpp#certificationAuthority",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -40,7 +40,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Certification"
+        "@id": "http://w3id.org/dpp#Certification"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -56,7 +56,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#certificationStatus",
+    "@id": "http://w3id.org/dpp#certificationStatus",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -68,7 +68,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Certification"
+        "@id": "http://w3id.org/dpp#Certification"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -84,7 +84,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#issueDate",
+    "@id": "http://w3id.org/dpp#issueDate",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -96,7 +96,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Certification"
+        "@id": "http://w3id.org/dpp#Certification"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -112,7 +112,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/certification",
+    "@id": "http://w3id.org/dpp/certification",
     "@type": [
       "http://www.w3.org/2002/07/owl#Ontology"
     ],
@@ -152,7 +152,7 @@
     ],
     "http://www.w3.org/2002/07/owl#versionIRI": [
       {
-        "@id": "http://www.w3id.org/dpp/certification/1.0"
+        "@id": "http://w3id.org/dpp/certification/1.0"
       }
     ],
     "http://www.w3.org/2002/07/owl#versionInfo": [
@@ -162,7 +162,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#certificationName",
+    "@id": "http://w3id.org/dpp#certificationName",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -174,7 +174,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Certification"
+        "@id": "http://w3id.org/dpp#Certification"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -190,7 +190,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#EnergyEfficiencyRating",
+    "@id": "http://w3id.org/dpp#EnergyEfficiencyRating",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -208,12 +208,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#Certification"
+        "@id": "http://w3id.org/dpp#Certification"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#expiryDate",
+    "@id": "http://w3id.org/dpp#expiryDate",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -225,7 +225,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Certification"
+        "@id": "http://w3id.org/dpp#Certification"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -241,7 +241,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasCertification",
+    "@id": "http://w3id.org/dpp#hasCertification",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -253,7 +253,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Product"
+        "@id": "http://w3id.org/dpp#Product"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -264,12 +264,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Certification"
+        "@id": "http://w3id.org/dpp#Certification"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#RegulatoryCompliance",
+    "@id": "http://w3id.org/dpp#RegulatoryCompliance",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -287,12 +287,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#Certification"
+        "@id": "http://w3id.org/dpp#Certification"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#certificationScope",
+    "@id": "http://w3id.org/dpp#certificationScope",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -304,7 +304,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Certification"
+        "@id": "http://w3id.org/dpp#Certification"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -320,7 +320,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#EnvironmentalCertification",
+    "@id": "http://w3id.org/dpp#EnvironmentalCertification",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -338,12 +338,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#Certification"
+        "@id": "http://w3id.org/dpp#Certification"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#SafetyCertification",
+    "@id": "http://w3id.org/dpp#SafetyCertification",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -361,12 +361,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#Certification"
+        "@id": "http://w3id.org/dpp#Certification"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Certification",
+    "@id": "http://w3id.org/dpp#Certification",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -384,7 +384,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#ConformityCertificates",
+    "@id": "http://w3id.org/dpp#ConformityCertificates",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -402,7 +402,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#Certification"
+        "@id": "http://w3id.org/dpp#Certification"
       }
     ]
   }

@@ -1,6 +1,6 @@
 [
   {
-    "@id": "http://www.w3id.org/dpp#classificationDescription",
+    "@id": "http://w3id.org/dpp#classificationDescription",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -12,7 +12,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Classification"
+        "@id": "http://w3id.org/dpp#Classification"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -28,7 +28,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#classificationName",
+    "@id": "http://w3id.org/dpp#classificationName",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -40,7 +40,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Classification"
+        "@id": "http://w3id.org/dpp#Classification"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -56,7 +56,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#classifiesProduct",
+    "@id": "http://w3id.org/dpp#classifiesProduct",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -68,7 +68,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Classification"
+        "@id": "http://w3id.org/dpp#Classification"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -79,12 +79,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Product"
+        "@id": "http://w3id.org/dpp#Product"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#classifiesMaterial",
+    "@id": "http://w3id.org/dpp#classifiesMaterial",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -96,7 +96,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Classification"
+        "@id": "http://w3id.org/dpp#Classification"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -107,12 +107,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Material"
+        "@id": "http://w3id.org/dpp#Material"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#classificationCode",
+    "@id": "http://w3id.org/dpp#classificationCode",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -124,7 +124,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Classification"
+        "@id": "http://w3id.org/dpp#Classification"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -140,7 +140,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Classification",
+    "@id": "http://w3id.org/dpp#Classification",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -158,7 +158,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/classification",
+    "@id": "http://w3id.org/dpp/classification",
     "@type": [
       "http://www.w3.org/2002/07/owl#Ontology"
     ],
@@ -198,7 +198,7 @@
     ],
     "http://www.w3.org/2002/07/owl#versionIRI": [
       {
-        "@id": "http://www.w3id.org/dpp/classification/1.0"
+        "@id": "http://w3id.org/dpp/classification/1.0"
       }
     ],
     "http://www.w3.org/2002/07/owl#versionInfo": [
@@ -208,7 +208,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#classifiesComponent",
+    "@id": "http://w3id.org/dpp#classifiesComponent",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -220,7 +220,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Classification"
+        "@id": "http://w3id.org/dpp#Classification"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -231,12 +231,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Component"
+        "@id": "http://w3id.org/dpp#Component"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasClassification",
+    "@id": "http://w3id.org/dpp#hasClassification",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -248,13 +248,13 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Component"
+        "@id": "http://w3id.org/dpp#Component"
       },
       {
-        "@id": "http://www.w3id.org/dpp#Material"
+        "@id": "http://w3id.org/dpp#Material"
       },
       {
-        "@id": "http://www.w3id.org/dpp#Product"
+        "@id": "http://w3id.org/dpp#Product"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -265,7 +265,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Classification"
+        "@id": "http://w3id.org/dpp#Classification"
       }
     ]
   }

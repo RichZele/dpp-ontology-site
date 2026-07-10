@@ -151,46 +151,46 @@
     
 
 
-    <!-- http://www.w3id.org/dpp#Agent -->
+    <!-- http://w3id.org/dpp#Agent -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/dpp#Agent">
+    <owl:Class rdf:about="http://w3id.org/dpp#Agent">
         <owl:equivalentClass rdf:resource="https://w3id.org/dppo/ontology/dpp-prov/Actor"/>
     </owl:Class>
     
 
 
-    <!-- http://www.w3id.org/dpp#Component -->
+    <!-- http://w3id.org/dpp#Component -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/dpp#Component">
+    <owl:Class rdf:about="http://w3id.org/dpp#Component">
         <owl:equivalentClass rdf:resource="https://w3id.org/dppo/ontology/dpp-core/Component"/>
     </owl:Class>
     
 
 
-    <!-- http://www.w3id.org/dpp#Material -->
+    <!-- http://w3id.org/dpp#Material -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/dpp#Material">
+    <owl:Class rdf:about="http://w3id.org/dpp#Material">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dppo/ontology/dpp-core/Material"/>
     </owl:Class>
     
 
 
-    <!-- http://www.w3id.org/dpp#MaterialComposition -->
+    <!-- http://w3id.org/dpp#MaterialComposition -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/dpp#MaterialComposition">
+    <owl:Class rdf:about="http://w3id.org/dpp#MaterialComposition">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dppo/ontology/dpp-info/CompositionInformation"/>
     </owl:Class>
     
 
 
-    <!-- http://www.w3id.org/dpp#Product -->
+    <!-- http://w3id.org/dpp#Product -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/dpp#Product">
+    <owl:Class rdf:about="http://w3id.org/dpp#Product">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dppo/ontology/dpp-odp/Product"/>
     </owl:Class>
     
@@ -332,7 +332,7 @@
         <sssom:subject_label>Agent</sssom:subject_label>
         <sssom:subject_type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     </owl:NamedIndividual>
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/dpp#hasComponent">
+    <owl:ObjectProperty rdf:about="http://w3id.org/dpp#hasComponent">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/dppo/ontology/dpp-odp/hasPart"/>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:about="https://w3id.org/dppo/ontology/dpp-odp/hasPart"/>

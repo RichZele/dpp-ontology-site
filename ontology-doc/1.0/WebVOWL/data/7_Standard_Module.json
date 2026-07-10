@@ -1,12 +1,12 @@
 [
   {
-    "@id": "http://www.w3id.org/dpp#Guarantee",
+    "@id": "http://w3id.org/dpp#Guarantee",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/standard",
+    "@id": "http://w3id.org/dpp/standard",
     "@type": [
       "http://www.w3.org/2002/07/owl#Ontology"
     ],
@@ -46,7 +46,7 @@
     ],
     "http://www.w3.org/2002/07/owl#versionIRI": [
       {
-        "@id": "http://www.w3id.org/dpp/standard/1.0"
+        "@id": "http://w3id.org/dpp/standard/1.0"
       }
     ],
     "http://www.w3.org/2002/07/owl#versionInfo": [
@@ -56,13 +56,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#ComplianceCheck",
+    "@id": "http://w3id.org/dpp#ComplianceCheck",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasBuildingCode",
+    "@id": "http://w3id.org/dpp#hasBuildingCode",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -74,7 +74,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Product"
+        "@id": "http://w3id.org/dpp#Product"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -85,12 +85,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#BuildingCode"
+        "@id": "http://w3id.org/dpp#BuildingCode"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasComplianceCheck",
+    "@id": "http://w3id.org/dpp#hasComplianceCheck",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -102,7 +102,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Product"
+        "@id": "http://w3id.org/dpp#Product"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -113,12 +113,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#ComplianceCheck"
+        "@id": "http://w3id.org/dpp#ComplianceCheck"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#standardName",
+    "@id": "http://w3id.org/dpp#standardName",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -130,7 +130,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Standard"
+        "@id": "http://w3id.org/dpp#Standard"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -146,19 +146,19 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Regulation",
+    "@id": "http://w3id.org/dpp#Regulation",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Warranty",
+    "@id": "http://w3id.org/dpp#Warranty",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#rating",
+    "@id": "http://w3id.org/dpp#rating",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -170,10 +170,10 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#FireResistanceRating"
+        "@id": "http://w3id.org/dpp#FireResistanceRating"
       },
       {
-        "@id": "http://www.w3id.org/dpp#SoundTransmissionClass"
+        "@id": "http://w3id.org/dpp#SoundTransmissionClass"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -189,7 +189,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasLiabilityDetail",
+    "@id": "http://w3id.org/dpp#hasLiabilityDetail",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -201,7 +201,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Product"
+        "@id": "http://w3id.org/dpp#Product"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -212,12 +212,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#LiabilityDetail"
+        "@id": "http://w3id.org/dpp#LiabilityDetail"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#standardDescription",
+    "@id": "http://w3id.org/dpp#standardDescription",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -229,7 +229,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Standard"
+        "@id": "http://w3id.org/dpp#Standard"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -245,7 +245,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasDeclarationOfConformity",
+    "@id": "http://w3id.org/dpp#hasDeclarationOfConformity",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -257,7 +257,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Product"
+        "@id": "http://w3id.org/dpp#Product"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -268,12 +268,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#DeclarationOfConformity"
+        "@id": "http://w3id.org/dpp#DeclarationOfConformity"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasSoundTransmissionClass",
+    "@id": "http://w3id.org/dpp#hasSoundTransmissionClass",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -285,7 +285,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Product"
+        "@id": "http://w3id.org/dpp#Product"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -296,18 +296,18 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#SoundTransmissionClass"
+        "@id": "http://w3id.org/dpp#SoundTransmissionClass"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Product",
+    "@id": "http://w3id.org/dpp#Product",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#standardIdentifier",
+    "@id": "http://w3id.org/dpp#standardIdentifier",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -319,7 +319,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Standard"
+        "@id": "http://w3id.org/dpp#Standard"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -335,7 +335,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasFireResistanceRating",
+    "@id": "http://w3id.org/dpp#hasFireResistanceRating",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -347,7 +347,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Product"
+        "@id": "http://w3id.org/dpp#Product"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -358,24 +358,24 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#FireResistanceRating"
+        "@id": "http://w3id.org/dpp#FireResistanceRating"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#FireResistanceRating",
+    "@id": "http://w3id.org/dpp#FireResistanceRating",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#BuildingCode",
+    "@id": "http://w3id.org/dpp#BuildingCode",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Standard",
+    "@id": "http://w3id.org/dpp#Standard",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -393,7 +393,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#description",
+    "@id": "http://w3id.org/dpp#description",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -405,25 +405,25 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#BuildingCode"
+        "@id": "http://w3id.org/dpp#BuildingCode"
       },
       {
-        "@id": "http://www.w3id.org/dpp#DeclarationOfConformity"
+        "@id": "http://w3id.org/dpp#DeclarationOfConformity"
       },
       {
-        "@id": "http://www.w3id.org/dpp#Guarantee"
+        "@id": "http://w3id.org/dpp#Guarantee"
       },
       {
-        "@id": "http://www.w3id.org/dpp#LiabilityDetail"
+        "@id": "http://w3id.org/dpp#LiabilityDetail"
       },
       {
-        "@id": "http://www.w3id.org/dpp#Regulation"
+        "@id": "http://w3id.org/dpp#Regulation"
       },
       {
-        "@id": "http://www.w3id.org/dpp#TechnicalDocumentation"
+        "@id": "http://w3id.org/dpp#TechnicalDocumentation"
       },
       {
-        "@id": "http://www.w3id.org/dpp#Warranty"
+        "@id": "http://w3id.org/dpp#Warranty"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -439,7 +439,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasRegulation",
+    "@id": "http://w3id.org/dpp#hasRegulation",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -451,7 +451,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Product"
+        "@id": "http://w3id.org/dpp#Product"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -462,12 +462,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Regulation"
+        "@id": "http://w3id.org/dpp#Regulation"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasGuarantee",
+    "@id": "http://w3id.org/dpp#hasGuarantee",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -479,7 +479,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Product"
+        "@id": "http://w3id.org/dpp#Product"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -490,18 +490,18 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Guarantee"
+        "@id": "http://w3id.org/dpp#Guarantee"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#LiabilityDetail",
+    "@id": "http://w3id.org/dpp#LiabilityDetail",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasWarranty",
+    "@id": "http://w3id.org/dpp#hasWarranty",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -513,7 +513,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Product"
+        "@id": "http://w3id.org/dpp#Product"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -524,18 +524,18 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Warranty"
+        "@id": "http://w3id.org/dpp#Warranty"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#TechnicalDocumentation",
+    "@id": "http://w3id.org/dpp#TechnicalDocumentation",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#regulatedBy",
+    "@id": "http://w3id.org/dpp#regulatedBy",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -547,7 +547,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Standard"
+        "@id": "http://w3id.org/dpp#Standard"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -558,12 +558,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Organization"
+        "@id": "http://w3id.org/dpp#Organization"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasTechnicalDocumentation",
+    "@id": "http://w3id.org/dpp#hasTechnicalDocumentation",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -575,7 +575,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Product"
+        "@id": "http://w3id.org/dpp#Product"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -586,12 +586,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#TechnicalDocumentation"
+        "@id": "http://w3id.org/dpp#TechnicalDocumentation"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#adheresTo",
+    "@id": "http://w3id.org/dpp#adheresTo",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -603,7 +603,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Product"
+        "@id": "http://w3id.org/dpp#Product"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -614,18 +614,18 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Standard"
+        "@id": "http://w3id.org/dpp#Standard"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#VerificationResult",
+    "@id": "http://w3id.org/dpp#VerificationResult",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#checkedAgainst",
+    "@id": "http://w3id.org/dpp#checkedAgainst",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -637,7 +637,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#ComplianceCheck"
+        "@id": "http://w3id.org/dpp#ComplianceCheck"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -648,24 +648,24 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Standard"
+        "@id": "http://w3id.org/dpp#Standard"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#DeclarationOfConformity",
+    "@id": "http://w3id.org/dpp#DeclarationOfConformity",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Organization",
+    "@id": "http://w3id.org/dpp#Organization",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasVerificationResult",
+    "@id": "http://w3id.org/dpp#hasVerificationResult",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -677,7 +677,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#ComplianceCheck"
+        "@id": "http://w3id.org/dpp#ComplianceCheck"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -688,12 +688,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#VerificationResult"
+        "@id": "http://w3id.org/dpp#VerificationResult"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#SoundTransmissionClass",
+    "@id": "http://w3id.org/dpp#SoundTransmissionClass",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ]

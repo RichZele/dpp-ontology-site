@@ -9,42 +9,42 @@
     <url2>https://w3id.org/dppo/</url2>
     <map>
       <cell>
-        <entity1 rdf:resource="http://www.w3id.org/dpp#Product" />
+        <entity1 rdf:resource="http://w3id.org/dpp#Product" />
         <entity2 rdf:resource="http://w3id.org/dppo/ontology/dpp-odp/Product" />
         <relation>&lt;</relation>
       </cell>
     </map>
     <map>
       <cell>
-        <entity1 rdf:resource="http://www.w3id.org/dpp#Component" />
+        <entity1 rdf:resource="http://w3id.org/dpp#Component" />
         <entity2 rdf:resource="http://w3id.org/dppo/ontology/dpp-core/Component" />
         <relation>=</relation>
       </cell>
     </map>
     <map>
       <cell>
-        <entity1 rdf:resource="http://www.w3id.org/dpp#Material" />
+        <entity1 rdf:resource="http://w3id.org/dpp#Material" />
         <entity2 rdf:resource="http://w3id.org/dppo/ontology/dpp-core/Material" />
         <relation>&lt;</relation>
       </cell>
     </map>
     <map>
       <cell>
-        <entity1 rdf:resource="http://www.w3id.org/dpp#MaterialComposition" />
+        <entity1 rdf:resource="http://w3id.org/dpp#MaterialComposition" />
         <entity2 rdf:resource="http://w3id.org/dppo/ontology/dpp-info/CompositionInformation" />
         <relation>&lt;</relation>
       </cell>
     </map>
     <map>
       <cell>
-        <entity1 rdf:resource="http://www.w3id.org/dpp#Agent" />
+        <entity1 rdf:resource="http://w3id.org/dpp#Agent" />
         <entity2 rdf:resource="http://w3id.org/dppo/ontology/dpp-prov/Actor" />
         <relation>=</relation>
       </cell>
     </map>
     <map>
       <cell>
-        <entity1 rdf:resource="http://www.w3id.org/dpp#hasComponent" />
+        <entity1 rdf:resource="http://w3id.org/dpp#hasComponent" />
         <entity2 rdf:resource="http://w3id.org/dppo/ontology/dpp-odp/hasPart" />
         <relation>&lt;</relation>
       </cell>

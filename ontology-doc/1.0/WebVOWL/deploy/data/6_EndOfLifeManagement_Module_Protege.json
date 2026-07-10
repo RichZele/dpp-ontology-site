@@ -1,27 +1,27 @@
 [
   {
-    "@id": "http://www.w3id.org/dpp/EoL#nextFix",
+    "@id": "http://w3id.org/dpp/EoL#nextFix",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
+        "@id": "http://w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Fix"
+        "@id": "http://w3id.org/dpp/EoL#Fix"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Fix"
+        "@id": "http://w3id.org/dpp/EoL#Fix"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL-modules/f832651f-85a0-4296-a2ff-10d79a8f59d8",
+    "@id": "http://w3id.org/dpp/EoL-modules/f832651f-85a0-4296-a2ff-10d79a8f59d8",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "http://ontologydesignpatterns.org/opla#Module"
@@ -38,13 +38,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#EndingFix",
+    "@id": "http://w3id.org/dpp/EoL#EndingFix",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
+        "@id": "http://w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -54,7 +54,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Fix"
+        "@id": "http://w3id.org/dpp/EoL#Fix"
       }
     ]
   },
@@ -80,7 +80,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL",
+    "@id": "http://w3id.org/dpp/EoL",
     "@type": [
       "http://www.w3.org/2002/07/owl#Ontology"
     ],
@@ -120,7 +120,7 @@
     ],
     "http://www.w3.org/2002/07/owl#versionIRI": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL/1.0"
+        "@id": "http://w3id.org/dpp/EoL/1.0"
       }
     ],
     "http://www.w3.org/2002/07/owl#versionInfo": [
@@ -130,13 +130,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#Place",
+    "@id": "http://w3id.org/dpp/EoL#Place",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
+        "@id": "http://w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -167,55 +167,55 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#subeventOf",
+    "@id": "http://w3id.org/dpp/EoL#subeventOf",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/1f43db29-6097-4bd0-8540-62243781cdc6"
+        "@id": "http://w3id.org/dpp/EoL-modules/1f43db29-6097-4bd0-8540-62243781cdc6"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Event"
+        "@id": "http://w3id.org/dpp/EoL#Event"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Event"
+        "@id": "http://w3id.org/dpp/EoL#Event"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#endsAt",
+    "@id": "http://w3id.org/dpp/EoL#endsAt",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
+        "@id": "http://w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Segment"
+        "@id": "http://w3id.org/dpp/EoL#Segment"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Fix"
+        "@id": "http://w3id.org/dpp/EoL#Fix"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#Type",
+    "@id": "http://w3id.org/dpp/EoL#Type",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/c2f589a8-2490-4e15-abd4-77698bf072b0"
+        "@id": "http://w3id.org/dpp/EoL-modules/c2f589a8-2490-4e15-abd4-77698bf072b0"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -267,7 +267,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasDisposalMethod",
+    "@id": "http://w3id.org/dpp#hasDisposalMethod",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -278,7 +278,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#DisposalAction"
+        "@id": "http://w3id.org/dpp/EoL#DisposalAction"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -309,7 +309,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL-modules/2fa70abf-8783-4197-84d9-2ff825f49474",
+    "@id": "http://w3id.org/dpp/EoL-modules/2fa70abf-8783-4197-84d9-2ff825f49474",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "http://ontologydesignpatterns.org/opla#Module"
@@ -326,7 +326,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#EndOfLifeManagement",
+    "@id": "http://w3id.org/dpp#EndOfLifeManagement",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -349,7 +349,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Event"
+        "@id": "http://w3id.org/dpp/EoL#Event"
       }
     ]
   },
@@ -375,13 +375,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#ParticipantRole",
+    "@id": "http://w3id.org/dpp/EoL#ParticipantRole",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/1f43db29-6097-4bd0-8540-62243781cdc6"
+        "@id": "http://w3id.org/dpp/EoL-modules/1f43db29-6097-4bd0-8540-62243781cdc6"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -417,13 +417,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#QuantityKind",
+    "@id": "http://w3id.org/dpp/EoL#QuantityKind",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/dc780b2c-3905-4b94-8bbd-164e56bcd2e3"
+        "@id": "http://w3id.org/dpp/EoL-modules/dc780b2c-3905-4b94-8bbd-164e56bcd2e3"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -454,13 +454,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#Identifier",
+    "@id": "http://w3id.org/dpp/EoL#Identifier",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/2fa70abf-8783-4197-84d9-2ff825f49474"
+        "@id": "http://w3id.org/dpp/EoL-modules/2fa70abf-8783-4197-84d9-2ff825f49474"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -518,7 +518,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Reduce",
+    "@id": "http://w3id.org/dpp#Reduce",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -529,7 +529,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#EndOfLifeManagement"
+        "@id": "http://w3id.org/dpp#EndOfLifeManagement"
       }
     ]
   },
@@ -609,13 +609,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#identifierAsText",
+    "@id": "http://w3id.org/dpp/EoL#identifierAsText",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/2fa70abf-8783-4197-84d9-2ff825f49474"
+        "@id": "http://w3id.org/dpp/EoL-modules/2fa70abf-8783-4197-84d9-2ff825f49474"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -625,7 +625,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Identifier"
+        "@id": "http://w3id.org/dpp/EoL#Identifier"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -656,39 +656,39 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasDisposalOption",
+    "@id": "http://w3id.org/dpp#hasDisposalOption",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#DisposalAction"
+        "@id": "http://w3id.org/dpp/EoL#DisposalAction"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#DisposalOption"
+        "@id": "http://w3id.org/dpp/EoL#DisposalOption"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#isSubjectToDisposal",
+    "@id": "http://w3id.org/dpp/EoL#isSubjectToDisposal",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Product"
+        "@id": "http://w3id.org/dpp#Product"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#DisposalAction"
+        "@id": "http://w3id.org/dpp/EoL#DisposalAction"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Repair",
+    "@id": "http://w3id.org/dpp#Repair",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -699,7 +699,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#EndOfLifeManagement"
+        "@id": "http://w3id.org/dpp#EndOfLifeManagement"
       }
     ]
   },
@@ -725,13 +725,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#hasNumericValue",
+    "@id": "http://w3id.org/dpp/EoL#hasNumericValue",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/dc780b2c-3905-4b94-8bbd-164e56bcd2e3"
+        "@id": "http://w3id.org/dpp/EoL-modules/dc780b2c-3905-4b94-8bbd-164e56bcd2e3"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -741,7 +741,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#QuantityValue"
+        "@id": "http://w3id.org/dpp/EoL#QuantityValue"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -778,18 +778,18 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#hasEnvironmentalImpact",
+    "@id": "http://w3id.org/dpp/EoL#hasEnvironmentalImpact",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#DisposalAction"
+        "@id": "http://w3id.org/dpp/EoL#DisposalAction"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#EnvironmentalImpact"
+        "@id": "http://w3id.org/dpp/EoL#EnvironmentalImpact"
       }
     ]
   },
@@ -815,28 +815,28 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#hasQuantityKind",
+    "@id": "http://w3id.org/dpp/EoL#hasQuantityKind",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/dc780b2c-3905-4b94-8bbd-164e56bcd2e3"
+        "@id": "http://w3id.org/dpp/EoL-modules/dc780b2c-3905-4b94-8bbd-164e56bcd2e3"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Quantity"
+        "@id": "http://w3id.org/dpp/EoL#Quantity"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#QuantityKind"
+        "@id": "http://w3id.org/dpp/EoL#QuantityKind"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Reuse",
+    "@id": "http://w3id.org/dpp#Reuse",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -847,7 +847,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#EndOfLifeManagement"
+        "@id": "http://w3id.org/dpp#EndOfLifeManagement"
       }
     ]
   },
@@ -912,23 +912,23 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#atPlace",
+    "@id": "http://w3id.org/dpp/EoL#atPlace",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
+        "@id": "http://w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Fix"
+        "@id": "http://w3id.org/dpp/EoL#Fix"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Place"
+        "@id": "http://w3id.org/dpp/EoL#Place"
       }
     ]
   },
@@ -954,7 +954,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Product",
+    "@id": "http://w3id.org/dpp#Product",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -986,13 +986,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#Unit",
+    "@id": "http://w3id.org/dpp/EoL#Unit",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/dc780b2c-3905-4b94-8bbd-164e56bcd2e3"
+        "@id": "http://w3id.org/dpp/EoL-modules/dc780b2c-3905-4b94-8bbd-164e56bcd2e3"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -1023,13 +1023,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#hasType",
+    "@id": "http://w3id.org/dpp/EoL#hasType",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/c2f589a8-2490-4e15-abd4-77698bf072b0"
+        "@id": "http://w3id.org/dpp/EoL-modules/c2f589a8-2490-4e15-abd4-77698bf072b0"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
@@ -1039,7 +1039,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Type"
+        "@id": "http://w3id.org/dpp/EoL#Type"
       }
     ]
   },
@@ -1052,10 +1052,10 @@
       {
         "@list": [
           {
-            "@id": "http://www.w3id.org/dpp#EndOfLifeManagement"
+            "@id": "http://w3id.org/dpp#EndOfLifeManagement"
           },
           {
-            "@id": "http://www.w3id.org/dpp#Product"
+            "@id": "http://w3id.org/dpp#Product"
           }
         ]
       }
@@ -1068,46 +1068,46 @@
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/c2f589a8-2490-4e15-abd4-77698bf072b0"
+        "@id": "http://w3id.org/dpp/EoL-modules/c2f589a8-2490-4e15-abd4-77698bf072b0"
       },
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/cd70486e-d17c-4dc0-8e8f-9d77551e0189"
+        "@id": "http://w3id.org/dpp/EoL-modules/cd70486e-d17c-4dc0-8e8f-9d77551e0189"
       },
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/dc780b2c-3905-4b94-8bbd-164e56bcd2e3"
+        "@id": "http://w3id.org/dpp/EoL-modules/dc780b2c-3905-4b94-8bbd-164e56bcd2e3"
       },
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/f832651f-85a0-4296-a2ff-10d79a8f59d8"
+        "@id": "http://w3id.org/dpp/EoL-modules/f832651f-85a0-4296-a2ff-10d79a8f59d8"
       },
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/1f43db29-6097-4bd0-8540-62243781cdc6"
+        "@id": "http://w3id.org/dpp/EoL-modules/1f43db29-6097-4bd0-8540-62243781cdc6"
       },
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/2fa70abf-8783-4197-84d9-2ff825f49474"
+        "@id": "http://w3id.org/dpp/EoL-modules/2fa70abf-8783-4197-84d9-2ff825f49474"
       },
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
+        "@id": "http://w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#hasTrajectory",
+    "@id": "http://w3id.org/dpp/EoL#hasTrajectory",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
+        "@id": "http://w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#SpatiotemporalExtent"
+        "@id": "http://w3id.org/dpp/EoL#SpatiotemporalExtent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Trajectory"
+        "@id": "http://w3id.org/dpp/EoL#Trajectory"
       }
     ]
   },
@@ -1133,7 +1133,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Rethink",
+    "@id": "http://w3id.org/dpp#Rethink",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1144,7 +1144,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#EndOfLifeManagement"
+        "@id": "http://w3id.org/dpp#EndOfLifeManagement"
       }
     ]
   },
@@ -1170,7 +1170,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Recycle",
+    "@id": "http://w3id.org/dpp#Recycle",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1181,7 +1181,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#EndOfLifeManagement"
+        "@id": "http://w3id.org/dpp#EndOfLifeManagement"
       }
     ]
   },
@@ -1207,18 +1207,18 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#hasQuantity",
+    "@id": "http://w3id.org/dpp/EoL#hasQuantity",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#EndOfLifeManagement"
+        "@id": "http://w3id.org/dpp#EndOfLifeManagement"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Quantity"
+        "@id": "http://w3id.org/dpp/EoL#Quantity"
       }
     ]
   },
@@ -1244,28 +1244,28 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#providesParticipantRole",
+    "@id": "http://w3id.org/dpp/EoL#providesParticipantRole",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/1f43db29-6097-4bd0-8540-62243781cdc6"
+        "@id": "http://w3id.org/dpp/EoL-modules/1f43db29-6097-4bd0-8540-62243781cdc6"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Event"
+        "@id": "http://w3id.org/dpp/EoL#Event"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#ParticipantRole"
+        "@id": "http://w3id.org/dpp/EoL#ParticipantRole"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#Recycler",
+    "@id": "http://w3id.org/dpp/EoL#Recycler",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1276,7 +1276,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#ParticipantRole"
+        "@id": "http://w3id.org/dpp/EoL#ParticipantRole"
       }
     ]
   },
@@ -1323,7 +1323,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#DisposalAction",
+    "@id": "http://w3id.org/dpp/EoL#DisposalAction",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1355,7 +1355,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Repurpose",
+    "@id": "http://w3id.org/dpp#Repurpose",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1366,7 +1366,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#EndOfLifeManagement"
+        "@id": "http://w3id.org/dpp#EndOfLifeManagement"
       }
     ]
   },
@@ -1392,13 +1392,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#Event",
+    "@id": "http://w3id.org/dpp/EoL#Event",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/1f43db29-6097-4bd0-8540-62243781cdc6"
+        "@id": "http://w3id.org/dpp/EoL-modules/1f43db29-6097-4bd0-8540-62243781cdc6"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -1450,7 +1450,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Recover",
+    "@id": "http://w3id.org/dpp#Recover",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1461,7 +1461,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#EndOfLifeManagement"
+        "@id": "http://w3id.org/dpp#EndOfLifeManagement"
       }
     ]
   },
@@ -1499,23 +1499,23 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#hasIdentifierType",
+    "@id": "http://w3id.org/dpp/EoL#hasIdentifierType",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/2fa70abf-8783-4197-84d9-2ff825f49474"
+        "@id": "http://w3id.org/dpp/EoL-modules/2fa70abf-8783-4197-84d9-2ff825f49474"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Identifier"
+        "@id": "http://w3id.org/dpp/EoL#Identifier"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#IDType"
+        "@id": "http://w3id.org/dpp/EoL#IDType"
       }
     ]
   },
@@ -1583,37 +1583,37 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#atTime",
+    "@id": "http://w3id.org/dpp/EoL#atTime",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
+        "@id": "http://w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Fix"
+        "@id": "http://w3id.org/dpp/EoL#Fix"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Time"
+        "@id": "http://w3id.org/dpp/EoL#Time"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#SpatiotemporalExtent",
+    "@id": "http://w3id.org/dpp/EoL#SpatiotemporalExtent",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/1f43db29-6097-4bd0-8540-62243781cdc6"
+        "@id": "http://w3id.org/dpp/EoL-modules/1f43db29-6097-4bd0-8540-62243781cdc6"
       },
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
+        "@id": "http://w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -1691,7 +1691,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Refuse",
+    "@id": "http://w3id.org/dpp#Refuse",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1702,7 +1702,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#EndOfLifeManagement"
+        "@id": "http://w3id.org/dpp#EndOfLifeManagement"
       }
     ]
   },
@@ -1749,7 +1749,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL-modules/dc780b2c-3905-4b94-8bbd-164e56bcd2e3",
+    "@id": "http://w3id.org/dpp/EoL-modules/dc780b2c-3905-4b94-8bbd-164e56bcd2e3",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "http://ontologydesignpatterns.org/opla#Module"
@@ -1766,28 +1766,28 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#hasUnit",
+    "@id": "http://w3id.org/dpp/EoL#hasUnit",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/dc780b2c-3905-4b94-8bbd-164e56bcd2e3"
+        "@id": "http://w3id.org/dpp/EoL-modules/dc780b2c-3905-4b94-8bbd-164e56bcd2e3"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#QuantityValue"
+        "@id": "http://w3id.org/dpp/EoL#QuantityValue"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Unit"
+        "@id": "http://w3id.org/dpp/EoL#Unit"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#hasDisposalReason",
+    "@id": "http://w3id.org/dpp/EoL#hasDisposalReason",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -1798,7 +1798,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#DisposalAction"
+        "@id": "http://w3id.org/dpp/EoL#DisposalAction"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -1850,13 +1850,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#QuantityValue",
+    "@id": "http://w3id.org/dpp/EoL#QuantityValue",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/dc780b2c-3905-4b94-8bbd-164e56bcd2e3"
+        "@id": "http://w3id.org/dpp/EoL-modules/dc780b2c-3905-4b94-8bbd-164e56bcd2e3"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -1887,19 +1887,19 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#managesEndOfLifeFor",
+    "@id": "http://w3id.org/dpp#managesEndOfLifeFor",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#Quantity",
+    "@id": "http://w3id.org/dpp/EoL#Quantity",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/dc780b2c-3905-4b94-8bbd-164e56bcd2e3"
+        "@id": "http://w3id.org/dpp/EoL-modules/dc780b2c-3905-4b94-8bbd-164e56bcd2e3"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -1936,13 +1936,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#IDType",
+    "@id": "http://w3id.org/dpp/EoL#IDType",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/2fa70abf-8783-4197-84d9-2ff825f49474"
+        "@id": "http://w3id.org/dpp/EoL-modules/2fa70abf-8783-4197-84d9-2ff825f49474"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -1973,7 +1973,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Refurbish",
+    "@id": "http://w3id.org/dpp#Refurbish",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1984,7 +1984,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#EndOfLifeManagement"
+        "@id": "http://w3id.org/dpp#EndOfLifeManagement"
       }
     ]
   },
@@ -2022,13 +2022,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#hasSpatiotemporalExtent",
+    "@id": "http://w3id.org/dpp/EoL#hasSpatiotemporalExtent",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/1f43db29-6097-4bd0-8540-62243781cdc6"
+        "@id": "http://w3id.org/dpp/EoL-modules/1f43db29-6097-4bd0-8540-62243781cdc6"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
@@ -2043,7 +2043,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#SpatiotemporalExtent"
+        "@id": "http://w3id.org/dpp/EoL#SpatiotemporalExtent"
       }
     ]
   },
@@ -2056,17 +2056,17 @@
       {
         "@list": [
           {
-            "@id": "http://www.w3id.org/dpp#Product"
+            "@id": "http://w3id.org/dpp#Product"
           },
           {
-            "@id": "http://www.w3id.org/dpp/EoL#Event"
+            "@id": "http://w3id.org/dpp/EoL#Event"
           }
         ]
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL-modules/1f43db29-6097-4bd0-8540-62243781cdc6",
+    "@id": "http://w3id.org/dpp/EoL-modules/1f43db29-6097-4bd0-8540-62243781cdc6",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "http://ontologydesignpatterns.org/opla#Module"
@@ -2104,7 +2104,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL-modules/cd70486e-d17c-4dc0-8e8f-9d77551e0189",
+    "@id": "http://w3id.org/dpp/EoL-modules/cd70486e-d17c-4dc0-8e8f-9d77551e0189",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "http://ontologydesignpatterns.org/opla#Module"
@@ -2127,36 +2127,36 @@
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/c2f589a8-2490-4e15-abd4-77698bf072b0"
+        "@id": "http://w3id.org/dpp/EoL-modules/c2f589a8-2490-4e15-abd4-77698bf072b0"
       },
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/cd70486e-d17c-4dc0-8e8f-9d77551e0189"
+        "@id": "http://w3id.org/dpp/EoL-modules/cd70486e-d17c-4dc0-8e8f-9d77551e0189"
       },
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/dc780b2c-3905-4b94-8bbd-164e56bcd2e3"
+        "@id": "http://w3id.org/dpp/EoL-modules/dc780b2c-3905-4b94-8bbd-164e56bcd2e3"
       },
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/f832651f-85a0-4296-a2ff-10d79a8f59d8"
+        "@id": "http://w3id.org/dpp/EoL-modules/f832651f-85a0-4296-a2ff-10d79a8f59d8"
       },
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/1f43db29-6097-4bd0-8540-62243781cdc6"
+        "@id": "http://w3id.org/dpp/EoL-modules/1f43db29-6097-4bd0-8540-62243781cdc6"
       },
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/2fa70abf-8783-4197-84d9-2ff825f49474"
+        "@id": "http://w3id.org/dpp/EoL-modules/2fa70abf-8783-4197-84d9-2ff825f49474"
       },
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
+        "@id": "http://w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#Trajectory",
+    "@id": "http://w3id.org/dpp/EoL#Trajectory",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
+        "@id": "http://w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -2187,28 +2187,28 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#hasFix",
+    "@id": "http://w3id.org/dpp/EoL#hasFix",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
+        "@id": "http://w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Trajectory"
+        "@id": "http://w3id.org/dpp/EoL#Trajectory"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Fix"
+        "@id": "http://w3id.org/dpp/EoL#Fix"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Remanufacture",
+    "@id": "http://w3id.org/dpp#Remanufacture",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -2219,7 +2219,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#EndOfLifeManagement"
+        "@id": "http://w3id.org/dpp#EndOfLifeManagement"
       }
     ]
   },
@@ -2266,7 +2266,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL-modules/c2f589a8-2490-4e15-abd4-77698bf072b0",
+    "@id": "http://w3id.org/dpp/EoL-modules/c2f589a8-2490-4e15-abd4-77698bf072b0",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "http://ontologydesignpatterns.org/opla#Module"
@@ -2283,7 +2283,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#Refurbisher",
+    "@id": "http://w3id.org/dpp/EoL#Refurbisher",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -2294,7 +2294,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#ParticipantRole"
+        "@id": "http://w3id.org/dpp/EoL#ParticipantRole"
       }
     ]
   },
@@ -2320,13 +2320,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#StartingFix",
+    "@id": "http://w3id.org/dpp/EoL#StartingFix",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
+        "@id": "http://w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -2336,7 +2336,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Fix"
+        "@id": "http://w3id.org/dpp/EoL#Fix"
       }
     ]
   },
@@ -2368,51 +2368,51 @@
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/c2f589a8-2490-4e15-abd4-77698bf072b0"
+        "@id": "http://w3id.org/dpp/EoL-modules/c2f589a8-2490-4e15-abd4-77698bf072b0"
       },
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/cd70486e-d17c-4dc0-8e8f-9d77551e0189"
+        "@id": "http://w3id.org/dpp/EoL-modules/cd70486e-d17c-4dc0-8e8f-9d77551e0189"
       },
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/dc780b2c-3905-4b94-8bbd-164e56bcd2e3"
+        "@id": "http://w3id.org/dpp/EoL-modules/dc780b2c-3905-4b94-8bbd-164e56bcd2e3"
       },
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/f832651f-85a0-4296-a2ff-10d79a8f59d8"
+        "@id": "http://w3id.org/dpp/EoL-modules/f832651f-85a0-4296-a2ff-10d79a8f59d8"
       },
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/1f43db29-6097-4bd0-8540-62243781cdc6"
+        "@id": "http://w3id.org/dpp/EoL-modules/1f43db29-6097-4bd0-8540-62243781cdc6"
       },
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/2fa70abf-8783-4197-84d9-2ff825f49474"
+        "@id": "http://w3id.org/dpp/EoL-modules/2fa70abf-8783-4197-84d9-2ff825f49474"
       },
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
+        "@id": "http://w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#hasSegment",
+    "@id": "http://w3id.org/dpp/EoL#hasSegment",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
+        "@id": "http://w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Trajectory"
+        "@id": "http://w3id.org/dpp/EoL#Trajectory"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Segment"
+        "@id": "http://w3id.org/dpp/EoL#Segment"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#managedBy",
+    "@id": "http://w3id.org/dpp#managedBy",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -2424,43 +2424,43 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Product"
+        "@id": "http://w3id.org/dpp#Product"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#EndOfLifeManagement"
+        "@id": "http://w3id.org/dpp#EndOfLifeManagement"
       }
     ],
     "http://www.w3.org/2002/07/owl#inverseOf": [
       {
-        "@id": "http://www.w3id.org/dpp#managesEndOfLifeFor"
+        "@id": "http://w3id.org/dpp#managesEndOfLifeFor"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#hasQuantityValue",
+    "@id": "http://w3id.org/dpp/EoL#hasQuantityValue",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/dc780b2c-3905-4b94-8bbd-164e56bcd2e3"
+        "@id": "http://w3id.org/dpp/EoL-modules/dc780b2c-3905-4b94-8bbd-164e56bcd2e3"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Quantity"
+        "@id": "http://w3id.org/dpp/EoL#Quantity"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#QuantityValue"
+        "@id": "http://w3id.org/dpp/EoL#QuantityValue"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#EnvironmentalImpact",
+    "@id": "http://w3id.org/dpp/EoL#EnvironmentalImpact",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -2492,13 +2492,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#Fix",
+    "@id": "http://w3id.org/dpp/EoL#Fix",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
+        "@id": "http://w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -2529,13 +2529,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#hasIdentifier",
+    "@id": "http://w3id.org/dpp/EoL#hasIdentifier",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/2fa70abf-8783-4197-84d9-2ff825f49474"
+        "@id": "http://w3id.org/dpp/EoL-modules/2fa70abf-8783-4197-84d9-2ff825f49474"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
@@ -2545,7 +2545,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Identifier"
+        "@id": "http://w3id.org/dpp/EoL#Identifier"
       }
     ]
   },
@@ -2558,17 +2558,17 @@
       {
         "@list": [
           {
-            "@id": "http://www.w3id.org/dpp#EndOfLifeManagement"
+            "@id": "http://w3id.org/dpp#EndOfLifeManagement"
           },
           {
-            "@id": "http://www.w3id.org/dpp#Product"
+            "@id": "http://w3id.org/dpp#Product"
           }
         ]
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Resilience",
+    "@id": "http://w3id.org/dpp#Resilience",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -2579,7 +2579,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#EndOfLifeManagement"
+        "@id": "http://w3id.org/dpp#EndOfLifeManagement"
       }
     ]
   },
@@ -2605,7 +2605,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasDisposalInstruction",
+    "@id": "http://w3id.org/dpp#hasDisposalInstruction",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -2616,7 +2616,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#DisposalAction"
+        "@id": "http://w3id.org/dpp/EoL#DisposalAction"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -2647,7 +2647,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061",
+    "@id": "http://w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "http://ontologydesignpatterns.org/opla#Module"
@@ -2688,7 +2688,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#compliesWithRegulation",
+    "@id": "http://w3id.org/dpp/EoL#compliesWithRegulation",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -2699,7 +2699,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#DisposalAction"
+        "@id": "http://w3id.org/dpp/EoL#DisposalAction"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -2730,28 +2730,28 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#startsFrom",
+    "@id": "http://w3id.org/dpp/EoL#startsFrom",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
+        "@id": "http://w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Segment"
+        "@id": "http://w3id.org/dpp/EoL#Segment"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#Fix"
+        "@id": "http://w3id.org/dpp/EoL#Fix"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#Consumer",
+    "@id": "http://w3id.org/dpp/EoL#Consumer",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -2762,7 +2762,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL#ParticipantRole"
+        "@id": "http://w3id.org/dpp/EoL#ParticipantRole"
       }
     ]
   },
@@ -2788,13 +2788,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#Segment",
+    "@id": "http://w3id.org/dpp/EoL#Segment",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
+        "@id": "http://w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -2825,7 +2825,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#DisposalOption",
+    "@id": "http://w3id.org/dpp/EoL#DisposalOption",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -2857,13 +2857,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/EoL#Time",
+    "@id": "http://w3id.org/dpp/EoL#Time",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
+        "@id": "http://w3id.org/dpp/EoL-modules/514085e8-da50-4104-a89a-59703b753061"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [

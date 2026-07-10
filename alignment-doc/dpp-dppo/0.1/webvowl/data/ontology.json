@@ -2,7 +2,7 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "undefined" ],
-    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/dppo/ontology/dpp-info", "http://www.w3id.org/dpp", "https://w3id.org/sssom", "https://w3id.org/dppo/ontology/dpp-odp", "https://w3id.org/dppo/ontology/dpp-core", "https://w3id.org/dppo/ontology/dpp-prov" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/dppo/ontology/dpp-info", "http://w3id.org/dpp", "https://w3id.org/sssom", "https://w3id.org/dppo/ontology/dpp-odp", "https://w3id.org/dppo/ontology/dpp-core", "https://w3id.org/dppo/ontology/dpp-prov" ],
     "title" : {
       "undefined" : "The alignment ontology between DPP ontology and DPPO"
     },
@@ -113,8 +113,8 @@
     "attributes" : [ "external" ],
     "id" : "0"
   }, {
-    "iri" : "http://www.w3id.org/dpp#Product",
-    "baseIri" : "http://www.w3id.org/dpp",
+    "iri" : "http://w3id.org/dpp#Product",
+    "baseIri" : "http://w3id.org/dpp",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Product"
@@ -133,9 +133,9 @@
     "attributes" : [ "external", "equivalent" ],
     "id" : "4"
   }, {
-    "iri" : "http://www.w3id.org/dpp#Component",
+    "iri" : "http://w3id.org/dpp#Component",
     "equivalent" : [ "8" ],
-    "baseIri" : "http://www.w3id.org/dpp",
+    "baseIri" : "http://w3id.org/dpp",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Component"
@@ -153,8 +153,8 @@
     "attributes" : [ "external" ],
     "id" : "9"
   }, {
-    "iri" : "http://www.w3id.org/dpp#MaterialComposition",
-    "baseIri" : "http://www.w3id.org/dpp",
+    "iri" : "http://w3id.org/dpp#MaterialComposition",
+    "baseIri" : "http://w3id.org/dpp",
     "instances" : 0,
     "label" : {
       "IRI-based" : "MaterialComposition"
@@ -438,8 +438,8 @@
     "attributes" : [ "external" ],
     "id" : "11"
   }, {
-    "iri" : "http://www.w3id.org/dpp#Material",
-    "baseIri" : "http://www.w3id.org/dpp",
+    "iri" : "http://w3id.org/dpp#Material",
+    "baseIri" : "http://w3id.org/dpp",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Material"
@@ -468,9 +468,9 @@
     "attributes" : [ "external" ],
     "id" : "3"
   }, {
-    "iri" : "http://www.w3id.org/dpp#Agent",
+    "iri" : "http://w3id.org/dpp#Agent",
     "equivalent" : [ "4" ],
-    "baseIri" : "http://www.w3id.org/dpp",
+    "baseIri" : "http://w3id.org/dpp",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Agent"

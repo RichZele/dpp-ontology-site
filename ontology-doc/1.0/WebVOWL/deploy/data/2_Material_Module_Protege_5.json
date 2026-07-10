@@ -42,7 +42,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp_material",
+    "@id": "http://w3id.org/dpp_material",
     "@type": [
       "http://www.w3.org/2002/07/owl#Ontology"
     ],
@@ -82,7 +82,7 @@
     ],
     "http://www.w3.org/2002/07/owl#versionIRI": [
       {
-        "@id": "http://www.w3id.org/dpp/dpp_material/1.0"
+        "@id": "http://w3id.org/dpp/dpp_material/1.0"
       }
     ],
     "http://www.w3.org/2002/07/owl#versionInfo": [
@@ -113,13 +113,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#TemporalExtent",
+    "@id": "http://w3id.org/dpp#TemporalExtent",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/8139a624-1eae-4a22-8257-13a3729c0582"
+        "@id": "http://w3id.org/dpp/material-modules/8139a624-1eae-4a22-8257-13a3729c0582"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -171,29 +171,29 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasManufacturer",
+    "@id": "http://w3id.org/dpp#hasManufacturer",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Material"
+        "@id": "http://w3id.org/dpp#Material"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Manufacturer"
+        "@id": "http://w3id.org/dpp#Manufacturer"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#nameAsString",
+    "@id": "http://w3id.org/dpp#nameAsString",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/c0131992-1d12-4923-90e0-ff30cda96794"
+        "@id": "http://w3id.org/dpp/material-modules/c0131992-1d12-4923-90e0-ff30cda96794"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -203,7 +203,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Name"
+        "@id": "http://w3id.org/dpp#Name"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -234,7 +234,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#MaterialTreatment",
+    "@id": "http://w3id.org/dpp#MaterialTreatment",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -245,7 +245,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#Event"
+        "@id": "http://w3id.org/dpp#Event"
       }
     ]
   },
@@ -271,28 +271,28 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasContext",
+    "@id": "http://w3id.org/dpp#hasContext",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/4857fc77-f2e7-4410-a905-9648ba75754a"
+        "@id": "http://w3id.org/dpp/material-modules/4857fc77-f2e7-4410-a905-9648ba75754a"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#PropertyToBeReified"
+        "@id": "http://w3id.org/dpp#PropertyToBeReified"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Context"
+        "@id": "http://w3id.org/dpp#Context"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#QualityInspector",
+    "@id": "http://w3id.org/dpp#QualityInspector",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -303,7 +303,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#Agent"
+        "@id": "http://w3id.org/dpp#Agent"
       }
     ]
   },
@@ -350,44 +350,44 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#performsAgentRole",
+    "@id": "http://w3id.org/dpp#performsAgentRole",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/8139a624-1eae-4a22-8257-13a3729c0582"
+        "@id": "http://w3id.org/dpp/material-modules/8139a624-1eae-4a22-8257-13a3729c0582"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Agent"
+        "@id": "http://w3id.org/dpp#Agent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#AgentRole"
+        "@id": "http://w3id.org/dpp#AgentRole"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasCertification",
+    "@id": "http://w3id.org/dpp#hasCertification",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Material"
+        "@id": "http://w3id.org/dpp#Material"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Certification"
+        "@id": "http://w3id.org/dpp#Certification"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/material-modules/3d246da2-dc4a-489d-b1c7-7845db449580",
+    "@id": "http://w3id.org/dpp/material-modules/3d246da2-dc4a-489d-b1c7-7845db449580",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "http://ontologydesignpatterns.org/opla#Module"
@@ -446,23 +446,23 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasIdentifierType",
+    "@id": "http://w3id.org/dpp#hasIdentifierType",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/d2cf0f2f-cacf-4702-aa5e-eef679c6332a"
+        "@id": "http://w3id.org/dpp/material-modules/d2cf0f2f-cacf-4702-aa5e-eef679c6332a"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Identifier"
+        "@id": "http://w3id.org/dpp#Identifier"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#IDType"
+        "@id": "http://w3id.org/dpp#IDType"
       }
     ]
   },
@@ -509,18 +509,18 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasName",
+    "@id": "http://w3id.org/dpp#hasName",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Material"
+        "@id": "http://w3id.org/dpp#Material"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Name"
+        "@id": "http://w3id.org/dpp#Name"
       }
     ]
   },
@@ -546,7 +546,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Weight",
+    "@id": "http://w3id.org/dpp#Weight",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -557,7 +557,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#Quantity"
+        "@id": "http://w3id.org/dpp#Quantity"
       }
     ]
   },
@@ -625,29 +625,29 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasProperty",
+    "@id": "http://w3id.org/dpp#hasProperty",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#MaterialSpecification"
+        "@id": "http://w3id.org/dpp#MaterialSpecification"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#MaterialProperty"
+        "@id": "http://w3id.org/dpp#MaterialProperty"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#ParticipantRole",
+    "@id": "http://w3id.org/dpp#ParticipantRole",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/46946791-472d-4448-b28e-197791c41217"
+        "@id": "http://w3id.org/dpp/material-modules/46946791-472d-4448-b28e-197791c41217"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -678,7 +678,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#ConsumerRole",
+    "@id": "http://w3id.org/dpp#ConsumerRole",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -689,7 +689,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#AgentRole"
+        "@id": "http://w3id.org/dpp#AgentRole"
       }
     ]
   },
@@ -715,49 +715,49 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#startsFrom",
+    "@id": "http://w3id.org/dpp#startsFrom",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
+        "@id": "http://w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Segment"
+        "@id": "http://w3id.org/dpp#Segment"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Fix"
+        "@id": "http://w3id.org/dpp#Fix"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#itemOf",
+    "@id": "http://w3id.org/dpp#itemOf",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/675db85f-448f-4d28-bb54-5f1007c6cf6c"
+        "@id": "http://w3id.org/dpp/material-modules/675db85f-448f-4d28-bb54-5f1007c6cf6c"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#BagItem"
+        "@id": "http://w3id.org/dpp#BagItem"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Bag"
+        "@id": "http://w3id.org/dpp#Bag"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#MaterialComposition",
+    "@id": "http://w3id.org/dpp#MaterialComposition",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -768,7 +768,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#PropertyToBeReified"
+        "@id": "http://w3id.org/dpp#PropertyToBeReified"
       }
     ]
   },
@@ -815,44 +815,44 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasQuantityKind",
+    "@id": "http://w3id.org/dpp#hasQuantityKind",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/076176d3-2eda-4a17-9d6c-863e2a8b5246"
+        "@id": "http://w3id.org/dpp/material-modules/076176d3-2eda-4a17-9d6c-863e2a8b5246"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Quantity"
+        "@id": "http://w3id.org/dpp#Quantity"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#QuantityKind"
+        "@id": "http://w3id.org/dpp#QuantityKind"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#proivdesAgentRole",
+    "@id": "http://w3id.org/dpp#proivdesAgentRole",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/8139a624-1eae-4a22-8257-13a3729c0582"
+        "@id": "http://w3id.org/dpp/material-modules/8139a624-1eae-4a22-8257-13a3729c0582"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Material"
+        "@id": "http://w3id.org/dpp#Material"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#AgentRole"
+        "@id": "http://w3id.org/dpp#AgentRole"
       }
     ]
   },
@@ -863,23 +863,23 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#reifiedPropertyFrom",
+    "@id": "http://w3id.org/dpp#reifiedPropertyFrom",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/4857fc77-f2e7-4410-a905-9648ba75754a"
+        "@id": "http://w3id.org/dpp/material-modules/4857fc77-f2e7-4410-a905-9648ba75754a"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Domain"
+        "@id": "http://w3id.org/dpp#Domain"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#PropertyToBeReified"
+        "@id": "http://w3id.org/dpp#PropertyToBeReified"
       }
     ]
   },
@@ -917,13 +917,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#EndingFix",
+    "@id": "http://w3id.org/dpp#EndingFix",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
+        "@id": "http://w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -933,7 +933,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#Fix"
+        "@id": "http://w3id.org/dpp#Fix"
       }
     ]
   },
@@ -959,13 +959,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Unit",
+    "@id": "http://w3id.org/dpp#Unit",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/076176d3-2eda-4a17-9d6c-863e2a8b5246"
+        "@id": "http://w3id.org/dpp/material-modules/076176d3-2eda-4a17-9d6c-863e2a8b5246"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -996,7 +996,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#RecyclerRole",
+    "@id": "http://w3id.org/dpp#RecyclerRole",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1007,7 +1007,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#AgentRole"
+        "@id": "http://w3id.org/dpp#AgentRole"
       }
     ]
   },
@@ -1033,13 +1033,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Collection",
+    "@id": "http://w3id.org/dpp#Collection",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/675db85f-448f-4d28-bb54-5f1007c6cf6c"
+        "@id": "http://w3id.org/dpp/material-modules/675db85f-448f-4d28-bb54-5f1007c6cf6c"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -1070,7 +1070,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/material-modules/d2cf0f2f-cacf-4702-aa5e-eef679c6332a",
+    "@id": "http://w3id.org/dpp/material-modules/d2cf0f2f-cacf-4702-aa5e-eef679c6332a",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "http://ontologydesignpatterns.org/opla#Module"
@@ -1087,7 +1087,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#QualityAssessment",
+    "@id": "http://w3id.org/dpp#QualityAssessment",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1098,7 +1098,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#ProvenanceActivity"
+        "@id": "http://w3id.org/dpp#ProvenanceActivity"
       }
     ]
   },
@@ -1124,34 +1124,34 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#attributedTo",
+    "@id": "http://w3id.org/dpp#attributedTo",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/d8313f95-220c-42eb-a555-0daee9437575"
+        "@id": "http://w3id.org/dpp/material-modules/d8313f95-220c-42eb-a555-0daee9437575"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#EntityWithProvenance"
+        "@id": "http://w3id.org/dpp#EntityWithProvenance"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Agent"
+        "@id": "http://w3id.org/dpp#Agent"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Segment",
+    "@id": "http://w3id.org/dpp#Segment",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
+        "@id": "http://w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -1182,7 +1182,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#MaterialScientist",
+    "@id": "http://w3id.org/dpp#MaterialScientist",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1193,7 +1193,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#Agent"
+        "@id": "http://w3id.org/dpp#Agent"
       }
     ]
   },
@@ -1219,7 +1219,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#CompositionContext",
+    "@id": "http://w3id.org/dpp#CompositionContext",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1230,7 +1230,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#Context"
+        "@id": "http://w3id.org/dpp#Context"
       }
     ]
   },
@@ -1283,13 +1283,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#EntityWithProvenance",
+    "@id": "http://w3id.org/dpp#EntityWithProvenance",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/d8313f95-220c-42eb-a555-0daee9437575"
+        "@id": "http://w3id.org/dpp/material-modules/d8313f95-220c-42eb-a555-0daee9437575"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -1320,16 +1320,16 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#SpatiotemporalExtent",
+    "@id": "http://w3id.org/dpp#SpatiotemporalExtent",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/46946791-472d-4448-b28e-197791c41217"
+        "@id": "http://w3id.org/dpp/material-modules/46946791-472d-4448-b28e-197791c41217"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
+        "@id": "http://w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -1360,13 +1360,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Event",
+    "@id": "http://w3id.org/dpp#Event",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/46946791-472d-4448-b28e-197791c41217"
+        "@id": "http://w3id.org/dpp/material-modules/46946791-472d-4448-b28e-197791c41217"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -1397,7 +1397,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Material",
+    "@id": "http://w3id.org/dpp#Material",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1423,7 +1423,7 @@
         "@id": "http://bimerr.iot.linkeddata.es/def/material-properties#Material"
       },
       {
-        "@id": "http://www.w3id.org/dpp#EntityWithProvenance"
+        "@id": "http://w3id.org/dpp#EntityWithProvenance"
       }
     ]
   },
@@ -1449,7 +1449,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/material-modules/46946791-472d-4448-b28e-197791c41217",
+    "@id": "http://w3id.org/dpp/material-modules/46946791-472d-4448-b28e-197791c41217",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "http://ontologydesignpatterns.org/opla#Module"
@@ -1478,13 +1478,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#QuantityKind",
+    "@id": "http://w3id.org/dpp#QuantityKind",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/076176d3-2eda-4a17-9d6c-863e2a8b5246"
+        "@id": "http://w3id.org/dpp/material-modules/076176d3-2eda-4a17-9d6c-863e2a8b5246"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -1515,7 +1515,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#SupplyChainInfo",
+    "@id": "http://w3id.org/dpp#SupplyChainInfo",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1526,7 +1526,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#ProvenanceActivity"
+        "@id": "http://w3id.org/dpp#ProvenanceActivity"
       }
     ]
   },
@@ -1552,34 +1552,34 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasTemporalExtent",
+    "@id": "http://w3id.org/dpp#hasTemporalExtent",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/8139a624-1eae-4a22-8257-13a3729c0582"
+        "@id": "http://w3id.org/dpp/material-modules/8139a624-1eae-4a22-8257-13a3729c0582"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#AgentRole"
+        "@id": "http://w3id.org/dpp#AgentRole"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#TemporalExtent"
+        "@id": "http://w3id.org/dpp#TemporalExtent"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasMaterialLifetime",
+    "@id": "http://w3id.org/dpp#hasMaterialLifetime",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
-        "@id": "http://www.w3id.org/dpp#hasTemporalExtent"
+        "@id": "http://w3id.org/dpp#hasTemporalExtent"
       }
     ]
   },
@@ -1665,23 +1665,23 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#performedBy",
+    "@id": "http://w3id.org/dpp#performedBy",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/d8313f95-220c-42eb-a555-0daee9437575"
+        "@id": "http://w3id.org/dpp/material-modules/d8313f95-220c-42eb-a555-0daee9437575"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#ProvenanceActivity"
+        "@id": "http://w3id.org/dpp#ProvenanceActivity"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Agent"
+        "@id": "http://w3id.org/dpp#Agent"
       }
     ]
   },
@@ -1707,7 +1707,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/material-modules/076176d3-2eda-4a17-9d6c-863e2a8b5246",
+    "@id": "http://w3id.org/dpp/material-modules/076176d3-2eda-4a17-9d6c-863e2a8b5246",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "http://ontologydesignpatterns.org/opla#Module"
@@ -1724,7 +1724,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/material-modules/675db85f-448f-4d28-bb54-5f1007c6cf6c",
+    "@id": "http://w3id.org/dpp/material-modules/675db85f-448f-4d28-bb54-5f1007c6cf6c",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "http://ontologydesignpatterns.org/opla#Module"
@@ -1741,7 +1741,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Product",
+    "@id": "http://w3id.org/dpp#Product",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1752,7 +1752,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#EntityWithProvenance"
+        "@id": "http://w3id.org/dpp#EntityWithProvenance"
       }
     ]
   },
@@ -1820,28 +1820,28 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasQuantityValue",
+    "@id": "http://w3id.org/dpp#hasQuantityValue",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/076176d3-2eda-4a17-9d6c-863e2a8b5246"
+        "@id": "http://w3id.org/dpp/material-modules/076176d3-2eda-4a17-9d6c-863e2a8b5246"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Quantity"
+        "@id": "http://w3id.org/dpp#Quantity"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#QuantityValue"
+        "@id": "http://w3id.org/dpp#QuantityValue"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Consumer",
+    "@id": "http://w3id.org/dpp#Consumer",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1852,7 +1852,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#Agent"
+        "@id": "http://w3id.org/dpp#Agent"
       }
     ]
   },
@@ -1878,45 +1878,45 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasCompositionDetail",
+    "@id": "http://w3id.org/dpp#hasCompositionDetail",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
-        "@id": "http://www.w3id.org/dpp#reifiedPropertyTo"
+        "@id": "http://w3id.org/dpp#reifiedPropertyTo"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#providesParticipantRole",
+    "@id": "http://w3id.org/dpp#providesParticipantRole",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/46946791-472d-4448-b28e-197791c41217"
+        "@id": "http://w3id.org/dpp/material-modules/46946791-472d-4448-b28e-197791c41217"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Event"
+        "@id": "http://w3id.org/dpp#Event"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#ParticipantRole"
+        "@id": "http://w3id.org/dpp#ParticipantRole"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Place",
+    "@id": "http://w3id.org/dpp#Place",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
+        "@id": "http://w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -1974,61 +1974,61 @@
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/c0131992-1d12-4923-90e0-ff30cda96794"
+        "@id": "http://w3id.org/dpp/material-modules/c0131992-1d12-4923-90e0-ff30cda96794"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/d2cf0f2f-cacf-4702-aa5e-eef679c6332a"
+        "@id": "http://w3id.org/dpp/material-modules/d2cf0f2f-cacf-4702-aa5e-eef679c6332a"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/d8313f95-220c-42eb-a555-0daee9437575"
+        "@id": "http://w3id.org/dpp/material-modules/d8313f95-220c-42eb-a555-0daee9437575"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/0e07f8f7-0263-4efe-8fa5-6f48e403ec63"
+        "@id": "http://w3id.org/dpp/material-modules/0e07f8f7-0263-4efe-8fa5-6f48e403ec63"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/076176d3-2eda-4a17-9d6c-863e2a8b5246"
+        "@id": "http://w3id.org/dpp/material-modules/076176d3-2eda-4a17-9d6c-863e2a8b5246"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/26fe252c-dac0-4844-a19b-cb9bb5546d48"
+        "@id": "http://w3id.org/dpp/material-modules/26fe252c-dac0-4844-a19b-cb9bb5546d48"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/3d246da2-dc4a-489d-b1c7-7845db449580"
+        "@id": "http://w3id.org/dpp/material-modules/3d246da2-dc4a-489d-b1c7-7845db449580"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/46946791-472d-4448-b28e-197791c41217"
+        "@id": "http://w3id.org/dpp/material-modules/46946791-472d-4448-b28e-197791c41217"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/4857fc77-f2e7-4410-a905-9648ba75754a"
+        "@id": "http://w3id.org/dpp/material-modules/4857fc77-f2e7-4410-a905-9648ba75754a"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
+        "@id": "http://w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/675db85f-448f-4d28-bb54-5f1007c6cf6c"
+        "@id": "http://w3id.org/dpp/material-modules/675db85f-448f-4d28-bb54-5f1007c6cf6c"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/8139a624-1eae-4a22-8257-13a3729c0582"
+        "@id": "http://w3id.org/dpp/material-modules/8139a624-1eae-4a22-8257-13a3729c0582"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasTreatment",
+    "@id": "http://w3id.org/dpp#hasTreatment",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#MaterialSpecification"
+        "@id": "http://w3id.org/dpp#MaterialSpecification"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#MaterialTreatment"
+        "@id": "http://w3id.org/dpp#MaterialTreatment"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#QualityInspectorRole",
+    "@id": "http://w3id.org/dpp#QualityInspectorRole",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -2039,7 +2039,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#AgentRole"
+        "@id": "http://w3id.org/dpp#AgentRole"
       }
     ]
   },
@@ -2107,58 +2107,58 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#atTime",
+    "@id": "http://w3id.org/dpp#atTime",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
+        "@id": "http://w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Fix"
+        "@id": "http://w3id.org/dpp#Fix"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Time"
+        "@id": "http://w3id.org/dpp#Time"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasSupplyChainInfo",
+    "@id": "http://w3id.org/dpp#hasSupplyChainInfo",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Material"
+        "@id": "http://w3id.org/dpp#Material"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#SupplyChainInfo"
+        "@id": "http://w3id.org/dpp#SupplyChainInfo"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasQuantity",
+    "@id": "http://w3id.org/dpp#hasQuantity",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#MaterialProperty"
+        "@id": "http://w3id.org/dpp#MaterialProperty"
       },
       {
-        "@id": "http://www.w3id.org/dpp#MaterialSpecification"
+        "@id": "http://w3id.org/dpp#MaterialSpecification"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Quantity"
+        "@id": "http://w3id.org/dpp#Quantity"
       }
     ]
   },
@@ -2289,13 +2289,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Trajectory",
+    "@id": "http://w3id.org/dpp#Trajectory",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
+        "@id": "http://w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -2326,23 +2326,23 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasType",
+    "@id": "http://w3id.org/dpp#hasType",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/3d246da2-dc4a-489d-b1c7-7845db449580"
+        "@id": "http://w3id.org/dpp/material-modules/3d246da2-dc4a-489d-b1c7-7845db449580"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Material"
+        "@id": "http://w3id.org/dpp#Material"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Type"
+        "@id": "http://w3id.org/dpp#Type"
       }
     ]
   },
@@ -2359,23 +2359,23 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasFix",
+    "@id": "http://w3id.org/dpp#hasFix",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
+        "@id": "http://w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Trajectory"
+        "@id": "http://w3id.org/dpp#Trajectory"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Fix"
+        "@id": "http://w3id.org/dpp#Fix"
       }
     ]
   },
@@ -2401,23 +2401,23 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#endsAt",
+    "@id": "http://w3id.org/dpp#endsAt",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
+        "@id": "http://w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Segment"
+        "@id": "http://w3id.org/dpp#Segment"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Fix"
+        "@id": "http://w3id.org/dpp#Fix"
       }
     ]
   },
@@ -2464,61 +2464,61 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasUnit",
+    "@id": "http://w3id.org/dpp#hasUnit",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/076176d3-2eda-4a17-9d6c-863e2a8b5246"
+        "@id": "http://w3id.org/dpp/material-modules/076176d3-2eda-4a17-9d6c-863e2a8b5246"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#QuantityValue"
+        "@id": "http://w3id.org/dpp#QuantityValue"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Unit"
+        "@id": "http://w3id.org/dpp#Unit"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasSpatioTemporalExtent",
+    "@id": "http://w3id.org/dpp#hasSpatioTemporalExtent",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
+        "@id": "http://w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#EntityWithProvenance"
+        "@id": "http://w3id.org/dpp#EntityWithProvenance"
       },
       {
-        "@id": "http://www.w3id.org/dpp#Material"
+        "@id": "http://w3id.org/dpp#Material"
       },
       {
-        "@id": "http://www.w3id.org/dpp#MaterialTreatment"
+        "@id": "http://w3id.org/dpp#MaterialTreatment"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#SpatiotemporalExtent"
+        "@id": "http://w3id.org/dpp#SpatiotemporalExtent"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#PropertyToBeReified",
+    "@id": "http://w3id.org/dpp#PropertyToBeReified",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/4857fc77-f2e7-4410-a905-9648ba75754a"
+        "@id": "http://w3id.org/dpp/material-modules/4857fc77-f2e7-4410-a905-9648ba75754a"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -2549,7 +2549,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Manufacturing",
+    "@id": "http://w3id.org/dpp#Manufacturing",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -2560,7 +2560,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#ProvenanceActivity"
+        "@id": "http://w3id.org/dpp#ProvenanceActivity"
       }
     ]
   },
@@ -2586,13 +2586,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasComposition",
+    "@id": "http://w3id.org/dpp#hasComposition",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
-        "@id": "http://www.w3id.org/dpp#reifiedPropertyFrom"
+        "@id": "http://w3id.org/dpp#reifiedPropertyFrom"
       }
     ]
   },
@@ -2639,13 +2639,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#MaterialSpecification",
+    "@id": "http://w3id.org/dpp#MaterialSpecification",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/26fe252c-dac0-4844-a19b-cb9bb5546d48"
+        "@id": "http://w3id.org/dpp/material-modules/26fe252c-dac0-4844-a19b-cb9bb5546d48"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -2655,7 +2655,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#Domain"
+        "@id": "http://w3id.org/dpp#Domain"
       }
     ]
   },
@@ -2702,7 +2702,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#SupplierRole",
+    "@id": "http://w3id.org/dpp#SupplierRole",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -2713,7 +2713,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#AgentRole"
+        "@id": "http://w3id.org/dpp#AgentRole"
       }
     ]
   },
@@ -2739,7 +2739,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d",
+    "@id": "http://w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "http://ontologydesignpatterns.org/opla#Module"
@@ -2777,7 +2777,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#ManufacturingRole",
+    "@id": "http://w3id.org/dpp#ManufacturingRole",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -2788,7 +2788,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#AgentRole"
+        "@id": "http://w3id.org/dpp#AgentRole"
       }
     ]
   },
@@ -2835,7 +2835,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/material-modules/8139a624-1eae-4a22-8257-13a3729c0582",
+    "@id": "http://w3id.org/dpp/material-modules/8139a624-1eae-4a22-8257-13a3729c0582",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "http://ontologydesignpatterns.org/opla#Module"
@@ -2852,7 +2852,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#CompositionDetail",
+    "@id": "http://w3id.org/dpp#CompositionDetail",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -2863,7 +2863,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#Range"
+        "@id": "http://w3id.org/dpp#Range"
       }
     ]
   },
@@ -2889,13 +2889,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#AgentRole",
+    "@id": "http://w3id.org/dpp#AgentRole",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/8139a624-1eae-4a22-8257-13a3729c0582"
+        "@id": "http://w3id.org/dpp/material-modules/8139a624-1eae-4a22-8257-13a3729c0582"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -2932,7 +2932,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#MaterialProperty",
+    "@id": "http://w3id.org/dpp#MaterialProperty",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -2943,7 +2943,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#BagItem"
+        "@id": "http://w3id.org/dpp#BagItem"
       }
     ]
   },
@@ -3032,7 +3032,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/material-modules/26fe252c-dac0-4844-a19b-cb9bb5546d48",
+    "@id": "http://w3id.org/dpp/material-modules/26fe252c-dac0-4844-a19b-cb9bb5546d48",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "http://ontologydesignpatterns.org/opla#Module"
@@ -3049,23 +3049,23 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasIdentifier",
+    "@id": "http://w3id.org/dpp#hasIdentifier",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/d2cf0f2f-cacf-4702-aa5e-eef679c6332a"
+        "@id": "http://w3id.org/dpp/material-modules/d2cf0f2f-cacf-4702-aa5e-eef679c6332a"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Material"
+        "@id": "http://w3id.org/dpp#Material"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Identifier"
+        "@id": "http://w3id.org/dpp#Identifier"
       }
     ]
   },
@@ -3091,7 +3091,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Classification",
+    "@id": "http://w3id.org/dpp#Classification",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -3156,29 +3156,29 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#UsedIn",
+    "@id": "http://w3id.org/dpp#UsedIn",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Material"
+        "@id": "http://w3id.org/dpp#Material"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Product"
+        "@id": "http://w3id.org/dpp#Product"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Identifier",
+    "@id": "http://w3id.org/dpp#Identifier",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/d2cf0f2f-cacf-4702-aa5e-eef679c6332a"
+        "@id": "http://w3id.org/dpp/material-modules/d2cf0f2f-cacf-4702-aa5e-eef679c6332a"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -3230,7 +3230,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/material-modules/4857fc77-f2e7-4410-a905-9648ba75754a",
+    "@id": "http://w3id.org/dpp/material-modules/4857fc77-f2e7-4410-a905-9648ba75754a",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "http://ontologydesignpatterns.org/opla#Module"
@@ -3268,7 +3268,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Supplier",
+    "@id": "http://w3id.org/dpp#Supplier",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -3279,7 +3279,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#Agent"
+        "@id": "http://w3id.org/dpp#Agent"
       }
     ]
   },
@@ -3332,51 +3332,51 @@
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/c0131992-1d12-4923-90e0-ff30cda96794"
+        "@id": "http://w3id.org/dpp/material-modules/c0131992-1d12-4923-90e0-ff30cda96794"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/d2cf0f2f-cacf-4702-aa5e-eef679c6332a"
+        "@id": "http://w3id.org/dpp/material-modules/d2cf0f2f-cacf-4702-aa5e-eef679c6332a"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/d8313f95-220c-42eb-a555-0daee9437575"
+        "@id": "http://w3id.org/dpp/material-modules/d8313f95-220c-42eb-a555-0daee9437575"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/0e07f8f7-0263-4efe-8fa5-6f48e403ec63"
+        "@id": "http://w3id.org/dpp/material-modules/0e07f8f7-0263-4efe-8fa5-6f48e403ec63"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/076176d3-2eda-4a17-9d6c-863e2a8b5246"
+        "@id": "http://w3id.org/dpp/material-modules/076176d3-2eda-4a17-9d6c-863e2a8b5246"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/26fe252c-dac0-4844-a19b-cb9bb5546d48"
+        "@id": "http://w3id.org/dpp/material-modules/26fe252c-dac0-4844-a19b-cb9bb5546d48"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/3d246da2-dc4a-489d-b1c7-7845db449580"
+        "@id": "http://w3id.org/dpp/material-modules/3d246da2-dc4a-489d-b1c7-7845db449580"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/46946791-472d-4448-b28e-197791c41217"
+        "@id": "http://w3id.org/dpp/material-modules/46946791-472d-4448-b28e-197791c41217"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/4857fc77-f2e7-4410-a905-9648ba75754a"
+        "@id": "http://w3id.org/dpp/material-modules/4857fc77-f2e7-4410-a905-9648ba75754a"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
+        "@id": "http://w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/675db85f-448f-4d28-bb54-5f1007c6cf6c"
+        "@id": "http://w3id.org/dpp/material-modules/675db85f-448f-4d28-bb54-5f1007c6cf6c"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/8139a624-1eae-4a22-8257-13a3729c0582"
+        "@id": "http://w3id.org/dpp/material-modules/8139a624-1eae-4a22-8257-13a3729c0582"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Name",
+    "@id": "http://w3id.org/dpp#Name",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/c0131992-1d12-4923-90e0-ff30cda96794"
+        "@id": "http://w3id.org/dpp/material-modules/c0131992-1d12-4923-90e0-ff30cda96794"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -3419,7 +3419,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Volume",
+    "@id": "http://w3id.org/dpp#Volume",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -3430,7 +3430,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#Quantity"
+        "@id": "http://w3id.org/dpp#Quantity"
       }
     ]
   },
@@ -3489,18 +3489,18 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasEnvironmentalImpact",
+    "@id": "http://w3id.org/dpp#hasEnvironmentalImpact",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Material"
+        "@id": "http://w3id.org/dpp#Material"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#EnvironmentalImpact"
+        "@id": "http://w3id.org/dpp#EnvironmentalImpact"
       }
     ]
   },
@@ -3526,13 +3526,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#IDType",
+    "@id": "http://w3id.org/dpp#IDType",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/d2cf0f2f-cacf-4702-aa5e-eef679c6332a"
+        "@id": "http://w3id.org/dpp/material-modules/d2cf0f2f-cacf-4702-aa5e-eef679c6332a"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -3563,7 +3563,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#EnvironmentalImpact",
+    "@id": "http://w3id.org/dpp#EnvironmentalImpact",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -3595,28 +3595,28 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#subeventOf",
+    "@id": "http://w3id.org/dpp#subeventOf",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/46946791-472d-4448-b28e-197791c41217"
+        "@id": "http://w3id.org/dpp/material-modules/46946791-472d-4448-b28e-197791c41217"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Event"
+        "@id": "http://w3id.org/dpp#Event"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Event"
+        "@id": "http://w3id.org/dpp#Event"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Mass",
+    "@id": "http://w3id.org/dpp#Mass",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -3627,7 +3627,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#Quantity"
+        "@id": "http://w3id.org/dpp#Quantity"
       }
     ]
   },
@@ -3653,13 +3653,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#ProvenanceActivity",
+    "@id": "http://w3id.org/dpp#ProvenanceActivity",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/d8313f95-220c-42eb-a555-0daee9437575"
+        "@id": "http://w3id.org/dpp/material-modules/d8313f95-220c-42eb-a555-0daee9437575"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -3690,13 +3690,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#identifierAsText",
+    "@id": "http://w3id.org/dpp#identifierAsText",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/d2cf0f2f-cacf-4702-aa5e-eef679c6332a"
+        "@id": "http://w3id.org/dpp/material-modules/d2cf0f2f-cacf-4702-aa5e-eef679c6332a"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -3706,7 +3706,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Identifier"
+        "@id": "http://w3id.org/dpp#Identifier"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -3737,7 +3737,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/material-modules/d8313f95-220c-42eb-a555-0daee9437575",
+    "@id": "http://w3id.org/dpp/material-modules/d8313f95-220c-42eb-a555-0daee9437575",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "http://ontologydesignpatterns.org/opla#Module"
@@ -3754,13 +3754,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Domain",
+    "@id": "http://w3id.org/dpp#Domain",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/4857fc77-f2e7-4410-a905-9648ba75754a"
+        "@id": "http://w3id.org/dpp/material-modules/4857fc77-f2e7-4410-a905-9648ba75754a"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -3791,13 +3791,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Fix",
+    "@id": "http://w3id.org/dpp#Fix",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
+        "@id": "http://w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -3828,13 +3828,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#QuantityValue",
+    "@id": "http://w3id.org/dpp#QuantityValue",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/076176d3-2eda-4a17-9d6c-863e2a8b5246"
+        "@id": "http://w3id.org/dpp/material-modules/076176d3-2eda-4a17-9d6c-863e2a8b5246"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -3877,7 +3877,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#RecyclingAgent",
+    "@id": "http://w3id.org/dpp#RecyclingAgent",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -3888,7 +3888,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#Agent"
+        "@id": "http://w3id.org/dpp#Agent"
       }
     ]
   },
@@ -3935,23 +3935,23 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#derivedFrom",
+    "@id": "http://w3id.org/dpp#derivedFrom",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/d8313f95-220c-42eb-a555-0daee9437575"
+        "@id": "http://w3id.org/dpp/material-modules/d8313f95-220c-42eb-a555-0daee9437575"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#EntityWithProvenance"
+        "@id": "http://w3id.org/dpp#EntityWithProvenance"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#EntityWithProvenance"
+        "@id": "http://w3id.org/dpp#EntityWithProvenance"
       }
     ]
   },
@@ -3962,61 +3962,61 @@
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/c0131992-1d12-4923-90e0-ff30cda96794"
+        "@id": "http://w3id.org/dpp/material-modules/c0131992-1d12-4923-90e0-ff30cda96794"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/d2cf0f2f-cacf-4702-aa5e-eef679c6332a"
+        "@id": "http://w3id.org/dpp/material-modules/d2cf0f2f-cacf-4702-aa5e-eef679c6332a"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/d8313f95-220c-42eb-a555-0daee9437575"
+        "@id": "http://w3id.org/dpp/material-modules/d8313f95-220c-42eb-a555-0daee9437575"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/0e07f8f7-0263-4efe-8fa5-6f48e403ec63"
+        "@id": "http://w3id.org/dpp/material-modules/0e07f8f7-0263-4efe-8fa5-6f48e403ec63"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/076176d3-2eda-4a17-9d6c-863e2a8b5246"
+        "@id": "http://w3id.org/dpp/material-modules/076176d3-2eda-4a17-9d6c-863e2a8b5246"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/26fe252c-dac0-4844-a19b-cb9bb5546d48"
+        "@id": "http://w3id.org/dpp/material-modules/26fe252c-dac0-4844-a19b-cb9bb5546d48"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/3d246da2-dc4a-489d-b1c7-7845db449580"
+        "@id": "http://w3id.org/dpp/material-modules/3d246da2-dc4a-489d-b1c7-7845db449580"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/46946791-472d-4448-b28e-197791c41217"
+        "@id": "http://w3id.org/dpp/material-modules/46946791-472d-4448-b28e-197791c41217"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/4857fc77-f2e7-4410-a905-9648ba75754a"
+        "@id": "http://w3id.org/dpp/material-modules/4857fc77-f2e7-4410-a905-9648ba75754a"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
+        "@id": "http://w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/675db85f-448f-4d28-bb54-5f1007c6cf6c"
+        "@id": "http://w3id.org/dpp/material-modules/675db85f-448f-4d28-bb54-5f1007c6cf6c"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/8139a624-1eae-4a22-8257-13a3729c0582"
+        "@id": "http://w3id.org/dpp/material-modules/8139a624-1eae-4a22-8257-13a3729c0582"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#atPlace",
+    "@id": "http://w3id.org/dpp#atPlace",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
+        "@id": "http://w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Fix"
+        "@id": "http://w3id.org/dpp#Fix"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Place"
+        "@id": "http://w3id.org/dpp#Place"
       }
     ]
   },
@@ -4084,13 +4084,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#BagItem",
+    "@id": "http://w3id.org/dpp#BagItem",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/675db85f-448f-4d28-bb54-5f1007c6cf6c"
+        "@id": "http://w3id.org/dpp/material-modules/675db85f-448f-4d28-bb54-5f1007c6cf6c"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -4142,13 +4142,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasNumericValue",
+    "@id": "http://w3id.org/dpp#hasNumericValue",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/076176d3-2eda-4a17-9d6c-863e2a8b5246"
+        "@id": "http://w3id.org/dpp/material-modules/076176d3-2eda-4a17-9d6c-863e2a8b5246"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -4158,7 +4158,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#QuantityValue"
+        "@id": "http://w3id.org/dpp#QuantityValue"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -4210,13 +4210,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Bag",
+    "@id": "http://w3id.org/dpp#Bag",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/675db85f-448f-4d28-bb54-5f1007c6cf6c"
+        "@id": "http://w3id.org/dpp/material-modules/675db85f-448f-4d28-bb54-5f1007c6cf6c"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -4226,7 +4226,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#Collection"
+        "@id": "http://w3id.org/dpp#Collection"
       }
     ]
   },
@@ -4252,7 +4252,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/material-modules/c0131992-1d12-4923-90e0-ff30cda96794",
+    "@id": "http://w3id.org/dpp/material-modules/c0131992-1d12-4923-90e0-ff30cda96794",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "http://ontologydesignpatterns.org/opla#Module"
@@ -4269,13 +4269,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Quantity",
+    "@id": "http://w3id.org/dpp#Quantity",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/076176d3-2eda-4a17-9d6c-863e2a8b5246"
+        "@id": "http://w3id.org/dpp/material-modules/076176d3-2eda-4a17-9d6c-863e2a8b5246"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -4327,7 +4327,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Recycling",
+    "@id": "http://w3id.org/dpp#Recycling",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -4338,7 +4338,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#ProvenanceActivity"
+        "@id": "http://w3id.org/dpp#ProvenanceActivity"
       }
     ]
   },
@@ -4364,13 +4364,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Range",
+    "@id": "http://w3id.org/dpp#Range",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/4857fc77-f2e7-4410-a905-9648ba75754a"
+        "@id": "http://w3id.org/dpp/material-modules/4857fc77-f2e7-4410-a905-9648ba75754a"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -4401,18 +4401,18 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasClassification",
+    "@id": "http://w3id.org/dpp#hasClassification",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Material"
+        "@id": "http://w3id.org/dpp#Material"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Classification"
+        "@id": "http://w3id.org/dpp#Classification"
       }
     ]
   },
@@ -4438,13 +4438,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Context",
+    "@id": "http://w3id.org/dpp#Context",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/4857fc77-f2e7-4410-a905-9648ba75754a"
+        "@id": "http://w3id.org/dpp/material-modules/4857fc77-f2e7-4410-a905-9648ba75754a"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -4507,16 +4507,16 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Agent",
+    "@id": "http://w3id.org/dpp#Agent",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/d8313f95-220c-42eb-a555-0daee9437575"
+        "@id": "http://w3id.org/dpp/material-modules/d8313f95-220c-42eb-a555-0daee9437575"
       },
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/8139a624-1eae-4a22-8257-13a3729c0582"
+        "@id": "http://w3id.org/dpp/material-modules/8139a624-1eae-4a22-8257-13a3729c0582"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -4568,23 +4568,23 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#nextFix",
+    "@id": "http://w3id.org/dpp#nextFix",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
+        "@id": "http://w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Fix"
+        "@id": "http://w3id.org/dpp#Fix"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Fix"
+        "@id": "http://w3id.org/dpp#Fix"
       }
     ]
   },
@@ -4610,7 +4610,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp/material-modules/0e07f8f7-0263-4efe-8fa5-6f48e403ec63",
+    "@id": "http://w3id.org/dpp/material-modules/0e07f8f7-0263-4efe-8fa5-6f48e403ec63",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "http://ontologydesignpatterns.org/opla#Module"
@@ -4648,7 +4648,7 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Certification",
+    "@id": "http://w3id.org/dpp#Certification",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -4680,13 +4680,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Type",
+    "@id": "http://w3id.org/dpp#Type",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/3d246da2-dc4a-489d-b1c7-7845db449580"
+        "@id": "http://w3id.org/dpp/material-modules/3d246da2-dc4a-489d-b1c7-7845db449580"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -4783,34 +4783,34 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#reifiedPropertyTo",
+    "@id": "http://w3id.org/dpp#reifiedPropertyTo",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/4857fc77-f2e7-4410-a905-9648ba75754a"
+        "@id": "http://w3id.org/dpp/material-modules/4857fc77-f2e7-4410-a905-9648ba75754a"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#PropertyToBeReified"
+        "@id": "http://w3id.org/dpp#PropertyToBeReified"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Range"
+        "@id": "http://w3id.org/dpp#Range"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Time",
+    "@id": "http://w3id.org/dpp#Time",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
+        "@id": "http://w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -4841,13 +4841,13 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#StartingFix",
+    "@id": "http://w3id.org/dpp#StartingFix",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
+        "@id": "http://w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
       }
     ],
     "http://ontologydesignpatterns.org/opla-sd#entityPosition": [
@@ -4857,7 +4857,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#Fix"
+        "@id": "http://w3id.org/dpp#Fix"
       }
     ]
   },
@@ -4904,28 +4904,28 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasTrajectory",
+    "@id": "http://w3id.org/dpp#hasTrajectory",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
+        "@id": "http://w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#SpatiotemporalExtent"
+        "@id": "http://w3id.org/dpp#SpatiotemporalExtent"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Trajectory"
+        "@id": "http://w3id.org/dpp#Trajectory"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Manufacturer",
+    "@id": "http://w3id.org/dpp#Manufacturer",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -4936,7 +4936,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#Agent"
+        "@id": "http://w3id.org/dpp#Agent"
       }
     ]
   },
@@ -4983,23 +4983,23 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasSpatiotemporalExtent-1",
+    "@id": "http://w3id.org/dpp#hasSpatiotemporalExtent-1",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/46946791-472d-4448-b28e-197791c41217"
+        "@id": "http://w3id.org/dpp/material-modules/46946791-472d-4448-b28e-197791c41217"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Event"
+        "@id": "http://w3id.org/dpp#Event"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#SpatiotemporalExtent"
+        "@id": "http://w3id.org/dpp#SpatiotemporalExtent"
       }
     ]
   },
@@ -5025,23 +5025,23 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#hasSegment",
+    "@id": "http://w3id.org/dpp#hasSegment",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
+        "@id": "http://w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#Trajectory"
+        "@id": "http://w3id.org/dpp#Trajectory"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#Segment"
+        "@id": "http://w3id.org/dpp#Segment"
       }
     ]
   },
@@ -5067,28 +5067,28 @@
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#generatedBy",
+    "@id": "http://w3id.org/dpp#generatedBy",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://ontologydesignpatterns.org/opla#isNativeTo": [
       {
-        "@id": "http://www.w3id.org/dpp/material-modules/d8313f95-220c-42eb-a555-0daee9437575"
+        "@id": "http://w3id.org/dpp/material-modules/d8313f95-220c-42eb-a555-0daee9437575"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3id.org/dpp#EntityWithProvenance"
+        "@id": "http://w3id.org/dpp#EntityWithProvenance"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3id.org/dpp#ProvenanceActivity"
+        "@id": "http://w3id.org/dpp#ProvenanceActivity"
       }
     ]
   },
   {
-    "@id": "http://www.w3id.org/dpp#Usage",
+    "@id": "http://w3id.org/dpp#Usage",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -5099,7 +5099,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3id.org/dpp#ProvenanceActivity"
+        "@id": "http://w3id.org/dpp#ProvenanceActivity"
       }
     ]
   },
