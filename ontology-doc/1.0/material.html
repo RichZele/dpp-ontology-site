@@ -283,32 +283,19 @@ td {
     <script id="schema.org" type="application/ld+json">
 [
   {
-    "@id": "http://w3id.org/dpp_material",
+    "@id": "http://w3id.org/dpp/material",
     "@type": [
       "https://schema.org/DefinedTermSet"
-    ],
-    "https://schema.org/contributor": [
-      {
-        "@value": "Peter Johansson"
-      },
-      {
-        "@value": "Annika Moscati"
-      }
     ],
     "https://schema.org/creator": [
       {
         "@value": "Rahel Kebede"
       }
     ],
-    "https://schema.org/dateCreated": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-10-28"
-      }
-    ],
     "https://schema.org/description": [
       {
-        "@value": "This ontology defines key material-related concepts and properties for the Material Module of a Digital Product Passport (DPP), supporting the semantic representation of material specifications, classifications, and sustainability indicators."
+        "@language": "en",
+        "@value": "This ontology defines concepts and properties for representing material characteristics, composition, and related data within the Digital Product Passport (DPP) context."
       }
     ],
     "https://schema.org/license": [
@@ -318,6 +305,7 @@ td {
     ],
     "https://schema.org/name": [
       {
+        "@language": "en",
         "@value": "Digital Product Passport – Material Module Ontology"
       }
     ]
@@ -336,7 +324,7 @@ td {
               <strong>IRI</strong>
             </dt>
             <dd>
-              <code>http://w3id.org/dpp_material</code>
+              <code>http://w3id.org/dpp/material</code>
             </dd>
           </div>
           <div>
@@ -353,23 +341,6 @@ td {
           </div>
           <div>
             <dt>
-              <a class="hover_property" href="http://purl.org/dc/terms/contributor" title="An entity responsible for making contributions to the resource. Defined in DCMI Metadata Terms">Contributor</a>
-            </dt>
-            <dd>
-              <ul>
-                <li><p>Peter Johansson</p></li>
-                <li><p>Annika Moscati</p></li>
-              </ul>
-            </dd>
-          </div>
-          <div>
-            <dt>
-              <a class="hover_property" href="http://purl.org/dc/terms/created" title="Date of creation of the resource. Defined in DCMI Metadata Terms">Date Created</a>
-            </dt>
-            <dd><p>2023-10-28</p></dd>
-          </div>
-          <div>
-            <dt>
               <a class="hover_property" href="http://purl.org/dc/terms/license" title="A legal document giving official permission to do something with the resource. Defined in DCMI Metadata Terms">License</a>
             </dt>
             <dd>
@@ -381,7 +352,7 @@ td {
               <a class="hover_property" href="http://www.w3.org/2002/07/owl#versionIRI" title="The property that identifies the version IRI of an ontology. Defined in The OWL 2 Schema vocabulary (OWL 2)">Version Iri</a>
             </dt>
             <dd>
-              <a href="http://w3id.org/dpp/dpp_material/1.0">http://w3id.org/dpp/dpp_material/1.0</a>
+              <a href="#1.0">http://w3id.org/dpp/material/1.0</a>
             </dd>
           </div>
           <div>
@@ -394,7 +365,7 @@ td {
             <dt>
               <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
             </dt>
-            <dd><p>This ontology defines key material-related concepts and properties for the Material Module of a Digital Product Passport (DPP), supporting the semantic representation of material specifications, classifications, and sustainability indicators.</p></dd>
+            <dd><p>This ontology defines concepts and properties for representing material characteristics, composition, and related data within the Digital Product Passport (DPP) context.</p></dd>
           </div>
         </dl>
       </div>
@@ -4358,7 +4329,7 @@ td {
           </dd>
           <dt id="ns1">ns1</dt>
           <dd>
-            <code>http://www.w3id.org/</code>
+            <code>http://w3id.org/dpp/</code>
           </dd>
           <dt id="owl">owl</dt>
           <dd>

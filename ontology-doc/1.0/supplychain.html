@@ -283,32 +283,19 @@ td {
     <script id="schema.org" type="application/ld+json">
 [
   {
-    "@id": "http://w3id.org/dpp/SupplyChain",
+    "@id": "http://w3id.org/dpp/supplychain",
     "@type": [
       "https://schema.org/DefinedTermSet"
-    ],
-    "https://schema.org/contributor": [
-      {
-        "@value": "Peter Johansson"
-      },
-      {
-        "@value": "Annika Moscati"
-      }
     ],
     "https://schema.org/creator": [
       {
         "@value": "Rahel Kebede"
       }
     ],
-    "https://schema.org/dateCreated": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2024-01-13"
-      }
-    ],
     "https://schema.org/description": [
       {
-        "@value": "This ontology defines concepts and properties related to the supply chain of products in a Digital Product Passport (DPP), including suppliers, logistics, traceability, and related documentation."
+        "@language": "en",
+        "@value": "This ontology defines concepts and properties for representing supply chain actors, events, and traceability information in the context of a Digital Product Passport (DPP)."
       }
     ],
     "https://schema.org/license": [
@@ -318,6 +305,7 @@ td {
     ],
     "https://schema.org/name": [
       {
+        "@language": "en",
         "@value": "Digital Product Passport – Supply Chain Module Ontology"
       }
     ]
@@ -336,7 +324,7 @@ td {
               <strong>IRI</strong>
             </dt>
             <dd>
-              <code>http://w3id.org/dpp/SupplyChain</code>
+              <code>http://w3id.org/dpp/supplychain</code>
             </dd>
           </div>
           <div>
@@ -353,23 +341,6 @@ td {
           </div>
           <div>
             <dt>
-              <a class="hover_property" href="http://purl.org/dc/terms/contributor" title="An entity responsible for making contributions to the resource. Defined in DCMI Metadata Terms">Contributor</a>
-            </dt>
-            <dd>
-              <ul>
-                <li><p>Peter Johansson</p></li>
-                <li><p>Annika Moscati</p></li>
-              </ul>
-            </dd>
-          </div>
-          <div>
-            <dt>
-              <a class="hover_property" href="http://purl.org/dc/terms/created" title="Date of creation of the resource. Defined in DCMI Metadata Terms">Date Created</a>
-            </dt>
-            <dd><p>2024-01-13</p></dd>
-          </div>
-          <div>
-            <dt>
               <a class="hover_property" href="http://purl.org/dc/terms/license" title="A legal document giving official permission to do something with the resource. Defined in DCMI Metadata Terms">License</a>
             </dt>
             <dd>
@@ -381,7 +352,7 @@ td {
               <a class="hover_property" href="http://www.w3.org/2002/07/owl#versionIRI" title="The property that identifies the version IRI of an ontology. Defined in The OWL 2 Schema vocabulary (OWL 2)">Version Iri</a>
             </dt>
             <dd>
-              <a href="#1.0">http://w3id.org/dpp/SupplyChain/1.0</a>
+              <a href="#1.0">http://w3id.org/dpp/supplychain/1.0</a>
             </dd>
           </div>
           <div>
@@ -394,7 +365,7 @@ td {
             <dt>
               <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
             </dt>
-            <dd><p>This ontology defines concepts and properties related to the supply chain of products in a Digital Product Passport (DPP), including suppliers, logistics, traceability, and related documentation.</p></dd>
+            <dd><p>This ontology defines concepts and properties for representing supply chain actors, events, and traceability information in the context of a Digital Product Passport (DPP).</p></dd>
           </div>
         </dl>
       </div>
@@ -443,7 +414,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#PhysicalEntity">PhysicalEntity</a>
+                  <a href="http://w3id.org/dpp#PhysicalEntity">dpp:PhysicalEntity</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -467,7 +438,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#isPartOf">isPartOf</a>
+                  <a href="http://w3id.org/dpp#isPartOf">dpp:isPartOf</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -486,7 +457,7 @@ td {
                   </li>
                   <li>
                     <span>
-                      <a href="#undergoesReverseLogistics">undergoesReverseLogistics</a>
+                      <a href="http://w3id.org/dpp#undergoesReverseLogistics">dpp:undergoesReverseLogistics</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
@@ -520,13 +491,13 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="#encompassesEvent">encompassesEvent</a>
+                      <a href="http://w3id.org/dpp#encompassesEvent">dpp:encompassesEvent</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#manages">manages</a>
+                      <a href="http://w3id.org/dpp#manages">dpp:manages</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
@@ -541,13 +512,13 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="#isManagedBy">isManagedBy</a>
+                      <a href="http://w3id.org/dpp#isManagedBy">dpp:isManagedBy</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#isPartOf">isPartOf</a>
+                      <a href="http://w3id.org/dpp#isPartOf">dpp:isPartOf</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
@@ -564,7 +535,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#DeliveryEvent</code>
+                <code>http://w3id.org/dpp#DeliveryEvent</code>
               </td>
             </tr>
             <tr>
@@ -573,7 +544,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#SupplyChainEvent">SupplyChainEvent</a>
+                  <a href="http://w3id.org/dpp#SupplyChainEvent">dpp:SupplyChainEvent</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -588,7 +559,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#DistributionEvent</code>
+                <code>http://w3id.org/dpp#DistributionEvent</code>
               </td>
             </tr>
             <tr>
@@ -597,7 +568,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#SupplyChainEvent">SupplyChainEvent</a>
+                  <a href="http://w3id.org/dpp#SupplyChainEvent">dpp:SupplyChainEvent</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -612,7 +583,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#EndingFix</code>
+                <code>http://w3id.org/dpp#EndingFix</code>
               </td>
             </tr>
             <tr>
@@ -621,7 +592,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Fix">Fix</a>
+                  <a href="http://w3id.org/dpp#Fix">dpp:Fix</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -636,7 +607,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#Event</code>
+                <code>http://w3id.org/dpp#Event</code>
               </td>
             </tr>
             <tr>
@@ -647,19 +618,19 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="#hasSpatiotemporalExtent">hasSpatiotemporalExtent</a>
+                      <a href="http://w3id.org/dpp#hasSpatiotemporalExtent">dpp:hasSpatiotemporalExtent</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#providesParticipantRole">providesParticipantRole</a>
+                      <a href="http://w3id.org/dpp#providesParticipantRole">dpp:providesParticipantRole</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#subeventOf">subeventOf</a>
+                      <a href="http://w3id.org/dpp#subeventOf">dpp:subeventOf</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
@@ -672,7 +643,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#subeventOf">subeventOf</a>
+                  <a href="http://w3id.org/dpp#subeventOf">dpp:subeventOf</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -683,7 +654,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#SupplyChainEvent">SupplyChainEvent</a>
+                  <a href="http://w3id.org/dpp#SupplyChainEvent">dpp:SupplyChainEvent</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -698,7 +669,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#Fix</code>
+                <code>http://w3id.org/dpp#Fix</code>
               </td>
             </tr>
             <tr>
@@ -709,19 +680,19 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="#atPlace">atPlace</a>
+                      <a href="http://w3id.org/dpp#atPlace">dpp:atPlace</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#atTime">atTime</a>
+                      <a href="http://w3id.org/dpp#atTime">dpp:atTime</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#nextFix">nextFix</a>
+                      <a href="http://w3id.org/dpp#nextFix">dpp:nextFix</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
@@ -736,25 +707,25 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="#endsAt">endsAt</a>
+                      <a href="http://w3id.org/dpp#endsAt">dpp:endsAt</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#hasFix">hasFix</a>
+                      <a href="http://w3id.org/dpp#hasFix">dpp:hasFix</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#nextFix">nextFix</a>
+                      <a href="http://w3id.org/dpp#nextFix">dpp:nextFix</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#startsFrom">startsFrom</a>
+                      <a href="http://w3id.org/dpp#startsFrom">dpp:startsFrom</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
@@ -769,13 +740,13 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="#EndingFix">EndingFix</a>
+                      <a href="http://w3id.org/dpp#EndingFix">dpp:EndingFix</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#StartingFix">StartingFix</a>
+                      <a href="http://w3id.org/dpp#StartingFix">dpp:StartingFix</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -792,7 +763,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#IDType</code>
+                <code>http://w3id.org/dpp#IDType</code>
               </td>
             </tr>
             <tr>
@@ -801,7 +772,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#hasIdentifierType">hasIdentifierType</a>
+                  <a href="http://w3id.org/dpp#hasIdentifierType">dpp:hasIdentifierType</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -816,7 +787,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#Identifier</code>
+                <code>http://w3id.org/dpp#Identifier</code>
               </td>
             </tr>
             <tr>
@@ -827,13 +798,13 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="#hasIdentifierType">hasIdentifierType</a>
+                      <a href="http://w3id.org/dpp#hasIdentifierType">dpp:hasIdentifierType</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#identifierAsText">identifierAsText</a>
+                      <a href="http://w3id.org/dpp#identifierAsText">dpp:identifierAsText</a>
                       <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                     </span>
                   </li>
@@ -846,7 +817,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#hasIdentifier">hasIdentifier</a>
+                  <a href="http://w3id.org/dpp#hasIdentifier">dpp:hasIdentifier</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -861,7 +832,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#LogisticsEvent</code>
+                <code>http://w3id.org/dpp#LogisticsEvent</code>
               </td>
             </tr>
             <tr>
@@ -870,7 +841,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#SupplyChainEvent">SupplyChainEvent</a>
+                  <a href="http://w3id.org/dpp#SupplyChainEvent">dpp:SupplyChainEvent</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -885,7 +856,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#ManufacturingEvent</code>
+                <code>http://w3id.org/dpp#ManufacturingEvent</code>
               </td>
             </tr>
             <tr>
@@ -894,7 +865,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#SupplyChainEvent">SupplyChainEvent</a>
+                  <a href="http://w3id.org/dpp#SupplyChainEvent">dpp:SupplyChainEvent</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -909,7 +880,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#Material</code>
+                <code>http://w3id.org/dpp#Material</code>
               </td>
             </tr>
             <tr>
@@ -918,7 +889,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#PhysicalEntity">PhysicalEntity</a>
+                  <a href="http://w3id.org/dpp#PhysicalEntity">dpp:PhysicalEntity</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -933,7 +904,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#PackagingEvent</code>
+                <code>http://w3id.org/dpp#PackagingEvent</code>
               </td>
             </tr>
             <tr>
@@ -942,7 +913,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#SupplyChainEvent">SupplyChainEvent</a>
+                  <a href="http://w3id.org/dpp#SupplyChainEvent">dpp:SupplyChainEvent</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -957,7 +928,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#ParticipantRole</code>
+                <code>http://w3id.org/dpp#ParticipantRole</code>
               </td>
             </tr>
             <tr>
@@ -966,7 +937,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#providesParticipantRole">providesParticipantRole</a>
+                  <a href="http://w3id.org/dpp#providesParticipantRole">dpp:providesParticipantRole</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -981,7 +952,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#PhysicalEntity</code>
+                <code>http://w3id.org/dpp#PhysicalEntity</code>
               </td>
             </tr>
             <tr>
@@ -998,31 +969,31 @@ td {
                   </li>
                   <li>
                     <span>
-                      <a href="#hasIdentifier">hasIdentifier</a>
+                      <a href="http://w3id.org/dpp#hasIdentifier">dpp:hasIdentifier</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#hasQuantity">hasQuantity</a>
+                      <a href="http://w3id.org/dpp#hasQuantity">dpp:hasQuantity</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#isInvolvedIn">isInvolvedIn</a>
+                      <a href="http://w3id.org/dpp#isInvolvedIn">dpp:isInvolvedIn</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#isManagedBy">isManagedBy</a>
+                      <a href="http://w3id.org/dpp#isManagedBy">dpp:isManagedBy</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#undergoesReverseLogistics">undergoesReverseLogistics</a>
+                      <a href="http://w3id.org/dpp#undergoesReverseLogistics">dpp:undergoesReverseLogistics</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
@@ -1035,7 +1006,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#manages">manages</a>
+                  <a href="http://w3id.org/dpp#manages">dpp:manages</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -1054,7 +1025,7 @@ td {
                   </li>
                   <li>
                     <span>
-                      <a href="#Material">Material</a>
+                      <a href="http://w3id.org/dpp#Material">dpp:Material</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -1071,7 +1042,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#Place</code>
+                <code>http://w3id.org/dpp#Place</code>
               </td>
             </tr>
             <tr>
@@ -1080,7 +1051,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#atPlace">atPlace</a>
+                  <a href="http://w3id.org/dpp#atPlace">dpp:atPlace</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -1095,7 +1066,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#Quantity</code>
+                <code>http://w3id.org/dpp#Quantity</code>
               </td>
             </tr>
             <tr>
@@ -1106,13 +1077,13 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="#hasQuantityKind">hasQuantityKind</a>
+                      <a href="http://w3id.org/dpp#hasQuantityKind">dpp:hasQuantityKind</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#hasQuantityValue">hasQuantityValue</a>
+                      <a href="http://w3id.org/dpp#hasQuantityValue">dpp:hasQuantityValue</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
@@ -1125,7 +1096,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#hasQuantity">hasQuantity</a>
+                  <a href="http://w3id.org/dpp#hasQuantity">dpp:hasQuantity</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -1140,7 +1111,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#QuantityKind</code>
+                <code>http://w3id.org/dpp#QuantityKind</code>
               </td>
             </tr>
             <tr>
@@ -1149,7 +1120,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#hasQuantityKind">hasQuantityKind</a>
+                  <a href="http://w3id.org/dpp#hasQuantityKind">dpp:hasQuantityKind</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -1164,7 +1135,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#QuantityValue</code>
+                <code>http://w3id.org/dpp#QuantityValue</code>
               </td>
             </tr>
             <tr>
@@ -1175,13 +1146,13 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="#hasUnit">hasUnit</a>
+                      <a href="http://w3id.org/dpp#hasUnit">dpp:hasUnit</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#hasNumericValue">hasNumericValue</a>
+                      <a href="http://w3id.org/dpp#hasNumericValue">dpp:hasNumericValue</a>
                       <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                     </span>
                   </li>
@@ -1194,7 +1165,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#hasQuantityValue">hasQuantityValue</a>
+                  <a href="http://w3id.org/dpp#hasQuantityValue">dpp:hasQuantityValue</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -1209,7 +1180,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#Segment</code>
+                <code>http://w3id.org/dpp#Segment</code>
               </td>
             </tr>
             <tr>
@@ -1220,13 +1191,13 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="#endsAt">endsAt</a>
+                      <a href="http://w3id.org/dpp#endsAt">dpp:endsAt</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#startsFrom">startsFrom</a>
+                      <a href="http://w3id.org/dpp#startsFrom">dpp:startsFrom</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
@@ -1239,7 +1210,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#hasSegment">hasSegment</a>
+                  <a href="http://w3id.org/dpp#hasSegment">dpp:hasSegment</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -1254,7 +1225,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#SpatiotemporalExtent</code>
+                <code>http://w3id.org/dpp#SpatiotemporalExtent</code>
               </td>
             </tr>
             <tr>
@@ -1263,7 +1234,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#hasTrajectory">hasTrajectory</a>
+                  <a href="http://w3id.org/dpp#hasTrajectory">dpp:hasTrajectory</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -1274,7 +1245,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#hasSpatiotemporalExtent">hasSpatiotemporalExtent</a>
+                  <a href="http://w3id.org/dpp#hasSpatiotemporalExtent">dpp:hasSpatiotemporalExtent</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -1289,7 +1260,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#StartingFix</code>
+                <code>http://w3id.org/dpp#StartingFix</code>
               </td>
             </tr>
             <tr>
@@ -1298,7 +1269,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Fix">Fix</a>
+                  <a href="http://w3id.org/dpp#Fix">dpp:Fix</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1313,7 +1284,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#StorageEvent</code>
+                <code>http://w3id.org/dpp#StorageEvent</code>
               </td>
             </tr>
             <tr>
@@ -1322,7 +1293,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#SupplyChainEvent">SupplyChainEvent</a>
+                  <a href="http://w3id.org/dpp#SupplyChainEvent">dpp:SupplyChainEvent</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1337,7 +1308,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#SupplyChainEvent</code>
+                <code>http://w3id.org/dpp#SupplyChainEvent</code>
               </td>
             </tr>
             <tr>
@@ -1346,7 +1317,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Event">Event</a>
+                  <a href="http://w3id.org/dpp#Event">dpp:Event</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1357,7 +1328,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#hasIdentifier">hasIdentifier</a>
+                  <a href="http://w3id.org/dpp#hasIdentifier">dpp:hasIdentifier</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -1370,13 +1341,13 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="#encompassesEvent">encompassesEvent</a>
+                      <a href="http://w3id.org/dpp#encompassesEvent">dpp:encompassesEvent</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#isInvolvedIn">isInvolvedIn</a>
+                      <a href="http://w3id.org/dpp#isInvolvedIn">dpp:isInvolvedIn</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
@@ -1391,43 +1362,43 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="#DeliveryEvent">DeliveryEvent</a>
+                      <a href="http://w3id.org/dpp#DeliveryEvent">dpp:DeliveryEvent</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#DistributionEvent">DistributionEvent</a>
+                      <a href="http://w3id.org/dpp#DistributionEvent">dpp:DistributionEvent</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#LogisticsEvent">LogisticsEvent</a>
+                      <a href="http://w3id.org/dpp#LogisticsEvent">dpp:LogisticsEvent</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#ManufacturingEvent">ManufacturingEvent</a>
+                      <a href="http://w3id.org/dpp#ManufacturingEvent">dpp:ManufacturingEvent</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#PackagingEvent">PackagingEvent</a>
+                      <a href="http://w3id.org/dpp#PackagingEvent">dpp:PackagingEvent</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#StorageEvent">StorageEvent</a>
+                      <a href="http://w3id.org/dpp#StorageEvent">dpp:StorageEvent</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#TransportationEvent">TransportationEvent</a>
+                      <a href="http://w3id.org/dpp#TransportationEvent">dpp:TransportationEvent</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -1444,7 +1415,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#Time</code>
+                <code>http://w3id.org/dpp#Time</code>
               </td>
             </tr>
             <tr>
@@ -1453,7 +1424,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#atTime">atTime</a>
+                  <a href="http://w3id.org/dpp#atTime">dpp:atTime</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -1468,7 +1439,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#Trajectory</code>
+                <code>http://w3id.org/dpp#Trajectory</code>
               </td>
             </tr>
             <tr>
@@ -1479,13 +1450,13 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="#hasFix">hasFix</a>
+                      <a href="http://w3id.org/dpp#hasFix">dpp:hasFix</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#hasSegment">hasSegment</a>
+                      <a href="http://w3id.org/dpp#hasSegment">dpp:hasSegment</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
@@ -1498,7 +1469,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#hasTrajectory">hasTrajectory</a>
+                  <a href="http://w3id.org/dpp#hasTrajectory">dpp:hasTrajectory</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -1513,7 +1484,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#TransportationEvent</code>
+                <code>http://w3id.org/dpp#TransportationEvent</code>
               </td>
             </tr>
             <tr>
@@ -1522,7 +1493,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#SupplyChainEvent">SupplyChainEvent</a>
+                  <a href="http://w3id.org/dpp#SupplyChainEvent">dpp:SupplyChainEvent</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1537,7 +1508,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#Unit</code>
+                <code>http://w3id.org/dpp#Unit</code>
               </td>
             </tr>
             <tr>
@@ -1546,7 +1517,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#hasUnit">hasUnit</a>
+                  <a href="http://w3id.org/dpp#hasUnit">dpp:hasUnit</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -1579,7 +1550,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#PhysicalEntity">PhysicalEntity</a>
+                  <a href="http://w3id.org/dpp#PhysicalEntity">dpp:PhysicalEntity</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1605,7 +1576,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#atPlace</code>
+                <code>http://w3id.org/dpp#atPlace</code>
               </td>
             </tr>
             <tr>
@@ -1614,7 +1585,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Fix">Fix</a>
+                  <a href="http://w3id.org/dpp#Fix">dpp:Fix</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1625,7 +1596,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Place">Place</a>
+                  <a href="http://w3id.org/dpp#Place">dpp:Place</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1640,7 +1611,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#atTime</code>
+                <code>http://w3id.org/dpp#atTime</code>
               </td>
             </tr>
             <tr>
@@ -1649,7 +1620,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Fix">Fix</a>
+                  <a href="http://w3id.org/dpp#Fix">dpp:Fix</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1660,7 +1631,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Time">Time</a>
+                  <a href="http://w3id.org/dpp#Time">dpp:Time</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1675,7 +1646,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#encompassesEvent</code>
+                <code>http://w3id.org/dpp#encompassesEvent</code>
               </td>
             </tr>
             <tr>
@@ -1695,7 +1666,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#SupplyChainEvent">SupplyChainEvent</a>
+                  <a href="http://w3id.org/dpp#SupplyChainEvent">dpp:SupplyChainEvent</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1710,7 +1681,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#endsAt</code>
+                <code>http://w3id.org/dpp#endsAt</code>
               </td>
             </tr>
             <tr>
@@ -1719,7 +1690,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Segment">Segment</a>
+                  <a href="http://w3id.org/dpp#Segment">dpp:Segment</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1730,7 +1701,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Fix">Fix</a>
+                  <a href="http://w3id.org/dpp#Fix">dpp:Fix</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1745,7 +1716,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#hasFix</code>
+                <code>http://w3id.org/dpp#hasFix</code>
               </td>
             </tr>
             <tr>
@@ -1754,7 +1725,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Trajectory">Trajectory</a>
+                  <a href="http://w3id.org/dpp#Trajectory">dpp:Trajectory</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1765,7 +1736,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Fix">Fix</a>
+                  <a href="http://w3id.org/dpp#Fix">dpp:Fix</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1780,7 +1751,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#hasIdentifier</code>
+                <code>http://w3id.org/dpp#hasIdentifier</code>
               </td>
             </tr>
             <tr>
@@ -1791,13 +1762,13 @@ td {
                 <ul>
                   <li>
                     <span>
-                      <a href="#PhysicalEntity">PhysicalEntity</a>
+                      <a href="http://w3id.org/dpp#PhysicalEntity">dpp:PhysicalEntity</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#SupplyChainEvent">SupplyChainEvent</a>
+                      <a href="http://w3id.org/dpp#SupplyChainEvent">dpp:SupplyChainEvent</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -1810,7 +1781,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Identifier">Identifier</a>
+                  <a href="http://w3id.org/dpp#Identifier">dpp:Identifier</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1825,7 +1796,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#hasIdentifierType</code>
+                <code>http://w3id.org/dpp#hasIdentifierType</code>
               </td>
             </tr>
             <tr>
@@ -1834,7 +1805,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Identifier">Identifier</a>
+                  <a href="http://w3id.org/dpp#Identifier">dpp:Identifier</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1845,7 +1816,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#IDType">IDType</a>
+                  <a href="http://w3id.org/dpp#IDType">dpp:IDType</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1860,7 +1831,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#hasQuantity</code>
+                <code>http://w3id.org/dpp#hasQuantity</code>
               </td>
             </tr>
             <tr>
@@ -1869,7 +1840,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#PhysicalEntity">PhysicalEntity</a>
+                  <a href="http://w3id.org/dpp#PhysicalEntity">dpp:PhysicalEntity</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1880,7 +1851,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Quantity">Quantity</a>
+                  <a href="http://w3id.org/dpp#Quantity">dpp:Quantity</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1895,7 +1866,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#hasQuantityKind</code>
+                <code>http://w3id.org/dpp#hasQuantityKind</code>
               </td>
             </tr>
             <tr>
@@ -1904,7 +1875,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Quantity">Quantity</a>
+                  <a href="http://w3id.org/dpp#Quantity">dpp:Quantity</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1915,7 +1886,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#QuantityKind">QuantityKind</a>
+                  <a href="http://w3id.org/dpp#QuantityKind">dpp:QuantityKind</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1930,7 +1901,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#hasQuantityValue</code>
+                <code>http://w3id.org/dpp#hasQuantityValue</code>
               </td>
             </tr>
             <tr>
@@ -1939,7 +1910,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Quantity">Quantity</a>
+                  <a href="http://w3id.org/dpp#Quantity">dpp:Quantity</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1950,7 +1921,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#QuantityValue">QuantityValue</a>
+                  <a href="http://w3id.org/dpp#QuantityValue">dpp:QuantityValue</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1965,7 +1936,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#hasSegment</code>
+                <code>http://w3id.org/dpp#hasSegment</code>
               </td>
             </tr>
             <tr>
@@ -1974,7 +1945,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Trajectory">Trajectory</a>
+                  <a href="http://w3id.org/dpp#Trajectory">dpp:Trajectory</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1985,7 +1956,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Segment">Segment</a>
+                  <a href="http://w3id.org/dpp#Segment">dpp:Segment</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2000,7 +1971,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#hasSpatiotemporalExtent</code>
+                <code>http://w3id.org/dpp#hasSpatiotemporalExtent</code>
               </td>
             </tr>
             <tr>
@@ -2009,7 +1980,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Event">Event</a>
+                  <a href="http://w3id.org/dpp#Event">dpp:Event</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2020,7 +1991,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#SpatiotemporalExtent">SpatiotemporalExtent</a>
+                  <a href="http://w3id.org/dpp#SpatiotemporalExtent">dpp:SpatiotemporalExtent</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2035,7 +2006,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#hasTrajectory</code>
+                <code>http://w3id.org/dpp#hasTrajectory</code>
               </td>
             </tr>
             <tr>
@@ -2044,7 +2015,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#SpatiotemporalExtent">SpatiotemporalExtent</a>
+                  <a href="http://w3id.org/dpp#SpatiotemporalExtent">dpp:SpatiotemporalExtent</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2055,7 +2026,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Trajectory">Trajectory</a>
+                  <a href="http://w3id.org/dpp#Trajectory">dpp:Trajectory</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2070,7 +2041,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#hasUnit</code>
+                <code>http://w3id.org/dpp#hasUnit</code>
               </td>
             </tr>
             <tr>
@@ -2079,7 +2050,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#QuantityValue">QuantityValue</a>
+                  <a href="http://w3id.org/dpp#QuantityValue">dpp:QuantityValue</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2090,7 +2061,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Unit">Unit</a>
+                  <a href="http://w3id.org/dpp#Unit">dpp:Unit</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2105,7 +2076,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#isInvolvedIn</code>
+                <code>http://w3id.org/dpp#isInvolvedIn</code>
               </td>
             </tr>
             <tr>
@@ -2114,7 +2085,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#PhysicalEntity">PhysicalEntity</a>
+                  <a href="http://w3id.org/dpp#PhysicalEntity">dpp:PhysicalEntity</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2125,7 +2096,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#SupplyChainEvent">SupplyChainEvent</a>
+                  <a href="http://w3id.org/dpp#SupplyChainEvent">dpp:SupplyChainEvent</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2140,7 +2111,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#isManagedBy</code>
+                <code>http://w3id.org/dpp#isManagedBy</code>
               </td>
             </tr>
             <tr>
@@ -2149,7 +2120,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#PhysicalEntity">PhysicalEntity</a>
+                  <a href="http://w3id.org/dpp#PhysicalEntity">dpp:PhysicalEntity</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2175,7 +2146,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#isPartOf</code>
+                <code>http://w3id.org/dpp#isPartOf</code>
               </td>
             </tr>
             <tr>
@@ -2210,7 +2181,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#manages</code>
+                <code>http://w3id.org/dpp#manages</code>
               </td>
             </tr>
             <tr>
@@ -2230,7 +2201,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#PhysicalEntity">PhysicalEntity</a>
+                  <a href="http://w3id.org/dpp#PhysicalEntity">dpp:PhysicalEntity</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2245,7 +2216,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#nextFix</code>
+                <code>http://w3id.org/dpp#nextFix</code>
               </td>
             </tr>
             <tr>
@@ -2254,7 +2225,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Fix">Fix</a>
+                  <a href="http://w3id.org/dpp#Fix">dpp:Fix</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2265,7 +2236,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Fix">Fix</a>
+                  <a href="http://w3id.org/dpp#Fix">dpp:Fix</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2280,7 +2251,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#providesParticipantRole</code>
+                <code>http://w3id.org/dpp#providesParticipantRole</code>
               </td>
             </tr>
             <tr>
@@ -2289,7 +2260,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Event">Event</a>
+                  <a href="http://w3id.org/dpp#Event">dpp:Event</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2300,7 +2271,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#ParticipantRole">ParticipantRole</a>
+                  <a href="http://w3id.org/dpp#ParticipantRole">dpp:ParticipantRole</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2315,7 +2286,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#startsFrom</code>
+                <code>http://w3id.org/dpp#startsFrom</code>
               </td>
             </tr>
             <tr>
@@ -2324,7 +2295,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Segment">Segment</a>
+                  <a href="http://w3id.org/dpp#Segment">dpp:Segment</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2335,7 +2306,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Fix">Fix</a>
+                  <a href="http://w3id.org/dpp#Fix">dpp:Fix</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2350,7 +2321,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#subeventOf</code>
+                <code>http://w3id.org/dpp#subeventOf</code>
               </td>
             </tr>
             <tr>
@@ -2359,7 +2330,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Event">Event</a>
+                  <a href="http://w3id.org/dpp#Event">dpp:Event</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2370,7 +2341,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Event">Event</a>
+                  <a href="http://w3id.org/dpp#Event">dpp:Event</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2385,7 +2356,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#undergoesReverseLogistics</code>
+                <code>http://w3id.org/dpp#undergoesReverseLogistics</code>
               </td>
             </tr>
             <tr>
@@ -2394,7 +2365,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#PhysicalEntity">PhysicalEntity</a>
+                  <a href="http://w3id.org/dpp#PhysicalEntity">dpp:PhysicalEntity</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2423,7 +2394,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#hasNumericValue</code>
+                <code>http://w3id.org/dpp#hasNumericValue</code>
               </td>
             </tr>
             <tr>
@@ -2432,7 +2403,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#QuantityValue">QuantityValue</a>
+                  <a href="http://w3id.org/dpp#QuantityValue">dpp:QuantityValue</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2455,7 +2426,7 @@ td {
             <tr>
               <th>IRI</th>
               <td>
-                <code>http://w3id.org/dpp/SupplyChain#identifierAsText</code>
+                <code>http://w3id.org/dpp#identifierAsText</code>
               </td>
             </tr>
             <tr>
@@ -2464,7 +2435,7 @@ td {
               </th>
               <td>
                 <span>
-                  <a href="#Identifier">Identifier</a>
+                  <a href="http://w3id.org/dpp#Identifier">dpp:Identifier</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2551,10 +2522,6 @@ td {
       <div id="namespaces">
         <h2>Namespaces</h2>
         <dl>
-          <dt id=":">:</dt>
-          <dd>
-            <code>http://w3id.org/dpp/SupplyChain#</code>
-          </dd>
           <dt id="dcterms">dcterms</dt>
           <dd>
             <code>http://purl.org/dc/terms/</code>
@@ -2855,9 +2822,6 @@ td {
             <a href="#namespaces">Namespaces</a>
           </h4>
           <ul class="second">
-            <li>
-              <a href="#"></a>
-            </li>
             <li>
               <a href="#dcterms">dcterms</a>
             </li>
