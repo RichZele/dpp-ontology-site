@@ -332,6 +332,10 @@
         <sssom:subject_label>Agent</sssom:subject_label>
         <sssom:subject_type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     </owl:NamedIndividual>
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/dpp#hasComponent">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/dppo/ontology/dpp-odp/hasPart"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="https://w3id.org/dppo/ontology/dpp-odp/hasPart"/>
 </rdf:RDF>
 
 

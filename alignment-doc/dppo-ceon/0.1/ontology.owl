@@ -214,7 +214,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/CEON/ontology/product/Product">
-        <owl:equivalentClass rdf:resource="https://w3id.org/dppo/ontology/dpp-odp/Product"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dppo/ontology/dpp-odp/Product"/>
     </owl:Class>
     
 

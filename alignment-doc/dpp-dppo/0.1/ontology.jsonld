@@ -267,4 +267,13 @@
 }, {
   "@id" : "https://w3id.org/sssom/subject_type",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3id.org/dpp#hasComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/dppo/ontology/dpp-odp/hasPart"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dppo/ontology/dpp-odp/hasPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 } ]

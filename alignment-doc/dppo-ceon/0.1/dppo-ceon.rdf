@@ -11,7 +11,7 @@
       <cell>
         <entity1 rdf:resource="http://w3id.org/dppo/ontology/dpp-odp/Product" />
         <entity2 rdf:resource="http://w3id.org/CEON/ontology/product/Product" />
-        <relation>=</relation>
+        <relation>&gt;</relation>
       </cell>
     </map>
     <map>

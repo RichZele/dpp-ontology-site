@@ -107,7 +107,7 @@
 # 
 # https://w3id.org/CEON/ontology/product/Product
 <https://w3id.org/CEON/ontology/product/Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/CEON/ontology/product/Product> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/dppo/ontology/dpp-odp/Product> .
+<https://w3id.org/CEON/ontology/product/Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/dppo/ontology/dpp-odp/Product> .
 # 
 # https://w3id.org/dppo/ontology/dpp-comp/SubstanceOfConcern
 <https://w3id.org/dppo/ontology/dpp-comp/SubstanceOfConcern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

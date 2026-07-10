@@ -115,7 +115,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/CEON/ontology/product/Product
 <https://w3id.org/CEON/ontology/product/Product> rdf:type owl:Class ;
-                                                 owl:equivalentClass <https://w3id.org/dppo/ontology/dpp-odp/Product> .
+                                                 rdfs:subClassOf <https://w3id.org/dppo/ontology/dpp-odp/Product> .
 
 
 ###  https://w3id.org/dppo/ontology/dpp-comp/SubstanceOfConcern
@@ -149,7 +149,7 @@ xsd:date rdf:type rdfs:Datatype .
                          <https://w3id.org/sssom/Mapping> ;
                 <http://purl.org/dc/elements/1.1/identifier> "DPPO_CEON_0001" ;
                 <http://purl.org/dc/terms/source> "https://w3id.org/dpp/alignment/dppo-ceon/" ;
-                rdfs:comment "Both denote the generic notion of a product. DPPO’s Product is defined as the thing a DPP describes; CEON’s Product aligns with the same ISO definition. Thus, a one-to-one equivalence is appropriate, enabling a DPP-described product instance to be recognized as a CEON product instance." ;
+                rdfs:comment "Both denote the generic notion of a product. DPPO’s Product is defined as the thing a DPP describes; CEON’s Product aligns with the same ISO definition. However, DPPO's Product is broad and not disjoint from material, whereas CEON's Product covers physical products but excludes materials (which CEON places under Matter). Every CEON product is therefore a DPPO product but not conversely, so the correct relation is subsumption (ceon:Product rdfs:subClassOf dppo:Product) rather than equivalence." ;
                 <https://w3id.org/sssom/mapping_justificatio> <https://w3id.org/semapv/vocab/ManualMappingCuration> ;
                 <https://w3id.org/sssom/object_label> "Product" ;
                 <https://w3id.org/sssom/object_type> owl:Class ;

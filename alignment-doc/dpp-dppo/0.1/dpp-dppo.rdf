@@ -42,5 +42,12 @@
         <relation>=</relation>
       </cell>
     </map>
+    <map>
+      <cell>
+        <entity1 rdf:resource="http://www.w3id.org/dpp#hasComponent" />
+        <entity2 rdf:resource="http://w3id.org/dppo/ontology/dpp-odp/hasPart" />
+        <relation>&lt;</relation>
+      </cell>
+    </map>
   </Alignment>
 </rdf:RDF>
