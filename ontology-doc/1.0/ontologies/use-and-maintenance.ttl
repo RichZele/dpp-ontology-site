@@ -8,9 +8,9 @@
 
 @base <http://w3id.org/dpp#> .
 
-<https://w3id.org/dpp/useandmaintenance>
+<http://w3id.org/dpp/useandmaintenance>
     a owl:Ontology ;
-    owl:versionIRI   <https://w3id.org/dpp/useandmaintenance/1.0> ;
+    owl:versionIRI   <http://w3id.org/dpp/useandmaintenance/1.0> ;
     owl:versionInfo  "1.0" ;
     dcterms:title    "Digital Product Passport – Use and Maintenance Module Ontology"@en ;
     dcterms:creator  "Rahel Kebede" ;
@@ -19,7 +19,7 @@
         "This ontology defines concepts and properties related to the use phase and maintenance of products within a Digital Product Passport (DPP), covering usage instructions, maintenance schedules, and operational performance data."@en ;
     dcterms:created  "2024-01-10"^^xsd:date ;
     dcterms:license  <https://creativecommons.org/licenses/by/4.0/> ;
-    owl:imports      <https://w3id.org/dpp> .
+    owl:imports      <http://w3id.org/dpp> .
 
 #################################################################
 #    Annotation properties

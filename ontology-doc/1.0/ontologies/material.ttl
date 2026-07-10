@@ -9,15 +9,15 @@
 
 @base <http://w3id.org/dpp#> .
 
-<https://w3id.org/dpp/material>
+<http://w3id.org/dpp/material>
     a owl:Ontology ;
-    owl:versionIRI   <https://w3id.org/dpp/material/1.0> ;
+    owl:versionIRI   <http://w3id.org/dpp/material/1.0> ;
     owl:versionInfo  "1.0" ;
     dcterms:title    "Digital Product Passport – Material Module Ontology"@en ;
     dcterms:creator  "Rahel Kebede" ;
     dcterms:description "This ontology defines concepts and properties for representing material characteristics, composition, and related data within the Digital Product Passport (DPP) context."@en ;
     dcterms:license  <https://creativecommons.org/licenses/by/4.0/> ;
-    owl:imports      <https://w3id.org/dpp> ,
+    owl:imports      <http://w3id.org/dpp> ,
                      <http://bimerr.iot.linkeddata.es/def/material-properties> .
 
 

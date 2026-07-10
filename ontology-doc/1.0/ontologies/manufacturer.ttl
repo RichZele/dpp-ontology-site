@@ -8,9 +8,9 @@
 
 @base <http://w3id.org/dpp#> .
 
-<https://w3id.org/dpp/manufacturer>
+<http://w3id.org/dpp/manufacturer>
     a owl:Ontology ;
-    owl:versionIRI   <https://w3id.org/dpp/manufacturer/1.0> ;
+    owl:versionIRI   <http://w3id.org/dpp/manufacturer/1.0> ;
     owl:versionInfo  "1.0" ;
     dcterms:title    "Digital Product Passport – Manufacturer Module Ontology"@en ;
     dcterms:creator  "Rahel Kebede" ;
@@ -19,7 +19,7 @@
         "This ontology defines core concepts and properties related to manufacturers in the context of a Digital Product Passport (DPP), including manufacturer identity, roles, and relevant certification or compliance information."@en ;
     dcterms:created  "2023-12-14"^^xsd:date ;
     dcterms:license  <https://creativecommons.org/licenses/by/4.0/> ;
-    owl:imports      <https://w3id.org/dpp> .
+    owl:imports      <http://w3id.org/dpp> .
 
 
 #################################################################

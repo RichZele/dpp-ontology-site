@@ -8,9 +8,9 @@
 
 @base <http://w3id.org/dpp#> .
 
-<https://w3id.org/dpp/endoflifemanagement>
+<http://w3id.org/dpp/endoflifemanagement>
     a owl:Ontology ;
-    owl:versionIRI   <https://w3id.org/dpp/endoflifemanagement/1.0> ;
+    owl:versionIRI   <http://w3id.org/dpp/endoflifemanagement/1.0> ;
     owl:versionInfo  "1.0" ;
     dcterms:title    "Digital Product Passport – End-of-Life Management Module Ontology"@en ;
     dcterms:creator  "Rahel Kebede" ;
@@ -19,7 +19,7 @@
         "This ontology defines concepts and properties related to the end-of-life phase of products in the Digital Product Passport (DPP), including reuse, recycling, recovery processes, and material separation."@en ;
     dcterms:created  "2024-01-30"^^xsd:date ;
     dcterms:license  <https://creativecommons.org/licenses/by/4.0/> ;
-    owl:imports      <https://w3id.org/dpp> .
+    owl:imports      <http://w3id.org/dpp> .
 
 #################################################################
 #    Annotation properties

@@ -8,8 +8,8 @@
 
 @base <http://w3id.org/dpp#> .
 
-<https://w3id.org/dpp/classification> rdf:type owl:Ontology ;
-    owl:versionIRI <https://w3id.org/dpp/classification/1.0> ;
+<http://w3id.org/dpp/classification> rdf:type owl:Ontology ;
+    owl:versionIRI <http://w3id.org/dpp/classification/1.0> ;
     owl:versionInfo "1.0" ;
     dcterms:title "Digital Product Passport – Classification Module Ontology" ;
     dcterms:creator "Rahel Kebede" ;

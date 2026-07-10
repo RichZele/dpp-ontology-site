@@ -8,9 +8,9 @@
 
 @base <http://w3id.org/dpp#> .
 
-<https://w3id.org/dpp/standard>
+<http://w3id.org/dpp/standard>
     a owl:Ontology ;
-    owl:versionIRI   <https://w3id.org/dpp/standard/1.0> ;
+    owl:versionIRI   <http://w3id.org/dpp/standard/1.0> ;
     owl:versionInfo  "1.0" ;
     dcterms:title    "Digital Product Passport – Standard Module Ontology"@en ;
     dcterms:creator  "Rahel Kebede" ;
@@ -19,7 +19,7 @@
         "This ontology defines concepts and properties for representing product standards, certifications, and compliance requirements in the context of a Digital Product Passport (DPP)."@en ;
     dcterms:created  "2023-09-07"^^xsd:date ;
     dcterms:license  <https://creativecommons.org/licenses/by/4.0/> ;
-    owl:imports      <https://w3id.org/dpp> .
+    owl:imports      <http://w3id.org/dpp> .
 
 
 dpp:adheresTo a owl:ObjectProperty ;

@@ -8,16 +8,16 @@
 
 @base <http://w3id.org/dpp#> .
 
-<https://w3id.org/dpp/supplychain>
+<http://w3id.org/dpp/supplychain>
     a owl:Ontology ;
-    owl:versionIRI   <https://w3id.org/dpp/supplychain/1.0> ;
+    owl:versionIRI   <http://w3id.org/dpp/supplychain/1.0> ;
     owl:versionInfo  "1.0" ;
     dcterms:title    "Digital Product Passport – Supply Chain Module Ontology"@en ;
     dcterms:creator  "Rahel Kebede" ;
     dcterms:description
         "This ontology defines concepts and properties for representing supply chain actors, events, and traceability information in the context of a Digital Product Passport (DPP)."@en ;
     dcterms:license  <https://creativecommons.org/licenses/by/4.0/> ;
-    owl:imports      <https://w3id.org/dpp> .
+    owl:imports      <http://w3id.org/dpp> .
 
 
 #################################################################
