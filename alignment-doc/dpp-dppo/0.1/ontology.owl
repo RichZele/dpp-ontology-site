@@ -142,6 +142,34 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/dpp#hasComponent -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/dpp#hasComponent">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/dppo/ontology/dpp-odp/hasPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/dppo/ontology/dpp-odp/hasPart -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dppo/ontology/dpp-odp/hasPart"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -332,10 +360,23 @@
         <sssom:subject_label>Agent</sssom:subject_label>
         <sssom:subject_type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     </owl:NamedIndividual>
-    <owl:ObjectProperty rdf:about="http://w3id.org/dpp#hasComponent">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/dppo/ontology/dpp-odp/hasPart"/>
-    </owl:ObjectProperty>
-    <owl:ObjectProperty rdf:about="https://w3id.org/dppo/ontology/dpp-odp/hasPart"/>
+    
+
+
+    <!-- https://w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0006 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0006">
+        <rdf:type rdf:resource="https://w3id.org/sssom/Mapping"/>
+        <dc:identifier>DPP_DPPO_0006</dc:identifier>
+        <terms:source>https://w3id.org/dpp/alignment/dpp-dppo/</terms:source>
+        <rdfs:comment>DPP expresses product partonomy directly through dpp:hasComponent, while DPPO uses the generic dpp-odp:hasPart. dpp:hasComponent is aligned as a subproperty of dppo:hasPart.</rdfs:comment>
+        <sssom:mapping_justificatio rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:object_label>hasPart</sssom:object_label>
+        <sssom:object_type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <sssom:subject_label>hasComponent</sssom:subject_label>
+        <sssom:subject_type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 

@@ -277,7 +277,7 @@
         <rdf:type rdf:resource="https://w3id.org/sssom/Mapping"/>
         <dc:identifier>DPPO_CEON_0001</dc:identifier>
         <terms:source>https://w3id.org/dpp/alignment/dppo-ceon/</terms:source>
-        <rdfs:comment>Both denote the generic notion of a product. DPPO’s Product is defined as the thing a DPP describes; CEON’s Product aligns with the same ISO definition. Thus, a one-to-one equivalence is appropriate, enabling a DPP-described product instance to be recognized as a CEON product instance.</rdfs:comment>
+        <rdfs:comment>Both denote the generic notion of a product. DPPO’s Product is defined as the thing a DPP describes; CEON’s Product aligns with the same ISO definition. However, DPPO&apos;s Product is broad and not disjoint from material, whereas CEON&apos;s Product covers physical products but excludes materials (which CEON places under Matter). Every CEON product is therefore a DPPO product but not conversely, so the correct relation is subsumption (ceon:Product rdfs:subClassOf dppo:Product) rather than equivalence.</rdfs:comment>
         <sssom:mapping_justificatio rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>Product</sssom:object_label>
         <sssom:object_type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>

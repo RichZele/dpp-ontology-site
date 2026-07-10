@@ -84,7 +84,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://w3id.org/dpp#hasComponent
 <http://w3id.org/dpp#hasComponent> rdf:type owl:ObjectProperty ;
-                                       rdfs:subPropertyOf <https://w3id.org/dppo/ontology/dpp-odp/hasPart> .
+                                   rdfs:subPropertyOf <https://w3id.org/dppo/ontology/dpp-odp/hasPart> .
 
 
 ###  https://w3id.org/dppo/ontology/dpp-odp/hasPart
@@ -97,27 +97,27 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://w3id.org/dpp#Agent
 <http://w3id.org/dpp#Agent> rdf:type owl:Class ;
-                                owl:equivalentClass <https://w3id.org/dppo/ontology/dpp-prov/Actor> .
+                            owl:equivalentClass <https://w3id.org/dppo/ontology/dpp-prov/Actor> .
 
 
 ###  http://w3id.org/dpp#Component
 <http://w3id.org/dpp#Component> rdf:type owl:Class ;
-                                    owl:equivalentClass <https://w3id.org/dppo/ontology/dpp-core/Component> .
+                                owl:equivalentClass <https://w3id.org/dppo/ontology/dpp-core/Component> .
 
 
 ###  http://w3id.org/dpp#Material
 <http://w3id.org/dpp#Material> rdf:type owl:Class ;
-                                   rdfs:subClassOf <https://w3id.org/dppo/ontology/dpp-core/Material> .
+                               rdfs:subClassOf <https://w3id.org/dppo/ontology/dpp-core/Material> .
 
 
 ###  http://w3id.org/dpp#MaterialComposition
 <http://w3id.org/dpp#MaterialComposition> rdf:type owl:Class ;
-                                              rdfs:subClassOf <https://w3id.org/dppo/ontology/dpp-info/CompositionInformation> .
+                                          rdfs:subClassOf <https://w3id.org/dppo/ontology/dpp-info/CompositionInformation> .
 
 
 ###  http://w3id.org/dpp#Product
 <http://w3id.org/dpp#Product> rdf:type owl:Class ;
-                                  rdfs:subClassOf <https://w3id.org/dppo/ontology/dpp-odp/Product> .
+                              rdfs:subClassOf <https://w3id.org/dppo/ontology/dpp-odp/Product> .
 
 
 ###  https://w3id.org/dppo/ontology/dpp-core/Component

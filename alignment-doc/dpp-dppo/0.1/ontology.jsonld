@@ -20,9 +20,6 @@
   "@id" : "http://purl.org/dc/terms/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.w3.org/2001/XMLSchema#date",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
-}, {
   "@id" : "http://w3id.org/dpp#Agent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
@@ -52,6 +49,15 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dppo/ontology/dpp-odp/Product"
   } ]
+}, {
+  "@id" : "http://w3id.org/dpp#hasComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/dppo/ontology/dpp-odp/hasPart"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
   "@id" : "https://w3id.org/dpp/alignment/dpp-dppo/",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
@@ -235,6 +241,36 @@
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ]
 }, {
+  "@id" : "https://w3id.org/dpp/alignment/dpp-dppo/DPP_DPPO_0006",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/identifier" : [ {
+    "@value" : "DPP_DPPO_0006"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://w3id.org/dpp/alignment/dpp-dppo/"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/sssom/Mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "DPP expresses product partonomy directly through dpp:hasComponent, while DPPO uses the generic dpp-odp:hasPart. dpp:hasComponent is aligned as a subproperty of dppo:hasPart."
+  } ],
+  "https://w3id.org/sssom/mapping_justificatio" : [ {
+    "@id" : "https://w3id.org/semapv/vocab/ManualMappingCuration"
+  } ],
+  "https://w3id.org/sssom/object_label" : [ {
+    "@value" : "hasPart"
+  } ],
+  "https://w3id.org/sssom/object_type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+  } ],
+  "https://w3id.org/sssom/subject_label" : [ {
+    "@value" : "hasComponent"
+  } ],
+  "https://w3id.org/sssom/subject_type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+  } ]
+}, {
   "@id" : "https://w3id.org/dppo/ontology/dpp-core/Component",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -246,6 +282,9 @@
 }, {
   "@id" : "https://w3id.org/dppo/ontology/dpp-odp/Product",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dppo/ontology/dpp-odp/hasPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "https://w3id.org/dppo/ontology/dpp-prov/Actor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
@@ -267,13 +306,4 @@
 }, {
   "@id" : "https://w3id.org/sssom/subject_type",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://w3id.org/dpp#hasComponent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/dppo/ontology/dpp-odp/hasPart"
-  } ]
-}, {
-  "@id" : "https://w3id.org/dppo/ontology/dpp-odp/hasPart",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 } ]
