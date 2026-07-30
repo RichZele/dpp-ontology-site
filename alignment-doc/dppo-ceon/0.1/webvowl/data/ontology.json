@@ -2,7 +2,7 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "undefined" ],
-    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/CEON/ontology/material", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/CEON/ontology/product", "https://w3id.org/sssom", "https://w3id.org/dppo/ontology/dpp-odp", "https://w3id.org/dppo/ontology/dpp-core", "https://w3id.org/dppo/ontology/dpp-comp" ],
+    "baseIris" : [ "http://w3id.org/dppo/ontology/dpp-odp", "http://w3id.org/CEON/ontology/product", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://w3id.org/CEON/ontology/material", "https://w3id.org/sssom", "http://w3id.org/dppo/ontology/dpp-comp", "http://w3id.org/dppo/ontology/dpp-core" ],
     "title" : {
       "undefined" : "The alignment ontology between DPPO and CEON"
     },
@@ -28,17 +28,17 @@
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "Eva Blomqvist",
-        "type" : "label"
-      }, {
-        "identifier" : "contributor",
-        "language" : "undefined",
         "value" : "Huanyu Li",
         "type" : "label"
       }, {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Rahel Kebede",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Eva Blomqvist",
         "type" : "label"
       } ],
       "created" : [ {
@@ -47,16 +47,16 @@
         "value" : "2026-01-23",
         "type" : "label"
       } ],
-      "source" : [ {
-        "identifier" : "source",
-        "language" : "undefined",
-        "value" : "https://github.com/RichZele/DPP-DPPO-CEON-Ontology-Alignment/blob/main/documentations/DPPO-CEON.xlsx",
-        "type" : "label"
-      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "0.1",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "undefined",
+        "value" : "https://github.com/RichZele/DPP-DPPO-CEON-Ontology-Alignment/blob/main/documentations/DPPO-CEON.xlsx",
         "type" : "label"
       } ],
       "title" : [ {
@@ -69,66 +69,86 @@
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "3",
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
     "type" : "owl:Class"
   }, {
     "id" : "5",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "11",
+    "id" : "7",
     "type" : "owl:Class"
   }, {
     "id" : "12",
     "type" : "owl:Class"
   }, {
+    "id" : "13",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
     "id" : "1",
     "type" : "owl:Thing"
   }, {
-    "id" : "10",
+    "id" : "14",
     "type" : "owl:equivalentClass"
-  }, {
-    "id" : "6",
-    "type" : "owl:Class"
-  }, {
-    "id" : "4",
-    "type" : "owl:Class"
-  }, {
-    "id" : "13",
-    "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "https://w3id.org/CEON/ontology/product/Product",
-    "baseIri" : "https://w3id.org/CEON/ontology/product",
+    "iri" : "http://w3id.org/CEON/ontology/material/ChemicalEntity",
+    "baseIri" : "http://w3id.org/CEON/ontology/material",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ChemicalEntity"
+    },
+    "subClasses" : [ "5" ],
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/material/ChemicalSubstance",
+    "baseIri" : "http://w3id.org/CEON/ontology/material",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ChemicalSubstance"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://w3id.org/dppo/ontology/dpp-odp/Product",
+    "baseIri" : "http://w3id.org/dppo/ontology/dpp-odp",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Product"
     },
+    "subClasses" : [ "9" ],
     "attributes" : [ "external" ],
-    "id" : "3",
+    "id" : "10"
+  }, {
+    "iri" : "http://w3id.org/dppo/ontology/dpp-comp/SubstanceOfConcern",
+    "baseIri" : "http://w3id.org/dppo/ontology/dpp-comp",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubstanceOfConcern"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5",
     "superClasses" : [ "4" ]
   }, {
-    "iri" : "https://w3id.org/dppo/ontology/dpp-core/Substance",
-    "baseIri" : "https://w3id.org/dppo/ontology/dpp-core",
+    "iri" : "http://w3id.org/dppo/ontology/dpp-core/Substance",
+    "baseIri" : "http://w3id.org/dppo/ontology/dpp-core",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Substance"
     },
+    "subClasses" : [ "6" ],
     "attributes" : [ "external" ],
-    "id" : "5",
-    "superClasses" : [ "6" ]
-  }, {
-    "iri" : "https://w3id.org/dppo/ontology/dpp-core/Material",
-    "equivalent" : [ "10" ],
-    "baseIri" : "https://w3id.org/dppo/ontology/dpp-core",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Material"
-    },
-    "attributes" : [ "equivalent", "external" ],
-    "id" : "9"
+    "id" : "7"
   }, {
     "iri" : "https://w3id.org/sssom/Mapping",
     "baseIri" : "https://w3id.org/sssom",
@@ -152,20 +172,20 @@
           "value" : "http://www.w3.org/2002/07/owl#Class",
           "type" : "iri"
         } ],
-        "object_type" : [ {
-          "identifier" : "object_type",
-          "language" : "undefined",
-          "value" : "http://www.w3.org/2002/07/owl#Class",
-          "type" : "iri"
-        } ],
         "subject_label" : [ {
           "identifier" : "subject_label",
           "language" : "undefined",
           "value" : "Product",
           "type" : "label"
         } ],
-        "mapping_justificatio" : [ {
-          "identifier" : "mapping_justificatio",
+        "object_type" : [ {
+          "identifier" : "object_type",
+          "language" : "undefined",
+          "value" : "http://www.w3.org/2002/07/owl#Class",
+          "type" : "iri"
+        } ],
+        "mapping_justification" : [ {
+          "identifier" : "mapping_justification",
           "language" : "undefined",
           "value" : "https://w3id.org/semapv/vocab/ManualMappingCuration",
           "type" : "iri"
@@ -205,20 +225,20 @@
           "value" : "http://www.w3.org/2002/07/owl#Class",
           "type" : "iri"
         } ],
-        "subject_label" : [ {
-          "identifier" : "subject_label",
-          "language" : "undefined",
-          "value" : "Substance",
-          "type" : "label"
-        } ],
         "object_type" : [ {
           "identifier" : "object_type",
           "language" : "undefined",
           "value" : "http://www.w3.org/2002/07/owl#Class",
           "type" : "iri"
         } ],
-        "mapping_justificatio" : [ {
-          "identifier" : "mapping_justificatio",
+        "subject_label" : [ {
+          "identifier" : "subject_label",
+          "language" : "undefined",
+          "value" : "ChemicalSubstance",
+          "type" : "label"
+        } ],
+        "mapping_justification" : [ {
+          "identifier" : "mapping_justification",
           "language" : "undefined",
           "value" : "https://w3id.org/semapv/vocab/ManualMappingCuration",
           "type" : "iri"
@@ -226,7 +246,7 @@
         "object_label" : [ {
           "identifier" : "object_label",
           "language" : "undefined",
-          "value" : "ChemicalSubstance",
+          "value" : "Substance",
           "type" : "label"
         } ],
         "source" : [ {
@@ -258,20 +278,20 @@
           "value" : "http://www.w3.org/2002/07/owl#Class",
           "type" : "iri"
         } ],
-        "object_type" : [ {
-          "identifier" : "object_type",
-          "language" : "undefined",
-          "value" : "http://www.w3.org/2002/07/owl#Class",
-          "type" : "iri"
-        } ],
         "subject_label" : [ {
           "identifier" : "subject_label",
           "language" : "undefined",
           "value" : "Material",
           "type" : "label"
         } ],
-        "mapping_justificatio" : [ {
-          "identifier" : "mapping_justificatio",
+        "object_type" : [ {
+          "identifier" : "object_type",
+          "language" : "undefined",
+          "value" : "http://www.w3.org/2002/07/owl#Class",
+          "type" : "iri"
+        } ],
+        "mapping_justification" : [ {
+          "identifier" : "mapping_justification",
           "language" : "undefined",
           "value" : "https://w3id.org/semapv/vocab/ManualMappingCuration",
           "type" : "iri"
@@ -314,7 +334,7 @@
         "subject_label" : [ {
           "identifier" : "subject_label",
           "language" : "undefined",
-          "value" : "hasPart",
+          "value" : "hasProductComponent",
           "type" : "label"
         } ],
         "object_type" : [ {
@@ -323,8 +343,8 @@
           "value" : "http://www.w3.org/2002/07/owl#ObjectProperty",
           "type" : "iri"
         } ],
-        "mapping_justificatio" : [ {
-          "identifier" : "mapping_justificatio",
+        "mapping_justification" : [ {
+          "identifier" : "mapping_justification",
           "language" : "undefined",
           "value" : "https://w3id.org/semapv/vocab/ManualMappingCuration",
           "type" : "iri"
@@ -332,7 +352,7 @@
         "object_label" : [ {
           "identifier" : "object_label",
           "language" : "undefined",
-          "value" : "hasProductComponent",
+          "value" : "hasPart",
           "type" : "label"
         } ],
         "source" : [ {
@@ -364,20 +384,20 @@
           "value" : "http://www.w3.org/2002/07/owl#Class",
           "type" : "iri"
         } ],
-        "object_type" : [ {
-          "identifier" : "object_type",
-          "language" : "undefined",
-          "value" : "http://www.w3.org/2002/07/owl#Class",
-          "type" : "iri"
-        } ],
         "subject_label" : [ {
           "identifier" : "subject_label",
           "language" : "undefined",
           "value" : "SubstanceOfConcern",
           "type" : "label"
         } ],
-        "mapping_justificatio" : [ {
-          "identifier" : "mapping_justificatio",
+        "object_type" : [ {
+          "identifier" : "object_type",
+          "language" : "undefined",
+          "value" : "http://www.w3.org/2002/07/owl#Class",
+          "type" : "iri"
+        } ],
+        "mapping_justification" : [ {
+          "identifier" : "mapping_justification",
           "language" : "undefined",
           "value" : "https://w3id.org/semapv/vocab/ManualMappingCuration",
           "type" : "iri"
@@ -420,7 +440,7 @@
         "subject_label" : [ {
           "identifier" : "subject_label",
           "language" : "undefined",
-          "value" : "hasPart",
+          "value" : "hasProductObjectComponent",
           "type" : "label"
         } ],
         "object_type" : [ {
@@ -429,8 +449,8 @@
           "value" : "http://www.w3.org/2002/07/owl#ObjectProperty",
           "type" : "iri"
         } ],
-        "mapping_justificatio" : [ {
-          "identifier" : "mapping_justificatio",
+        "mapping_justification" : [ {
+          "identifier" : "mapping_justification",
           "language" : "undefined",
           "value" : "https://w3id.org/semapv/vocab/ManualMappingCuration",
           "type" : "iri"
@@ -438,7 +458,7 @@
         "object_label" : [ {
           "identifier" : "object_label",
           "language" : "undefined",
-          "value" : "hasProductObjectComponent",
+          "value" : "hasPart",
           "type" : "label"
         } ],
         "source" : [ {
@@ -453,17 +473,27 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "11"
+    "id" : "12"
   }, {
-    "iri" : "https://w3id.org/CEON/ontology/material/ChemicalEntity",
-    "baseIri" : "https://w3id.org/CEON/ontology/material",
+    "iri" : "http://w3id.org/CEON/ontology/material/Material",
+    "equivalent" : [ "14" ],
+    "baseIri" : "http://w3id.org/CEON/ontology/material",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "ChemicalEntity"
+      "IRI-based" : "Material"
     },
-    "subClasses" : [ "13" ],
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/product/Product",
+    "baseIri" : "http://w3id.org/CEON/ontology/product",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Product"
+    },
     "attributes" : [ "external" ],
-    "id" : "12"
+    "id" : "9",
+    "superClasses" : [ "10" ]
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
@@ -472,112 +502,82 @@
       "undefined" : "Thing"
     }
   }, {
-    "iri" : "https://w3id.org/CEON/ontology/material/Material",
-    "equivalent" : [ "9" ],
-    "baseIri" : "https://w3id.org/CEON/ontology/material",
+    "iri" : "http://w3id.org/dppo/ontology/dpp-core/Material",
+    "equivalent" : [ "13" ],
+    "baseIri" : "http://w3id.org/dppo/ontology/dpp-core",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Material"
     },
-    "attributes" : [ "equivalent", "external" ],
-    "id" : "10"
-  }, {
-    "iri" : "https://w3id.org/CEON/ontology/material/ChemicalSubstance",
-    "baseIri" : "https://w3id.org/CEON/ontology/material",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ChemicalSubstance"
-    },
-    "subClasses" : [ "5" ],
-    "attributes" : [ "external" ],
-    "id" : "6"
-  }, {
-    "iri" : "https://w3id.org/dppo/ontology/dpp-odp/Product",
-    "baseIri" : "https://w3id.org/dppo/ontology/dpp-odp",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Product"
-    },
-    "subClasses" : [ "3" ],
-    "attributes" : [ "external" ],
-    "id" : "4"
-  }, {
-    "iri" : "https://w3id.org/dppo/ontology/dpp-comp/SubstanceOfConcern",
-    "baseIri" : "https://w3id.org/dppo/ontology/dpp-comp",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "SubstanceOfConcern"
-    },
-    "attributes" : [ "external" ],
-    "id" : "13",
-    "superClasses" : [ "12" ]
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "14"
   } ],
   "property" : [ {
     "id" : "0",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "7",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "8",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "14",
+    "id" : "11",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "2",
     "type" : "owl:objectProperty"
   }, {
     "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "https://w3id.org/CEON/ontology/product/hasProductComponent",
-    "baseIri" : "https://w3id.org/CEON/ontology/product",
-    "range" : "1",
-    "label" : {
-      "IRI-based" : "hasProductComponent"
-    },
-    "domain" : "1",
-    "subproperty" : [ "2" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "0"
-  }, {
-    "range" : "6",
-    "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "7"
-  }, {
-    "range" : "4",
-    "domain" : "3",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "8"
-  }, {
-    "range" : "12",
-    "domain" : "13",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "14"
-  }, {
-    "iri" : "https://w3id.org/dppo/ontology/dpp-odp/hasPart",
-    "baseIri" : "https://w3id.org/dppo/ontology/dpp-odp",
+    "iri" : "http://w3id.org/dppo/ontology/dpp-odp/hasPart",
+    "baseIri" : "http://w3id.org/dppo/ontology/dpp-odp",
     "range" : "1",
     "label" : {
       "IRI-based" : "hasPart"
     },
-    "superproperty" : [ "0", "15" ],
     "domain" : "1",
+    "subproperty" : [ "2", "3" ],
     "attributes" : [ "external", "object" ],
-    "id" : "2"
+    "id" : "0"
   }, {
-    "iri" : "https://w3id.org/CEON/ontology/product/hasProductObjectComponent",
-    "baseIri" : "https://w3id.org/CEON/ontology/product",
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "8"
+  }, {
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/product/hasProductObjectComponent",
+    "baseIri" : "http://w3id.org/CEON/ontology/product",
     "range" : "1",
     "label" : {
       "IRI-based" : "hasProductObjectComponent"
     },
+    "superproperty" : [ "0" ],
     "domain" : "1",
-    "subproperty" : [ "2" ],
     "attributes" : [ "external", "object" ],
+    "id" : "2"
+  }, {
+    "range" : "4",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "15"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/product/hasProductComponent",
+    "baseIri" : "http://w3id.org/CEON/ontology/product",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasProductComponent"
+    },
+    "superproperty" : [ "0" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "3"
   } ]
 }

@@ -85,10 +85,10 @@
     
 
 
-    <!-- https://w3id.org/sssom/mapping_justificatio -->
+    <!-- https://w3id.org/sssom/mapping_justification -->
 
 
-    <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/mapping_justificatio"/>
+    <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/mapping_justification"/>
     
 
 
@@ -155,15 +155,15 @@
 
 
     <owl:ObjectProperty rdf:about="http://w3id.org/dpp#hasComponent">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/dppo/ontology/dpp-odp/hasPart"/>
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/dppo/ontology/dpp-odp/hasPart"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/dppo/ontology/dpp-odp/hasPart -->
+    <!-- http://w3id.org/dppo/ontology/dpp-odp/hasPart -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/dppo/ontology/dpp-odp/hasPart"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/dppo/ontology/dpp-odp/hasPart"/>
     
 
 
@@ -183,7 +183,7 @@
 
 
     <owl:Class rdf:about="http://w3id.org/dpp#Agent">
-        <owl:equivalentClass rdf:resource="https://w3id.org/dppo/ontology/dpp-prov/Actor"/>
+        <owl:equivalentClass rdf:resource="http://w3id.org/dppo/ontology/dpp-prov/Actor"/>
     </owl:Class>
     
 
@@ -192,7 +192,7 @@
 
 
     <owl:Class rdf:about="http://w3id.org/dpp#Component">
-        <owl:equivalentClass rdf:resource="https://w3id.org/dppo/ontology/dpp-core/Component"/>
+        <owl:equivalentClass rdf:resource="http://w3id.org/dppo/ontology/dpp-core/Component"/>
     </owl:Class>
     
 
@@ -201,7 +201,7 @@
 
 
     <owl:Class rdf:about="http://w3id.org/dpp#Material">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dppo/ontology/dpp-core/Material"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dppo/ontology/dpp-core/Material"/>
     </owl:Class>
     
 
@@ -210,7 +210,7 @@
 
 
     <owl:Class rdf:about="http://w3id.org/dpp#MaterialComposition">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dppo/ontology/dpp-info/CompositionInformation"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dppo/ontology/dpp-info/CompositionInformation"/>
     </owl:Class>
     
 
@@ -219,43 +219,43 @@
 
 
     <owl:Class rdf:about="http://w3id.org/dpp#Product">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dppo/ontology/dpp-odp/Product"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/dppo/ontology/dpp-odp/Product"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/dppo/ontology/dpp-core/Component -->
+    <!-- http://w3id.org/dppo/ontology/dpp-core/Component -->
 
 
-    <owl:Class rdf:about="https://w3id.org/dppo/ontology/dpp-core/Component"/>
+    <owl:Class rdf:about="http://w3id.org/dppo/ontology/dpp-core/Component"/>
     
 
 
-    <!-- https://w3id.org/dppo/ontology/dpp-core/Material -->
+    <!-- http://w3id.org/dppo/ontology/dpp-core/Material -->
 
 
-    <owl:Class rdf:about="https://w3id.org/dppo/ontology/dpp-core/Material"/>
+    <owl:Class rdf:about="http://w3id.org/dppo/ontology/dpp-core/Material"/>
     
 
 
-    <!-- https://w3id.org/dppo/ontology/dpp-info/CompositionInformation -->
+    <!-- http://w3id.org/dppo/ontology/dpp-info/CompositionInformation -->
 
 
-    <owl:Class rdf:about="https://w3id.org/dppo/ontology/dpp-info/CompositionInformation"/>
+    <owl:Class rdf:about="http://w3id.org/dppo/ontology/dpp-info/CompositionInformation"/>
     
 
 
-    <!-- https://w3id.org/dppo/ontology/dpp-odp/Product -->
+    <!-- http://w3id.org/dppo/ontology/dpp-odp/Product -->
 
 
-    <owl:Class rdf:about="https://w3id.org/dppo/ontology/dpp-odp/Product"/>
+    <owl:Class rdf:about="http://w3id.org/dppo/ontology/dpp-odp/Product"/>
     
 
 
-    <!-- https://w3id.org/dppo/ontology/dpp-prov/Actor -->
+    <!-- http://w3id.org/dppo/ontology/dpp-prov/Actor -->
 
 
-    <owl:Class rdf:about="https://w3id.org/dppo/ontology/dpp-prov/Actor"/>
+    <owl:Class rdf:about="http://w3id.org/dppo/ontology/dpp-prov/Actor"/>
     
 
 
@@ -286,7 +286,7 @@
         <dc:identifier>DPP_DPPO_0001</dc:identifier>
         <terms:source>https://w3id.org/dpp/alignment/dpp-dppo/</terms:source>
         <rdfs:comment>DPP is stricter: product≠material; DPPO keeps them possibly overlapping. Subclass mapping preserves DPPO’s sector-agnostic stance without breaking DPP&apos;s disjointness.</rdfs:comment>
-        <sssom:mapping_justificatio rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>Product</sssom:object_label>
         <sssom:object_type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
         <sssom:subject_label>Product</sssom:subject_label>
@@ -303,7 +303,7 @@
         <dc:identifier>DPP_DPPO_0002</dc:identifier>
         <terms:source>https://w3id.org/dpp/alignment/dpp-dppo/</terms:source>
         <rdfs:comment>Both represent part-whole relationships. Structural correspondence: both as subclasses of Product with part-of links. Modular alignment allows complex product breakdowns in DPP (e.g., building elements into sub-components) to map into DPPO’s composition pattern.</rdfs:comment>
-        <sssom:mapping_justificatio rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>Component</sssom:object_label>
         <sssom:object_type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
         <sssom:subject_label>Component</sssom:subject_label>
@@ -320,7 +320,7 @@
         <dc:identifier>DPP_DPPO_0003</dc:identifier>
         <terms:source>https://w3id.org/dpp/alignment/dpp-dppo/</terms:source>
         <rdfs:comment>Semantically equivalent: both capture the matter constituting products/parts. Subclass mapping (dppo:Material ⊑ dppo:Product) reflects DPPO’s flexibility; DPP’s modular placement preserves structure. Alignment preserves CE relevance (resource loops, recyclability).</rdfs:comment>
-        <sssom:mapping_justificatio rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>Material</sssom:object_label>
         <sssom:object_type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
         <sssom:subject_label>Material</sssom:subject_label>
@@ -337,7 +337,7 @@
         <dc:identifier>DPP_DPPO_0004</dc:identifier>
         <terms:source>https://w3id.org/dpp/alignment/dpp-dppo/</terms:source>
         <rdfs:comment>Both model partonomy as first-class nodes; quantitative details remain attached to the reified link.</rdfs:comment>
-        <sssom:mapping_justificatio rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>CompositionInformation</sssom:object_label>
         <sssom:object_type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
         <sssom:subject_label>MaterialComposition</sssom:subject_label>
@@ -354,7 +354,7 @@
         <dc:identifier>DPP_DPPO_0005</dc:identifier>
         <terms:source>https://w3id.org/dpp/alignment/dpp-dppo/</terms:source>
         <rdfs:comment>For product-level roles, keep DPP’s AgentRole on dpp:Product; additionally mint DPPO responsibleActor on each DPPInformation item to meet DPPO’s auditability.</rdfs:comment>
-        <sssom:mapping_justificatio rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>Actor</sssom:object_label>
         <sssom:object_type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
         <sssom:subject_label>Agent</sssom:subject_label>
@@ -371,7 +371,7 @@
         <dc:identifier>DPP_DPPO_0006</dc:identifier>
         <terms:source>https://w3id.org/dpp/alignment/dpp-dppo/</terms:source>
         <rdfs:comment>DPP expresses product partonomy directly through dpp:hasComponent, while DPPO uses the generic dpp-odp:hasPart. dpp:hasComponent is aligned as a subproperty of dppo:hasPart.</rdfs:comment>
-        <sssom:mapping_justificatio rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
         <sssom:object_label>hasPart</sssom:object_label>
         <sssom:object_type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
         <sssom:subject_label>hasComponent</sssom:subject_label>

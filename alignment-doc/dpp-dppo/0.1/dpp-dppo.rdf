@@ -3,9 +3,9 @@
   <Alignment>
     <xml>yes</xml>
     <level>0</level>
-    <onto1>http://w3id.org/dpp/</onto1>
+    <onto1>https://w3id.org/dpp/</onto1>
     <onto2>https://w3id.org/dppo/</onto2>
-    <url1>http://w3id.org/dpp/</url1>
+    <url1>https://w3id.org/dpp/</url1>
     <url2>https://w3id.org/dppo/</url2>
     <map>
       <cell>
@@ -40,13 +40,6 @@
         <entity1 rdf:resource="http://w3id.org/dpp#Agent" />
         <entity2 rdf:resource="http://w3id.org/dppo/ontology/dpp-prov/Actor" />
         <relation>=</relation>
-      </cell>
-    </map>
-    <map>
-      <cell>
-        <entity1 rdf:resource="http://w3id.org/dpp#hasComponent" />
-        <entity2 rdf:resource="http://w3id.org/dppo/ontology/dpp-odp/hasPart" />
-        <relation>&lt;</relation>
       </cell>
     </map>
   </Alignment>

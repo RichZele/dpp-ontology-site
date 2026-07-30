@@ -64,7 +64,7 @@ $(function(){
 <body>
 <div class="container">
 <div class="head">
-<div style="float:right">language <a href="index.html"><b>en</b></a> </div>
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
 <h1>The alignment ontology between DPPO and CEON</h1>
 <h2>Release: 2026-01-23</h2>
 
@@ -104,24 +104,24 @@ This ontology has the following classes and properties.</span>
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
-      <a href="#https://w3id.org/CEON/ontology/material/Material" title="https://w3id.org/CEON/ontology/material/Material">
+      <a href="#http://w3id.org/CEON/ontology/material/ChemicalSubstance"
+         title="http://w3id.org/CEON/ontology/material/ChemicalSubstance">
+         <span>Chemical Substance</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://w3id.org/CEON/ontology/material/Material" title="http://w3id.org/CEON/ontology/material/Material">
          <span>Material</span>
       </a>
    </li>
    <li>
-      <a href="#https://w3id.org/CEON/ontology/product/Product" title="https://w3id.org/CEON/ontology/product/Product">
+      <a href="#http://w3id.org/CEON/ontology/product/Product" title="http://w3id.org/CEON/ontology/product/Product">
          <span>Product</span>
       </a>
    </li>
    <li>
-      <a href="#https://w3id.org/dppo/ontology/dpp-core/Substance"
-         title="https://w3id.org/dppo/ontology/dpp-core/Substance">
-         <span>Substance</span>
-      </a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/dppo/ontology/dpp-comp/SubstanceOfConcern"
-         title="https://w3id.org/dppo/ontology/dpp-comp/SubstanceOfConcern">
+      <a href="#http://w3id.org/dppo/ontology/dpp-comp/SubstanceOfConcern"
+         title="http://w3id.org/dppo/ontology/dpp-comp/SubstanceOfConcern">
          <span>Substance Of Concern</span>
       </a>
    </li>
@@ -129,8 +129,15 @@ This ontology has the following classes and properties.</span>
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
-      <a href="#https://w3id.org/dppo/ontology/dpp-odp/hasPart" title="https://w3id.org/dppo/ontology/dpp-odp/hasPart">
-         <span>has Part</span>
+      <a href="#http://w3id.org/CEON/ontology/product/hasProductComponent"
+         title="http://w3id.org/CEON/ontology/product/hasProductComponent">
+         <span>has Product Component</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://w3id.org/CEON/ontology/product/hasProductObjectComponent"
+         title="http://w3id.org/CEON/ontology/product/hasProductObjectComponent">
+         <span>has Product Object Component</span>
       </a>
    </li>
 </ul><h4>Annotation Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
@@ -162,8 +169,8 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#https://w3id.org/sssom/mapping_justificatio" title="https://w3id.org/sssom/mapping_justificatio">
-         <span>mapping justificatio</span>
+      <a href="#https://w3id.org/sssom/mapping_justification" title="https://w3id.org/sssom/mapping_justification">
+         <span>mapping justification</span>
       </a>
    </li>
    <li>
@@ -251,74 +258,89 @@ This section provides details for each class and property defined by The alignme
 <div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
  <h3 id="classes-headline" class="list">Classes</h3>
  <ul class="hlist">
-  <li><a href="#https://w3id.org/CEON/ontology/material/Material" title="https://w3id.org/CEON/ontology/material/Material"> <span>Material</span> </a></li>
-  <li><a href="#https://w3id.org/CEON/ontology/product/Product" title="https://w3id.org/CEON/ontology/product/Product"> <span>Product</span> </a></li>
-  <li><a href="#https://w3id.org/dppo/ontology/dpp-core/Substance" title="https://w3id.org/dppo/ontology/dpp-core/Substance"> <span>Substance</span> </a></li>
-  <li><a href="#https://w3id.org/dppo/ontology/dpp-comp/SubstanceOfConcern" title="https://w3id.org/dppo/ontology/dpp-comp/SubstanceOfConcern"> <span>Substance Of Concern</span> </a></li>
+  <li><a href="#http://w3id.org/CEON/ontology/material/ChemicalSubstance" title="http://w3id.org/CEON/ontology/material/ChemicalSubstance"> <span>Chemical Substance</span> </a></li>
+  <li><a href="#http://w3id.org/CEON/ontology/material/Material" title="http://w3id.org/CEON/ontology/material/Material"> <span>Material</span> </a></li>
+  <li><a href="#http://w3id.org/CEON/ontology/product/Product" title="http://w3id.org/CEON/ontology/product/Product"> <span>Product</span> </a></li>
+  <li><a href="#http://w3id.org/dppo/ontology/dpp-comp/SubstanceOfConcern" title="http://w3id.org/dppo/ontology/dpp-comp/SubstanceOfConcern"> <span>Substance Of Concern</span> </a></li>
  </ul>
- <div class="entity" id="https://w3id.org/CEON/ontology/material/Material">
+ <div class="entity" id="http://w3id.org/CEON/ontology/material/ChemicalSubstance">
+  <h3>Chemical Substance<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/CEON/ontology/material/ChemicalSubstance</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://w3id.org/dppo/ontology/dpp-core/Substance" target="_blank" title="http://w3id.org/dppo/ontology/dpp-core/Substance">Substance</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://w3id.org/CEON/ontology/material/Material">
   <h3>Material<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/CEON/ontology/material/Material</p>
+  <p><strong>IRI:</strong> http://w3id.org/CEON/ontology/material/Material</p>
   <dl class="description">
    <dt>
     is equivalent to
    </dt>
    <dd>
-    <a href="https://w3id.org/dppo/ontology/dpp-core/Material" target="_blank" title="https://w3id.org/dppo/ontology/dpp-core/Material">Material</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://w3id.org/dppo/ontology/dpp-core/Material" target="_blank" title="http://w3id.org/dppo/ontology/dpp-core/Material">Material</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
- <div class="entity" id="https://w3id.org/CEON/ontology/product/Product">
+ <div class="entity" id="http://w3id.org/CEON/ontology/product/Product">
   <h3>Product<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/CEON/ontology/product/Product</p>
+  <p><strong>IRI:</strong> http://w3id.org/CEON/ontology/product/Product</p>
   <dl class="description">
    <dt>
     has super-classes
    </dt>
    <dd>
-    <a href="https://w3id.org/dppo/ontology/dpp-odp/Product" target="_blank" title="https://w3id.org/dppo/ontology/dpp-odp/Product">Product</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://w3id.org/dppo/ontology/dpp-odp/Product" target="_blank" title="http://w3id.org/dppo/ontology/dpp-odp/Product">Product</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
- <div class="entity" id="https://w3id.org/dppo/ontology/dpp-core/Substance">
-  <h3>Substance<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/dppo/ontology/dpp-core/Substance</p>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="https://w3id.org/CEON/ontology/material/ChemicalSubstance" target="_blank" title="https://w3id.org/CEON/ontology/material/ChemicalSubstance">Chemical Substance</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="https://w3id.org/dppo/ontology/dpp-comp/SubstanceOfConcern">
+ <div class="entity" id="http://w3id.org/dppo/ontology/dpp-comp/SubstanceOfConcern">
   <h3>Substance Of Concern<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/dppo/ontology/dpp-comp/SubstanceOfConcern</p>
+  <p><strong>IRI:</strong> http://w3id.org/dppo/ontology/dpp-comp/SubstanceOfConcern</p>
   <dl class="description">
    <dt>
     has super-classes
    </dt>
    <dd>
-    <a href="https://w3id.org/CEON/ontology/material/ChemicalEntity" target="_blank" title="https://w3id.org/CEON/ontology/material/ChemicalEntity">Chemical Entity</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://w3id.org/CEON/ontology/material/ChemicalEntity" target="_blank" title="http://w3id.org/CEON/ontology/material/ChemicalEntity">Chemical Entity</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
  <h3 id="properties" class="list">Object Properties</h3>
  <ul class="hlist">
-  <li><a href="#https://w3id.org/dppo/ontology/dpp-odp/hasPart" title="https://w3id.org/dppo/ontology/dpp-odp/hasPart"> <span>has Part</span> </a></li>
+  <li><a href="#http://w3id.org/CEON/ontology/product/hasProductComponent" title="http://w3id.org/CEON/ontology/product/hasProductComponent"> <span>has Product Component</span> </a></li>
+  <li><a href="#http://w3id.org/CEON/ontology/product/hasProductObjectComponent" title="http://w3id.org/CEON/ontology/product/hasProductObjectComponent"> <span>has Product Object Component</span> </a></li>
  </ul>
- <div class="entity" id="https://w3id.org/dppo/ontology/dpp-odp/hasPart">
-  <h3>has Part<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/dppo/ontology/dpp-odp/hasPart</p>
+ <div class="entity" id="http://w3id.org/CEON/ontology/product/hasProductComponent">
+  <h3>has Product Component<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/CEON/ontology/product/hasProductComponent</p>
   <div class="description">
    <dl>
     <dt>
      has super-properties
     </dt>
     <dd>
-     <a href="https://w3id.org/CEON/ontology/product/hasProductComponent" target="_blank" title="https://w3id.org/CEON/ontology/product/hasProductComponent">has Product Component</a> <sup class="type-op" title="object property">op</sup>, <a href="https://w3id.org/CEON/ontology/product/hasProductObjectComponent" target="_blank" title="https://w3id.org/CEON/ontology/product/hasProductObjectComponent">has Product Object Component</a> <sup class="type-op" title="object property">op</sup>
+     <a href="http://w3id.org/dppo/ontology/dpp-odp/hasPart" target="_blank" title="http://w3id.org/dppo/ontology/dpp-odp/hasPart">has Part</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://w3id.org/CEON/ontology/product/hasProductObjectComponent">
+  <h3>has Product Object Component<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/CEON/ontology/product/hasProductObjectComponent</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://w3id.org/dppo/ontology/dpp-odp/hasPart" target="_blank" title="http://w3id.org/dppo/ontology/dpp-odp/hasPart">has Part</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -331,7 +353,7 @@ This section provides details for each class and property defined by The alignme
   <li><a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator"> <span>creator</span> </a></li>
   <li><a href="#http://purl.org/dc/elements/1.1/identifier" title="http://purl.org/dc/elements/1.1/identifier"> <span>identifier</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license"> <span>license</span> </a></li>
-  <li><a href="#https://w3id.org/sssom/mapping_justificatio" title="https://w3id.org/sssom/mapping_justificatio"> <span>mapping justificatio</span> </a></li>
+  <li><a href="#https://w3id.org/sssom/mapping_justification" title="https://w3id.org/sssom/mapping_justification"> <span>mapping justification</span> </a></li>
   <li><a href="#https://w3id.org/sssom/object_label" title="https://w3id.org/sssom/object_label"> <span>object label</span> </a></li>
   <li><a href="#https://w3id.org/sssom/object_type" title="https://w3id.org/sssom/object_type"> <span>object type</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/source" title="http://purl.org/dc/terms/source"> <span>source</span> </a></li>
@@ -359,9 +381,9 @@ This section provides details for each class and property defined by The alignme
   <h3>license<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/license</p>
  </div>
- <div class="entity" id="https://w3id.org/sssom/mapping_justificatio">
-  <h3>mapping justificatio<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/sssom/mapping_justificatio</p>
+ <div class="entity" id="https://w3id.org/sssom/mapping_justification">
+  <h3>mapping justification<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/sssom/mapping_justification</p>
  </div>
  <div class="entity" id="https://w3id.org/sssom/object_label">
   <h3>object label<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
@@ -425,7 +447,7 @@ This section provides details for each class and property defined by The alignme
     <a href="http://purl.org/dc/terms/source" target="_blank" title="http://purl.org/dc/terms/source">source</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"https://w3id.org/dpp/alignment/dppo-ceon/"</span>
    </dd>
    <dd>
-    <a href="https://w3id.org/sssom/mapping_justificatio" target="_blank" title="https://w3id.org/sssom/mapping_justificatio">mapping justificatio</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="https://w3id.org/semapv/vocab/ManualMappingCuration" target="_blank" title="https://w3id.org/semapv/vocab/ManualMappingCuration">Manual Mapping Curation</a> <sup class="type-ep" title="external property">ep</sup>
+    <a href="https://w3id.org/sssom/mapping_justification" target="_blank" title="https://w3id.org/sssom/mapping_justification">mapping justification</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="https://w3id.org/semapv/vocab/ManualMappingCuration" target="_blank" title="https://w3id.org/semapv/vocab/ManualMappingCuration">Manual Mapping Curation</a> <sup class="type-ep" title="external property">ep</sup>
    </dd>
    <dd>
     <a href="https://w3id.org/sssom/object_label" target="_blank" title="https://w3id.org/sssom/object_label">object label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Product"</span>
@@ -469,7 +491,7 @@ This section provides details for each class and property defined by The alignme
     <a href="http://purl.org/dc/terms/source" target="_blank" title="http://purl.org/dc/terms/source">source</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"https://w3id.org/dpp/alignment/dppo-ceon/"</span>
    </dd>
    <dd>
-    <a href="https://w3id.org/sssom/mapping_justificatio" target="_blank" title="https://w3id.org/sssom/mapping_justificatio">mapping justificatio</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="https://w3id.org/semapv/vocab/ManualMappingCuration" target="_blank" title="https://w3id.org/semapv/vocab/ManualMappingCuration">Manual Mapping Curation</a> <sup class="type-ep" title="external property">ep</sup>
+    <a href="https://w3id.org/sssom/mapping_justification" target="_blank" title="https://w3id.org/sssom/mapping_justification">mapping justification</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="https://w3id.org/semapv/vocab/ManualMappingCuration" target="_blank" title="https://w3id.org/semapv/vocab/ManualMappingCuration">Manual Mapping Curation</a> <sup class="type-ep" title="external property">ep</sup>
    </dd>
    <dd>
     <a href="https://w3id.org/sssom/object_label" target="_blank" title="https://w3id.org/sssom/object_label">object label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Material"</span>
@@ -513,16 +535,16 @@ This section provides details for each class and property defined by The alignme
     <a href="http://purl.org/dc/terms/source" target="_blank" title="http://purl.org/dc/terms/source">source</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"https://w3id.org/dpp/alignment/dppo-ceon/"</span>
    </dd>
    <dd>
-    <a href="https://w3id.org/sssom/mapping_justificatio" target="_blank" title="https://w3id.org/sssom/mapping_justificatio">mapping justificatio</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="https://w3id.org/semapv/vocab/ManualMappingCuration" target="_blank" title="https://w3id.org/semapv/vocab/ManualMappingCuration">Manual Mapping Curation</a> <sup class="type-ep" title="external property">ep</sup>
+    <a href="https://w3id.org/sssom/mapping_justification" target="_blank" title="https://w3id.org/sssom/mapping_justification">mapping justification</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="https://w3id.org/semapv/vocab/ManualMappingCuration" target="_blank" title="https://w3id.org/semapv/vocab/ManualMappingCuration">Manual Mapping Curation</a> <sup class="type-ep" title="external property">ep</sup>
    </dd>
    <dd>
-    <a href="https://w3id.org/sssom/object_label" target="_blank" title="https://w3id.org/sssom/object_label">object label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"ChemicalSubstance"</span>
+    <a href="https://w3id.org/sssom/object_label" target="_blank" title="https://w3id.org/sssom/object_label">object label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Substance"</span>
    </dd>
    <dd>
     <a href="https://w3id.org/sssom/object_type" target="_blank" title="https://w3id.org/sssom/object_type">object type</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://www.w3.org/2002/07/owl#Class" target="_blank" title="http://www.w3.org/2002/07/owl#Class">Class</a> <sup class="type-ep" title="external property">ep</sup>
    </dd>
    <dd>
-    <a href="https://w3id.org/sssom/subject_label" target="_blank" title="https://w3id.org/sssom/subject_label">subject label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Substance"</span>
+    <a href="https://w3id.org/sssom/subject_label" target="_blank" title="https://w3id.org/sssom/subject_label">subject label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"ChemicalSubstance"</span>
    </dd>
    <dd>
     <a href="https://w3id.org/sssom/subject_type" target="_blank" title="https://w3id.org/sssom/subject_type">subject type</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://www.w3.org/2002/07/owl#Class" target="_blank" title="http://www.w3.org/2002/07/owl#Class">Class</a> <sup class="type-ep" title="external property">ep</sup>
@@ -557,7 +579,7 @@ This section provides details for each class and property defined by The alignme
     <a href="http://purl.org/dc/terms/source" target="_blank" title="http://purl.org/dc/terms/source">source</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"https://w3id.org/dpp/alignment/dppo-ceon/"</span>
    </dd>
    <dd>
-    <a href="https://w3id.org/sssom/mapping_justificatio" target="_blank" title="https://w3id.org/sssom/mapping_justificatio">mapping justificatio</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="https://w3id.org/semapv/vocab/ManualMappingCuration" target="_blank" title="https://w3id.org/semapv/vocab/ManualMappingCuration">Manual Mapping Curation</a> <sup class="type-ep" title="external property">ep</sup>
+    <a href="https://w3id.org/sssom/mapping_justification" target="_blank" title="https://w3id.org/sssom/mapping_justification">mapping justification</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="https://w3id.org/semapv/vocab/ManualMappingCuration" target="_blank" title="https://w3id.org/semapv/vocab/ManualMappingCuration">Manual Mapping Curation</a> <sup class="type-ep" title="external property">ep</sup>
    </dd>
    <dd>
     <a href="https://w3id.org/sssom/object_label" target="_blank" title="https://w3id.org/sssom/object_label">object label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"ChemicalEntity"</span>
@@ -601,16 +623,16 @@ This section provides details for each class and property defined by The alignme
     <a href="http://purl.org/dc/terms/source" target="_blank" title="http://purl.org/dc/terms/source">source</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"https://w3id.org/dpp/alignment/dppo-ceon/"</span>
    </dd>
    <dd>
-    <a href="https://w3id.org/sssom/mapping_justificatio" target="_blank" title="https://w3id.org/sssom/mapping_justificatio">mapping justificatio</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="https://w3id.org/semapv/vocab/ManualMappingCuration" target="_blank" title="https://w3id.org/semapv/vocab/ManualMappingCuration">Manual Mapping Curation</a> <sup class="type-ep" title="external property">ep</sup>
+    <a href="https://w3id.org/sssom/mapping_justification" target="_blank" title="https://w3id.org/sssom/mapping_justification">mapping justification</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="https://w3id.org/semapv/vocab/ManualMappingCuration" target="_blank" title="https://w3id.org/semapv/vocab/ManualMappingCuration">Manual Mapping Curation</a> <sup class="type-ep" title="external property">ep</sup>
    </dd>
    <dd>
-    <a href="https://w3id.org/sssom/object_label" target="_blank" title="https://w3id.org/sssom/object_label">object label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"hasProductComponent"</span>
+    <a href="https://w3id.org/sssom/object_label" target="_blank" title="https://w3id.org/sssom/object_label">object label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"hasPart"</span>
    </dd>
    <dd>
     <a href="https://w3id.org/sssom/object_type" target="_blank" title="https://w3id.org/sssom/object_type">object type</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://www.w3.org/2002/07/owl#ObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#ObjectProperty">Object Property</a> <sup class="type-ep" title="external property">ep</sup>
    </dd>
    <dd>
-    <a href="https://w3id.org/sssom/subject_label" target="_blank" title="https://w3id.org/sssom/subject_label">subject label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"hasPart"</span>
+    <a href="https://w3id.org/sssom/subject_label" target="_blank" title="https://w3id.org/sssom/subject_label">subject label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"hasProductComponent"</span>
    </dd>
    <dd>
     <a href="https://w3id.org/sssom/subject_type" target="_blank" title="https://w3id.org/sssom/subject_type">subject type</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://www.w3.org/2002/07/owl#ObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#ObjectProperty">Object Property</a> <sup class="type-ep" title="external property">ep</sup>
@@ -642,16 +664,16 @@ This section provides details for each class and property defined by The alignme
     <a href="http://purl.org/dc/terms/source" target="_blank" title="http://purl.org/dc/terms/source">source</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"https://w3id.org/dpp/alignment/dppo-ceon/"</span>
    </dd>
    <dd>
-    <a href="https://w3id.org/sssom/mapping_justificatio" target="_blank" title="https://w3id.org/sssom/mapping_justificatio">mapping justificatio</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="https://w3id.org/semapv/vocab/ManualMappingCuration" target="_blank" title="https://w3id.org/semapv/vocab/ManualMappingCuration">Manual Mapping Curation</a> <sup class="type-ep" title="external property">ep</sup>
+    <a href="https://w3id.org/sssom/mapping_justification" target="_blank" title="https://w3id.org/sssom/mapping_justification">mapping justification</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="https://w3id.org/semapv/vocab/ManualMappingCuration" target="_blank" title="https://w3id.org/semapv/vocab/ManualMappingCuration">Manual Mapping Curation</a> <sup class="type-ep" title="external property">ep</sup>
    </dd>
    <dd>
-    <a href="https://w3id.org/sssom/object_label" target="_blank" title="https://w3id.org/sssom/object_label">object label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"hasProductObjectComponent"</span>
+    <a href="https://w3id.org/sssom/object_label" target="_blank" title="https://w3id.org/sssom/object_label">object label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"hasPart"</span>
    </dd>
    <dd>
     <a href="https://w3id.org/sssom/object_type" target="_blank" title="https://w3id.org/sssom/object_type">object type</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://www.w3.org/2002/07/owl#ObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#ObjectProperty">Object Property</a> <sup class="type-ep" title="external property">ep</sup>
    </dd>
    <dd>
-    <a href="https://w3id.org/sssom/subject_label" target="_blank" title="https://w3id.org/sssom/subject_label">subject label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"hasPart"</span>
+    <a href="https://w3id.org/sssom/subject_label" target="_blank" title="https://w3id.org/sssom/subject_label">subject label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"hasProductObjectComponent"</span>
    </dd>
    <dd>
     <a href="https://w3id.org/sssom/subject_type" target="_blank" title="https://w3id.org/sssom/subject_type">subject type</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://www.w3.org/2002/07/owl#ObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#ObjectProperty">Object Property</a> <sup class="type-ep" title="external property">ep</sup>

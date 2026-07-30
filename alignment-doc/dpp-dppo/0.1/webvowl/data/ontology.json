@@ -2,7 +2,7 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "undefined" ],
-    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/dppo/ontology/dpp-info", "https://w3id.org/sssom", "https://w3id.org/dppo/ontology/dpp-odp", "http://w3id.org/dpp", "https://w3id.org/dppo/ontology/dpp-core", "https://w3id.org/dppo/ontology/dpp-prov" ],
+    "baseIris" : [ "http://w3id.org/dppo/ontology/dpp-prov", "http://w3id.org/dppo/ontology/dpp-odp", "http://www.w3.org/2000/01/rdf-schema", "http://w3id.org/dppo/ontology/dpp-info", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/sssom", "http://w3id.org/dppo/ontology/dpp-core", "http://w3id.org/dpp" ],
     "title" : {
       "undefined" : "The alignment ontology between DPP ontology and DPPO"
     },
@@ -47,16 +47,16 @@
         "value" : "2026-01-23",
         "type" : "label"
       } ],
-      "source" : [ {
-        "identifier" : "source",
-        "language" : "undefined",
-        "value" : "https://github.com/RichZele/DPP-DPPO-CEON-Ontology-Alignment/blob/main/documentations/DPP-DPPO.xlsx",
-        "type" : "label"
-      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "0.1",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "undefined",
+        "value" : "https://github.com/RichZele/DPP-DPPO-CEON-Ontology-Alignment/blob/main/documentations/DPP-DPPO.xlsx",
         "type" : "label"
       } ],
       "title" : [ {
@@ -69,71 +69,51 @@
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "0",
-    "type" : "owl:Class"
-  }, {
-    "id" : "2",
-    "type" : "owl:equivalentClass"
-  }, {
     "id" : "3",
     "type" : "owl:equivalentClass"
-  }, {
-    "id" : "4",
-    "type" : "owl:Class"
-  }, {
-    "id" : "8",
-    "type" : "owl:Class"
-  }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "11",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "7",
-    "type" : "owl:Class"
-  }, {
-    "id" : "14",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "1",
-    "type" : "owl:Class"
   }, {
     "id" : "5",
     "type" : "owl:Class"
   }, {
+    "id" : "4",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "13",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
     "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
     "type" : "owl:equivalentClass"
   } ],
   "classAttribute" : [ {
-    "iri" : "https://w3id.org/dppo/ontology/dpp-info/CompositionInformation",
-    "baseIri" : "https://w3id.org/dppo/ontology/dpp-info",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "CompositionInformation"
-    },
-    "subClasses" : [ "1" ],
-    "attributes" : [ "external" ],
-    "id" : "0"
-  }, {
     "iri" : "http://w3id.org/dpp#Agent",
-    "equivalent" : [ "3" ],
+    "equivalent" : [ "4" ],
     "baseIri" : "http://w3id.org/dpp",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Agent"
     },
-    "attributes" : [ "equivalent", "external" ],
-    "id" : "2"
-  }, {
-    "iri" : "https://w3id.org/dppo/ontology/dpp-prov/Actor",
-    "equivalent" : [ "2" ],
-    "baseIri" : "https://w3id.org/dppo/ontology/dpp-prov",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Actor"
-    },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "3"
   }, {
     "iri" : "http://w3id.org/dpp#Product",
@@ -143,18 +123,38 @@
       "IRI-based" : "Product"
     },
     "attributes" : [ "external" ],
-    "id" : "4",
-    "superClasses" : [ "5" ]
+    "id" : "5",
+    "superClasses" : [ "6" ]
   }, {
-    "iri" : "https://w3id.org/dppo/ontology/dpp-core/Material",
-    "baseIri" : "https://w3id.org/dppo/ontology/dpp-core",
+    "iri" : "http://w3id.org/dppo/ontology/dpp-prov/Actor",
+    "equivalent" : [ "3" ],
+    "baseIri" : "http://w3id.org/dppo/ontology/dpp-prov",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Material"
+      "IRI-based" : "Actor"
     },
-    "subClasses" : [ "7" ],
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://w3id.org/dppo/ontology/dpp-core/Component",
+    "equivalent" : [ "14" ],
+    "baseIri" : "http://w3id.org/dppo/ontology/dpp-core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Component"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://w3id.org/dppo/ontology/dpp-odp/Product",
+    "baseIri" : "http://w3id.org/dppo/ontology/dpp-odp",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Product"
+    },
+    "subClasses" : [ "5" ],
     "attributes" : [ "external" ],
-    "id" : "8"
+    "id" : "6"
   }, {
     "iri" : "https://w3id.org/sssom/Mapping",
     "baseIri" : "https://w3id.org/sssom",
@@ -190,8 +190,8 @@
           "value" : "hasComponent",
           "type" : "label"
         } ],
-        "mapping_justificatio" : [ {
-          "identifier" : "mapping_justificatio",
+        "mapping_justification" : [ {
+          "identifier" : "mapping_justification",
           "language" : "undefined",
           "value" : "https://w3id.org/semapv/vocab/ManualMappingCuration",
           "type" : "iri"
@@ -231,20 +231,20 @@
           "value" : "http://www.w3.org/2002/07/owl#Class",
           "type" : "iri"
         } ],
-        "subject_label" : [ {
-          "identifier" : "subject_label",
-          "language" : "undefined",
-          "value" : "MaterialComposition",
-          "type" : "label"
-        } ],
         "object_type" : [ {
           "identifier" : "object_type",
           "language" : "undefined",
           "value" : "http://www.w3.org/2002/07/owl#Class",
           "type" : "iri"
         } ],
-        "mapping_justificatio" : [ {
-          "identifier" : "mapping_justificatio",
+        "subject_label" : [ {
+          "identifier" : "subject_label",
+          "language" : "undefined",
+          "value" : "MaterialComposition",
+          "type" : "label"
+        } ],
+        "mapping_justification" : [ {
+          "identifier" : "mapping_justification",
           "language" : "undefined",
           "value" : "https://w3id.org/semapv/vocab/ManualMappingCuration",
           "type" : "iri"
@@ -296,8 +296,8 @@
           "value" : "Agent",
           "type" : "label"
         } ],
-        "mapping_justificatio" : [ {
-          "identifier" : "mapping_justificatio",
+        "mapping_justification" : [ {
+          "identifier" : "mapping_justification",
           "language" : "undefined",
           "value" : "https://w3id.org/semapv/vocab/ManualMappingCuration",
           "type" : "iri"
@@ -349,8 +349,8 @@
           "value" : "Component",
           "type" : "label"
         } ],
-        "mapping_justificatio" : [ {
-          "identifier" : "mapping_justificatio",
+        "mapping_justification" : [ {
+          "identifier" : "mapping_justification",
           "language" : "undefined",
           "value" : "https://w3id.org/semapv/vocab/ManualMappingCuration",
           "type" : "iri"
@@ -390,20 +390,20 @@
           "value" : "http://www.w3.org/2002/07/owl#Class",
           "type" : "iri"
         } ],
-        "object_type" : [ {
-          "identifier" : "object_type",
-          "language" : "undefined",
-          "value" : "http://www.w3.org/2002/07/owl#Class",
-          "type" : "iri"
-        } ],
         "subject_label" : [ {
           "identifier" : "subject_label",
           "language" : "undefined",
           "value" : "Material",
           "type" : "label"
         } ],
-        "mapping_justificatio" : [ {
-          "identifier" : "mapping_justificatio",
+        "object_type" : [ {
+          "identifier" : "object_type",
+          "language" : "undefined",
+          "value" : "http://www.w3.org/2002/07/owl#Class",
+          "type" : "iri"
+        } ],
+        "mapping_justification" : [ {
+          "identifier" : "mapping_justification",
           "language" : "undefined",
           "value" : "https://w3id.org/semapv/vocab/ManualMappingCuration",
           "type" : "iri"
@@ -443,20 +443,20 @@
           "value" : "http://www.w3.org/2002/07/owl#Class",
           "type" : "iri"
         } ],
-        "subject_label" : [ {
-          "identifier" : "subject_label",
-          "language" : "undefined",
-          "value" : "Product",
-          "type" : "label"
-        } ],
         "object_type" : [ {
           "identifier" : "object_type",
           "language" : "undefined",
           "value" : "http://www.w3.org/2002/07/owl#Class",
           "type" : "iri"
         } ],
-        "mapping_justificatio" : [ {
-          "identifier" : "mapping_justificatio",
+        "subject_label" : [ {
+          "identifier" : "subject_label",
+          "language" : "undefined",
+          "value" : "Product",
+          "type" : "label"
+        } ],
+        "mapping_justification" : [ {
+          "identifier" : "mapping_justification",
           "language" : "undefined",
           "value" : "https://w3id.org/semapv/vocab/ManualMappingCuration",
           "type" : "iri"
@@ -482,17 +482,7 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "10"
-  }, {
-    "iri" : "https://w3id.org/dppo/ontology/dpp-core/Component",
-    "equivalent" : [ "12" ],
-    "baseIri" : "https://w3id.org/dppo/ontology/dpp-core",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Component"
-    },
-    "attributes" : [ "equivalent", "external" ],
-    "id" : "11"
+    "id" : "15"
   }, {
     "iri" : "http://w3id.org/dpp#Material",
     "baseIri" : "http://w3id.org/dpp",
@@ -501,12 +491,12 @@
       "IRI-based" : "Material"
     },
     "attributes" : [ "external" ],
-    "id" : "7",
-    "superClasses" : [ "8" ]
+    "id" : "11",
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "14",
+    "id" : "1",
     "label" : {
       "undefined" : "Thing"
     }
@@ -518,81 +508,91 @@
       "IRI-based" : "MaterialComposition"
     },
     "attributes" : [ "external" ],
-    "id" : "1",
-    "superClasses" : [ "0" ]
+    "id" : "8",
+    "superClasses" : [ "9" ]
   }, {
-    "iri" : "https://w3id.org/dppo/ontology/dpp-odp/Product",
-    "baseIri" : "https://w3id.org/dppo/ontology/dpp-odp",
+    "iri" : "http://w3id.org/dppo/ontology/dpp-info/CompositionInformation",
+    "baseIri" : "http://w3id.org/dppo/ontology/dpp-info",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Product"
+      "IRI-based" : "CompositionInformation"
     },
-    "subClasses" : [ "4" ],
+    "subClasses" : [ "8" ],
     "attributes" : [ "external" ],
-    "id" : "5"
+    "id" : "9"
+  }, {
+    "iri" : "http://w3id.org/dppo/ontology/dpp-core/Material",
+    "baseIri" : "http://w3id.org/dppo/ontology/dpp-core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Material"
+    },
+    "subClasses" : [ "11" ],
+    "attributes" : [ "external" ],
+    "id" : "12"
   }, {
     "iri" : "http://w3id.org/dpp#Component",
-    "equivalent" : [ "11" ],
+    "equivalent" : [ "13" ],
     "baseIri" : "http://w3id.org/dpp",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Component"
     },
-    "attributes" : [ "equivalent", "external" ],
-    "id" : "12"
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "14"
   } ],
   "property" : [ {
-    "id" : "6",
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "9",
+    "id" : "10",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "13",
+    "id" : "2",
     "type" : "owl:objectProperty"
   }, {
     "id" : "16",
     "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "15",
-    "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
-    "range" : "8",
-    "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "6"
-  }, {
-    "range" : "5",
-    "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "9"
-  }, {
-    "iri" : "http://w3id.org/dpp#hasComponent",
-    "baseIri" : "http://w3id.org/dpp",
-    "range" : "14",
-    "label" : {
-      "IRI-based" : "hasComponent"
-    },
-    "superproperty" : [ "15" ],
-    "domain" : "14",
-    "attributes" : [ "object", "external" ],
-    "id" : "13"
-  }, {
-    "range" : "0",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "16"
-  }, {
-    "iri" : "https://w3id.org/dppo/ontology/dpp-odp/hasPart",
-    "baseIri" : "https://w3id.org/dppo/ontology/dpp-odp",
-    "range" : "14",
+    "iri" : "http://w3id.org/dppo/ontology/dpp-odp/hasPart",
+    "baseIri" : "http://w3id.org/dppo/ontology/dpp-odp",
+    "range" : "1",
     "label" : {
       "IRI-based" : "hasPart"
     },
-    "domain" : "14",
-    "subproperty" : [ "13" ],
-    "attributes" : [ "object", "external" ],
-    "id" : "15"
+    "domain" : "1",
+    "subproperty" : [ "2" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "0"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "7"
+  }, {
+    "range" : "12",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://w3id.org/dpp#hasComponent",
+    "baseIri" : "http://w3id.org/dpp",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasComponent"
+    },
+    "superproperty" : [ "0" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "2"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "16"
   } ]
 }
