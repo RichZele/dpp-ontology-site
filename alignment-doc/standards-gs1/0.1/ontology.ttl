@@ -1,0 +1,67 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://w3id.org/dpp/alignment/standards-gs1/> a owl:Ontology ;
+    rdfs:label "Alignment between the DPP, DPPO and CEON ontologies and the GS1 Web Vocabulary." .
+
+<http://w3id.org/CEON/ontology/product/Product> rdfs:subClassOf <https://www.gs1.org/voc/Product> .
+
+<http://w3id.org/dpp#Product> rdfs:subClassOf <https://www.gs1.org/voc/Product> .
+
+<http://w3id.org/dppo/ontology/dpp-odp/Product> rdfs:subClassOf <https://www.gs1.org/voc/Product> .
+
+<http://w3id.org/CEON/ontology/product/hasGlobalTradeItemNumber> owl:equivalentProperty <https://www.gs1.org/voc/gtin> .
+
+<https://www.gs1.org/voc/gtin> rdfs:subPropertyOf <http://w3id.org/dppo/ontology/dpp-info/value> ;
+    owl:equivalentProperty <http://w3id.org/CEON/ontology/product/hasGlobalTradeItemNumber> .
+
+[] a owl:Axiom ;
+    dc:identifier "GS1_0001" ;
+    dcterms:source "StandardsGS1" ;
+    rdfs:comment "gs1:Product is any item, product or service, for which predefined information must be retrievable and that may be priced, ordered or invoiced. dpp:Product is a physical artefact and therefore satisfies the broader commercial definition. Stated in the GS1 section of the accompanying paper." ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource <http://w3id.org/dpp#Product> ;
+    owl:annotatedTarget <https://www.gs1.org/voc/Product> .
+
+[] a owl:Axiom ;
+    dc:identifier "GS1_0005" ;
+    dcterms:source "StandardsGS1" ;
+    rdfs:comment "CEON already provides a literal-valued property for the GTIN, with range xsd:string and an rdfs:seeAlso reference to the GS1 GTIN standard, so the two capture the same lexical value. Stated as an equivalence in the GS1 section of the accompanying paper." ;
+    owl:annotatedProperty owl:equivalentProperty ;
+    owl:annotatedSource <http://w3id.org/CEON/ontology/product/hasGlobalTradeItemNumber> ;
+    owl:annotatedTarget <https://www.gs1.org/voc/gtin> .
+
+[] a owl:Axiom ;
+    dc:identifier "GS1_0003" ;
+    dcterms:source "StandardsGS1" ;
+    rdfs:comment "gs1:Product is strictly broader than the CEON product class, so only a subclass axiom is justified. Stated in the GS1 section of the accompanying paper." ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource <http://w3id.org/CEON/ontology/product/Product> ;
+    owl:annotatedTarget <https://www.gs1.org/voc/Product> .
+
+[] a owl:Axiom ;
+    dc:identifier "GS1_0002" ;
+    dcterms:source "StandardsGS1" ;
+    rdfs:comment "gs1:Product is strictly broader than the DPPO product class, so only a subclass axiom is justified. Stated in the GS1 section of the accompanying paper." ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource <http://w3id.org/dppo/ontology/dpp-odp/Product> ;
+    owl:annotatedTarget <https://www.gs1.org/voc/Product> .
+
+[] a owl:Axiom ;
+    dc:identifier "GS1_0005" ;
+    dcterms:source "StandardsGS1" ;
+    rdfs:comment "CEON already provides a literal-valued property for the GTIN, with range xsd:string and an rdfs:seeAlso reference to the GS1 GTIN standard, so the two capture the same lexical value. Stated as an equivalence in the GS1 section of the accompanying paper." ;
+    owl:annotatedProperty owl:equivalentProperty ;
+    owl:annotatedSource <https://www.gs1.org/voc/gtin> ;
+    owl:annotatedTarget <http://w3id.org/CEON/ontology/product/hasGlobalTradeItemNumber> .
+
+[] a owl:Axiom ;
+    dc:identifier "GS1_0004" ;
+    dcterms:source "StandardsGS1" ;
+    rdfs:comment "DPPO provides no datatype property parallel to gs1:gtin. The literal-valued dpp-info:value is the closest available, although its semantic scope is broader and not specific to product identifiers. Stated in the GS1 section of the accompanying paper." ;
+    owl:annotatedProperty rdfs:subPropertyOf ;
+    owl:annotatedSource <https://www.gs1.org/voc/gtin> ;
+    owl:annotatedTarget <http://w3id.org/dppo/ontology/dpp-info/value> .
+

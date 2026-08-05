@@ -1,0 +1,28 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://w3id.org/dpp/alignment/dpp-ceon/> a owl:Ontology ;
+    rdfs:label "Alignment between the DPP ontology and CEON." .
+
+<http://w3id.org/dpp#Product> rdfs:subClassOf <http://w3id.org/CEON/ontology/product/Product> .
+
+<http://w3id.org/dpp#hasComponent> rdfs:subPropertyOf <http://w3id.org/CEON/ontology/product/hasProductComponent> .
+
+[] a owl:Axiom ;
+    dc:identifier "DPP_CEON_0001" ;
+    dcterms:source "DPPCEON" ;
+    rdfs:comment "dpp:Product and ceon-product:Product share the ISO 59004:2024 product definition, but dpp:Product is scoped to the products of the built environment whereas ceon-product:Product is domain neutral. Stated in the section on semantic alignment informed by the ESPR in the accompanying paper, where this alignment gives the DPP ontology access to the ESPR model, batch and item levels through CEON." ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource <http://w3id.org/dpp#Product> ;
+    owl:annotatedTarget <http://w3id.org/CEON/ontology/product/Product> .
+
+[] a owl:Axiom ;
+    dc:identifier "DPP_CEON_0002" ;
+    dcterms:source "DPPCEON" ;
+    rdfs:comment "Both properties relate a product to a component that is itself a product. Additional mapping, not discussed in the paper." ;
+    owl:annotatedProperty rdfs:subPropertyOf ;
+    owl:annotatedSource <http://w3id.org/dpp#hasComponent> ;
+    owl:annotatedTarget <http://w3id.org/CEON/ontology/product/hasProductComponent> .
+

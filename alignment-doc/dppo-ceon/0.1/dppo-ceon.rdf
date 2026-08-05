@@ -49,5 +49,61 @@
         <relation>&lt;</relation>
       </cell>
     </map>
+    <map>
+      <cell>
+        <entity1 rdf:resource="http://w3id.org/dppo/ontology/dpp-info/CompositionInformation" />
+        <entity2 rdf:resource="http://w3id.org/CEON/ontology/product/Composition" />
+        <relation>=</relation>
+      </cell>
+    </map>
+    <map>
+      <cell>
+        <entity1 rdf:resource="http://w3id.org/dppo/ontology/dpp-core/Component" />
+        <entity2 rdf:resource="http://w3id.org/CEON/ontology/product/Product" />
+        <relation>&lt;</relation>
+      </cell>
+    </map>
+    <map>
+      <cell>
+        <entity1 rdf:resource="http://w3id.org/dppo/ontology/dpp-comp/aboutWhole" />
+        <entity2 rdf:resource="http://w3id.org/CEON/ontology/product/associatedWithProductModel" />
+        <relation>=</relation>
+      </cell>
+    </map>
+    <map>
+      <cell>
+        <entity1 rdf:resource="http://w3id.org/dppo/ontology/dpp-info/DPPInformation" />
+        <entity2 rdf:resource="http://w3id.org/CEON/ontology/resourceODP/Information" />
+        <relation>&lt;</relation>
+      </cell>
+    </map>
+    <map>
+      <cell>
+        <entity1 rdf:resource="http://w3id.org/dppo/ontology/dpp-info/containsInformation" />
+        <entity2 rdf:resource="http://w3id.org/CEON/ontology/resourceODP/containsInformation" />
+        <relation>&lt;</relation>
+      </cell>
+    </map>
+    <map>
+      <cell>
+        <entity1 rdf:resource="http://w3id.org/dppo/ontology/dpp-odp/describes" />
+        <entity2 rdf:resource="http://w3id.org/CEON/ontology/resourceODP/isAbout" />
+        <relation>&lt;</relation>
+      </cell>
+    </map>
+    <map>
+      <cell>
+        <entity1 rdf:resource="http://w3id.org/dppo/ontology/dpp-info/isAbout" />
+        <entity2 rdf:resource="http://w3id.org/CEON/ontology/resourceODP/isAbout" />
+        <relation>&lt;</relation>
+      </cell>
+    </map>
+    <map>
+      <cell>
+        <entity1 rdf:resource="http://w3id.org/dppo/ontology/dpp-comp/aboutPart" />
+        <entity2 rdf:resource="http://w3id.org/CEON/ontology/product/compositionOf" />
+        <relation>&lt;</relation>
+      </cell>
+    </map>
   </Alignment>
 </rdf:RDF>

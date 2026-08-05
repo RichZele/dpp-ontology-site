@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rdf:RDF xmlns="http://w3id.org/dpp/alignment/standards-gs1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <Alignment>
+    <xml>yes</xml>
+    <level>0</level>
+    <onto1>https://w3id.org/dpp/</onto1>
+    <onto2>https://www.gs1.org/voc/</onto2>
+    <url1>https://w3id.org/dpp/</url1>
+    <url2>https://www.gs1.org/voc/</url2>
+    <map>
+      <cell>
+        <entity1 rdf:resource="http://w3id.org/dpp#Product" />
+        <entity2 rdf:resource="https://www.gs1.org/voc/Product" />
+        <relation>&lt;</relation>
+      </cell>
+    </map>
+    <map>
+      <cell>
+        <entity1 rdf:resource="http://w3id.org/dppo/ontology/dpp-odp/Product" />
+        <entity2 rdf:resource="https://www.gs1.org/voc/Product" />
+        <relation>&lt;</relation>
+      </cell>
+    </map>
+    <map>
+      <cell>
+        <entity1 rdf:resource="http://w3id.org/CEON/ontology/product/Product" />
+        <entity2 rdf:resource="https://www.gs1.org/voc/Product" />
+        <relation>&lt;</relation>
+      </cell>
+    </map>
+    <map>
+      <cell>
+        <entity1 rdf:resource="https://www.gs1.org/voc/gtin" />
+        <entity2 rdf:resource="http://w3id.org/dppo/ontology/dpp-info/value" />
+        <relation>&lt;</relation>
+      </cell>
+    </map>
+    <map>
+      <cell>
+        <entity1 rdf:resource="https://www.gs1.org/voc/gtin" />
+        <entity2 rdf:resource="http://w3id.org/CEON/ontology/product/hasGlobalTradeItemNumber" />
+        <relation>=</relation>
+      </cell>
+    </map>
+  </Alignment>
+</rdf:RDF>
