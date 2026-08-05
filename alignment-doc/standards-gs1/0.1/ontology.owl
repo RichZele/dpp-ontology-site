@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/dpp/alignment/standards-gs1/"
+     xml:base="https://w3id.org/dpp/alignment/standards-gs1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:voc="https://www.gs1.org/voc/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:dpp-info="http://w3id.org/dppo/ontology/dpp-info/">
+    <owl:Ontology rdf:about="https://w3id.org/dpp/alignment/standards-gs1/">
+        <rdfs:label>Alignment between the DPP, DPPO and CEON ontologies and the GS1 Web Vocabulary.</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://w3id.org/dppo/ontology/dpp-info/value -->
+
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/dppo/ontology/dpp-info/value"/>
+    
+
+
+    <!-- https://www.gs1.org/voc/gtin -->
+
+
+    <owl:AnnotationProperty rdf:about="https://www.gs1.org/voc/gtin">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/dppo/ontology/dpp-info/value"/>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.gs1.org/voc/gtin"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+        <owl:annotatedTarget rdf:resource="http://w3id.org/dppo/ontology/dpp-info/value"/>
+        <dc:identifier>GS1_0004</dc:identifier>
+        <terms:source>StandardsGS1</terms:source>
+        <rdfs:comment>DPPO provides no datatype property parallel to gs1:gtin. The literal-valued dpp-info:value is the closest available, although its semantic scope is broader and not specific to product identifiers. Stated in the GS1 section of the accompanying paper.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/CEON/ontology/product/Product -->
+
+
+    <owl:Class rdf:about="http://w3id.org/CEON/ontology/product/Product">
+        <rdfs:subClassOf rdf:resource="https://www.gs1.org/voc/Product"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://w3id.org/CEON/ontology/product/Product"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="https://www.gs1.org/voc/Product"/>
+        <dc:identifier>GS1_0003</dc:identifier>
+        <terms:source>StandardsGS1</terms:source>
+        <rdfs:comment>gs1:Product is strictly broader than the CEON product class, so only a subclass axiom is justified. Stated in the GS1 section of the accompanying paper.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://w3id.org/dpp#Product -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dpp#Product">
+        <rdfs:subClassOf rdf:resource="https://www.gs1.org/voc/Product"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://w3id.org/dpp#Product"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="https://www.gs1.org/voc/Product"/>
+        <dc:identifier>GS1_0001</dc:identifier>
+        <terms:source>StandardsGS1</terms:source>
+        <rdfs:comment>gs1:Product is any item, product or service, for which predefined information must be retrievable and that may be priced, ordered or invoiced. dpp:Product is a physical artefact and therefore satisfies the broader commercial definition. Stated in the GS1 section of the accompanying paper.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://w3id.org/dppo/ontology/dpp-odp/Product -->
+
+
+    <owl:Class rdf:about="http://w3id.org/dppo/ontology/dpp-odp/Product">
+        <rdfs:subClassOf rdf:resource="https://www.gs1.org/voc/Product"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://w3id.org/dppo/ontology/dpp-odp/Product"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="https://www.gs1.org/voc/Product"/>
+        <dc:identifier>GS1_0002</dc:identifier>
+        <terms:source>StandardsGS1</terms:source>
+        <rdfs:comment>gs1:Product is strictly broader than the DPPO product class, so only a subclass axiom is justified. Stated in the GS1 section of the accompanying paper.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.gs1.org/voc/Product -->
+
+
+    <owl:Class rdf:about="https://www.gs1.org/voc/Product"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

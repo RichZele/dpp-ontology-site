@@ -1,0 +1,92 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://w3id.org/dppo/ontology/dpp-odp", "http://w3id.org/CEON/ontology/product", "https://www.gs1.org/voc", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://w3id.org/dpp" ],
+    "iri" : "https://w3id.org/dpp/alignment/standards-gs1/",
+    "labels" : {
+      "undefined" : "Alignment between the DPP, DPPO and CEON ontologies and the GS1 Web Vocabulary."
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://w3id.org/CEON/ontology/product/Product",
+    "baseIri" : "http://w3id.org/CEON/ontology/product",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Product"
+    },
+    "attributes" : [ "external" ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/dpp#Product",
+    "baseIri" : "http://w3id.org/dpp",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Product"
+    },
+    "attributes" : [ "external" ],
+    "id" : "3",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://www.gs1.org/voc/Product",
+    "baseIri" : "https://www.gs1.org/voc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Product"
+    },
+    "subClasses" : [ "0", "3", "5" ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://w3id.org/dppo/ontology/dpp-odp/Product",
+    "baseIri" : "http://w3id.org/dppo/ontology/dpp-odp",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Product"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "1" ]
+  } ],
+  "property" : [ {
+    "id" : "2",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "2"
+  }, {
+    "range" : "1",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "4"
+  }, {
+    "range" : "1",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "6"
+  } ]
+}

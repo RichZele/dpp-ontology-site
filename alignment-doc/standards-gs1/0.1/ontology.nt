@@ -1,0 +1,77 @@
+<https://w3id.org/dpp/alignment/standards-gs1/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/dpp/alignment/standards-gs1/> <http://www.w3.org/2000/01/rdf-schema#label> "Alignment between the DPP, DPPO and CEON ontologies and the GS1 Web Vocabulary." .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://w3id.org/dppo/ontology/dpp-info/value
+<http://w3id.org/dppo/ontology/dpp-info/value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://www.gs1.org/voc/gtin
+<https://www.gs1.org/voc/gtin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://www.gs1.org/voc/gtin> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/dppo/ontology/dpp-info/value> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid1 <http://www.w3.org/2002/07/owl#annotatedSource> <https://www.gs1.org/voc/gtin> .
+_:genid1 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> .
+_:genid1 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://w3id.org/dppo/ontology/dpp-info/value> .
+_:genid1 <http://purl.org/dc/elements/1.1/identifier> "GS1_0004" .
+_:genid1 <http://purl.org/dc/terms/source> "StandardsGS1" .
+_:genid1 <http://www.w3.org/2000/01/rdf-schema#comment> "DPPO provides no datatype property parallel to gs1:gtin. The literal-valued dpp-info:value is the closest available, although its semantic scope is broader and not specific to product identifiers. Stated in the GS1 section of the accompanying paper." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/CEON/ontology/product/Product
+<http://w3id.org/CEON/ontology/product/Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/CEON/ontology/product/Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.gs1.org/voc/Product> .
+<https://www.gs1.org/voc/Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid2 <http://www.w3.org/2002/07/owl#annotatedSource> <http://w3id.org/CEON/ontology/product/Product> .
+_:genid2 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+_:genid2 <http://www.w3.org/2002/07/owl#annotatedTarget> <https://www.gs1.org/voc/Product> .
+_:genid2 <http://purl.org/dc/elements/1.1/identifier> "GS1_0003" .
+_:genid2 <http://purl.org/dc/terms/source> "StandardsGS1" .
+_:genid2 <http://www.w3.org/2000/01/rdf-schema#comment> "gs1:Product is strictly broader than the CEON product class, so only a subclass axiom is justified. Stated in the GS1 section of the accompanying paper." .
+# 
+# http://w3id.org/dpp#Product
+<http://w3id.org/dpp#Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dpp#Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.gs1.org/voc/Product> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid3 <http://www.w3.org/2002/07/owl#annotatedSource> <http://w3id.org/dpp#Product> .
+_:genid3 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+_:genid3 <http://www.w3.org/2002/07/owl#annotatedTarget> <https://www.gs1.org/voc/Product> .
+_:genid3 <http://purl.org/dc/elements/1.1/identifier> "GS1_0001" .
+_:genid3 <http://purl.org/dc/terms/source> "StandardsGS1" .
+_:genid3 <http://www.w3.org/2000/01/rdf-schema#comment> "gs1:Product is any item, product or service, for which predefined information must be retrievable and that may be priced, ordered or invoiced. dpp:Product is a physical artefact and therefore satisfies the broader commercial definition. Stated in the GS1 section of the accompanying paper." .
+# 
+# http://w3id.org/dppo/ontology/dpp-odp/Product
+<http://w3id.org/dppo/ontology/dpp-odp/Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/dppo/ontology/dpp-odp/Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.gs1.org/voc/Product> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid4 <http://www.w3.org/2002/07/owl#annotatedSource> <http://w3id.org/dppo/ontology/dpp-odp/Product> .
+_:genid4 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+_:genid4 <http://www.w3.org/2002/07/owl#annotatedTarget> <https://www.gs1.org/voc/Product> .
+_:genid4 <http://purl.org/dc/elements/1.1/identifier> "GS1_0002" .
+_:genid4 <http://purl.org/dc/terms/source> "StandardsGS1" .
+_:genid4 <http://www.w3.org/2000/01/rdf-schema#comment> "gs1:Product is strictly broader than the DPPO product class, so only a subclass axiom is justified. Stated in the GS1 section of the accompanying paper." .
+# 
+# https://www.gs1.org/voc/Product
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

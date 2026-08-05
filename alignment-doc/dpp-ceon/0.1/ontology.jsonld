@@ -1,0 +1,73 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://purl.org/dc/elements/1.1/identifier" : [ {
+    "@value" : "DPP_CEON_0002"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "DPPCEON"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Both properties relate a product to a component that is itself a product. Additional mapping, not discussed in the paper."
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://w3id.org/dpp#hasComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@id" : "http://w3id.org/CEON/ontology/product/hasProductComponent"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://purl.org/dc/elements/1.1/identifier" : [ {
+    "@value" : "DPP_CEON_0001"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "DPPCEON"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "dpp:Product and ceon-product:Product share the ISO 59004:2024 product definition, but dpp:Product is scoped to the products of the built environment whereas ceon-product:Product is domain neutral. Stated in the section on semantic alignment informed by the ESPR in the accompanying paper, where this alignment gives the DPP ontology access to the ESPR model, batch and item levels through CEON."
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://w3id.org/dpp#Product"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@id" : "http://w3id.org/CEON/ontology/product/Product"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/CEON/ontology/product/Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/CEON/ontology/product/hasProductComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/dpp#Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/CEON/ontology/product/Product"
+  } ]
+}, {
+  "@id" : "http://w3id.org/dpp#hasComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://w3id.org/CEON/ontology/product/hasProductComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpp/alignment/dpp-ceon/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Alignment between the DPP ontology and CEON."
+  } ]
+} ]

@@ -1,0 +1,127 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://purl.org/dc/elements/1.1/identifier" : [ {
+    "@value" : "GS1_0004"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "StandardsGS1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "DPPO provides no datatype property parallel to gs1:gtin. The literal-valued dpp-info:value is the closest available, although its semantic scope is broader and not specific to product identifiers. Stated in the GS1 section of the accompanying paper."
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "https://www.gs1.org/voc/gtin"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@id" : "http://w3id.org/dppo/ontology/dpp-info/value"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://purl.org/dc/elements/1.1/identifier" : [ {
+    "@value" : "GS1_0003"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "StandardsGS1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "gs1:Product is strictly broader than the CEON product class, so only a subclass axiom is justified. Stated in the GS1 section of the accompanying paper."
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://w3id.org/CEON/ontology/product/Product"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@id" : "https://www.gs1.org/voc/Product"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://purl.org/dc/elements/1.1/identifier" : [ {
+    "@value" : "GS1_0001"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "StandardsGS1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "gs1:Product is any item, product or service, for which predefined information must be retrievable and that may be priced, ordered or invoiced. dpp:Product is a physical artefact and therefore satisfies the broader commercial definition. Stated in the GS1 section of the accompanying paper."
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://w3id.org/dpp#Product"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@id" : "https://www.gs1.org/voc/Product"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://purl.org/dc/elements/1.1/identifier" : [ {
+    "@value" : "GS1_0002"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "StandardsGS1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "gs1:Product is strictly broader than the DPPO product class, so only a subclass axiom is justified. Stated in the GS1 section of the accompanying paper."
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://w3id.org/dppo/ontology/dpp-odp/Product"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@id" : "https://www.gs1.org/voc/Product"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/CEON/ontology/product/Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.gs1.org/voc/Product"
+  } ]
+}, {
+  "@id" : "http://w3id.org/dpp#Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.gs1.org/voc/Product"
+  } ]
+}, {
+  "@id" : "http://w3id.org/dppo/ontology/dpp-info/value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/dppo/ontology/dpp-odp/Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.gs1.org/voc/Product"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpp/alignment/standards-gs1/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Alignment between the DPP, DPPO and CEON ontologies and the GS1 Web Vocabulary."
+  } ]
+}, {
+  "@id" : "https://www.gs1.org/voc/Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.gs1.org/voc/gtin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://w3id.org/dppo/ontology/dpp-info/value"
+  } ]
+} ]
